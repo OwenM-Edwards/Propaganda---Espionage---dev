@@ -82,6 +82,10 @@ pol_op_spy_balanced_focus:0 "Balanced"
 pol_op_spy_balanced_focus_name:0 "Balanced Operations"
 pol_op_spy_balanced_focus_desc:0 "We must pursue our interests both foreign and domestic."
 
+spy_balanced_focus_name:0 "Balanced"
+spy_offensive_focus_name:0 "Offensive"
+spy_defensive_focus_name:0 "Defensive"
+
 pol_op_spy_defensive_focus:0 "Domestic"
 pol_op_spy_defensive_focus_name:0 "Domestic Operations"
 pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting our citizens from foreign influence and ensuring internal stability.\n\nNetworks assigned to domestic operations will have a higher counterintelligence effect, and have more success conducting operations. However foreign networks will have less success conducting operations."
@@ -106,6 +110,9 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  sm_stationSab:0 "Sabotaged Station"
  sm_stationSab_desc:0 "Sabotaged Station"
  cb_fabricated_claim:0 "Fabricated Claim"
+
+ sabStationHigh_mod:0 ""
+ sabStationLow_mod:0 ""
 
 
  opinion_spy_discovered:0 "Discovered Espionage"
@@ -1819,3 +1826,16 @@ spyModConfig.2.name:0 "Uninstall"
 spyModConfig.2.desc:0 "This will remove several flags and modifiers, ensuring a completely clean uninstall from a save game. Do not reopen the intelligence menu after using this."
 spyModConfig.2.a:0 "Uninstall."
 spyModConfig.2.b:0 "Cancel."
+
+
+
+
+
+
+
+
+####################
+ ### RESOLUTIONS
+ ####################
+
+ galactic_espionage:0 "Galactic Espionage"

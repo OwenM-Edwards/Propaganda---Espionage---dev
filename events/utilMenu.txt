@@ -21,6 +21,8 @@ country_event = {
     id = agencyMenu.0 
     is_triggered_only = yes
     diplomatic = yes
+    title = ""
+    desc = ""
     custom_gui = "quibble_intelligence_cells"
 
     picture_event_data = {

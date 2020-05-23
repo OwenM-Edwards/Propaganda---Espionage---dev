@@ -158,7 +158,7 @@ country_event = {
 	immediate = {
 		event_target:finalStationTarget = {
 			add_modifier = {
-				modifier = sabStationHigh_mod
+				modifier = sabStationHigh_mod 
 			}
 			owner = {
 				country_event = { id = stationSabotage.7 }

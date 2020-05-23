@@ -14,7 +14,7 @@ country_event = { #SUCCESS
 				}
 			}
 			random_list = {
-				@messageDisplayChance = {
+				70 = {
 					random_list = {
 						30 = {
 							create_message = { 
@@ -42,7 +42,7 @@ country_event = { #SUCCESS
 						}
 					}
 				}
-				@messageNoDisplayChance = { }
+				30 = { }
 			}
 		}
 
