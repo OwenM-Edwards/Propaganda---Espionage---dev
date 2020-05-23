@@ -1,0 +1,137 @@
+namespace = boostRepB
+
+country_event = {  #SUCCESS/FAIL ROLL EVENT
+	id = boostRepB.1
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			50 = {
+				country_event = { id = boostRepB.2 } #FULL SUCCESS
+			}
+			50 = {
+				country_event = { id = boostRepB.3 } #PARTIAL SUCCESS
+			}
+		}
+	}
+}
+
+
+
+
+
+
+#### #PARTIAL SUCCESS ###
+country_event = {
+	id = boostRepB.2
+	title = "boostRepBSuccess.title"
+	desc = "boostRepBSuccessPartial.desc" 
+	show_sound = event_conversation
+	is_triggered_only = yes
+	picture = GFX_evt_news_room
+
+
+	immediate = {
+		save_event_target_as = playerAgency
+
+		every_country = {
+			limit = {
+				checkCountryType = yes
+				has_communications = event_target:playerAgency
+			}
+			add_opinion_modifier = {
+				who = event_target:playerAgency
+				modifier = opinion_boostRep_low
+			}
+		}
+	}
+	option = { #REDO
+		name = boostRepBSuccess.a
+		custom_tooltip = pointsRequiredBetaD.tooltip
+		allow = {
+			hidden_trigger = {
+				has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
+			}
+		}
+		hidden_effect = {
+			removeGatherProgress_Beta_D = yes
+			country_event = {
+				id = counterProgressTrackerB.1
+			}
+		}
+	}
+
+	option = { #RETURN TO INTEL GATHERING
+		name = boostRepBSuccess.b
+		hidden_effect = {
+			remove_country_flag = boostRepB
+			removeGatherProgress_Beta_D = yes
+			country_event = {
+				id = counterProgressTrackerB.1
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#### SUCCESS HIGH ###
+country_event = {
+	id = boostRepB.3
+	title = "boostRepBSuccess.title"
+	desc = "boostRepBSuccess.desc" 
+	show_sound = event_conversation
+	is_triggered_only = yes
+	picture = GFX_evt_news_room
+
+
+	immediate = {
+		save_event_target_as = playerAgency
+
+		every_country = {
+			limit = {
+				checkCountryType = yes
+				has_communications = event_target:playerAgency
+			}
+			add_opinion_modifier = {
+				who = event_target:playerAgency
+				modifier = opinion_boostRep_high	
+			}
+		}
+	}
+	option = { #REDO
+		name = boostRepBSuccess.a
+		custom_tooltip = pointsRequiredBetaD.tooltip
+		allow = {
+			hidden_trigger = {
+				has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
+			}
+		}
+		hidden_effect = {
+			removeGatherProgress_Beta_D = yes
+			country_event = {
+				id = counterProgressTrackerB.1
+			}
+		}
+
+	}
+
+	option = { #RETURN TO INTEL GATHERING
+		name = boostRepBSuccess.b
+		hidden_effect = {
+			remove_country_flag = boostRepB
+			removeGatherProgress_Beta_D = yes
+			country_event = {
+				id = counterProgressTrackerB.1
+			}
+		}
+
+	}
+}

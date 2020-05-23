@@ -1,0 +1,49 @@
+namespace = pointsMax
+
+country_event = {
+	id = pointsMax.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_list = {
+			60 = {
+				if = {
+					limit = {
+						is_ai = no
+					}
+					if = {
+						limit = {
+							has_resource = {
+								type = sr_alpha_points
+								amount = 200
+							}
+						}
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization = pointsAlphaFull
+							days = @messageDisplayLength
+							target = root
+					  }
+					}
+			
+					if = {
+						limit = {
+							has_resource = {
+								type = sr_beta_points
+								amount = 200
+							}
+						}
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization = pointsBetaFull
+							days = @messageDisplayLength
+							target = root
+					  }
+					}
+				}
+			}
+			40 = {}
+		}
+	}
+}

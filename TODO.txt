@@ -1,0 +1,168 @@
+#FINISH THE DEFECTING SCIENTIST EVENT
+
+#ADD DESCRIPTION TO RAID WINDOW, EXPLAININIG CURRENT RAID, STOPPING NEW RAID UNTIL FINISHED.
+
+#UPDATED THE PROGRESS BAR TOOLTIPS
+
+#UPDATE OPERATION COST TOOLTIPS AND NOTIFICATIONS
+
+#SPELL CHECK LOC
+
+#NEED TO TEST DESTYORED CPOUNTRY EVENT
+
+#MAKE SURE STATION SAB FLAGS GET REMOVED ON COMPLETION
+
+#CHECK LOCALISATION GUIDE FOR EVENTS
+
+#FINISH THE TARGET NOTIFICATION FOR THE STATION SABOTAGE EVENT
+
+#UPDATE TARGET COUNTERINTELLIGENCE TOOLTIP GATHER AMOUNT, LETTING PLAYING KNOW HOW MUCH THEY GET OER LEVEL OF COUNTERINTELLIGENCE THEY'RE WORKING AGAINST.
+
+#FIX THE CASUS BELLI AND WARGOALS
+
+#ADD BACK IN RANDOM DAYS FOR STATION AND OPPORTUNITY EVENTS
+
+#CHECK THAT AI DOUBLE DOMESTIC WORKS
+
+#UNIQUE OPPORTUNITY COOLDOWN
+
+#FIX THAT STUPID POPUP TEXT ON MAIN SPY MENU
+
+#FIND ANOTHER WAY OF SHOWING CURRENT INTEL POINTS OTHER THAN JUST TOPBAR
+
+#TEST OUT ON OTHER RESOLUTIONS = { #720p #1080p #1440p }
+
+#CHANGE MILITARY POWER CONDITIONALS SO THEY'RE NOT SAME AS RIVALS
+
+#FOREIGN LOCALISATION
+
+#FIX EMPIRE DESTROYED EVENT - NAME IS MISSING
+
+#STEAM = { #TAKE SCREENSHOTS FOR STEAM #WRITE STEAM DESCRIPTION #CREATE NEW THUMBNAILS FOR STEAM }
+
+#NO INDUSTRAIL ESPIONAGE IF TARGET HAS ENIGMATIC ENG
+
+#UI MODS COMPAT PATCH
+
+#TOOLTIP THE NEW COUNTER INTEL UI'S
+
+#MAKE FIRST CONTACT COOLDOWN SPECIFIC TO EACH EMPIRE
+
+#AI DECISIONS FOR POLICY
+
+#OPTIMIZATION PASS 1
+
+#POLICY FOR ESPIONAGE
+
+#ADD NEW LOCALS TO FOREIGN
+
+#TEST UPDATRE ON OLD SAVEGAME
+
+#ADDED IN FEDERATION LAW - BANS INTER-FEDERATION ESPIONAGE
+
+#ADD IN DEBUFF FOR DOMESTIC FOCUS ON SUCCESS CHANCE
+
+# DONE
+# Fixed small ui bug on Alpha Network intel report
+# Added espionage focus policy
+# Tweaked chance of stronger AI response to starbase raid
+# Better and more efficient AI operations
+# Now if player has both agencies on defense AND has the focus domestic policy, they will be 100% immune to espionage.
+# Complete rebalance of success/fail chances
+# AI tech steal generic reward now acts the same as the player version, and scales based off of relative tech power
+# Fixed small bug with opportunity mission chance.
+# Added tooltip to target counterintelligence repoRt, giving a rough estimation at success chance.
+# Adjustment to AI espionage targetting after communications established.
+# Added small background to intell ntwroks screen intel points icons
+# Small localisation fix to fund crime success message
+# Fixed bug sometimes stopping AI from doing espionage
+# Optimization pass of all on_action events
+# Fixed bug of ai not getting stop crime boost
+
+
+
+# DONE 2
+# Added in police state buff
+# Fixed small swing ethics bug
+# Added in global flag - prop_esp_installed - for other mod authors
+# Added in some mod compat information for mod authors in events/untilModCompat.txt
+# changed on actions to also fire global flag event
+#SPY CONFIG MENU = {
+   #ADDED NEW EVENT - utilOptionsMenu
+   #Adjusted the neighbor filter in the scripted filters
+   #In AI menu changed their 'checkCountryType = yes' to the checkCountryType = yes trigger.
+   #removed default country check from menu button.
+   #removed default country type from policies
+   #just cntrl-f and replace 'em all'
+   #add new config button to main intel window, and to the 'no intel networks' yet window
+   #change desc text of the 'no intel networks yet' window to be different for hiveminds etc
+#}
+#added compatability for civics and ethics classic
+#Improved the backup edict, fixed some localisation and removed delay
+#polished up some of the old GUI names.
+#fixed small bug cuased when cancelling a sow unrest operation
+
+
+MAKE SURE ALL MODS HAVE ICONS AND DESCRIPTIONS
+
+ADD DISPLAY OF OWN COUNTERINTEL LEVEL
+
+ADD RACE TRAIT (SNEAKY) FOR ESPIONAGE
+
+ADD IN MORE DETAILED BREAKDOWN OF HOW TARGET COUNTERINTEL WAS CALCULATED
+
+GALACTIC COUNCIL IDEAS  =  {
+   BAN ON ESPIONAGE?
+   BAN ON TYPES OF ESPIONAGE = {
+      WOULD NEED TO INVESTIGATE HOW TO IMPLEMENT BREACHES OF GALACTIC LAW
+   }
+
+   WAYS TO MANIPULATE THE GALACTIC COUNCIL
+
+
+}
+
+WHEN GATHERING INTELLIGENCE, RANDOM CHANCE TO GET SOME DIPLOMATIC FAVORS (FROM BLACKMAIL ETC)
+
+
+
+
+
+
+----- 	MAYBE FEATURE CREEP STUFF -----
+
+GALACTIC COUNCIL ESPIONAGE LAWS
+
+FUND CRIME SHOULD BE BASED OFF OF ENEMY ECONOMY
+
+POSSIBLE ADD PERCENTAGE SUCCESS CHANCE TOOLTIP
+
+ADD GOVORNOR TO INTELLIGENCE NETOWRKS PANEL, PROVIDE BUFFS
+
+ADD WAY TO CHANGE AGENCY NAME, LOOK INTO NAMING A HIDDEN PLANET AND TAKING NAME FROM THAT, OR HAVING A SELECTION OF DIFFERENT NAMES
+
+Have dialogues with AI asking for financial support in wars, or asking for assistence in other ways. 
+
+GALCIV style AI suggesting at some point them and player are going to have to team up against anothor faction, player can choose to promise support or not.
+
+Ai offering gifts to the player (or each other)
+
+AI warning player that they are expanding too fast.
+
+Ai asking player to change one of their policies.
+
+Add tech or civic etc, that grants espionage boost.
+
+Possible interior trade piracy stuff.
+   ./See if there is a way to increase trade route piracy levels.
+   ./There is, called Interception levels or something
+
+
+Possible sensor link spying stuff.
+
+
+
+
+fix EDICT TOOLTIP TEXT
+
+increase industrail espionge occurance tiome 

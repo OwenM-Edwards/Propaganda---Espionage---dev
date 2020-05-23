@@ -1,0 +1,295 @@
+namespace = sabRepCrit
+#######
+
+#TODO
+
+#######
+
+
+### SABOTAGE REPUTATION CRIT EVENTS ###
+country_event = {
+    id = sabRepCrit.1  ### RANDOMLY PICKES SABREP CRIT EVENT FOR ALPHA AGENCY
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        random_list = {
+            10 = { #BOMB DIPLOMATS OPERATION
+                country_event = {
+                    id = sabRepCrit.2
+                }
+            }
+            10 = { #MILITARIZE EXTREMISTS OPERATION
+                country_event = {
+                    id = sabRepCrit.3
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+#### BOMB DIPLOMATES ALPHA ####
+#### DECIDE TO DO IT ####
+country_event = { 
+    id = sabRepCrit.2
+    title = sabRepCrit_Terror_title
+    desc = sabRepCrit_Terror_desc
+    picture = GFX_evt_board_meeting
+    is_triggered_only = yes
+    
+    option = { #DO IT
+        name = sabRepCrit_Terror.a
+        hidden_effect = {
+            random_list = {
+                70 = { #SUCCEED
+                    country_event = { id = sabRepCrit.201 days = 20 random = 5 }
+                }
+
+                30 = { #FAIL
+                    country_event = { id = sabRepCrit.202 days = 20 random = 5 }
+                }
+            }
+        }
+    }
+    option = { #DONT DO IT, RETURN TO NORMAL SABOREP
+        name = sabRepCrit_Terror.b
+        hidden_effect = {
+            random_list = {
+                50 = {
+                    country_event = { id = saboRep.2 days = 1 } 
+                }
+                50 = {
+                    country_event = { id = saboRep.3 days = 1 } 
+                }
+            }
+        }
+    }
+}
+country_event = { #ALPHA AGENCY - BOMB DIPLOMATS OPERATION SUCCESS
+    id = sabRepCrit.201
+    title = sabRepCrit_Terror_success.title
+    desc = sabRepCrit_Terror_success.desc 
+    is_triggered_only = yes
+    picture = GFX_evt_debris
+    show_sound = event_super_explosion
+
+    option = { #REDO
+        name = sabotageRepSuccess.a
+        allow = {
+            custom_tooltip = sabotageRepSuccess.a.a
+            custom_tooltip = {
+                fail_text = "sabotageRepSuccess.a.b"
+                check_variable = {
+                    which = AlphaFPoints
+                    value >= 60  
+                }
+            }
+        }
+        hidden_effect = {
+            change_variable = {
+                which = AlphaFPoints
+                value = -60  
+            }
+            removeGatherProgress_Alpha_F = yes
+            country_event = {
+                id = progressTrackerA.1
+            }
+        }
+    }
+    option = { #RETURN TO INTEL GATHERING
+        name = sabotageRepSuccess.b
+        hidden_effect = {
+            remove_country_flag = saboRep
+            removeGatherProgress_Alpha_F = yes
+            set_country_flag = gatherIntelAlpha
+            country_event = {
+                id = progressTrackerA.1  
+            }
+        }
+    }
+}
+country_event = { #ALPHA AGENCY - BOMB DIPLOMATS OPERATION FAIL
+    id = sabRepCrit.202
+    title = sabRepCrit_Terror_fail.title     
+    desc = sabRepCrit_Terror_fail.desc
+    is_triggered_only = yes
+    picture = GFX_evt_interior_battle
+    show_sound = event_planetary_riot
+
+    option = { #REDO
+        name = sabotageRepSuccess.a
+        allow = {
+            custom_tooltip = sabotageRepSuccess.a.a
+            custom_tooltip = {
+                fail_text = "sabotageRepSuccess.a.b"
+                check_variable = {
+                    which = AlphaFPoints
+                    value >= 60
+                }
+            }
+        }
+        hidden_effect = {
+            change_variable = {
+                which = AlphaFPoints
+                value = -60  
+            }
+            removeGatherProgress_Alpha_F = yes
+            country_event = {
+                id = progressTrackerA.1
+            }
+        }
+    }
+    option = { #RETURN TO INTEL GATHERING
+        name = sabotageRepSuccess.b
+        hidden_effect = {
+            remove_country_flag = saboRep
+            removeGatherProgress_Alpha_F = yes
+            set_country_flag = gatherIntelAlpha
+            country_event = {
+                id = progressTrackerA.1    
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+### MILITARIZE EXTREMISTS OPERATION ALPHA ###
+#### DECIDE TO DO IT ####
+country_event = { 
+    id = sabRepCrit.3
+    title = sabRepCrit_Extreme.title
+    desc = sabRepCrit_Extreme.desc
+    picture = GFX_evt_alien_propaganda
+    is_triggered_only = yes
+    
+    option = { #DO IT
+        name = sabRepCrit_Terror.a
+        hidden_effect = {
+            random_list = {
+                70 = { #SUCCEED
+                    country_event = { id = sabRepCrit.301 days = 20 random = 5 }
+                }
+                30 = { #FAIL
+                    country_event = { id = sabRepCrit.302 days = 20 random = 5 }
+                }
+            }
+        }
+    }
+    option = { #DONT DO IT
+        name = sabRepCrit_Terror.b
+        hidden_effect = {
+            random_list = {
+                50 = {
+                    country_event = { id = saboRep.2 days = 1 } 
+                }
+                50 = {
+                    country_event = { id = saboRep.3 days = 1 } 
+                }
+            }
+        }
+    }
+}
+country_event = { #POTENTIAL EXTREMIST SUCCESS
+    id = sabRepCrit.301
+    title = sabRepCrit_Extreme_success.title
+    desc = sabRepCrit_Extreme_success.desc 
+    is_triggered_only = yes
+    picture = GFX_evt_debris
+    show_sound = event_super_explosion
+
+    option = { #REDO
+        name = sabotageRepSuccess.a
+        allow = {
+            custom_tooltip = sabotageRepSuccess.a.a
+            custom_tooltip = {
+                fail_text = "sabotageRepSuccess.a.b"
+                check_variable = {
+                    which = AlphaFPoints
+                    value >= 60
+                }
+            } 
+        }
+        hidden_effect = {
+            change_variable = {
+                which = AlphaFPoints
+                value = -60
+            }
+            removeGatherProgress_Alpha_F = yes
+            country_event = {
+                id = progressTrackerA.1
+            }
+        }
+    }
+
+    option = { #RETURN TO INTEL GATHERING
+        name = sabotageRepSuccess.b
+        hidden_effect = {
+            remove_country_flag = saboRep
+            removeGatherProgress_Alpha_F = yes
+            set_country_flag = gatherIntelAlpha
+            country_event = {
+                id = progressTrackerA.1
+                
+            }
+        }
+    }
+}
+country_event = { #POTENTIAL EXTREME FAIL
+    id = sabRepCrit.302
+    title = sabRepCrit_Extreme_fail.title     
+    desc = sabRepCrit_Extreme_fail.desc
+    is_triggered_only = yes
+    picture = GFX_evt_interior_battle
+    show_sound = event_planetary_riot
+
+    option = { #REDO
+        name = sabotageRepSuccess.a
+        allow = {
+            custom_tooltip = sabotageRepSuccess.a.a
+            custom_tooltip = {
+                fail_text = "sabotageRepSuccess.a.b"
+                check_variable = {
+                    which = AlphaFPoints
+                    value >= 60     
+                }
+            }  
+        }
+        hidden_effect = {
+            change_variable = {
+                which = AlphaFPoints
+                value = -60
+            }
+            removeGatherProgress_Alpha_F = yes
+            country_event = {
+                id = progressTrackerA.1
+            }
+        }
+    }
+    option = { #RETURN TO INTEL GATHERING
+        name = sabotageRepSuccess.b
+        hidden_effect = {
+            remove_country_flag = saboRep
+            removeGatherProgress_Alpha_F = yes
+            set_country_flag = gatherIntelAlpha
+            country_event = {
+                id = progressTrackerA.1   
+            }
+        }
+    }
+}
+

@@ -1,0 +1,143 @@
+namespace = saboRepB
+
+country_event = {  
+    id = saboRepB.1 
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        random_list = { #CHECKS FOR CRIT
+            # 10 = { #crit table
+            #     country_event = { id = sabRepCrit.11 days = 1 }
+            # }
+            40 = { #standard table
+                random_list = {
+                    50 = {
+                        country_event = { id = saboRepB.2 } #FULL SUCCESS
+                    }
+                    50 = {
+                        country_event = { id = saboRepB.3 } #PARTIAL SUCCESS
+                    }
+                }
+            }     
+        }
+    }
+}
+
+#### FULL SUCCESS ####
+country_event = {
+	id = saboRepB.2
+	title = "sabotageRepSuccess2.title"
+	desc = "sabotageRepSuccess2.desc" 
+	show_sound = event_conversation
+    is_triggered_only = yes
+    picture = GFX_evt_alien_segregation
+
+
+    immediate = {
+        save_event_target_as = playerAgency
+        event_target:betaNetworkTarget_temp = {
+            every_country = {
+                limit = {
+                    checkCountryType = yes
+                    has_communications = event_target:betaNetworkTarget_temp
+                    not = {
+                        is_same_value = event_target:playerAgency
+                    }
+                }
+                add_opinion_modifier = {
+                    who = event_target:betaNetworkTarget_temp
+                    modifier = opinion_saboRep_high
+                }
+            }
+        }
+    }
+    option = { #REDO
+        name = sabotageRepSuccess.a
+        custom_tooltip = pointsRequiredAlpha.tooltip
+        allow = {
+            hidden_trigger = {
+                has_resource = { type = sr_beta_points amount >= @operationCostCheck }
+			}
+        }
+        hidden_effect = {
+            removeGatherProgress_Beta_F = yes
+            country_event = {
+                id = progressTrackerB.1
+            }
+        }
+    }
+
+    option = { #RETURN TO INTEL GATHERING
+        name = sabotageRepSuccess.b
+        hidden_effect = {
+            remove_country_flag = saboRep2
+            set_country_flag = gatherIntelBeta
+            country_event = {
+                id = progressTrackerB.1
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#### PARTIAL SUCCESS #####
+country_event = {
+	id = saboRepB.3
+	title = "sabotageRepSuccessPartial2.title"
+	desc = "sabotageRepSuccessPartial2.desc"
+	show_sound = event_conversation
+	is_triggered_only = yes
+    picture = GFX_evt_alien_segregation
+
+
+    immediate = {
+        save_event_target_as = playerAgency
+
+        event_target:betaNetworkTarget_temp = {
+            every_neighbor_country = {
+                limit = {
+                    checkCountryType = yes
+                    has_communications = event_target:betaNetworkTarget_temp
+                    not = {
+                        is_same_value = event_target:playerAgency
+                    }
+                }
+                add_opinion_modifier = {
+                    who = event_target:betaNetworkTarget_temp
+                    modifier = opinion_saboRep_low
+                }
+            }
+        }
+    }
+    option = { #REDO
+        name = sabotageRepSuccess.a
+        custom_tooltip = pointsRequiredBeta.tooltip
+        allow = {
+            hidden_trigger = {
+                has_resource = { type = sr_beta_points amount >= @operationCostCheck }
+			}
+        }
+        hidden_effect = {
+            removeGatherProgress_Beta_F = yes
+            country_event = {
+                id = progressTrackerB.1
+            }
+        }
+    }
+
+    option = { #RETURN TO INTEL GATHERING
+        name = sabotageRepSuccess.b
+        hidden_effect = {
+            remove_country_flag = saboRep2
+            set_country_flag = gatherIntelBeta
+            country_event = {
+                id = progressTrackerB.1
+            }
+        }
+    }
+}
+#### SUCCESS ###
