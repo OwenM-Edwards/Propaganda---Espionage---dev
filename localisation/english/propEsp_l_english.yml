@@ -116,6 +116,9 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
 
  opinion_spy_discovered:0 "Discovered Espionage"
+
+ domStability_low:0 "Domestic Supression."
+ domStability_high:0 "Major Domestic Supression."
  
 
  ### TECH STUFF ###
@@ -591,6 +594,8 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  AlphaD-stopCrime.a:0 "Working against domestic organised crime."
  
  AlphaD-boostEthics.a:0 "Conducting propaganda operation with the aim of influencing our civilian population towards our governing ethics."
+
+ AlphaD-boostStability:0 "Supressing unrest in one of our systems."
  
  AlphaD-intelPoints.a:0 "Our current level of domestic intelligence."
  
@@ -678,6 +683,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  AlphaD-boostRep:0 "§SImprove Reputation§!"
  AlphaD-stopCrime:0 "§SCrime Crackdown §!"
  AlphaD-boostEthics:0 "§SDomestic Propaganda§!"
+ AlphaD-boostStability:0 "§SImprove Stability§!"
  
  AlphaD-intelPoints:0 ""
  AlphaD-intelPoints-none:0 "[Root.alpha_domestic_intel_cover_or_not]§!"
@@ -847,7 +853,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  ABD_chooseOP.a:0 "Improve Diplomatic Reputation."
  ABD_chooseOP.b:0 "Organised Crime Crackdown."
  ABD_chooseOP.d:0 "Domestic Propaganda."
- ABD_chooseOP.e:0 "Domestic Stability."
+ ABD_chooseOP.e:0 "Improve Stability."
  ABD_chooseOP.z:0 "Back."
  
  
@@ -1320,21 +1326,69 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 ### CHOOSE TARGET ###
 ## ALPHA ## 
  spyDomStability.1.name:0 "Target System"
- spyDomStability.1.desc:0 "The Alpha Network stands ready, which system should we work to imprive?"
+ spyDomStability.1.desc:0 "The Alpha Network stands ready, we can assign them to operate in one of our colonised systems. They will work to stablise all planets within."
 
  spyDomStability.1.1:0 "§S[stability_target_system_1.GetName]§!."
  spyDomStability.1.2:0 "§S[stability_target_system_2.GetName]§!."
-
+ spyDomStability.1.2:0 "§S[stability_target_system_3.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_4.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_5.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_6.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_7.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_8.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_9.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_10.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_11.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_12.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_13.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_14.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_15.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_16.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_17.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_18.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_19.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_20.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_21.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_22.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_23.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_24.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_25.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_26.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_27.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_28.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_29.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_30.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_31.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_32.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_33.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_34.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_35.GetName]§!."
+ spyDomStability.1.1:0 "§S[stability_target_system_36.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_37.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_38.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_39.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_40.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_41.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_42.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_43.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_44.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_45.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_46.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_47.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_48.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_49.GetName]§!."
+ spyDomStability.1.2:0 "§S[stability_target_system_50.GetName]§!."
+ 
  spyDomStability.2.z:0 "Cancel."
 
 
 ## SUCCESS PARTIAL ##
 spyDomStability.3.name:0 "Domestic Stability"
-spyDomStability.3.desc:0 "Partial"
+spyDomStability.3.desc:0 "§YSuccess!§!. Our Alpha Network operatives have successfully "
 
 ## SUCCESS MAJOR ##
 spyDomStability.4.name:0 "Domestic Stability"
-spyDomStability.4.desc:0 "Major"
+spyDomStability.4.desc:0 "§YMajor Success!§!. "
  
  
  

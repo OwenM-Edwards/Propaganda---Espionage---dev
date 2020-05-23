@@ -658,6 +658,19 @@ country_event = {
         trigger = { has_country_flag = boostEthicA }
     }
 
+    option = { #OPERATION TYPE - STABILITY
+        name = AlphaD-boostStability
+        custom_tooltip = "AlphaD-boostStability.a" 
+        allow = {
+			custom_tooltip = {
+				fail_text = "blankFailTooltip" 
+				always = no
+			}		
+		}
+        custom_gui = "Alpha_D_secondOpGUI"
+        trigger = { has_country_flag = boostStabilityA }
+    }
+
 
 ############### OPERATIONS ################
 
