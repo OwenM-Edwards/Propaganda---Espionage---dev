@@ -2,11 +2,11 @@
 ##### BASIC STUFF ######
 
 	### OPERATION PROGRESS ###
-	@gatherProgStageOne = 90 #Must always be a few days longer than generic stage
-	@gatherProgGenericStage = 80
+	@gatherProgStageOne = 1 #Must always be a few days longer than generic stage
+	@gatherProgGenericStage = 2
 
-	@gatherProgRandomDays = 5 #Must not overlap
-	@gatherProgRandomRandom = 3
+	@gatherProgRandomDays = 1 #Must not overlap
+	@gatherProgRandomRandom = 2
 
 	@complicationChance = 50
 
@@ -74,6 +74,8 @@
 	@intelBasicPointCheck = 80
 	@intelAdvancedPointCheck = 100
 
+	### DOMESTIC STABILITY ###
+	@domStabilityLength = 180
 
 
 

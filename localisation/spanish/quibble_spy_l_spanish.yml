@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_spanish:
  
  ################\
  # english translation
@@ -7,9 +7,6 @@
 ##### GENERIC UI STUFF ######
  industrialEnigmatic:0 "The target's enigmatic engineering makes industrial espionage impossible."
 
-
- menuAlreadyOpen:0 "Network manager is already open."
-
  displayAlphaIntelPoints.a:0 "[playerAgency.getAlphaIntelPoints]"
  displayBetaIntelPoints.a:0 "[playerAgency.getBetaIntelPoints]"
 
@@ -17,8 +14,8 @@
  AlphaF-IntelReport-Unnasigned:0 "Unassigned"
  BetaF-IntelReport-Unnasigned:0 "Unassigned"
 
- spy_openAdvancedIntel.tooltip:0 "§SDetailed Intelligence Report§!"
- spy_openAdvancedIntelBeta.tooltip:0 "§SDetailed Intelligence Report§!"
+ spy_openAdvancedIntel.tooltip:0 "§SDetailed Information§!"
+ spy_openAdvancedIntelBeta.tooltip:0 "§SDetailed Information§!"
 
 
  AlphaF-Raid.a:0 "Short term, high impact raid. Can be run alongside regular long term operations."
@@ -33,15 +30,12 @@
 
  Intelligence_Networks_Header:0 "§SIntelligence Networks§!"
  spy_openMenuButton.tooltip:0 "§SManage Networks§!\nIntelligence networks overview."
-
- spy_configMenuButton.tooltip:0 "Propaganda & Espionage Configuration."
  closeSpyHidden.name:0 ""
  noClickUi:0 ""
  closeMenuOption.a:0 ""
  blankFailTooltip:0 ""
 
  edict_openNetworkManager:0 "Manage Networks"
- edict_openNetworkManager_desc:0 "Manage your intelligence networks."
  
  progressButton10:0 "Around §S490 days§! remaining until operation completion."
  progressButton20:0 "Around §S400 days§! remaining until operation completion."
@@ -61,7 +55,7 @@
  beta_d_name:0 "§SBeta Network§!"
  beta_f_name:0 "§SBeta Network§!"
 ########## FEDERATION LAWS #############
- spyFedLaw_tooltip:0 "Federation law prevents us from targeting this empire."
+ spyFedLaw_tooltip:0 "Federation law prevents us from targetting this empire."
  spy_unregulated_espionage:0 "Unregulated"
  spy_regulated_espionage:0 "Regulated"
  spy_unregulated_espionage_desc:0 "Inter-Federation espionage is unregulated."
@@ -81,10 +75,6 @@ pol_op_spy_offensive_focus_desc:0 "We must focus our efforts outwards, undermini
 pol_op_spy_balanced_focus:0 "Balanced"
 pol_op_spy_balanced_focus_name:0 "Balanced Operations"
 pol_op_spy_balanced_focus_desc:0 "We must pursue our interests both foreign and domestic."
-
-spy_balanced_focus_name:0 "Balanced"
-spy_offensive_focus_name:0 "Offensive"
-spy_defensive_focus_name:0 "Defensive"
 
 pol_op_spy_defensive_focus:0 "Domestic"
 pol_op_spy_defensive_focus_name:0 "Domestic Operations"
@@ -110,9 +100,6 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  sm_stationSab:0 "Sabotaged Station"
  sm_stationSab_desc:0 "Sabotaged Station"
  cb_fabricated_claim:0 "Fabricated Claim"
-
- sabStationHigh_mod:0 ""
- sabStationLow_mod:0 ""
 
 
  opinion_spy_discovered:0 "Discovered Espionage"
@@ -221,23 +208,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  spy_swingXenophile_desc:0 ""
  spy_swingXenophobe:0 "Increased Xenophobia"
  spy_swingXenophobe_desc:0 ""
-
-######## Ethics and Civics Classic 2.7 #####################
- spy_swingGreen:0 "Increased Ecocentrism"
- spy_swingGreen_desc:0 ""
- spy_swingIndustrial:0 "Increased Anthropocentrism"
- spy_swingIndustrial_desc:0 ""
- spy_swingElitist:0 "Increased Elitism"
- spy_swingElitist_desc:0 ""
- spy_swingSocialist:0 "Increased Cooperativism"
- spy_swingSocialist_desc:0 ""
- spy_swingPluralist:0 "Increased Pluralism"
- spy_swingPluralist_desc:0 ""
- spy_swingCapitalist:0 "Increased Competitism"
- spy_swingCapitalist_desc:0 ""
-
-
-
+ 
  spy_swingAuthoritarian_high:0 "Major Increased Authoritarianism"
  spy_swingAuthoritarian_high_desc:0 ""
  spy_swingEgalitarian_high:0 "Major Increased Egalitarianism"
@@ -254,21 +225,6 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  spy_swingXenophile_high_desc:0 ""
  spy_swingXenophobe_high:0 "Major Increased Xenophobia"
  spy_swingXenophobe_high_desc:0 ""
-
-######## Ethics and Civics Classic 2.7 #####################
- spy_swingGreen_high:0 "Major Increased Ecocentrism"
- spy_swingGreen_high_desc:0 ""
- spy_swingIndustrial_high:0 "Major Increased Anthropocentrism"
- spy_swingIndustrial_high_desc:0 ""
- spy_swingElitist_high:0 "Major Increased Elitism"
- spy_swingElitist_high_desc:0 ""
- spy_swingSocialist_high:0 "Major Increased Cooperativism"
- spy_swingSocialist_high_desc:0 ""
- spy_swingPluralist_high:0 "Major Increased Pluralism"
- spy_swingPluralist_high_desc:0 ""
- spy_swingCapitalist_high:0 "Major Increased Competitism"
- spy_swingCapitalist_high_desc:0 ""
-
  
  
 ########## MESSAGES ############
@@ -316,13 +272,6 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  AIswingEthics_MATERIALIST_MESSAGE:0 "There has been a recent upsurge in §SMaterialist§! ideals."
  AIswingEthics_PACIFIST_MESSAGE:0 "There has been a recent upsurge in §SPacifist§! ideals."
  AIswingEthics_XENOPHILE_MESSAGE:0 "There has been a recent upsurge in §SXenophilic§! ideals."
-
- AIswingEthics_GREEN_MESSAGE:0 "There has been a recent upsurge in §SEcocentrist§! ideals."
- AIswingEthics_INDUSTRIAL_MESSAGE:0 "There has been a recent upsurge in §SAnthropocentrist§! ideals."
- AIswingEthics_ELITIST_MESSAGE:0 "There has been a recent upsurge in §SElitist§! ideals."
- AIswingEthics_SOCIALISM_MESSAGE:0 "There has been a recent upsurge in §SCooperativist§! ideals."
- AIswingEthics_PLURALIST_MESSAGE:0 "There has been a recent upsurge in §SPluralist§! ideals."
- AIswingEthics_CAPITALISM_MESSAGE:0 "There has been a recent upsurge in §SCompetatist§! ideals."
 
  ### AI SOW UNREST ####
  ### SUCCESS ###
@@ -825,20 +774,17 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  ABF_chooseOP.e:0 "Back."
  
  
-###### SELECT DOMESTIC OPERATION ###### 
+###### SELECT DOMESTIC OPERATION ######
 ### TOOLTIPS ###
- AD_chooseOP.a:0 "Improve our diplomatic reputation.\n\nRequires §S15§! levels of intelligence."
- BD_chooseOP.a:0 "Improve our diplomatic reputation.\n\nRequires §S15§! levels of intelligence."
+ AD_chooseOP.a:0 "Improve our diplomatic reputation.\nRequires §S15§! levels of intelligence."
+ BD_chooseOP.a:0 "Improve our diplomatic reputation.\nRequires §S15§! levels of intelligence."
 
  
- AD_chooseOP.b:0 "Work against domestic organised crime.\n\nRequires §S15§! levels of intelligence."
- BD_chooseOP.b:0 "Work against domestic organised crime.\n\nRequires §S15§! levels of intelligence."
+ AD_chooseOP.b:0 "Work against domestic organised crime.\nRequires §S15§! levels of intelligence."
+ BD_chooseOP.b:0 "Work against domestic organised crime.\nRequires §S15§! levels of intelligence."
  
- AD_chooseOP.c:0 "Governing ethics propaganda.\n\nRequires §S15§! levels of intelligence."
- BD_chooseOP.c:0 "Governing ethics propaganda.\n\nRequires §S15§! levels of intelligence."
-
- AD_chooseOP.e:0 "Improve internal stability.\n\nRequires §S15§! levels of intelligence."
- BD_chooseOP.e:0 "Improve internal stability.\n\nRequires §S15§! levels of intelligence."
+ AD_chooseOP.c:0 "Governing ethics propaganda.\nRequires §S15§! levels of intelligence."
+ BD_chooseOP.c:0 "Governing ethics propaganda.\nRequires §S15§! levels of intelligence."
  
  ### MAIN ###
  ABD_chooseOP.title:0 "Select Secondary Operation"
@@ -847,8 +793,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  ABD_chooseOP.a:0 "Improve Diplomatic Reputation."
  ABD_chooseOP.b:0 "Organised Crime Crackdown."
  ABD_chooseOP.d:0 "Domestic Propaganda."
- ABD_chooseOP.e:0 "Domestic Stability."
- ABD_chooseOP.z:0 "Back."
+ ABD_chooseOP.c:0 "Back."
  
  
  
@@ -958,9 +903,9 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
 ##### SUPPORT ORGANISED CRIME #####
 ### TOOLTIPS ###
- fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
+ fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\Requires §S15§! levels of intelligence."
  
- fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
+ fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\Requires §S15§! levels of intelligence."
  
  ### MAIN ###
  ### ALPHA ###
@@ -1042,16 +987,17 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  ABF_chooseEthic.g:0 "Materialism."
  ABF_chooseEthic.h:0 "Spiritualism."
 ######## Ethics and Civics Classic 2.7 #####################
- ABF_chooseEthic.i:0 "Ecocentrism."
- ABF_chooseEthic.j:0 "Anthropocentrism."
+ ABF_chooseEthic.i:0 "Green."
+ ABF_chooseEthic.j:0 "Industrialism."
  ABF_chooseEthic.k:0 "Elitetism."
- ABF_chooseEthic.l:0 "Cooperative."
+ ABF_chooseEthic.l:0 "Socialism."
  ABF_chooseEthic.m:0 "Pluralism."
- ABF_chooseEthic.n:0 "Competitism."
+ ABF_chooseEthic.n:0 "Captalism."
  
  ### ALPHA ###
  ### SUCCESS ###
  swingEthicsSuccess.title:0 "Foreign Propaganda Success!"
+ 
  swingEthicsSuccessAuthoritarian.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Authoritarianism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessEgalitarian.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Egalitarianism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessMaterialist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Materialism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
@@ -1061,12 +1007,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  swingEthicsSuccessXenophile.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Xenophilia amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessXenophobe.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Xenophobia amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
 ######## Ethics and Civics Classic 2.7 #####################
- swingEthicsSuccessGreen.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Ecocentrism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessIndustrial.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Anthropocentrism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessGreen.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted the Green ethic amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessIndustrial.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Industrialism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessElitist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Elitism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessSocialist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Cooperativism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessSocialist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Socialism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPluralist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Pluralism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessCapitalist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Competitism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessCapitalist.desc:0 "§YMajor Success!§!. Our Alpha Network has successfully promoted Capitalism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  
 
 
@@ -1082,12 +1028,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  swingEthicsSuccessPartialXenophile.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Xenophilia amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPartialXenophobe.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Xenophobia amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
 ######## Ethics and Civics Classic 2.7 #####################
- swingEthicsSuccessPartialGreen.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Ecocentrism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessPartialIndustrial.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Anthropocentrism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialGreen.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting the Green ethic amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialIndustrial.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Industrialism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPartialElitist.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Elitism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessPartialSocialist.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Cooperativism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialSocialist.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Socialism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPartialPluralist.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Pluralism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessPartialCapitalist.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Competitism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialCapitalist.desc:0 "§YSuccess!§!. Our Alpha Network has had some partial success in promoting Capitalism amongst the citizens of the §S[alphaNetworkTarget_temp.GetName]§!."
  
  ### BETA ###
  ### SUCCESS ###
@@ -1102,12 +1048,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  swingEthicsSuccessXenophile2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Xenophilia amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessXenophobe2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Xenophobia amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
 ######## Ethics and Civics Classic 2.7 #####################
- swingEthicsSuccessGreen2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Ecocentrism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessIndustrial2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Anthropocentrism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessGreen2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted the Green ethic amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessIndustrial2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Industrialism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessElitist2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Elitism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessSocialist2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Cooperativism  amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessSocialist2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Socialism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPluralist2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Pluralism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessCapitalist2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Competitism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessCapitalist2.desc:0 "§YMajor Success!§!. Our Beta Network has successfully promoted Capitalism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  ### PARTIAL SUCCESS ###
  swingEthicsSuccessPartial2.title:0 "Foreign Propaganda Partial Success!"
  
@@ -1121,12 +1067,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  swingEthicsSuccessPartialXenophobe2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Xenophobia amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
 
 ######## Ethics and Civics Classic 2.7 #####################
- swingEthicsSuccessPartialGreen2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Ecocentrism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessPartialIndustrial2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Anthropocentrism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialGreen2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting the Green ethic amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialIndustrial2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Industrialism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPartialElitist2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Elitism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessPartialSocialist2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Cooperativism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialSocialist2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Socialism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  swingEthicsSuccessPartialPluralist2.desc:0 "§YSuccess!§!. Our Beta Network has had some partial success in promoting Pluralism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
- swingEthicsSuccessPartialCapitalist2.desc:0 "§YSuccess!§!. Our Beta Network has successfully promoted Competitism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
+ swingEthicsSuccessPartialCapitalist2.desc:0 "§YSuccess!§!. Our Beta Network has successfully promoted Capitalism amongst the citizens of the §S[betaNetworkTarget_temp.GetName]§!."
  
 
 #### SABOTAGE STATION ####
@@ -1314,27 +1260,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
  stopCrimeBSuccess.a:0 "Repeat operation."
  stopCrimeBSuccess.b:0 "Return to gathering intelligence."
-
-
-##### BOOST STABILITY ######
-### CHOOSE TARGET ###
-## ALPHA ## 
- spyDomStability.1.name:0 "Target System"
- spyDomStability.1.desc:0 "The Alpha Network stands ready, which system should we work to imprive?"
-
- spyDomStability.1.1:0 "§S[stability_target_system_1.GetName]§!."
- spyDomStability.1.2:0 "§S[stability_target_system_2.GetName]§!."
-
- spyDomStability.2.z:0 "Cancel."
-
-
-## SUCCESS PARTIAL ##
-spyDomStability.3.name:0 "Domestic Stability"
-spyDomStability.3.desc:0 "Partial"
-
-## SUCCESS MAJOR ##
-spyDomStability.4.name:0 "Domestic Stability"
-spyDomStability.4.desc:0 "Major"
+ 
  
  
  
@@ -1832,24 +1758,6 @@ spyDomStability.4.desc:0 "Major"
 
 
  
-##### CONFIGURATION MENU #####
-spyModConfig.1.name:0 "Configuration"
-spyModConfig.1.desc:0 "By default, Fallen Empires and Gestalt Consciousnesses can neither use espionage or have espionage used against them. If you wish to change that then just toggle the buttons below.\n\nNOTE - The mod is not designed to be used with FE's, I have only included the option for people using playable FE mods.\n\nYou can change these at any time, although it may take a short while for your changes to take effect.\n\n[Root.spy_FallenEmpire_Status]\n\n[Root.spy_HiveMinds_Status]"
-spyModConfig.a:0 "Toggle Hive Minds."
-spyModConfig.b.tooltip:0 "§RNOT RECOMMENDED§!."
-spyModConfig.b:0 "Toggle Fallen Empires."
-spyModConfig.c:0 "Uninstall Mod."
-spyModConfig.d:0 "Exit."
-
-spy_HiveMinds_Enabled:0 "Hive Minds §YEnabled§!."
-spy_HiveMinds_Disabled:0 "Hive Minds §RDisabled§!."
-spy_FallenEmpires_Enabled:0 "Fallen Empires §YEnabled§!."
-spy_FallenEmpires_Disabled:0 "Fallen Empires §RDisabled§!."
-
-spyModConfig.2.name:0 "Uninstall"
-spyModConfig.2.desc:0 "This will remove several flags and modifiers, ensuring a completely clean uninstall from a save game. Do not reopen the intelligence menu after using this."
-spyModConfig.2.a:0 "Uninstall."
-spyModConfig.2.b:0 "Cancel."
 
 
 
@@ -1858,8 +1766,5 @@ spyModConfig.2.b:0 "Cancel."
 
 
 
-####################
- ### RESOLUTIONS
- ####################
 
- galactic_espionage:0 "Galactic Espionage"
+

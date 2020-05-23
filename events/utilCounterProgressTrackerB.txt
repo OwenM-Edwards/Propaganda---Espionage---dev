@@ -315,6 +315,12 @@ country_event = {     #STAGE SEVEN
 				}
 				country_event = { id = boostEthicB.1  days = @gatherProgRandomDays random = @gatherProgRandomRandom  }
 			}
+			else_if = {
+				limit = {
+					has_country_flag = boostStabilityB
+				}
+				country_event = { id = spyDomStabilityBeta.1  days = @gatherProgRandomDays random = @gatherProgRandomRandom }
+			}
 		}
 	}
 }

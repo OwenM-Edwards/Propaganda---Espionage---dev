@@ -1,0 +1,214 @@
+namespace = spyDomStability
+
+
+### CHOOSE TARGET COLONY ###
+country_event = {
+	id = spyDomStability.1
+	title = spyDomStability.1.name
+	desc = spyDomStability.1.desc
+	is_triggered_only = yes
+
+
+	custom_gui = quibble_spy_window
+	diplomatic = yes
+	 
+
+	immediate = {	
+		random_system_within_border = {
+			limit = {
+				domStabilitySystemFilter = yes
+				any_system_planet = {
+					is_colony = yes
+				}
+			}
+			save_event_target_as = stability_target_system_1
+		}
+		random_system_within_border = {
+			limit = {
+				domStabilitySystemFilter = yes
+				any_system_planet = {
+					is_colony = yes
+				}
+			}
+			save_event_target_as = stability_target_system_2
+		}
+	}
+
+
+
+
+	option = {
+		name = spyDomStability.1.1
+		trigger = {
+			exists = event_target:stability_target_system_1
+		}
+		custom_gui = quibble_spy_option
+		hidden_effect = {
+			
+			event_target:stability_target_system_1 = {
+				every_system_planet = {
+					limit = {
+						is_colony = yes
+					}
+					save_event_target_as = domStability_TargetPlanet
+				}
+			}
+			country_event = { id = counterProgressTrackerA.1  }
+			country_event = { id = agencyGlobal.2 }
+		}
+	}
+
+	option = {
+		name = spyDomStability.2.1
+		trigger = {
+			exists = event_target:stability_target_system_2
+		}
+		custom_gui = quibble_spy_option
+		hidden_effect = {
+			
+			event_target:stability_target_system_2 = {
+				every_system_planet = {
+					limit = {
+						is_colony = yes
+					}
+					save_event_target_as = domStability_TargetPlanet
+				}
+			}
+			country_event = { id = counterProgressTrackerA.1  }
+			country_event = { id = agencyGlobal.2 }
+		}
+	}	
+
+	option = {  #CANCEL REDEPLOY
+		name = spyDomStability.2.z
+		hidden_effect = {
+			remove_country_flag = boostStabilityA
+			removeGatherProgress_Alpha_D = yes
+			country_event = { id = counterProgressTrackerA.1 }
+			country_event = { id = agencyGlobal.2 }
+		}
+	}
+}
+
+
+
+
+
+### ROLL FOR SUCCESS ###
+country_event = {
+	id = spyDomStability.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = {
+				country_event = {
+					id = spyDomStability.3
+				}
+			}
+			50 = {
+				country_event = {
+					id = spyDomStability.4
+				}
+			}
+		}
+	}
+}
+
+
+
+### PARTIAL SUCCESS ###
+country_event = {
+	id = spyDomStability.3
+	title = spyDomStability.3.name
+	desc = spyDomStability.3.desc
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:domStability_TargetPlanet = {
+			add_modifier = {
+				modifier = domStability_low
+				days = @domStabilityLength
+		  	}
+		}
+	}
+
+	option = { #REDO
+		name = boostEthicASuccess.a
+		custom_tooltip = pointsRequiredAlpha.tooltip
+		allow = {
+			custom_tooltip = sabotageRepSuccess.a.alpha
+			custom_tooltip = {
+				fail_text = "sabotageRepSuccess.a.alpha"
+				has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+			}
+		}
+		hidden_effect = {
+			removeGatherProgress_Alpha_D = yes
+			country_event = {
+				id = counterProgressTrackerA.1
+			}
+		}
+	}
+
+	option = { #RETURN TO INTEL GATHERING
+		name = boostEthicASuccess.b
+		hidden_effect = {
+			remove_country_flag = boostStabilityA
+			removeGatherProgress_Alpha_D = yes
+			country_event = {
+				id = counterProgressTrackerA.1
+			}
+		}
+	}
+}
+
+
+
+
+### MAJOR SUCCESS ###
+country_event = {
+	id = spyDomStability.4
+	title = spyDomStability.4.name
+	desc = spyDomStability.4.desc
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:domStability_TargetPlanet = {
+			add_modifier = {
+				modifier = domStability_high
+				days = @domStabilityLength
+		  	}
+		}
+	}
+
+	option = { #REDO
+		name = boostEthicASuccess.a
+		custom_tooltip = pointsRequiredAlpha.tooltip
+		allow = {
+			custom_tooltip = sabotageRepSuccess.a.alpha
+			custom_tooltip = {
+				fail_text = "sabotageRepSuccess.a.alpha"
+				has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+			}
+		}
+		hidden_effect = {
+			removeGatherProgress_Alpha_D = yes
+			country_event = {
+				id = counterProgressTrackerA.1
+			}
+		}
+	}
+
+	option = { #RETURN TO INTEL GATHERING
+		name = boostEthicASuccess.b
+		hidden_effect = {
+			remove_country_flag = boostStabilityA
+			removeGatherProgress_Alpha_D = yes
+			country_event = {
+				id = counterProgressTrackerA.1
+			}
+		}
+	}
+}

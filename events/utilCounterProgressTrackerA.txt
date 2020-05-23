@@ -36,6 +36,7 @@ country_event = {
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 			set_country_flag = gatherProgress_1_03
@@ -80,6 +81,7 @@ country_event = {     #BEGIN LONGTERM OPERATION - STAGE TWO
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 			# change_variable = {
@@ -125,6 +127,7 @@ country_event = {     #STAGE THREE
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 			# change_variable = {
@@ -168,6 +171,7 @@ country_event = {     #STAGE FOUR
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 			# change_variable = {
@@ -210,6 +214,7 @@ country_event = {     #STAGE FIVE
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 			# change_variable = {
@@ -250,6 +255,7 @@ country_event = {     #STAGE SIX
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 		  	set_country_flag = gatherProgress_6_03
@@ -279,6 +285,7 @@ country_event = {     #STAGE SEVEN
 					has_country_flag = boostRepA
 					has_country_flag = stopCrimeA
 					has_country_flag = boostEthicA
+					has_country_flag = boostStabilityA
 				}
 			}
 			# GIVE INTEL POINTS #
@@ -295,7 +302,6 @@ country_event = {     #STAGE SEVEN
 		  	country_event = { id = counterProgressTrackerA.1 days = 1 } 
 		}
 		else = { 
-
 			#FILTER FOR OPERATION TYPE
 			if = {
 				limit = {
@@ -314,6 +320,12 @@ country_event = {     #STAGE SEVEN
 					has_country_flag = boostEthicA
 				}
 				country_event = { id = boostEthicA.1  days = @gatherProgRandomDays random = @gatherProgRandomRandom }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = boostStabilityA
+				}
+				country_event = { id = spyDomStability.2  }#days = @gatherProgRandomDays random = @gatherProgRandomRandom }
 			}
 		}
 	}

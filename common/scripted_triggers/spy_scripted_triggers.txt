@@ -345,3 +345,13 @@ sabStationFilter = {
 		is_same_value = event_target:potentialSabStation_40
 	}
 }
+
+
+
+
+domStabilitySystemFilter = {
+	NOR = {
+		is_same_value = stability_target_system_1
+		is_same_value = stability_target_system_2
+	}
+}

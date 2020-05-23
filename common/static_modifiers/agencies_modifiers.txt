@@ -332,3 +332,20 @@ sabStationHigh_mod = {
 sabStationLow_mod = {
 	shipclass_starbase_damage_mult = -0.1
 }
+
+
+
+
+#### DOMESTIC STABILITY ####
+domStability_low = {
+	trade_value_mult = 0.10
+	planet_crime_add = -20
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"   
+	icon_frame = 1
+}
+domStability_high = {
+	trade_value_mult = 0.10
+	planet_crime_add = -20
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"   
+	icon_frame = 1
+}
