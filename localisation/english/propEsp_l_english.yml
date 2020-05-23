@@ -947,9 +947,9 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
 ##### SUPPORT ORGANISED CRIME #####
 ### TOOLTIPS ###
- fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\Requires §S15§! levels of intelligence."
+ fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
  
- fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\Requires §S15§! levels of intelligence."
+ fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
  
  ### MAIN ###
  ### ALPHA ###
