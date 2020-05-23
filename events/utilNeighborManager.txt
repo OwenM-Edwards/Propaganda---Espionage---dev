@@ -378,7 +378,7 @@ country_event = { #Give list of country names to pick from
             custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_1 flag = spy_banned } } } 
             custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_1
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -411,7 +411,7 @@ country_event = { #Give list of country names to pick from
             custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_2 flag = spy_banned } } } 
             custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_2
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -442,7 +442,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_3 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_3
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -473,7 +473,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_4 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_4
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -504,7 +504,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_5 flag = spy_banned } } }
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_5
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -535,7 +535,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_6 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_6
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -566,7 +566,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_7 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_7
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -597,7 +597,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_8 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_8
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -628,7 +628,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_9 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_9
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -659,7 +659,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_10 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_10
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -689,7 +689,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_11 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_11
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -719,7 +719,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_12 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_12
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -749,7 +749,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_13 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_13
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -779,7 +779,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_14 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_14
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -809,7 +809,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_15 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_15
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -839,7 +839,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_16 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_16
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -869,7 +869,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_17 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_17
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -899,7 +899,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_18 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_18
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -929,7 +929,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_19 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_19
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -959,7 +959,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_20 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_20
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -995,7 +995,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_21 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_21
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1025,7 +1025,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_22 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_22
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1055,7 +1055,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_23 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_23
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1085,7 +1085,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_24 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_24
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1115,7 +1115,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_25 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_25
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1145,7 +1145,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_26 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_26
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1175,7 +1175,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_27 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_27
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1205,7 +1205,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_28 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_28
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1235,7 +1235,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_29 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_29
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1265,7 +1265,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_30 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_30
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1295,7 +1295,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_31 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_31
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1325,7 +1325,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_32 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_32
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1355,7 +1355,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_33 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_33
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1385,7 +1385,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_34 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_34
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1415,7 +1415,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_35 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_35
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1445,7 +1445,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_36 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_36
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1475,7 +1475,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_37 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_37
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1505,7 +1505,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_38 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_38
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1535,7 +1535,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_39 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_39
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1565,7 +1565,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_40 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_40
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1595,7 +1595,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_41 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_41
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1625,7 +1625,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_42 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_42
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1656,7 +1656,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_43 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_43
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1686,7 +1686,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_44 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_44
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1716,7 +1716,7 @@ country_event = { #Give list of country names to pick from
         allow  = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_45 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_45
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1746,7 +1746,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_46 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_46
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1776,7 +1776,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_47 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_47
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1806,7 +1806,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_48 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_48
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1836,7 +1836,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_49 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_49
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1866,7 +1866,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_50 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_50
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1896,7 +1896,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_51 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_51
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1926,7 +1926,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_52 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_52
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1956,7 +1956,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_53 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_53
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -1986,7 +1986,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_54 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_54
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
@@ -2016,7 +2016,7 @@ country_event = { #Give list of country names to pick from
         allow = { custom_tooltip = { fail_text = "spyBanned_tooltip" not = { has_relation_flag = { who = event_target:possibleAgencyTarget_55 flag = spy_banned } } } 
         custom_tooltip = { fail_text = "spyFedLaw_tooltip" 
                 nand = {
-                    is_in_federation_with = event_target:player_Agency
+                    is_in_federation_with = event_target:possibleAgencyTarget_55
                     federation = {
                         has_federation_law = spy_regulated_espionage
                     }
