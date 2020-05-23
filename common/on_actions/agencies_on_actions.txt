@@ -27,6 +27,7 @@ on_yearly_pulse_country = {
 	events = {
 		agnAImenu.1
 		espionageUnlock.44 #Gives espionage to qualifying empires
+		pointsMax.1 #notifies if intel points are full
 	}
 }
 
