@@ -338,12 +338,12 @@ sabStationLow_mod = {
 
 #### DOMESTIC STABILITY ####
 domStability_low = {
-	planet_stability_add = 20
+	planet_stability_add = 15
 	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
 	icon_frame = 1
 }
 domStability_high = {
-	planet_stability_add = 20
+	planet_stability_add = 25
 	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
 	icon_frame = 1
 }

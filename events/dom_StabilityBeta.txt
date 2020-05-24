@@ -1162,7 +1162,7 @@ country_event = {
 
 
 
-### MAJOR SUCCESS ###
+### MAJOR SUCCESS ### 
 country_event = {
 	id = spyDomStabilityBeta.4
 	title = spyDomStabilityBeta.4.name
