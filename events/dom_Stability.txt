@@ -493,9 +493,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_1 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -508,9 +506,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_2 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -522,9 +518,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_3 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -536,9 +530,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_4 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -550,9 +542,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_5 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -564,9 +554,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_6 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -578,9 +566,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_7 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -592,9 +578,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_8 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -606,9 +590,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_9 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -620,9 +602,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_10 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -634,9 +614,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_11 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -648,9 +626,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_12 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -662,9 +638,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_13 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -676,9 +650,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_14 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -690,9 +662,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_15 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -704,9 +674,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_16 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -718,9 +686,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_17 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -732,9 +698,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_18 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -746,9 +710,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_19 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -760,9 +722,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_20 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -774,9 +734,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_21 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -788,9 +746,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_22 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -802,9 +758,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_23 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -816,9 +770,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_24 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -830,9 +782,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_25 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -844,9 +794,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_26 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -858,9 +806,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_27 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -872,9 +818,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_28 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -886,9 +830,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_29 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -900,9 +842,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_30 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -915,9 +855,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_40 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -929,9 +867,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_41 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -943,9 +879,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_42 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -957,9 +891,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_43 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -971,9 +903,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_44 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -985,9 +915,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_45 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -999,9 +927,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_46 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -1013,9 +939,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_47 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -1027,9 +951,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_48 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -1041,9 +963,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_49 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -1055,9 +975,7 @@ country_event = {
 		custom_gui = quibble_spy_option
 		hidden_effect = {
 			event_target:stability_target_system_50 = {
-				every_system_planet = { limit = { is_colony = yes }
-					save_event_target_as = domStability_TargetPlanet
-				}
+				save_event_target_as = domStability_TargetPlanet 
 			}
 			country_event = { id = counterProgressTrackerA.1  }
 			country_event = { id = agencyGlobal.2 }
@@ -1122,10 +1040,13 @@ country_event = {
 
 	immediate = {
 		event_target:domStability_TargetPlanet = {
-			add_modifier = {
-				modifier = domStability_low
-				days = @domStabilityLength
-		  	}
+			every_system_planet = { 
+				limit = { is_colony = yes }
+				add_modifier = {
+					modifier = domStability_low
+					days = @domStabilityLength
+				}
+			}
 		}
 	}
 
@@ -1173,10 +1094,13 @@ country_event = {
 
 	immediate = {
 		event_target:domStability_TargetPlanet = {
-			add_modifier = {
-				modifier = domStability_high
-				days = @domStabilityLength
-		  	}
+			every_system_planet = { 
+				limit = { is_colony = yes }
+				add_modifier = {
+					modifier = domStability_high
+					days = @domStabilityLength
+				}
+			}
 		}
 	}
 
