@@ -128,7 +128,7 @@ guiTypes = {
 		effectButtonType = {
 			id = "button"
 			name = "configMenuButton"
-			position = { x = 910 y = 54   }
+			position = { x = 908 y = 54   }
 			quadTextureSprite = "GFX_button_manual"
 			effect = "openConfigMenu"
 			oversound = no_sound

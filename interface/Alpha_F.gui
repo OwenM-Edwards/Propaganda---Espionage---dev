@@ -250,7 +250,7 @@ guiTypes = {
         buttonType = {
             name = "option_button"
             quadTextureSprite = "GFX_invisible"
-            position = { x = 253 y = 510 } 
+            position = { x = 255 y = 510 } 
             size = { x = 100 y = 34 }
             font = "cg_16b"
             shortcut = "RETURN"
@@ -265,7 +265,7 @@ guiTypes = {
         buttonType = {
             name = "option_button"
             quadTextureSprite = "GFX_invisible"
-            position = { x = 708 y = 510 } 
+            position = { x = 710 y = 510 } 
             size = { x = 100 y = 34 }
             font = "cg_16b"
             shortcut = "RETURN"
