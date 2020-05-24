@@ -1073,7 +1073,7 @@ country_event = {
 
 
 	option = {  #CANCEL REDEPLOY
-		name = spyDomStability.2.z
+		name = spyDomStabilityBeta.2.z
 		hidden_effect = {
 			remove_country_flag = boostStabilityA
 			removeGatherProgress_Alpha_D = yes

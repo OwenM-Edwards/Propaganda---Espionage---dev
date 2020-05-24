@@ -67,7 +67,7 @@ country_event = {     #BEGIN LONGTERM OPERATION - STAGE TWO
 					has_country_flag = gatherProgress_6_04
 				}
 			}
-			break=yes
+			break = yes
 		}
 		else_if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
 			limit = {
@@ -97,7 +97,7 @@ country_event = {     #STAGE THREE
 					has_country_flag = gatherProgress_6_04
 				}
 			}
-			break=yes
+			break = yes
 		}
 		else_if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
 			limit = {
@@ -250,7 +250,7 @@ country_event = {     #STAGE SEVEN
 				limit = {
 					has_country_flag = boostStabilityB
 				}
-				country_event = { id = spyDomStabilityBeta.2  #days = @gatherProgRandomDays random = @gatherProgRandomRandom }
+				country_event = { id = spyDomStabilityBeta.2 }  #days = @gatherProgRandomDays random = @gatherProgRandomRandom }
 			}
 		}
 	}
