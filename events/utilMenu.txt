@@ -614,6 +614,7 @@ country_event = {
                 has_country_flag = boostRepA
                 has_country_flag = stopCrimeA
                 has_country_flag = boostEthicA
+                has_country_flag = boostStabilityA
             } 
         } 
     }
@@ -656,6 +657,19 @@ country_event = {
 		}
         custom_gui = "Alpha_D_secondOpGUI"
         trigger = { has_country_flag = boostEthicA }
+    }
+
+    option = { #OPERATION TYPE - STABILITY
+        name = AlphaD-boostStability
+        custom_tooltip = "AlphaD-boostStability.a" 
+        allow = {
+			custom_tooltip = {
+				fail_text = "blankFailTooltip" 
+				always = no
+			}		
+		}
+        custom_gui = "Alpha_D_secondOpGUI"
+        trigger = { has_country_flag = boostStabilityA }
     }
 
 
@@ -1252,6 +1266,7 @@ country_event = {
                 has_country_flag = boostRepB
                 has_country_flag = stopCrimeB
                 has_country_flag = boostEthicB
+                has_country_flag = boostStabilityB
             }
         } 
     }
@@ -1294,6 +1309,19 @@ country_event = {
 		}
         custom_gui = "Beta_D_secondOpGUI"
         trigger = { has_country_flag = boostEthicB }
+    }
+    
+    option = { #OPERATION TYPE - BOOST ETHICS
+        name = BetaD-boostStability
+        custom_tooltip = "BetaD-boostStability.a" 
+        allow = {
+			custom_tooltip = {
+				fail_text = "blankFailTooltip" 
+				always = no
+			}		
+		}
+        custom_gui = "Beta_D_secondOpGUI"
+        trigger = { has_country_flag = boostStabilityB }
     }
 
 
@@ -2616,6 +2644,89 @@ country_event = {
         }
     }
 
+
+
+    #STABILITY
+    option = { #BETA
+        name = ABD_chooseOP.e  
+        custom_tooltip = BD_chooseOP.e
+        trigger = {
+            has_country_flag = agencyBetaD
+        }
+        allow = {
+            custom_tooltip = {
+                fail_text = "pointsRequiredandOpChangeCoolDownBeta_D"
+                has_resource = { type = sr_beta_points amount >= @operationCostCheck }
+                not = {
+                    has_country_flag = REDEPLOY_COOLDOWN_BETA_D
+                }
+            }
+        }
+        hidden_effect = {
+            set_timed_country_flag = {
+                flag = REDEPLOY_COOLDOWN_BETA_D
+                days = @changeOpCooldown
+            }
+
+            removeOpFlagsBeta_D = yes
+
+            remove_country_flag = agencyBetaD
+            if = {
+                limit = {
+                    or = {
+                        hasGatherProgress_Beta_D = yes
+                    }
+                }
+                set_country_flag = cancelOngoingDomB
+                removeGatherProgress_Beta_D = yes
+            }
+            
+
+            set_country_flag = boostStabilityB
+
+            country_event = { id = spyDomStabilityBeta.1  }
+        }
+    }
+    option = { #ALPHA
+        name = ABD_chooseOP.e  
+        custom_tooltip = AD_chooseOP.e
+        trigger = {
+            not = {
+                has_country_flag = agencyBetaD
+            }
+        }
+        allow = {
+            custom_tooltip = {
+                fail_text = "pointsRequiredandOpChangeCoolDownAlpha_D"
+                has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+                not = {
+                    has_country_flag = REDEPLOY_COOLDOWN_ALPHA_D
+                }   
+            }
+        }
+        hidden_effect = {
+            set_timed_country_flag = {
+                flag = REDEPLOY_COOLDOWN_ALPHA_D
+                days = @changeOpCooldown
+            }
+            removeOpFlagsAlpha_D = yes
+
+            if = {
+                limit = {
+                    or = {
+                        hasGatherProgress_Alpha_D = yes
+                    }
+                }
+                set_country_flag = cancelOngoingDomA
+                removeGatherProgress_Alpha_D = yes
+            }
+
+            set_country_flag = boostStabilityA
+
+            country_event = { id = spyDomStability.1  }
+        }
+    }
+
    #COUNTER ESPIONAGE
 
     #IMPROVE GOVERNING ETHICS ATTRACTION - AND UNITY
@@ -2625,7 +2736,7 @@ country_event = {
     #REDUCE PIRACY
     
     option = { #Back
-        name = ABD_chooseOP.c
+        name = ABD_chooseOP.z
         hidden_effect = {
             remove_country_flag = agencyBetaD
             country_event = { id = agencyGlobal.2 }	

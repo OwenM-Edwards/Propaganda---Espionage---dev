@@ -332,3 +332,18 @@ sabStationHigh_mod = {
 sabStationLow_mod = {
 	shipclass_starbase_damage_mult = -0.1
 }
+
+
+
+
+#### DOMESTIC STABILITY ####
+domStability_low = {
+	planet_stability_add = 15
+	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
+	icon_frame = 1
+}
+domStability_high = {
+	planet_stability_add = 25
+	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
+	icon_frame = 1
+}

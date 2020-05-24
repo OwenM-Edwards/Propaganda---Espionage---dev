@@ -74,6 +74,9 @@
 	@intelBasicPointCheck = 80
 	@intelAdvancedPointCheck = 100
 
+	### DOM STABILITY EVENTS ###
+	@domStabilityLength = 180
+
 
 
 
