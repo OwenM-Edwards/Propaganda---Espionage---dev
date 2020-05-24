@@ -2,11 +2,11 @@
 ##### BASIC STUFF ######
 
 	### OPERATION PROGRESS ###
-	@gatherProgStageOne = 2 #Must always be a few days longer than generic stage
-	@gatherProgGenericStage = 1
+	@gatherProgStageOne = 90 #Must always be a few days longer than generic stage
+	@gatherProgGenericStage = 80
 
-	@gatherProgRandomDays = 1 #Must not overlap
-	@gatherProgRandomRandom = 2
+	@gatherProgRandomDays = 5 #Must not overlap
+	@gatherProgRandomRandom = 3
 
 	@complicationChance = 50
 
