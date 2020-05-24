@@ -614,6 +614,7 @@ country_event = {
                 has_country_flag = boostRepA
                 has_country_flag = stopCrimeA
                 has_country_flag = boostEthicA
+                has_country_flag = boostStabilityA
             } 
         } 
     }
@@ -1265,6 +1266,7 @@ country_event = {
                 has_country_flag = boostRepB
                 has_country_flag = stopCrimeB
                 has_country_flag = boostEthicB
+                has_country_flag = boostStabilityB
             }
         } 
     }
@@ -1307,6 +1309,19 @@ country_event = {
 		}
         custom_gui = "Beta_D_secondOpGUI"
         trigger = { has_country_flag = boostEthicB }
+    }
+    
+    option = { #OPERATION TYPE - BOOST ETHICS
+        name = BetaD-boostStability
+        custom_tooltip = "BetaD-boostStability.a" 
+        allow = {
+			custom_tooltip = {
+				fail_text = "blankFailTooltip" 
+				always = no
+			}		
+		}
+        custom_gui = "Beta_D_secondOpGUI"
+        trigger = { has_country_flag = boostStabilityB }
     }
 
 
@@ -2669,8 +2684,7 @@ country_event = {
 
             set_country_flag = boostStabilityB
 
-            country_event = { id = counterProgressTrackerB.1  }
-            country_event = { id = agencyGlobal.2 }
+            country_event = { id = spyDomStabilityBeta.1  }
         }
     }
     option = { #ALPHA

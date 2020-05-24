@@ -1117,6 +1117,8 @@ country_event = {
 	title = spyDomStability.3.name
 	desc = spyDomStability.3.desc
 	is_triggered_only = yes
+	picture = GFX_evt_announcement
+	show_sound = event_default
 
 	immediate = {
 		event_target:domStability_TargetPlanet = {
@@ -1166,6 +1168,8 @@ country_event = {
 	title = spyDomStability.4.name
 	desc = spyDomStability.4.desc
 	is_triggered_only = yes
+	picture = GFX_evt_announcement
+	show_sound = event_default
 
 	immediate = {
 		event_target:domStability_TargetPlanet = {

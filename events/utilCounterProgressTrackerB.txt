@@ -36,6 +36,7 @@ country_event = {
 					has_country_flag = boostRepB
 					has_country_flag = stopCrimeB
 					has_country_flag = boostEthicB
+					has_country_flag = boostStabilityB
 				}
 			}
 			set_country_flag = gatherProgress_1_04
@@ -74,21 +75,6 @@ country_event = {     #BEGIN LONGTERM OPERATION - STAGE TWO
 			}
 			remove_country_flag = cancelOngoingDomB
 		}
-		else_if = {
-			limit = {
-				nor = {
-					has_country_flag = boostRepB
-					has_country_flag = stopCrimeB
-					has_country_flag = boostEthicB
-				}
-			}
-			# change_variable = {
-			# 	which = BetaDPoints
-			# 	value = 10
-		  	# }
-		  	set_country_flag = gatherProgress_2_04
-		  	country_event = { id = counterProgressTrackerB.3 days = @gatherProgGenericStage } 
-		}
 		else = {
 			set_country_flag = gatherProgress_2_04
 			country_event = { id = counterProgressTrackerB.3 days = @gatherProgGenericStage }
@@ -119,21 +105,6 @@ country_event = {     #STAGE THREE
 			}
 			remove_country_flag = cancelOngoingDomB
 		}
-		else_if = {
-			limit = {
-				nor = {
-					has_country_flag = boostRepB
-					has_country_flag = stopCrimeB
-					has_country_flag = boostEthicB
-				}
-			}
-			# change_variable = {
-			# 	which = BetaDPoints
-			# 	value = 10
-		  	# }
-		  	set_country_flag = gatherProgress_3_04
-		  	country_event = { id = counterProgressTrackerB.4 days = @gatherProgGenericStage } 
-		}
 		else = {
 			set_country_flag = gatherProgress_3_04
 			country_event = { id = counterProgressTrackerB.4 days = @gatherProgGenericStage } 
@@ -162,21 +133,6 @@ country_event = {     #STAGE FOUR
 			}
 			remove_country_flag = cancelOngoingDomB
 		}
-		else_if = {
-			limit = {
-				nor = {
-					has_country_flag = boostRepB
-					has_country_flag = stopCrimeB
-					has_country_flag = boostEthicB
-				}
-			}
-			# change_variable = {
-			# 	which = BetaDPoints
-			# 	value = 10
-		  	# }
-		  	set_country_flag = gatherProgress_4_04
-		  	country_event = { id = counterProgressTrackerB.5 days = @gatherProgGenericStage } 
-		}
 		else = {
 			set_country_flag = gatherProgress_4_04
 			country_event = { id = counterProgressTrackerB.5 days = @gatherProgGenericStage } 
@@ -204,21 +160,6 @@ country_event = {     #STAGE FIVE
 			}
 			remove_country_flag = cancelOngoingDomB
 		}
-		else_if = {
-			limit = {
-				nor = {
-					has_country_flag = boostRepB
-					has_country_flag = stopCrimeB
-					has_country_flag = boostEthicB
-				}
-			}
-			# change_variable = {
-			# 	which = BetaDPoints
-			# 	value = 10
-		  	# }
-		  	set_country_flag = gatherProgress_5_04
-		  	country_event = { id = counterProgressTrackerB.55 days = @gatherProgGenericStage } 
-		}
 		else = {
 			set_country_flag = gatherProgress_5_04
 			country_event = { id = counterProgressTrackerB.55 days = @gatherProgGenericStage } 
@@ -244,17 +185,6 @@ country_event = {     #STAGE SIX
 			}
 			remove_country_flag = cancelOngoingDomB
 		}
-		else_if = {
-			limit = {
-				nor = {
-					has_country_flag = boostRepB
-					has_country_flag = stopCrimeB
-					has_country_flag = boostEthicB
-				}
-			}
-		  	set_country_flag = gatherProgress_6_04
-		  	country_event = { id = counterProgressTrackerB.6 days = @gatherProgGenericStage } 
-		}
 		else = {
 			set_country_flag = gatherProgress_6_04
 			country_event = { id = counterProgressTrackerB.6 days = @gatherProgGenericStage } 
@@ -279,6 +209,7 @@ country_event = {     #STAGE SEVEN
 					has_country_flag = boostRepB
 					has_country_flag = stopCrimeB
 					has_country_flag = boostEthicB
+					has_country_flag = boostStabilityB
 				}
 			}
 			# GIVE INTEL POINTS #
@@ -319,7 +250,7 @@ country_event = {     #STAGE SEVEN
 				limit = {
 					has_country_flag = boostStabilityB
 				}
-				country_event = { id = spyDomStabilityBeta.1  days = @gatherProgRandomDays random = @gatherProgRandomRandom }
+				country_event = { id = spyDomStabilityBeta.2  #days = @gatherProgRandomDays random = @gatherProgRandomRandom }
 			}
 		}
 	}

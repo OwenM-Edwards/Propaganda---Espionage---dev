@@ -338,14 +338,12 @@ sabStationLow_mod = {
 
 #### DOMESTIC STABILITY ####
 domStability_low = {
-	trade_value_mult = 0.10
-	planet_crime_add = -20
-	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"   
+	planet_stability_add = 20
+	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
 	icon_frame = 1
 }
 domStability_high = {
-	trade_value_mult = 0.10
-	planet_crime_add = -20
-	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"   
+	planet_stability_add = 20
+	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
 	icon_frame = 1
 }

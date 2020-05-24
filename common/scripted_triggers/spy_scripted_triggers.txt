@@ -404,3 +404,60 @@ domStabilitySystemFilter = {
 		is_same_value = event_target:stability_target_system_50
 	}
 }
+
+
+domStabilitySystemFilterBeta = {
+	NOR = {
+		is_same_value = event_target:stability_target_system_beta_1
+		is_same_value = event_target:stability_target_system_beta_2
+		is_same_value = event_target:stability_target_system_beta_3
+		is_same_value = event_target:stability_target_system_beta_4
+		is_same_value = event_target:stability_target_system_beta_5
+		is_same_value = event_target:stability_target_system_beta_6
+		is_same_value = event_target:stability_target_system_beta_7
+		is_same_value = event_target:stability_target_system_beta_7
+		is_same_value = event_target:stability_target_system_beta_8
+		is_same_value = event_target:stability_target_system_beta_9
+		is_same_value = event_target:stability_target_system_beta_10
+		is_same_value = event_target:stability_target_system_beta_11
+		is_same_value = event_target:stability_target_system_beta_12
+		is_same_value = event_target:stability_target_system_beta_13
+		is_same_value = event_target:stability_target_system_beta_14
+		is_same_value = event_target:stability_target_system_beta_15
+		is_same_value = event_target:stability_target_system_beta_16
+		is_same_value = event_target:stability_target_system_beta_17
+		is_same_value = event_target:stability_target_system_beta_18
+		is_same_value = event_target:stability_target_system_beta_19
+		is_same_value = event_target:stability_target_system_beta_20
+		is_same_value = event_target:stability_target_system_beta_21
+		is_same_value = event_target:stability_target_system_beta_22
+		is_same_value = event_target:stability_target_system_beta_23
+		is_same_value = event_target:stability_target_system_beta_24
+		is_same_value = event_target:stability_target_system_beta_25
+		is_same_value = event_target:stability_target_system_beta_26
+		is_same_value = event_target:stability_target_system_beta_27
+		is_same_value = event_target:stability_target_system_beta_28
+		is_same_value = event_target:stability_target_system_beta_29
+		is_same_value = event_target:stability_target_system_beta_30
+		is_same_value = event_target:stability_target_system_beta_31
+		is_same_value = event_target:stability_target_system_beta_32
+		is_same_value = event_target:stability_target_system_beta_33
+		is_same_value = event_target:stability_target_system_beta_34
+		is_same_value = event_target:stability_target_system_beta_35
+		is_same_value = event_target:stability_target_system_beta_36
+		is_same_value = event_target:stability_target_system_beta_37
+		is_same_value = event_target:stability_target_system_beta_38
+		is_same_value = event_target:stability_target_system_beta_39
+		is_same_value = event_target:stability_target_system_beta_40
+		is_same_value = event_target:stability_target_system_beta_41
+		is_same_value = event_target:stability_target_system_beta_42
+		is_same_value = event_target:stability_target_system_beta_43
+		is_same_value = event_target:stability_target_system_beta_44
+		is_same_value = event_target:stability_target_system_beta_45
+		is_same_value = event_target:stability_target_system_beta_46
+		is_same_value = event_target:stability_target_system_beta_47
+		is_same_value = event_target:stability_target_system_beta_48
+		is_same_value = event_target:stability_target_system_beta_49
+		is_same_value = event_target:stability_target_system_beta_50
+	}
+}
