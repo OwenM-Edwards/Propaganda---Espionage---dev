@@ -105,7 +105,7 @@ country_event = {     #STAGE THREE
 
 	immediate = { 
 		# CHECKS FOR STUDY TECH OPPORTUNITY #
-		if = { 
+		if = { #STUDY TECH OPP EVENTS#
 			limit = {
 				has_country_flag = studyTech
 				not = {
