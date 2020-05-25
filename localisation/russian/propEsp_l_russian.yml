@@ -117,11 +117,11 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
  opinion_spy_discovered:0 "Discovered Espionage"
 
- domStability_low:0 "Domestic Supression."
- domStability_high:0 "Major Domestic Supression."
+ domStability_low:0 "Domestic Stability Campaign."
+ domStability_high:0 "Major Domestic Stability Campaign."
 
- domStability_low_desc:0 "Domestic Supression."
- domStability_high_desc:0 "Major Domestic Supression."
+ domStability_low_desc:0 "Domestic Stability Campaign."
+ domStability_high_desc:0 "Major Domestic Stability Campaign."
  
 
  ### TECH STUFF ###
@@ -598,7 +598,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
  AlphaD-boostEthics.a:0 "Conducting propaganda operation with the aim of influencing our civilian population towards our governing ethics."
 
- AlphaD-boostStability:0 "Supressing unrest in one of our systems."
+ AlphaD-boostStability:0 "Campaigning to improve stability."
  
  AlphaD-intelPoints.a:0 "Our current level of domestic intelligence."
  
@@ -623,7 +623,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
  BetaD-boostEthics.a:0 "Conducting propaganda operations with the aim of influencing our civilian population towards our governing ethics."
 
- BetaD-boostStability.a:0 "Supressing unrest in one of our systems."
+ BetaD-boostStability.a:0 "Campaigning to improve stability."
  
  BetaD-intelPoints.a:0 "Our current level of domestic intelligence."
  
@@ -1310,6 +1310,14 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
  boostRepASuccess.a:0 "Repeat operation."
  boostRepASuccess.b:0 "Return to gathering intelligence."
+
+
+ ### CRIT SUCCESS ###
+ boostRepACritSuccess.title:0 "Favor Earned"
+ boostRepACritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Alpha Network has earned us a diplomatic favor from the §S[randomFavorCountry.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
+
+ boostRepBCritSuccess.title:0 "Favor Earned"
+ boostRepBCritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Beta Network has earned us a diplomatic favor from the §S[randomFavorCountryBeta.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
  
  
 ##### ORGANISED CRIME CRACKDOWN #####
@@ -1332,10 +1340,10 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 ### CHOOSE TARGET ###
 ## ALPHA ## 
  spyDomStability.1.name:0 "Target System"
- spyDomStability.1.desc:0 "The Alpha Network stands ready, we can assign them to operate in one of our colonised systems. They will work to stablise all planets within."
+ spyDomStability.1.desc:0 "We can order the Alpha Network to focus its operations on a single system, conducting widescale grassroots propaganda campaigns to improve the stability of all colonies within."
 
  spyDomStabilityBeta.1.name:0 "Target System"
- spyDomStabilityBeta.1.desc:0 "The Beta Network stands ready, we can assign them to operate in one of our colonised systems. They will work to stablise all planets within."
+ spyDomStabilityBeta.1.desc:0 "We can order the Beta Network to focus its operations on a single system, conducting widescale grassroots propaganda campaigns to improve the stability of all colonies within."
 
  spyDomStability.1.1:0 "§S[stability_target_system_1.GetName]§!."
  spyDomStability.1.2:0 "§S[stability_target_system_2.GetName]§!."
@@ -1445,20 +1453,20 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
 ## SUCCESS PARTIAL ##
 spyDomStability.3.name:0 "Domestic Stability"
-spyDomStability.3.desc:0 "§YSuccess!§!. Our Alpha Network operatives have successfully "#
+spyDomStability.3.desc:0 "§YSuccess!§!. Our Alpha Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanet.GetName]§! system."
 
 ## SUCCESS PARTIAL ##
 spyDomStabilityBeta.3.name:0 "Domestic Stability"
-spyDomStabilityBeta.3.desc:0 "§YSuccess!§!. Our Alpha Network operatives have successfully "
+spyDomStabilityBeta.3.desc:0 "§YSuccess!§!. Our Beta Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
 
 ## SUCCESS MAJOR ##
 spyDomStability.4.name:0 "Domestic Stability"
-spyDomStability.4.desc:0 "§YMajor Success!§!. "
+spyDomStability.4.desc:0 "§YMajor Success!§!. Our Alpha Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanet.GetName]§! system."
 
 
 ## SUCCESS MAJOR ##
 spyDomStabilityBeta.4.name:0 "Domestic Stability"
-spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. "
+spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
  
  
  
