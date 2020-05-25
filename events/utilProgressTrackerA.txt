@@ -104,7 +104,8 @@ country_event = {     #STAGE THREE
 	hide_window = yes
 
 	immediate = { 
-		if = {
+		# CHECKS FOR STUDY TECH OPPORTUNITY #
+		if = { 
 			limit = {
 				has_country_flag = studyTech
 				not = {

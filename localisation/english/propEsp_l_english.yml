@@ -1294,6 +1294,14 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
  boostRepASuccess.a:0 "Repeat operation."
  boostRepASuccess.b:0 "Return to gathering intelligence."
+
+
+ ### CRIT SUCCESS ###
+ boostRepACritSuccess.title:0 "Favor Earned"
+ boostRepACritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Alpha Network has earned us a diplomatic favor from the §S[randomFavorCountry.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
+
+ boostRepBCritSuccess.title:0 "Favor Earned"
+ boostRepBCritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Beta Network has earned us a diplomatic favor from the §S[randomFavorCountryBeta.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
  
  
 ##### ORGANISED CRIME CRACKDOWN #####
