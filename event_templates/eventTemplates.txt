@@ -173,7 +173,7 @@ namespace = TEMPLATE
 
 			# CHOICE A
 			option = { ## STAGE 1/2 A ##
-				name = TEMPLATE.2.a
+				name = TEMPLATE.2.a 
 				hidden_effect = {
 					country_event = { id = TEMPLATE.3 days = @eventDayLength random = @eventRandomLength }
 				}
@@ -211,11 +211,13 @@ namespace = TEMPLATE
 			option = {
 				name = TEMPLATE.3.a
 				hidden_effect = {
-					random_list = {
+					random_list = { 
 						50 = { #CONTINUE
+							save_event_target_as = stageOneHalfChoiceA_Success
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
+							save_event_target_as = stageOneHalfChoiceA_Fail
 							country_event = { id = TEMPLATE.4 days = @eventDayLength random = @eventRandomLength }
 						}
 					}
@@ -228,9 +230,11 @@ namespace = TEMPLATE
 				hidden_effect = {
 					random_list = {
 						50 = { #CONTINUE
+							save_event_target_as = stageOneHalfChoiceB_Success
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
+							save_event_target_as = stageOneHalfChoiceB_Fail
 							country_event = { id = TEMPLATE.4 days = @eventDayLength random = @eventRandomLength }
 						}
 					}
