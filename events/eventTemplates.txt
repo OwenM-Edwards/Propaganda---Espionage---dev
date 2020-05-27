@@ -1,0 +1,334 @@
+
+namespace = TEMPLATE
+
+###########################################################
+###								BASIC  							###
+###							EVENT TEMPLATE							###
+###																	###
+#############################################################
+	## OPENING EVENT ##
+		country_event = {
+			id = TEMPLATE.1
+			title = TEMPLATE.1.name
+			desc = {
+				text = TEMPLATE.1.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+
+			# CHOICE A
+			option = {
+				name = TEMPLATE.1.a
+				hidden_effect = {
+					
+				}
+			}
+
+			# CHOICE B
+			option = {
+				name = TEMPLATE.1.b
+				hidden_effect = {
+					
+				}
+			}
+		}
+
+
+
+	## FINAL STAGE ##
+		country_event = {
+			id = TEMPLATE.2
+			title = TEMPLATE.2.name
+			desc = {
+				text = TEMPLATE.2.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+
+			# END
+			option = {
+				name = TEMPLATE.2.a
+				hidden_effect = {
+					
+				}
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+###								STANDARD								###
+###							EVENT TEMPLATE							###
+###																	###
+#############################################################
+	## OPENING EVENT ##
+		country_event = {
+			id = TEMPLATE.1
+			title = TEMPLATE.1.name
+			desc = {
+				text = TEMPLATE.2.desc
+				trigger = {
+					
+				}
+			}
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			is_triggered_only = yes
+			
+			immediate = {
+
+			}
+
+			# CONTINUE
+			option = {
+				name = TEMPLATE.1.a
+				hidden_effect = {
+					country_event = { id = TEMPLATE.2 }
+				}
+			}
+		}
+
+
+	## STAGE ONE ##
+		country_event = {
+			id = TEMPLATE.2
+			title = TEMPLATE.2.name
+			desc = {
+				text = TEMPLATE.2.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+
+			# CHOICE A
+			option = { ## STAGE 1/2 A ##
+				name = TEMPLATE.2.a
+				hidden_effect = {
+					country_event = { id = TEMPLATE.3 }
+				}
+			}
+
+			# CHOICE B
+			option = { ## STAGE 1/2 B ##
+				name = TEMPLATE.2.b
+				hidden_effect = {
+					country_event = { id = TEMPLATE.5 }
+				}
+			}
+		}
+
+
+	## STAGE 1/2 A ##
+		country_event = {
+			id = TEMPLATE.3
+			title = TEMPLATE.3.name
+			desc = {
+				text = TEMPLATE.3.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+
+			# CHOICE A
+			option = {
+				name = TEMPLATE.3.a
+				hidden_effect = {
+					random_list = {
+						50 = { #CONTINUE
+							country_event = { id = TEMPLATE.7 }
+						}
+						50 = { #FAIL
+							country_event = { id = TEMPLATE.4 }
+						}
+					}
+				}
+			}
+
+			# CHOICE B
+			option = {
+				name = TEMPLATE.3.b.name
+				hidden_effect = {
+					random_list = {
+						50 = { #CONTINUE
+							country_event = { id = TEMPLATE.7 }
+						}
+						50 = { #FAIL
+							country_event = { id = TEMPLATE.4 }
+						}
+					}
+				}
+			}
+		}
+
+
+	# STAGE 1/2 A FAIL #
+		country_event = {
+			id = TEMPLATE.4
+			title = TEMPLATE.4.name
+			desc = {
+				text = TEMPLATE.4.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+			# END
+			option = { 
+				name = TEMPLATE.4.a
+				hidden_effect = {
+
+				}
+			}
+		}
+
+
+
+	## STAGE 1/2 B ##
+		country_event = {
+			id = TEMPLATE.5
+			title = TEMPLATE.5.name
+			desc = {
+				text = TEMPLATE.5.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+
+			# CHOICE A
+			option = {
+				name = TEMPLATE.5.a
+				hidden_effect = {
+					random_list = {
+						50 = { #CONTINUE
+							country_event = { id = TEMPLATE.7 }
+						}
+						50 = { #FAIL
+							country_event = { id = TEMPLATE.6 }
+						}
+					}
+				}
+			}
+
+			# CHOICE B
+			option = {
+				name = TEMPLATE.5.b
+				hidden_effect = {
+					random_list = {
+						50 = { #CONTINUE
+							country_event = { id = TEMPLATE.7 }
+						}
+						50 = { #FAIL
+							country_event = { id = TEMPLATE.6 }
+						}
+					}
+				}
+			}
+		}
+
+		
+	# STAGE 1/2 B FAIL #
+		country_event = {
+			id = TEMPLATE.6
+			title = TEMPLATE.6.name
+			desc = {
+				text = TEMPLATE.6.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+			# END
+			option = { 
+				name = TEMPLATE.6.a
+				hidden_effect = {
+
+				}
+			}
+		}
+
+
+
+		## STAGE TWO ##
+		country_event = {
+			id = TEMPLATE.7
+			title = TEMPLATE.7.name
+			desc = {
+				text = TEMPLATE.7.desc
+				trigger = {
+					
+				}
+			}
+			is_triggered_only = yes
+			picture = GFX_evt_debris
+			show_sound = event_super_explosion
+			
+			immediate = {
+
+			}
+
+			# END
+			option = { 
+				name = TEMPLATE.7.a
+				hidden_effect = {
+					
+				}
+			}
+		}
