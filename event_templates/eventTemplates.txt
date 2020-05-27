@@ -230,7 +230,7 @@ namespace = TEMPLATE
 				hidden_effect = {
 					random_list = {
 						50 = { #CONTINUE
-							save_event_target_as = stageOneHalfChoiceB_Success
+							save_event_target_as = stageOneHalfChoiceA_Fail
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
@@ -243,16 +243,23 @@ namespace = TEMPLATE
 		}
 
 
-	# STAGE 1/2 A FAIL #
+	# STAGE 1/2 AFAIL #
 		country_event = {
 			id = TEMPLATE.4
 			title = TEMPLATE.4.name
 			desc = {
 				text = TEMPLATE.4.desc
 				trigger = {
-					
+					is_same_value = event_target:stageOneChoiceA_Success
 				}
 			}
+			desc = {
+				text = TEMPLATE.4.desc
+				trigger = {
+					is_same_value = stageOneHalfChoiceB_Fail
+				}
+			}
+
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
