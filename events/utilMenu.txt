@@ -3014,6 +3014,43 @@ country_event = {
             country_event = { id = stationManager.1 }
         }
     }
+
+
+    option = { #FOCUSED DIPLO SAB
+        name = chooseRaid.b
+        allow = {
+			custom_tooltip = {
+				fail_text = "ongoingRaidTooltip" 
+				not = {
+                    has_country_flag = ongoingRaidAlpha
+                }
+            }	
+            custom_tooltip = {
+				fail_text = "raidCostTooltipInfluence" 
+				has_resource = { type = influence amount >= 50 } 
+            }	
+            custom_tooltip = {
+				fail_text = "raidCostTooltipintelPoints" 
+				has_resource = { type = sr_alpha_points amount >= 40 } 
+            }
+        }
+        add_resource = {
+            influence = -50
+            sr_alpha_points = -40
+        }
+        hidden_effect = {
+            set_country_flag = focus_sabrep_alpha
+            set_country_flag = ongoingRaidAlpha
+            country_event = { id = focus_sabrep.1 }
+        }
+    }
+
+
+
+
+
+
+
     option = { #CANCEL
         name = chooseRaid.z
         hidden_effect = {
