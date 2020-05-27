@@ -1,5 +1,4 @@
 ﻿l_english:
- 
 ################\
 # english translation
 #
@@ -20,9 +19,13 @@
 
 ## FINAL STAGE ##
  TEMPLATE.2.name:0 ""
+# CHOICE A SUCCESS
  TEMPLATE.2.desc.a:0 ""
+# CHOICE A FAIL
  TEMPLATE.2.desc.b:0 ""
+# CHOICE B SUCCESS
  TEMPLATE.2.desc.c:0 ""
+# CHOICE B FAIL
  TEMPLATE.2.desc.d:0 ""
 # END #
  TEMPLATE.2.a:0 ""
@@ -57,7 +60,9 @@ TEMPLATE.3.a:0 ""
 
 # STAGE 1/2 A FAIL #
  TEMPLATE.4.name:0 ""
+# STAGE 1/2 A CHOICE A FAIL
  TEMPLATE.4.desc.a:0 ""
+# STAGE 1/2 A CHOICE B FAIL
  TEMPLATE.4.desc.b:0 ""
 # END 
  TEMPLATE.4.a:0 ""
@@ -72,16 +77,22 @@ TEMPLATE.3.a:0 ""
 
 # STAGE 1/2 B FAIL #
  TEMPLATE.6.name:0 ""
+# STAGE 1/2 B CHOICE A FAIL 
  TEMPLATE.6.desc.a:0 ""
+# STAGE 1/2 B CHOICE B FAIL 
  TEMPLATE.6.desc.b:0 ""
 # END 
  TEMPLATE.6.a:0 ""
 
 ## FINAL STAGE ##
  TEMPLATE.7.name:0 ""
+# STAGE 1/2 A CHOICE A SUCCESS
  TEMPLATE.7.desc.a:0 ""
+# STAGE 1/2 A CHOICE B SUCCESS
  TEMPLATE.7.desc.b:0 ""
+# STAGE 1/2 B CHOICE A SUCCESS
  TEMPLATE.7.desc.c:0 ""
+# STAGE 1/2 B CHOICE B SUCCESS
  TEMPLATE.7.desc.d:0 ""
 # END 
  TEMPLATE.7.a:0 ""
