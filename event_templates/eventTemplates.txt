@@ -2,8 +2,8 @@
 namespace = TEMPLATE
 
 #########################################################
-###								 BASIC  			  ###
-###							EVENT TEMPLATE			  ###
+###						 BASIC  			          ###
+###				     EVENT TEMPLATE			          ###
 ###													  ###
 #########################################################
 	## OPENING EVENT ##
@@ -18,7 +18,7 @@ namespace = TEMPLATE
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -91,8 +91,8 @@ namespace = TEMPLATE
 				}
 			}
 			is_triggered_only = yes
-			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			picture = GFX_event_default
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -115,8 +115,8 @@ namespace = TEMPLATE
 
 
 ############################################################
-###						    STANDARD				     ###
-###						  EVENT TEMPLATE				 ###
+###						   STANDARD				         ###
+###						 EVENT TEMPLATE				     ###
 ###														 ###
 ############################################################
 	## OPENING EVENT ##
@@ -128,7 +128,7 @@ namespace = TEMPLATE
 				trigger = { }
 			}
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			is_triggered_only = yes
 			
 			immediate = { }
@@ -153,7 +153,7 @@ namespace = TEMPLATE
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -185,7 +185,7 @@ namespace = TEMPLATE
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -241,10 +241,9 @@ namespace = TEMPLATE
 					is_same_value = event_target:stageOneHalfAChoiceB_Fail
 				}
 			}
-
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -267,7 +266,7 @@ namespace = TEMPLATE
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -325,7 +324,7 @@ namespace = TEMPLATE
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
@@ -368,7 +367,7 @@ namespace = TEMPLATE
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
-			show_sound = event_super_explosion
+			show_sound = event_default
 			
 			immediate = { }
 
