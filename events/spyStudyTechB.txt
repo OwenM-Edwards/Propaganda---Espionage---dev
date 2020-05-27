@@ -6,13 +6,14 @@ country_event = {
     hide_window = yes
     immediate = {
         random_list = {
-            90 = {
-                country_event = { #PARTIAL SUCCESS
-                    id = techGeneric.2
-                }
+            90 = { #PARTIAL SUCCESS
+                country_event = { id = techGeneric.2 }
             }
-            5 = {
+            10 = {
                 country_event = { id = studyTechBeta.2 } 
+            }
+            20 = { #MEDIUM SUCCESS - GET TECH OPTION
+                country_event = { id = studyTechBeta.5 }
             }
         }
     }
@@ -63,8 +64,6 @@ country_event = {
 } 
 
 
-
-
 country_event = { 
     id = studyTechBeta.3 #SUCCESS MESSAGE 
     is_triggered_only = yes
@@ -100,6 +99,7 @@ country_event = {
         }
     }
 }
+
 country_event = { 
     id = studyTechBeta.4 #SUCCESS MESSAGE NO TECH AVAILABLE
     is_triggered_only = yes
@@ -119,3 +119,76 @@ country_event = {
         
     }
 }
+
+### MEDIUM SUCCESS - GET OPTION ##
+country_event = {   
+    id = studyTechBeta.5
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        random_list = {
+            30 = { #eng tech
+                event_target:betaNetworkTarget_temp = {
+                    save_event_target_as = sciGetTechTemp
+                }
+                getTechEngOption = yes
+                country_event ={ id = studyTechBeta.6 }
+            }
+            30 = { #phys tech
+                event_target:betaNetworkTarget_temp = {
+                    save_event_target_as = sciGetTechTemp
+                }
+                getTechPhysOption = yes
+                country_event ={ id = studyTechBeta.7 }
+            }
+            30 = { #soc tech
+                event_target:betaNetworkTarget_temp = {
+                    save_event_target_as = sciGetTechTemp
+                }
+                getTechSocOption = yes
+                country_event ={ id = studyTechBeta.8 }
+            }
+        }
+    }
+}
+### MEDIUM SUCCESS - ENG OPTION ##
+country_event = {   
+    id = studyTechBeta.6
+    is_triggered_only = yes
+    title = studyTechBeta.6.name
+    desc = studyTechBeta.6.desc
+    show_sound = event_conversation
+    picture = GFX_evt_engineering_research
+
+    option = {
+        name = studyTech.6.a
+    }
+}
+### MEDIUM SUCCESS - PHYS OPTION ##
+country_event = {   
+    id = studyTechBeta.7
+    is_triggered_only = yes
+    title = studyTechBeta.7.name
+    desc = studyTechBeta.7.desc
+    show_sound = event_conversation
+    picture = GFX_evt_engineering_research
+
+    option = {
+        name = studyTech.6.a
+    }
+}
+### MEDIUM SUCCESS - SOC OPTION ##
+country_event = {   
+    id = studyTechBeta.8
+    is_triggered_only = yes
+    title = studyTechBeta.8.name
+    desc = studyTechBeta.8.desc
+    show_sound = event_conversation
+    picture = GFX_evt_engineering_research
+
+    option = {
+        name = studyTech.6.a
+    }
+}
+

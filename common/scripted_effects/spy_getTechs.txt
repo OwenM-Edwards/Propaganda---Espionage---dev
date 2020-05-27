@@ -1,0 +1,3440 @@
+#### GET ENGINEERING TECH ####
+getTechEngOption = {
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_solar_panel_network
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_solar_panel_network
+			}
+		}
+		add_research_option = tech_solar_panel_network
+		set_country_flag = techOptOption
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_exploration
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_exploration
+			}
+		}
+		add_research_option = tech_space_exploration
+      set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_corvettes
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_corvettes
+
+			}
+		}
+		add_research_option = tech_corvettes
+      set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_destroyers
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_destroyers
+			}
+		}
+		add_research_option = tech_destroyers
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_cruisers
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cruisers
+			}
+		}
+		add_research_option = tech_cruisers
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_battleships
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_battleships
+			}
+		}
+		add_research_option = tech_battleships
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_titans
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_titans
+			}
+		}
+		add_research_option = tech_titans
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_juggernaut
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_juggernaut
+			}
+		}
+		add_research_option = tech_juggernaut
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_corvette_build_speed
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_corvette_build_speed
+			}
+		}
+		add_research_option = tech_corvette_build_speed
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_corvette_hull_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_corvette_hull_1
+			}
+		}
+		add_research_option = tech_corvette_hull_1
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_corvette_hull_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_corvette_hull_2
+			}
+		}
+		add_research_option = tech_corvette_hull_2
+      set_country_flag = techGotOption
+		
+
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_destroyer_build_speed
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_destroyer_build_speed
+			}
+		}
+		add_research_option = tech_destroyer_build_speed
+      set_country_flag = techGotOption
+		
+
+	}
+
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_destroyer_hull_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_destroyer_hull_1
+
+			}
+		}
+		add_research_option = tech_destroyer_hull_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_destroyer_hull_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_destroyer_hull_2
+
+			}
+		}
+		add_research_option = tech_destroyer_hull_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_cruiser_build_speed
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cruiser_build_speed
+			}
+		}
+		add_research_option = tech_cruiser_build_speed
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_cruiser_hull_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cruiser_hull_1
+			}
+		}
+		add_research_option = tech_cruiser_hull_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_cruiser_hull_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cruiser_hull_2
+			}
+		}
+		add_research_option = tech_cruiser_hull_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_battleship_build_speed
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_battleship_build_speed
+			}
+		}
+		add_research_option = tech_battleship_build_speed
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_battleship_hull_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_battleship_hull_1
+			}
+		}
+		add_research_option = tech_battleship_hull_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_battleship_hull_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_battleship_hull_2
+			}
+		}
+		add_research_option = tech_battleship_hull_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_titan_hull_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_titan_hull_1
+			}
+		}
+		add_research_option = tech_titan_hull_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_titan_hull_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_titan_hull_2
+			}
+		}
+		add_research_option = tech_titan_hull_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_starbase_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_starbase_1
+
+			}
+		}
+		add_research_option = tech_starbase_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_starbase_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_starbase_2
+
+			}
+		}
+		add_research_option = tech_starbase_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_starbase_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_starbase_3
+			}
+		}
+		add_research_option = tech_starbase_3
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_starbase_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_starbase_4
+			}
+		}
+		add_research_option = tech_starbase_4
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_starbase_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_starbase_5
+			}
+		}
+		add_research_option = tech_starbase_5
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_habitat_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_habitat_1
+			}
+		}
+		add_research_option = tech_habitat_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_modular_engineering
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_modular_engineering
+			}
+		}
+		add_research_option = tech_modular_engineering
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_defense_station_improvement
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_defense_station_improvement
+			}
+		}
+		add_research_option = tech_space_defense_station_improvement
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_strike_craft_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_strike_craft_1
+			}
+		}
+		add_research_option = tech_strike_craft_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_strike_craft_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_strike_craft_2
+			}
+		}
+		add_research_option = tech_strike_craft_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_strike_craft_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_strike_craft_3
+			}
+		}
+		add_research_option = tech_strike_craft_3
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_assault_armies
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_assault_armies
+
+			}
+		}
+		add_research_option = tech_assault_armies
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_ship_armor_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ship_armor_1
+
+			}
+		}
+		add_research_option = tech_ship_armor_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_ship_armor_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ship_armor_2
+			}
+		}
+		add_research_option = tech_ship_armor_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_ship_armor_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ship_armor_3
+			}
+		}
+		add_research_option = tech_ship_armor_3
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_ship_armor_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ship_armor_4
+			}
+		}
+		add_research_option = tech_ship_armor_4
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_ship_armor_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ship_armor_5
+			}
+		}
+		add_research_option = tech_ship_armor_5
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_crystal_armor_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_crystal_armor_1
+			}
+		}
+		add_research_option = tech_crystal_armor_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_crystal_armor_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_crystal_armor_2
+			}
+		}
+		add_research_option = tech_crystal_armor_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_thrusters_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_thrusters_1
+			}
+		}
+		add_research_option = tech_thrusters_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_thrusters_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_thrusters_2
+			}
+		}
+		add_research_option = tech_thrusters_2
+      set_country_flag = techGotOption
+		
+	}
+
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_thrusters_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_thrusters_3
+
+			}
+		}
+		add_research_option = tech_thrusters_3
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_thrusters_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_thrusters_4
+
+			}
+		}
+		add_research_option = tech_thrusters_4
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_defense_station_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_defense_station_1
+			}
+		}
+		add_research_option = tech_space_defense_station_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_defense_platform_hull_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_defense_platform_hull_1
+			}
+		}
+		add_research_option = tech_defense_platform_hull_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_basic_industry
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_basic_industry
+			}
+		}
+		add_research_option = tech_basic_industry
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mechanized_mining
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mechanized_mining
+			}
+		}
+		add_research_option = tech_mechanized_mining
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_powered_exoskeletons
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_powered_exoskeletons
+			}
+		}
+		add_research_option = tech_powered_exoskeletons
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_mining_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_mining_1
+			}
+		}
+		add_research_option = tech_space_mining_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_mining_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_mining_2
+			}
+		}
+		add_research_option = tech_space_mining_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_mining_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_mining_3
+			}
+		}
+		add_research_option = tech_space_mining_3
+      set_country_flag = techGotOption
+		
+	}
+
+
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_mining_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_mining_4
+
+			}
+		}
+		add_research_option = tech_space_mining_4
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_mining_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_mining_5
+
+			}
+		}
+		add_research_option = tech_space_mining_5
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mining_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mining_1
+			}
+		}
+		add_research_option = tech_mining_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mining_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mining_2
+			}
+		}
+		add_research_option = tech_mining_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mining_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mining_3
+			}
+		}
+		add_research_option = tech_mining_3
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mineral_purification_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mineral_purification_1
+			}
+		}
+		add_research_option = tech_mineral_purification_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mineral_purification_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mineral_purification_2
+			}
+		}
+		add_research_option = tech_mineral_purification_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_alloys_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_alloys_1
+			}
+		}
+		add_research_option = tech_alloys_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_alloys_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_alloys_2
+			}
+		}
+		add_research_option = tech_alloys_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_luxuries_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_luxuries_1
+			}
+		}
+		add_research_option = tech_luxuries_1
+      set_country_flag = techGotOption
+		
+	}
+
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_luxuries_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_luxuries_2
+
+			}
+		}
+		add_research_option = tech_luxuries_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_engineering_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_engineering_1
+
+			}
+		}
+		add_research_option = tech_engineering_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_engineering_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_engineering_2
+			}
+		}
+		add_research_option = tech_engineering_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_engineering_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_engineering_3
+			}
+		}
+		add_research_option = tech_engineering_3
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_robotic_workers
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_robotic_workers
+			}
+		}
+		add_research_option = tech_robotic_workers
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_droid_workers
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_droid_workers
+			}
+		}
+		add_research_option = tech_droid_workers
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_synthetic_workers
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_synthetic_workers
+			}
+		}
+		add_research_option = tech_synthetic_workers
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_synthetic_leaders
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_synthetic_leaders
+			}
+		}
+		add_research_option = tech_synthetic_leaders
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_space_construction
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_construction
+			}
+		}
+		add_research_option = tech_space_construction
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_afterburners_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_afterburners_1
+			}
+		}
+		add_research_option = tech_afterburners_1
+      set_country_flag = techGotOption
+		
+	}
+
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_afterburners_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_afterburners_2
+
+			}
+		}
+		add_research_option = tech_afterburners_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_assembly_pattern
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_assembly_pattern
+
+			}
+		}
+		add_research_option = tech_assembly_pattern
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_construction_templates
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_construction_templates
+			}
+		}
+		add_research_option = tech_construction_templates
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_housing_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_housing_1
+			}
+		}
+		add_research_option = tech_housing_1
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_housing_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_housing_2
+			}
+		}
+		add_research_option = tech_housing_2
+      set_country_flag = techGotOption
+		
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_technology = tech_mega_engineering
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mega_engineering
+			}
+		}
+		add_research_option = tech_mega_engineering
+      set_country_flag = techGotOption
+		
+	}
+
+
+
+
+	if = {
+		limit = {
+			has_country_flag = techGotOption
+		}
+		country_event = { id = quibble_spy_tech_eng.11 }
+	}
+	
+	else = {
+		country_event = { id = quibble_spy_tech_eng.12 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### PHYSICS #######
+getTechPhysOption = {
+	if = {
+		limit = {
+			NOT = {
+				has_technology = tech_basic_science_lab_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_basic_science_lab_1
+			}
+		}
+		add_research_option = tech_basic_science_lab_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_basic_science_lab_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_basic_science_lab_2
+
+			}
+		}
+		add_research_option = tech_basic_science_lab_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_basic_science_lab_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_basic_science_lab_3
+			}
+		}
+		add_research_option = tech_basic_science_lab_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_curator_lab
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_curator_lab
+			}
+		}
+		add_research_option = tech_curator_lab
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_archeology_lab
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_archeology_lab
+			}
+		}
+		add_research_option = tech_archeology_lab
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_science_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_science_1
+			}
+		}
+		add_research_option = tech_space_science_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_science_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_science_2
+			}
+		}
+		add_research_option = tech_space_science_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_science_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_science_3
+			}
+		}
+		add_research_option = tech_space_science_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_science_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_science_4
+			}
+		}
+		add_research_option = tech_space_science_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_science_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_science_5
+			}
+		}
+		add_research_option = tech_space_science_5
+		set_country_flag = techGotOption
+	}
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_physics_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_physics_1
+
+			}
+		}
+		add_research_option = tech_physics_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_physics_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_physics_2
+
+			}
+		}
+		add_research_option = tech_physics_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_physics_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_physics_3
+			}
+		}
+		add_research_option = tech_physics_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_global_research_initiative
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_global_research_initiative
+			}
+		}
+		add_research_option = tech_global_research_initiative
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_administrative_ai
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_administrative_ai
+			}
+		}
+		add_research_option = tech_administrative_ai
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_cryostasis_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cryostasis_1
+			}
+		}
+		add_research_option = tech_cryostasis_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_cryostasis_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cryostasis_2
+			}
+		}
+		add_research_option = tech_cryostasis_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_self_aware_logic
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_self_aware_logic
+			}
+		}
+		add_research_option = tech_self_aware_logic
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_automated_exploration
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_automated_exploration
+			}
+		}
+		add_research_option = tech_automated_exploration
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_sapient_ai
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_sapient_ai
+			}
+		}
+		add_research_option = tech_sapient_ai
+		set_country_flag = techGotOption
+	}
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_positronic_implants
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_positronic_implants
+
+			}
+		}
+		add_research_option = tech_positronic_implants
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_combat_computers_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_combat_computers_1
+
+			}
+		}
+		add_research_option = tech_combat_computers_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_combat_computers_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_combat_computers_2
+			}
+		}
+		add_research_option = tech_combat_computers_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_combat_computers_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_combat_computers_3
+			}
+		}
+		add_research_option = tech_combat_computers_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_combat_computers_autonomous
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_combat_computers_autonomous
+			}
+		}
+		add_research_option = tech_combat_computers_autonomous
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_auxiliary_fire_control
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_auxiliary_fire_control
+			}
+		}
+		add_research_option = tech_auxiliary_fire_control
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_synchronized_defences
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_synchronized_defences
+			}
+		}
+		add_research_option = tech_synchronized_defences
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_fission_power
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_fission_power
+			}
+		}
+		add_research_option = tech_fission_power
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_fusion_power
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_fusion_power
+			}
+		}
+		add_research_option = tech_fusion_power
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_cold_fusion_power
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cold_fusion_power
+			}
+		}
+		add_research_option = tech_cold_fusion_power
+		set_country_flag = techGotOption
+	}
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_antimatter_power
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_antimatter_power
+
+			}
+		}
+		add_research_option = tech_antimatter_power
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_zero_point_power
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_zero_point_power
+
+			}
+		}
+		add_research_option = tech_zero_point_power
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_reactor_boosters_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_reactor_boosters_1
+			}
+		}
+		add_research_option = tech_reactor_boosters_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_reactor_boosters_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_reactor_boosters_2
+			}
+		}
+		add_research_option = tech_reactor_boosters_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_reactor_boosters_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_reactor_boosters_3
+			}
+		}
+		add_research_option = tech_reactor_boosters_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_shields_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_shields_1
+			}
+		}
+		add_research_option = tech_shields_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_shields_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_shields_2
+			}
+		}
+		add_research_option = tech_shields_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_shields_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_shields_3
+			}
+		}
+		add_research_option = tech_shields_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_shields_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_shields_4
+			}
+		}
+		add_research_option = tech_shields_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_shields_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_shields_5
+			}
+		}
+		add_research_option = tech_shields_5
+		set_country_flag = techGotOption
+	}
+
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_shield_rechargers_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_shield_rechargers_1
+
+			}
+		}
+		add_research_option = tech_shield_rechargers_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_planetary_shield_generator
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_planetary_shield_generator
+
+			}
+		}
+		add_research_option = tech_planetary_shield_generator
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_sensors_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_sensors_2
+			}
+		}
+		add_research_option = tech_sensors_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_sensors_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_sensors_3
+			}
+		}
+		add_research_option = tech_sensors_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_sensors_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_sensors_4
+			}
+		}
+		add_research_option = tech_sensors_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_power_plant_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_power_plant_1
+			}
+		}
+		add_research_option = tech_power_plant_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_power_plant_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_power_plant_2
+			}
+		}
+		add_research_option = tech_power_plant_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_power_plant_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_power_plant_3
+			}
+		}
+		add_research_option = tech_power_plant_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_power_plant_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_power_plant_4
+			}
+		}
+		add_research_option = tech_power_plant_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_power_hub_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_power_hub_1
+			}
+		}
+		add_research_option = tech_power_hub_1
+		set_country_flag = techGotOption
+	}
+
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_power_hub_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_power_hub_2
+
+			}
+		}
+		add_research_option = tech_power_hub_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hyper_drive_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hyper_drive_1
+
+			}
+		}
+		add_research_option = tech_hyper_drive_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hyper_drive_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hyper_drive_2
+			}
+		}
+		add_research_option = tech_hyper_drive_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hyper_drive_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hyper_drive_3
+			}
+		}
+		add_research_option = tech_hyper_drive_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_wormhole_stabilization
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_wormhole_stabilization
+			}
+		}
+		add_research_option = tech_wormhole_stabilization
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gateway_activation
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gateway_activation
+			}
+		}
+		add_research_option = tech_gateway_activation
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gateway_construction
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gateway_construction
+			}
+		}
+		add_research_option = tech_gateway_construction
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_jump_drive_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_jump_drive_1
+			}
+		}
+		add_research_option = tech_jump_drive_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_ftl_inhibitor
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ftl_inhibitor
+			}
+		}
+		add_research_option = tech_ftl_inhibitor
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_bio_reactor
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_bio_reactor
+			}
+		}
+		add_research_option = tech_bio_reactor
+		set_country_flag = techGotOption
+	}
+
+
+	if = {
+		limit = {
+			has_country_flag = techGotOption
+		}
+		country_event = { id = quibble_spy_tech_phys.11 }
+	}
+	
+	else = {
+		country_event = { id = quibble_spy_tech_phys.12 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### GET SOC TECH OPTION ###
+getTechSocOption = {
+	if = {
+		limit = {
+			NOT = {
+				has_technology = tech_planetary_defenses
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_planetary_defenses
+			}
+		}
+		add_research_option = tech_planetary_defenses
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_interplanetary_commerce
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_interplanetary_commerce
+
+			}
+		}
+		add_research_option = tech_interplanetary_commerce
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_trading
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_trading
+			}
+		}
+		add_research_option = tech_space_trading
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_interstellar_economics
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_interstellar_economics
+			}
+		}
+		add_research_option = tech_interstellar_economics
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_galactic_markets
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_galactic_markets
+			}
+		}
+		add_research_option = tech_galactic_markets
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_prescient_data_modeling
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_prescient_data_modeling
+			}
+		}
+		add_research_option = tech_prescient_data_modeling
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_industrial_farming
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_industrial_farming
+			}
+		}
+		add_research_option = tech_industrial_farming
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_eco_simulation
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_eco_simulation
+			}
+		}
+		add_research_option = tech_eco_simulation
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gene_crops
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gene_crops
+			}
+		}
+		add_research_option = tech_gene_crops
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_nano_vitality_crops
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_nano_vitality_crops
+			}
+		}
+		add_research_option = tech_nano_vitality_crops
+		set_country_flag = techGotOption
+	}
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_nutrient_replication
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_nutrient_replication
+
+			}
+		}
+		add_research_option = tech_nutrient_replication
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hydroponics
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hydroponics
+
+			}
+		}
+		add_research_option = tech_hydroponics
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_food_processing_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_food_processing_1
+			}
+		}
+		add_research_option = tech_food_processing_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_food_processing_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_food_processing_2
+			}
+		}
+		add_research_option = tech_food_processing_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_society_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_society_1
+			}
+		}
+		add_research_option = tech_society_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_society_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_society_2
+			}
+		}
+		add_research_option = tech_society_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_society_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_society_3
+			}
+		}
+		add_research_option = tech_society_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_alien_life_studies
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_alien_life_studies
+			}
+		}
+		add_research_option = tech_alien_life_studies
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonization_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonization_1
+			}
+		}
+		add_research_option = tech_colonization_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonization_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonization_2
+			}
+		}
+		add_research_option = tech_colonization_2
+		set_country_flag = techGotOption
+	}
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonization_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonization_3
+
+			}
+		}
+		add_research_option = tech_colonization_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonization_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonization_4
+
+			}
+		}
+		add_research_option = tech_colonization_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonization_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonization_5
+			}
+		}
+		add_research_option = tech_colonization_5
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_tomb_world_adaption
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_tomb_world_adaption
+			}
+		}
+		add_research_option = tech_tomb_world_adaption
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_frontier_health
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_frontier_health
+			}
+		}
+		add_research_option = tech_frontier_health
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_frontier_hospital
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_frontier_hospital
+			}
+		}
+		add_research_option = tech_frontier_hospital
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_mountain_range
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_mountain_range
+			}
+		}
+		add_research_option = tech_mountain_range
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_volcano
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_volcano
+			}
+		}
+		add_research_option = tech_volcano
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_dangerous_wildlife
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_dangerous_wildlife
+			}
+		}
+		add_research_option = tech_dangerous_wildlife
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_dense_jungle
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_dense_jungle
+			}
+		}
+		add_research_option = tech_dense_jungle
+		set_country_flag = techGotOption
+	}
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_quicksand_basin
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_quicksand_basin
+
+			}
+		}
+		add_research_option = tech_quicksand_basin
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_noxious_swamp
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_noxious_swamp
+
+			}
+		}
+		add_research_option = tech_noxious_swamp
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_massive_glacier
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_massive_glacier
+			}
+		}
+		add_research_option = tech_massive_glacier
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_toxic_kelp
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_toxic_kelp
+			}
+		}
+		add_research_option = tech_toxic_kelp
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_deep_sinkhole
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_deep_sinkhole
+			}
+		}
+		add_research_option = tech_deep_sinkhole
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_terrestrial_sculpting
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_terrestrial_sculpting
+			}
+		}
+		add_research_option = tech_terrestrial_sculpting
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_ecological_adaptation
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ecological_adaptation
+			}
+		}
+		add_research_option = tech_ecological_adaptation
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_climate_restoration
+			}
+		}
+		add_research_option = tech_climate_restoration
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_genome_mapping
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_genome_mapping
+			}
+		}
+		add_research_option = tech_genome_mapping
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_vitality_boosters
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_vitality_boosters
+			}
+		}
+		add_research_option = tech_vitality_boosters
+		set_country_flag = techGotOption
+	}
+
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_epigenetic_triggers
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_epigenetic_triggers
+
+			}
+		}
+		add_research_option = tech_epigenetic_triggers
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_cloning
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cloning
+
+			}
+		}
+		add_research_option = tech_cloning
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gene_banks
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gene_banks
+			}
+		}
+		add_research_option = tech_gene_banks
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gene_seed_purification
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gene_seed_purification
+			}
+		}
+		add_research_option = tech_gene_seed_purification
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_morphogenetic_field_mastery
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_morphogenetic_field_mastery
+			}
+		}
+		add_research_option = tech_morphogenetic_field_mastery
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gene_tailoring
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gene_tailoring
+			}
+		}
+		add_research_option = tech_gene_tailoring
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_glandular_acclimation
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_glandular_acclimation
+			}
+		}
+		add_research_option = tech_glandular_acclimation
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_genetic_resequencing
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_genetic_resequencing
+			}
+		}
+		add_research_option = tech_genetic_resequencing
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_gene_expressions
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_gene_expressions
+			}
+		}
+		add_research_option = tech_gene_expressions
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_selected_lineages
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_selected_lineages
+			}
+		}
+		add_research_option = tech_selected_lineages
+		set_country_flag = techGotOption
+	}
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_space_mining_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_space_mining_4
+
+			}
+		}
+		add_research_option = tech_space_mining_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_capacity_boosters
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_capacity_boosters
+
+			}
+		}
+		add_research_option = tech_capacity_boosters
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_regenerative_hull_tissue
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_regenerative_hull_tissue
+			}
+		}
+		add_research_option = tech_regenerative_hull_tissue
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_fleet_size_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_fleet_size_1
+			}
+		}
+		add_research_option = tech_doctrine_fleet_size_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_fleet_size_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_fleet_size_2
+			}
+		}
+		add_research_option = tech_doctrine_fleet_size_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_fleet_size_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_fleet_size_3
+			}
+		}
+		add_research_option = tech_doctrine_fleet_size_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_fleet_size_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_fleet_size_4
+			}
+		}
+		add_research_option = tech_doctrine_fleet_size_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_fleet_size_5
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_fleet_size_5
+			}
+		}
+		add_research_option = tech_doctrine_fleet_size_5
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_interstellar_fleet_traditions
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_interstellar_fleet_traditions
+			}
+		}
+		add_research_option = tech_interstellar_fleet_traditions
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_refit_standards
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_refit_standards
+			}
+		}
+		add_research_option = tech_refit_standards
+		set_country_flag = techGotOption
+	}
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_command_matrix
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_command_matrix
+
+			}
+		}
+		add_research_option = tech_command_matrix
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_navy_size_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_navy_size_1
+
+			}
+		}
+		add_research_option = tech_doctrine_navy_size_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_navy_size_2
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_navy_size_2
+			}
+		}
+		add_research_option = tech_doctrine_navy_size_2
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_navy_size_3
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_navy_size_3
+			}
+		}
+		add_research_option = tech_doctrine_navy_size_3
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_doctrine_navy_size_4
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_doctrine_navy_size_4
+			}
+		}
+		add_research_option = tech_doctrine_navy_size_4
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_centralized_command
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_centralized_command
+			}
+		}
+		add_research_option = tech_centralized_command
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_combat_training
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_combat_training
+			}
+		}
+		add_research_option = tech_combat_training
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_ground_defense_planning
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ground_defense_planning
+			}
+		}
+		add_research_option = tech_ground_defense_planning
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_global_defense_grid
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_global_defense_grid
+			}
+		}
+		add_research_option = tech_global_defense_grid
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_psionic_theory
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_psionic_theory
+			}
+		}
+		add_research_option = tech_psionic_theory
+		set_country_flag = techGotOption
+	}
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_telepathy
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_telepathy
+
+			}
+		}
+		add_research_option = tech_telepathy
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_precognition_interface
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_precognition_interface
+
+			}
+		}
+		add_research_option = tech_precognition_interface
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_psi_jump_drive_1
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_psi_jump_drive_1
+			}
+		}
+		add_research_option = tech_psi_jump_drive_1
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_galactic_ambitions
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_galactic_ambitions
+			}
+		}
+		add_research_option = tech_galactic_ambitions
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_manifest_destiny
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_manifest_destiny
+			}
+		}
+		add_research_option = tech_manifest_destiny
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_interstellar_campaigns
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_interstellar_campaigns
+			}
+		}
+		add_research_option = tech_interstellar_campaigns
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_galactic_campaigns
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_galactic_campaigns
+
+			}
+		}
+		add_research_option = tech_galactic_campaigns
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_planetary_government
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_planetary_government
+
+			}
+		}
+		add_research_option = tech_planetary_government
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_planetary_unification
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_planetary_unification
+
+			}
+		}
+		add_research_option = tech_planetary_unification
+		set_country_flag = techGotOption
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonial_centralization
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonial_centralization
+
+			}
+		}
+		add_research_option = tech_colonial_centralization
+		set_country_flag = techGotOption
+	}
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_galactic_administration
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_galactic_administration
+
+			}
+		}
+		add_research_option = tech_galactic_administration
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_subdermal_stimulation
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_subdermal_stimulation
+
+			}
+		}
+		add_research_option = tech_subdermal_stimulation
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_global_production_strategy
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_global_production_strategy
+
+			}
+		}
+		add_research_option = tech_global_production_strategy
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_adaptive_bureaucracy
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_adaptive_bureaucracy
+
+			}
+		}
+		add_research_option = tech_adaptive_bureaucracy
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_colonial_bureaucracy
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_colonial_bureaucracy
+
+			}
+		}
+		add_research_option = tech_colonial_bureaucracy
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_galactic_bureaucracy
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_galactic_bureaucracy
+
+			}
+		}
+		add_research_option = tech_galactic_bureaucracy
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_living_state
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_living_state
+
+			}
+		}
+		add_research_option = tech_living_state
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_collective_self
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_collective_self
+
+			}
+		}
+		add_research_option = tech_collective_self
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_autonomous_agents
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_autonomous_agents
+
+			}
+		}
+		add_research_option = tech_autonomous_agents
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_embodied_dynamism
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_embodied_dynamism
+
+			}
+		}
+		add_research_option = tech_embodied_dynamism
+		set_country_flag = techGotOption
+
+	}
+
+
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_neural_implants
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_neural_implants
+
+			}
+		}
+		add_research_option = tech_neural_implants
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_artificial_moral_codes
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_artificial_moral_codes
+
+			}
+		}
+		add_research_option = tech_artificial_moral_codes
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_synthetic_thought_patterns
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_synthetic_thought_patterns
+
+			}
+		}
+		add_research_option = tech_synthetic_thought_patterns
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_unity_of_purpose
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_unity_of_purpose
+
+			}
+		}
+		add_research_option = tech_unity_of_purpose
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_collective_production_methods
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_collective_production_methods
+
+			}
+		}
+		add_research_option = tech_collective_production_methods
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_resource_processing_algorithms
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_resource_processing_algorithms
+
+			}
+		}
+		add_research_option = tech_resource_processing_algorithms
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_holo_entertainment
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_holo_entertainment
+
+			}
+		}
+		add_research_option = tech_holo_entertainment
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hyper_entertainment_forum
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hyper_entertainment_forum
+
+			}
+		}
+		add_research_option = tech_hyper_entertainment_forum
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_paradise_dome
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_paradise_dome
+
+			}
+		}
+		add_research_option = tech_paradise_dome
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_cultural_heritage
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_cultural_heritage
+
+			}
+		}
+		add_research_option = tech_cultural_heritage
+		set_country_flag = techGotOption
+		
+			
+
+	}
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_heritage_site
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_heritage_site
+
+			}
+		}
+		add_research_option = tech_heritage_site
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hypercomms_forum
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hypercomms_forum
+
+			}
+		}
+		add_research_option = tech_hypercomms_forum
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_autocurating_vault
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_autocurating_vault
+
+			}
+		}
+		add_research_option = tech_autocurating_vault
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_holographic_rituals
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_holographic_rituals
+
+			}
+		}
+		add_research_option = tech_holographic_rituals
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_consecration_fields
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_consecration_fields
+
+			}
+		}
+		add_research_option = tech_consecration_fields
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_transcendent_faith
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_transcendent_faith
+
+			}
+		}
+		add_research_option = tech_transcendent_faith
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hive_node
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hive_node
+
+			}
+		}
+		add_research_option = tech_hive_node
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hive_cluster
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hive_cluster
+
+			}
+		}
+		add_research_option = tech_hive_cluster
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_hive_confluence
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_hive_confluence
+
+			}
+		}
+		add_research_option = tech_hive_confluence
+		set_country_flag = techGotOption
+
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_ascension_theory
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_ascension_theory
+
+			}
+		}
+		add_research_option = tech_ascension_theory
+		set_country_flag = techGotOption
+		
+			
+	}
+
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_psionic_barrier
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_psionic_barrier
+
+			}
+		}
+		add_research_option = tech_psionic_barrier
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_psionic_shield
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_psionic_shield
+
+			}
+		}
+		add_research_option = tech_psionic_shield
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_penal_colonies
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_penal_colonies
+
+			}
+		}
+		add_research_option = tech_penal_colonies
+		set_country_flag = techGotOption 
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_resort_colonies
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_resort_colonies
+
+			}
+		}
+		add_research_option = tech_resort_colonies
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_slave_colonies
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_slave_colonies
+
+			}
+		}
+		add_research_option = tech_slave_colonies
+		set_country_flag = techGotOption
+		
+			
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_technology = tech_housing_agrarian_idyll
+			}
+			event_target:sciGetTechTemp = {
+				has_technology = tech_housing_agrarian_idyll
+
+			}
+		}
+		add_research_option = tech_housing_agrarian_idyll
+		set_country_flag = techGotOption
+		
+			
+	}
+
+	if = {
+		limit = {
+			has_country_flag = techGotOption
+		}
+		country_event = { id = quibble_spy_tech_soc.11 }
+	}
+	
+	else = {
+		country_event = { id = quibble_spy_tech_soc.12 }
+	}
+
+}
+
+
+
+

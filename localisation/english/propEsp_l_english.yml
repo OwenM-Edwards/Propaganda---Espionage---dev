@@ -1037,7 +1037,29 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  techGeneric.2.desc:0 "§YSuccess!§!. Beta Network agents have acquired a cache of technical data from the §S[betaNetworkTarget_temp.GetName]§!. \n\nIt has been added to our stored research."
  techGeneric.2.a:0 "Repeat operation."
  techGeneric.2.b:0 "Return to gathering intelligence."
- 
+
+
+### OPTION ###
+# ALPHA #
+ studyTech.6.name:0 "Industrial Espionage"
+ studyTech.6.desc:0 "§YSuccess!§!. After covertly infiltrating a secure §S[alphaNetworkTarget_temp.GetName]§! data vault, Alpha Network agents have secured us the rudimentary technical data of a valuable engineering technology.\n\nThe technology has been added to our list of research options."
+ studyTech.6.a:0 "Excellent."
+
+ studyTech.7.name:0 "Industrial Espionage"
+ studyTech.7.desc:0 "§YSuccess!§!. After covertly infiltrating a secure §S[alphaNetworkTarget_temp.GetName]§! data vault, Alpha Network agents have secured us the rudimentary technical data of a valuable physics technology.\n\nThe technology has been added to our list of research options."
+
+ studyTech.8.name:0 "Industrial Espionage"
+ studyTech.8.desc:0 "§YSuccess!§!. After covertly infiltrating a secure §S[alphaNetworkTarget_temp.GetName]§! data vault, Alpha Network agents have secured us the rudimentary technical data of a valuable society technology.\n\nThe technology has been added to our list of research options."
+# BETA #
+ studyTechBeta.6.name:0 "Industrial Espionage"
+ studyTechBeta.6.desc:0 "§YSuccess!§!. After covertly infiltrating a secure §S[betaNetworkTarget_temp.GetName]§! data vault, Beta Network agents have secured us the rudimentary technical data of a valuable engineering technology.\n\nThe technology has been added to our list of research options."
+ studyTechBeta.6.a:0 "Excellent."
+
+ studyTechBeta.7.name:0 "Industrial Espionage"
+ studyTechBeta.7.desc:0 "§YSuccess!§!. After covertly infiltrating a secure §S[betaNetworkTarget_temp.GetName]§! data vault, Beta Network agents have secured us the rudimentary technical data of a valuable physics technology.\n\nThe technology has been added to our list of research options."
+
+ studyTechBeta.8.name:0 "Industrial Espionage"
+ studyTechBeta.8.desc:0 "§YSuccess!§!. After covertly infiltrating a secure §S[betaNetworkTarget_temp.GetName]§! data vault, Beta Network agents have secured us the rudimentary technical data of a valuable society technology.\n\nThe technology has been added to our list of research options."
  
 ##### FOREIGN PROPAGANDA #####
 ### MAIN ###
