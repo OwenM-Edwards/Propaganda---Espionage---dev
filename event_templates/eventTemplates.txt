@@ -2,29 +2,25 @@
 namespace = TEMPLATE
 
 #########################################################
-###								 BASIC  							###
-###							EVENT TEMPLATE						###
-###																	###
+###								 BASIC  			  ###
+###							EVENT TEMPLATE			  ###
+###													  ###
 #########################################################
 	## OPENING EVENT ##
 		@eventDayLength = 20
 		@eventRandomLength = 10
 		country_event = {
-			id = TEMPLATE.1
+			id = TEMPLATE.1 
 			title = TEMPLATE.1.name
 			desc = {
 				text = TEMPLATE.1.desc
-				trigger = {
-					
-				}
+				trigger = { }
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# CHOICE A
 			option = {
@@ -38,7 +34,8 @@ namespace = TEMPLATE
 							save_event_target_as = stageOneChoiceA_Fail
 						}
 					}
-					country_event = { id = TEMPLATE.2 
+					country_event = { 
+						id = TEMPLATE.2 
 						days = @eventDayLength random = @eventRandomLength 
 					}
 				}
@@ -56,7 +53,8 @@ namespace = TEMPLATE
 							save_event_target_as = stageOneChoiceB_Fail
 						}
 					}
-					country_event = { id = TEMPLATE.2 
+					country_event = { 
+						id = TEMPLATE.2 
 						days = @eventDayLength random = @eventRandomLength 
 					}
 				}
@@ -96,16 +94,12 @@ namespace = TEMPLATE
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# END
 			option = {
 				name = TEMPLATE.2.a
-				hidden_effect = {
-					
-				}
+				hidden_effect = { }
 			}
 		}
 
@@ -121,9 +115,9 @@ namespace = TEMPLATE
 
 
 ############################################################
-###						    STANDARD								###
-###						  EVENT TEMPLATE							###
-###																	   ###
+###						    STANDARD				     ###
+###						  EVENT TEMPLATE				 ###
+###														 ###
 ############################################################
 	## OPENING EVENT ##
 		country_event = {
@@ -131,17 +125,13 @@ namespace = TEMPLATE
 			title = TEMPLATE.1.name
 			desc = {
 				text = TEMPLATE.2.desc
-				trigger = {
-					
-				}
+				trigger = { }
 			}
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			is_triggered_only = yes
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# CONTINUE
 			option = {
@@ -159,17 +149,13 @@ namespace = TEMPLATE
 			title = TEMPLATE.2.name
 			desc = {
 				text = TEMPLATE.2.desc
-				trigger = {
-					
-				}
+				trigger = { }
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# CHOICE A
 			option = { ## STAGE 1/2 A ##
@@ -195,17 +181,13 @@ namespace = TEMPLATE
 			title = TEMPLATE.3.name
 			desc = {
 				text = TEMPLATE.3.desc
-				trigger = {
-					
-				}
+				trigger = {}
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# CHOICE A
 			option = {
@@ -213,11 +195,11 @@ namespace = TEMPLATE
 				hidden_effect = {
 					random_list = { 
 						50 = { #CONTINUE
-							save_event_target_as = stageOneHalfChoiceA_Success
+							save_event_target_as = stageOneHalfAChoiceA_Success
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
-							save_event_target_as = stageOneHalfChoiceA_Fail
+							save_event_target_as = stageOneHalfAChoiceA_Fail
 							country_event = { id = TEMPLATE.4 days = @eventDayLength random = @eventRandomLength }
 						}
 					}
@@ -230,11 +212,11 @@ namespace = TEMPLATE
 				hidden_effect = {
 					random_list = {
 						50 = { #CONTINUE
-							save_event_target_as = stageOneHalfChoiceA_Fail
+							save_event_target_as = stageOneHalfAChoiceB_Success
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
-							save_event_target_as = stageOneHalfChoiceB_Fail
+							save_event_target_as = stageOneHalfAChoiceB_Fail
 							country_event = { id = TEMPLATE.4 days = @eventDayLength random = @eventRandomLength }
 						}
 					}
@@ -243,20 +225,20 @@ namespace = TEMPLATE
 		}
 
 
-	# STAGE 1/2 AFAIL #
+	# STAGE 1/2 A FAIL #
 		country_event = {
 			id = TEMPLATE.4
 			title = TEMPLATE.4.name
 			desc = {
-				text = TEMPLATE.4.desc
+				text = TEMPLATE.4.desc.a
 				trigger = {
-					is_same_value = event_target:stageOneChoiceA_Success
+					is_same_value = event_target:stageOneHalfAChoiceA_Fail
 				}
 			}
 			desc = {
-				text = TEMPLATE.4.desc
+				text = TEMPLATE.4.desc.b
 				trigger = {
-					is_same_value = stageOneHalfChoiceB_Fail
+					is_same_value = event_target:stageOneHalfAChoiceB_Fail
 				}
 			}
 
@@ -264,15 +246,12 @@ namespace = TEMPLATE
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
+			immediate = { }
 
-			}
 			# END
 			option = { 
 				name = TEMPLATE.4.a
-				hidden_effect = {
-
-				}
+				hidden_effect = { }
 			}
 		}
 
@@ -284,17 +263,13 @@ namespace = TEMPLATE
 			title = TEMPLATE.5.name
 			desc = {
 				text = TEMPLATE.5.desc
-				trigger = {
-					
-				}
+				trigger = { }
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# CHOICE A
 			option = {
@@ -302,9 +277,11 @@ namespace = TEMPLATE
 				hidden_effect = {
 					random_list = {
 						50 = { #CONTINUE
+							save_event_target_as = stageOneHalfBChoiceA_Success
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
+							save_event_target_as = stageOneHalfBChoiceA_Fail
 							country_event = { id = TEMPLATE.6 days = @eventDayLength random = @eventRandomLength }
 						}
 					}
@@ -317,9 +294,11 @@ namespace = TEMPLATE
 				hidden_effect = {
 					random_list = {
 						50 = { #CONTINUE
+							save_event_target_as = stageOneHalfBChoiceB_Success
 							country_event = { id = TEMPLATE.7 days = @eventDayLength random = @eventRandomLength }
 						}
 						50 = { #FAIL
+							save_event_target_as = stageOneHalfBChoiceB_Fail
 							country_event = { id = TEMPLATE.6 days = @eventDayLength random = @eventRandomLength }
 						}
 					}
@@ -333,24 +312,27 @@ namespace = TEMPLATE
 			id = TEMPLATE.6
 			title = TEMPLATE.6.name
 			desc = {
-				text = TEMPLATE.6.desc
+				text = TEMPLATE.6.desc.a
 				trigger = {
-					
+					is_same_value = event_target:stageOneHalfBChoiceA_Fail
+				}
+			}
+			desc = {
+				text = TEMPLATE.6.desc.b
+				trigger = {
+					is_same_value = event_target:stageOneHalfBChoiceB_Fail
 				}
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
+			immediate = { }
 
-			}
 			# END
 			option = { 
 				name = TEMPLATE.6.a
-				hidden_effect = {
-
-				}
+				hidden_effect = { }
 			}
 		}
 
@@ -361,24 +343,38 @@ namespace = TEMPLATE
 			id = TEMPLATE.7
 			title = TEMPLATE.7.name
 			desc = {
-				text = TEMPLATE.7.desc
+				text = TEMPLATE.7.desc.a
 				trigger = {
-					
+					is_same_value = event_target:stageOneHalfAChoiceA_Success
+				}
+			}
+			desc = {
+				text = TEMPLATE.7.desc.b
+				trigger = {
+					is_same_value = event_target:stageOneHalfAChoiceB_Success
+				}
+			}
+			desc = {
+				text = TEMPLATE.7.desc.c
+				trigger = {
+					is_same_value = event_target:stageOneHalfBChoiceA_Success
+				}
+			}
+			desc = {
+				text = TEMPLATE.7.desc.d
+				trigger = {
+					is_same_value = event_target:stageOneHalfBChoiceB_Success
 				}
 			}
 			is_triggered_only = yes
 			picture = GFX_evt_debris
 			show_sound = event_super_explosion
 			
-			immediate = {
-
-			}
+			immediate = { }
 
 			# END
 			option = { 
 				name = TEMPLATE.7.a
-				hidden_effect = {
-					
-				}
+				hidden_effect = { }
 			}
 		}
