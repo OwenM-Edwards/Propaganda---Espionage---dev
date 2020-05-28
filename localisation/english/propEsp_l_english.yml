@@ -1995,3 +1995,39 @@ spyModConfig.2.b:0 "Cancel."
  ####################
 
  galactic_espionage:0 "Galactic Espionage"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## OPENING EVENT ##
+ saboRep.5.name:0 ""
+ saboRep.5.desc:0 ""
+# CHOICE A
+ saboRep.5.a:0 ""
+# CHOICE B
+ saboRep.5.b:0 ""
+
+## FINAL STAGE ##
+ saboRep.6.name:0 ""
+# CHOICE A SUCCESS
+ saboRep.6.desc.a:0 ""
+# CHOICE A FAIL
+ saboRep.6.desc.b:0 ""
+# CHOICE B SUCCESS
+ saboRep.6.desc.c:0 ""
+# CHOICE B FAIL
+ saboRep.6.desc.d:0 ""
+# END #
+ saboRep.6.a:0 ""
