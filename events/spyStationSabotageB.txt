@@ -57,12 +57,12 @@ country_event = {
 		random_list = {
 			30 = { #need more funds
 				country_event = {
-					id = stationSabotageBeta.2 #days = @raidRandomDays random = @raidRandomRandom
+					id = stationSabotageBeta.2 days = @raidRandomDays random = @raidRandomRandom
 				}
 			}
 			30 = { #partial success
 				country_event = {
-					id = stationSabotageBeta.3 #days = @raidRandomDays random = @raidRandomRandom
+					id = stationSabotageBeta.3 days = @raidRandomDays random = @raidRandomRandom
 				}
 			}
 		}
@@ -96,7 +96,7 @@ country_event = {
 		}
 		add_resource = { energy = -200 }
 		hidden_effect = {
-			country_event = { id = stationSabotageBeta.3 } #AGENTS READY TO ATTACK
+			country_event = { id = stationSabotageBeta.3 days = @raidRandomDays random = @raidRandomRandom } #AGENTS READY TO ATTACK
 		}
 	}
 }
@@ -127,12 +127,12 @@ country_event = {
 			random_list = {
 				50 = { #FULL SUCCESS
 					country_event = {
-						id = stationSabotageBeta.4
+						id = stationSabotageBeta.4 days = @raidRandomDays random = @raidRandomRandom
 					}
 				}
 				50 = { #PARTIAL SUCCESS
 					country_event = {
-						id = stationSabotageBeta.5
+						id = stationSabotageBeta.5 days = @raidRandomDays random = @raidRandomRandom
 					}
 				}
 			}
@@ -142,7 +142,7 @@ country_event = {
 	option = {#DELAY ATTACK
 		name = stationSabotageBeta.3.c
 		hidden_effect = {
-			country_event = { id = stationSabotageBeta.3 }#days = 65 } ### LOOP BACK TO THIS EVENT
+			country_event = { id = stationSabotageBeta.3 days = 65 } ### LOOP BACK TO THIS EVENT
 		}
 	}
 }
@@ -267,7 +267,7 @@ country_event = {
 		}
 		hidden_effect = {
 			event_target:stationAttacker = { #STOP EVENT AFTER NORMAL TIME
-				country_event = { id = stationSabotageBeta.6 }#days = @stationSabFullTime }
+				country_event = { id = stationSabotageBeta.6 days = @stationSabFullTime }
 			}
 		}
 	}
@@ -284,7 +284,7 @@ country_event = {
 		add_resource = { influence = -40 }
 		hidden_effect = {
 			event_target:stationAttacker = { #STOP EVENT AFTER SHORTER TIME
-				country_event = { id = stationSabotageBeta.6 }#days = @stationSabPartialTime }
+				country_event = { id = stationSabotageBeta.6 days = @stationSabPartialTime }
 				country_event = { id = stationSabotageBeta.77 }
 			}
 		}
