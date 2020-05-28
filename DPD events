@@ -1,1 +1,41 @@
-hgfhgf
+EVENT IDEAS 
+
+	INDUSTRIAL ESPIONAGE 
+
+		COMPUTING TREE
+
+
+		MATERIAL TREE
+
+
+		HEALTHCARE - only fires at neutral relations or above, or if a native species is shared
+			OPENER: Your agents in the field have become sick with coronavirus
+				A. Send your agents to be treated at a local hospital
+				B. Recall your agents 
+			ENDING
+				A CRIT SUCCESS (0.5) Agents return home with knowledge of advanced medical technology 
+					Requires Genome Mapping
+					Begins Genome mapping/ Genetic Healthcare/ Cyto-Revitalisation with 50% progress
+
+				A SUCCESS (0.25) Agents are able to complete their mission and return home. They also learn something of alien medical technology.
+					100% Normal research point reward 
+					100% Biology research points reward
+
+				A FAIL (0.25) Agents pass away in hospital. Their knowledge is lost.
+					No rewards from industrial espionage
+
+				B SUCCESS 
+				Your agents return home what information they were able to gather before they were recalled
+					50-100% of normal research point reward
+				B FAIL 
+				Your agents have died in the field 
+					No rewards from industrial espionage
+
+
+
+
+
+
+
+
+				
