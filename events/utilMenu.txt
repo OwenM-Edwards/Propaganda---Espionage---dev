@@ -3054,15 +3054,11 @@ country_event = {
             }	
             custom_tooltip = {
 				fail_text = "raidCostTooltipInfluence" 
-				not = {
-                    has_resource = { type = influence amount >= 50 } 
-                }
+				has_resource = { type = influence amount >= 50 } 
             }	
             custom_tooltip = {
 				fail_text = "raidCostTooltipintelPoints" 
-				not = {
-                    has_resource = { type = sr_beta_points amount >= 40 } 
-                }
+				has_resource = { type = sr_beta_points amount >= 40 } 
             }
             has_technology = tech_spy_tactical	
         }
