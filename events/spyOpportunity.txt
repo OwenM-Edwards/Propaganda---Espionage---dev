@@ -43,11 +43,11 @@ country_event = {
 		}
 
 		random_list = {
-			50 = { #DEFECTING SCIENTIST
+			50 = { # DEFECTING SCIENTIST
 				modifier = {
-					factor = 000.1
-					event_target:spyOpportunityTarget = { 
-						or = {
+					factor = 0
+					or = {
+						event_target:spyOpportunityTarget = { 
 							is_ai = no 
 						}
 						has_country_flag = OppdefectingScientistCooldown
@@ -55,6 +55,17 @@ country_event = {
 				}
 				set_timed_country_flag = {
 					flag = OppdefectingScientistCooldown
+					days = 3650
+				}
+				country_event = { id = spyOpportunity.2 }
+			}
+			50 = { # INFECTED AGENTS
+				modifier = {
+					factor = 0
+					has_country_flag = OppinfectedAgents
+				}
+				set_timed_country_flag = {
+					flag = OppinfectedAgents
 					days = 3650
 				}
 				country_event = { id = spyOpportunity.2 }

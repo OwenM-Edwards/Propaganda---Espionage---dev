@@ -1,0 +1,114 @@
+namespace = studyTech_Opportunity
+
+
+## OPENING EVENT ##
+@eventDayLength = 20
+@eventRandomLength = 10
+country_event = {
+	id = studyTech_Opportunity.1 
+	title = studyTech_Opportunity.1.name
+	desc = {
+		text = studyTech_Opportunity.1.desc
+		trigger = { }
+	}
+	is_triggered_only = yes
+	picture = GFX_evt_debris
+	show_sound = event_default
+	
+	immediate = { }
+
+	# CHOICE A
+	option = {
+		name = studyTech_Opportunity.1.a
+		hidden_effect = {
+			random_list = {
+				5 = {
+					save_event_target_as = stageOneChoiceA_Crit
+				}
+				35 = {
+					save_event_target_as = stageOneChoiceA_Success
+				}
+				35 = {
+					save_event_target_as = stageOneChoiceA_Fail
+				}
+			}
+			country_event = { 
+				id = studyTech_Opportunity.2 
+				days = @eventDayLength random = @eventRandomLength 
+			}
+		}
+	}
+
+	# CHOICE B
+	option = {
+		name = studyTech_Opportunity.1.b
+		hidden_effect = {
+			random_list = {
+				50 = {
+					save_event_target_as = stageOneChoiceB_Success
+				}
+				50 = {
+					save_event_target_as = stageOneChoiceB_Fail
+				}
+			}
+			country_event = { 
+				id = studyTech_Opportunity.2 
+				days = @eventDayLength random = @eventRandomLength 
+			}
+		}
+	}
+}
+
+
+## FINAL STAGE ##
+country_event = {
+	id = studyTech_Opportunity.2
+	title = studyTech_Opportunity.2.name
+	desc = { # CHOICE A CRIT
+		text = studyTech_Opportunity.2.desc.a
+		trigger = {
+			is_same_value = event_target:stageOneChoiceA_Crit
+		}
+	}
+	desc = { # CHOICE A WON
+		text = studyTech_Opportunity.2.desc.b
+		trigger = {
+			is_same_value = event_target:stageOneChoiceA_Success
+		}
+	}
+	desc = { # CHOICE A FAIL
+		text = studyTech_Opportunity.2.desc.c
+		trigger = {
+			is_same_value = event_target:stageOneChoiceA_Fail
+		}
+	}
+	desc = { # CHOICE B WON
+		text = studyTech_Opportunity.2.desc.d
+		trigger = {
+			is_same_value = event_target:stageOneChoiceB_Success
+		}
+	}
+	desc = { # CHOICE B FAIL
+		text = studyTech_Opportunity.2.desc.e
+		trigger = {
+			is_same_value = event_target:stageOneChoiceB_Fail
+		}
+	}
+	is_triggered_only = yes
+	picture = GFX_event_default
+	show_sound = event_default
+	
+	immediate = { }
+
+	# END
+	option = {
+		name = studyTech_Opportunity.2.a
+		if = {
+			limit = {
+				is_same_value = event_target:stageOneChoiceA_Crit
+			}
+			
+		}
+		hidden_effect = { }
+	}
+}
