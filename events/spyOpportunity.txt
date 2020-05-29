@@ -62,13 +62,29 @@ country_event = {
 			50 = { # INFECTED AGENTS
 				modifier = {
 					factor = 0
-					has_country_flag = OppinfectedAgents
+					or = {
+						has_country_flag = OppinfectedAgents
+						event_target:alphaNetworkTarget_temp = {
+							is_at_war_with = event_target:spyOpportunityAttacker
+						}
+						event_target:alphaNetworkTarget_temp = {
+							nor = {
+								has_technology = tech_genome_mapping
+								has_technology = tech_vitality_boosters
+								has_technology = tech_frontier_hospital
+								has_technology = tech_alien_life_studies
+								has_technology = tech_society_3
+								has_technology = tech_society_2
+								has_technology = tech_society_1
+							}
+						}
+					}
 				}
 				set_timed_country_flag = {
 					flag = OppinfectedAgents
 					days = 3650
 				}
-				country_event = { id = spyOpportunity.2 }
+				country_event = { id = studyTech_Opportunity.1 }
 			}
 			10 = {
 				country_event = {

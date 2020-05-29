@@ -105,10 +105,153 @@ country_event = {
 		name = studyTech_Opportunity.2.a
 		if = {
 			limit = {
-				is_same_value = event_target:stageOneChoiceA_Crit
+				is_same_value = event_target:stageOneChoiceB_Success
 			}
-			
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 24
+				min = 150
+				max = 500
+		  	}
 		}
-		hidden_effect = { }
+		hidden_effect = {
+			if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceA_Crit
+				}
+				random_list = {
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_genome_mapping
+						}
+						give_technology = { tech = tech_genome_mapping message = yes }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_vitality_boosters
+						}
+						give_technology = { tech = tech_vitality_boosters message = yes }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_frontier_hospital
+						}
+						give_technology = { tech = tech_frontier_hospital message = yes }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_alien_life_studies
+						}
+						give_technology = { tech = tech_alien_life_studies message = yes }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_society_3
+						}
+						give_technology = { tech = tech_society_3 message = yes }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_society_2
+						}
+						give_technology = { tech = tech_society_2 message = yes }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_society_1
+						}
+						give_technology = { tech = tech_society_1 message = yes }
+					}
+				}	
+			}
+			else_if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceA_Success
+				}
+				random_list = {
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_genome_mapping
+						}
+						add_tech_progress = { tech = tech_genome_mapping progress = 0.25 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_vitality_boosters
+						}
+						add_tech_progress = { tech = tech_vitality_boosters progress = 0.25 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_frontier_hospital
+						}
+						add_tech_progress = { tech = tech_frontier_hospital progress = 0.25 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_alien_life_studies
+						}
+						add_tech_progress = { tech = tech_alien_life_studies progress = 0.25 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_society_3
+						}
+						add_tech_progress = { tech = tech_society_3 progress = 0.25 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_society_2
+						}
+						add_tech_progress = { tech = tech_society_2 progress = 0.25 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_technology = tech_society_1
+						}
+						add_tech_progress = { tech = tech_society_1 progress = 0.25 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceA_Fail
+				}
+				remove_country_flag = alphaF_OpportunityOngoing
+				removeGatherProgress_Alpha_F = yes
+				country_event = { id = progressTrackerA.2 }
+			}	
+			else_if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceB_Success
+				}
+				remove_country_flag = alphaF_OpportunityOngoing
+				removeGatherProgress_Alpha_F = yes
+				country_event = { id = progressTrackerA.2 }
+			}
+			else_if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceB_Fail
+				}
+				remove_country_flag = alphaF_OpportunityOngoing
+				removeGatherProgress_Alpha_F = yes
+				country_event = { id = progressTrackerA.2 }
+			}                              
+			country_event = { id = spyOpportunity.0 } #PROPERLY ENDS THE EVENT
+		}
 	}
 }
