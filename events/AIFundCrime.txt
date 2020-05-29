@@ -106,7 +106,7 @@ country_event = { #REPEAT OR STOP
                 }
                 set_country_flag = Ai_fundCrime_increased
                 country_event = {
-                    id = aifundCrime.2 days = 90
+                    id = aifundCrime.2 days = @fundCrimeRepeatLength
                 }
             }
 
