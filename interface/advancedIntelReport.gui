@@ -83,7 +83,6 @@ guiTypes = {
 		name = "spyCloseButtonIntel"
 		position = { x= 0 y = 0 }
 		size = { width = 100 height = 30 }
-		Orientation = "UPPER_RIGHT"
 
 		buttonType = {
 			name = "option_button"
@@ -99,7 +98,6 @@ guiTypes = {
 		orientation = center
 		moveable = yes
 		size = { width = 660 height =355 }
-		alwaysTransparent = yes
 		
 		background = {
 			name = "background"
@@ -213,7 +211,6 @@ guiTypes = {
 			font = "malgun_goth_24"
 			format = left
 			text = "Detailed Intelligence Report" #WHAT APPEARS AT THE VERY TOP, THE TITLE
-			scale = 3.2
 		}
 		#resources title
 		instantTextBoxType = { 

@@ -697,6 +697,17 @@ guiTypes = {
 					spriteType = "GFX_invisible"
 				}
 
+				
+				effectButtonType = {
+					id = "button"
+					name = "manageNetworksButton2"
+					position = { x = 32 y = 2 }
+					clicksound = interface
+					spriteType = "GFX_invisible"
+					effect = "manageNetworksButton"
+					# 
+				}
+
 				iconType = {
 					name = "icon"
 					spriteType = "GFX_alphaPointSmall"
@@ -725,6 +736,16 @@ guiTypes = {
 				background = {
 					name = "background"
 					spriteType = "GFX_invisible"
+				}
+
+				effectButtonType = {
+					id = "button"
+					name = "manageNetworksButton3"
+					position = { x = 1040 y = 0 }
+					clicksound = interface
+					spriteType = "GFX_invisible"
+					effect = "manageNetworksButton"
+					# 
 				}
 
 				iconType = {

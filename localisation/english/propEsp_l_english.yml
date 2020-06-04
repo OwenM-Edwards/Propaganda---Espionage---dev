@@ -13,6 +13,9 @@
  displayAlphaIntelPoints.a:0 "[playerAgency.getAlphaIntelPoints]"
  displayBetaIntelPoints.a:0 "[playerAgency.getBetaIntelPoints]"
 
+ spy_openMenuButton_topbar_A.tooltip:0 "Alpha network intelligence points.\n\nClick to open networks menu."
+ spy_openMenuButton_topbar_B.tooltip:0 "Beta network intelligence points.\n\nClick to open networks menu."
+
  advancedIntel.1.close:0 ""
  AlphaF-IntelReport-Unnasigned:0 "Unassigned"
  BetaF-IntelReport-Unnasigned:0 "Unassigned"
@@ -1995,3 +1998,67 @@ spyModConfig.2.b:0 "Cancel."
  ####################
 
  galactic_espionage:0 "Galactic Espionage"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## OPENING EVENT ##
+ saboRep.5.name:0 ""
+ saboRep.5.desc:0 ""
+# CHOICE A
+ saboRep.5.a:0 ""
+# CHOICE B
+ saboRep.5.b:0 ""
+
+## FINAL STAGE ##
+ saboRep.6.name:0 ""
+# CHOICE A SUCCESS
+ saboRep.6.desc.a:0 ""
+# CHOICE A FAIL
+ saboRep.6.desc.b:0 ""
+# CHOICE B SUCCESS
+ saboRep.6.desc.c:0 ""
+# CHOICE B FAIL
+ saboRep.6.desc.d:0 ""
+# END #
+ saboRep.6.a:0 ""
+
+
+
+
+ ###### STUDY TECH OPPORTUNITY EVENTS ######
+ ## SICK AGENTS - BY DPD ##
+## OPENING EVENT ##
+ studyTech_Opportunity.1.name:0 "Infected Agents"
+ studyTech_Opportunity.1.desc:0 "Our Alpha Network agents within the §S[alphaNetworkTarget_temp.GetName]§! have been infected with a deadly virus. We dot beleive there to have been any foul play, but unless treated quickly our agents will be in serious danger.\n\nWe can send an emergency transport to recall them, effectivly cancelling their current operation, or send them to a local §S[alphaNetworkTarget_temp.GetAdjective]§! hospital, at the risk of their true purpose being discovered."
+# CHOICE A
+ studyTech_Opportunity.1.a:0 "Send the agents to a local hospital."
+# CHOICE B
+ studyTech_Opportunity.1.b:0 "Recall the agents."
+
+## FINAL STAGE ##
+ studyTech_Opportunity.2.name:0 "Infected Agents"
+# CHOICE A CRIT SUCCESS
+ studyTech_Opportunity.2.desc.a:0 "Excellent news, our agents were treated well at a nearby §S[alphaNetworkTarget_temp.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents used the event as an opportunity to snoop through onsite database and aquire details on some of the advanced medical technology used."
+# CHOICE A SUCCESS
+ studyTech_Opportunity.2.desc.b:0 "Good news, our agents were treated well at a nearby §S[alphaNetworkTarget_temp.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents learned a great deal from observing the medical technology used."
+# CHOICE A FAIL
+ studyTech_Opportunity.2.desc.c:0 "Bad news, though our Alpha Network agents made it to a nearby §S[alphaNetworkTarget_temp.GetAdjective]§! emergency center it was already too late. All of of Alpha Network field agents perished.\n\nHowever, their true purpose was never discovered, and Alpha Network is already preparing a new field team."
+# CHOICE B SUCCESS
+ studyTech_Opportunity.2.desc.d:0 "Good news, our Alpha Network agents were extracted and treated before the virus could progress any further. They are recoverering well, and have even managed to bring back a small cache of already collected technical data."
+# CHOICE B FAIL
+ studyTech_Opportunity.2.desc.e:0 "Bad news, we were unable to extract our Alpha Network agents in time, and the entire field team perished.\n\nHowever they the extraction team did find a small cache of already collected technical data. We have added it to our research archives."
+# END #
+ studyTech_Opportunity.2.a:0 "Understood."

@@ -22,7 +22,7 @@ country_event = {
             10 = { #MILITARIZE EXTREMISTS OPERATION
                 country_event = {
                     id = sabRepCrit.3
-                }
+                } 
             }
         }
     }

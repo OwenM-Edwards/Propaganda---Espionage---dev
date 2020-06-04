@@ -3011,9 +3011,11 @@ country_event = {
         hidden_effect = {
             set_country_flag = raid_starbase_alpha
             set_country_flag = ongoingRaidAlpha
-            country_event = { id = stationManager.1 }
+            country_event = { id = stationManager.1 } 
         }
     }
+
+
     option = { #CANCEL
         name = chooseRaid.z
         hidden_effect = {

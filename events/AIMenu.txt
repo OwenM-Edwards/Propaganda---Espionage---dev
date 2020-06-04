@@ -398,6 +398,17 @@ country_event = {
                     }
 
                 }
+                modifier = {
+                    factor = 1.5
+                    has_technology = tech_spy_industrial
+                    event_target:AIAgency_Defender_Final = {
+                        relative_power = {
+                            who = event_target:AIAgency
+                            category = technology
+                            value > equivalent
+                        }
+                    }
+                }
                 country_event = { 
                     id = agnAImenu.5 #TECH STEAL
                 }
@@ -413,7 +424,7 @@ country_event = {
                     id = agnAImenu.6 #SWING ETHICS  
                 }
             }
-            5 = {
+            10 = {
                 modifier = {
                     factor = 0
                     not = {

@@ -142,3 +142,107 @@ country_event = {
         }
     }
 }
+
+
+
+
+
+
+
+#### BLACKMAIL DIPLOMAT #####
+	## OPENING EVENT ##
+    @eventDayLength = 20
+    @eventRandomLength = 10
+    country_event = {
+        id = saboRep.5 
+        title = saboRep.5.name
+        desc = {
+            text = saboRep.5.desc
+            trigger = { }
+        }
+        is_triggered_only = yes
+        picture = GFX_evt_debris
+        show_sound = event_default
+        
+        immediate = { }
+
+        # CHOICE A
+        option = {
+            name = saboRep.5.a
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        save_event_target_as = stageOneChoiceA_Success
+                    }
+                    50 = {
+                        save_event_target_as = stageOneChoiceA_Fail
+                    }
+                }
+                country_event = { 
+                    id = saboRep.6 
+                    days = @eventDayLength random = @eventRandomLength 
+                }
+            }
+        }
+
+        # CHOICE B
+        option = {
+            name = saboRep.5.b
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        save_event_target_as = stageOneChoiceB_Success
+                    }
+                    50 = {
+                        save_event_target_as = stageOneChoiceB_Fail
+                    }
+                }
+                country_event = { 
+                    id = saboRep.6 
+                    days = @eventDayLength random = @eventRandomLength 
+                }
+            }
+        }
+    }
+
+
+## FINAL STAGE ##
+    country_event = {
+        id = saboRep.6
+        title = saboRep.6.name
+        desc = { # CHOICE A WON
+            text = saboRep.6.desc.a
+            trigger = {
+                is_same_value = event_target:stageOneChoiceA_Success
+            }
+        }
+        desc = { # CHOICE A FAIL
+            text = saboRep.6.desc.b
+            trigger = {
+                is_same_value = event_target:stageOneChoiceA_Fail
+            }
+        }
+        desc = { # CHOICE B WON
+            text = saboRep.6.desc.c
+            trigger = {
+                is_same_value = event_target:stageOneChoiceB_Success
+            }
+        }
+        desc = { # CHOICE B FAIL
+            text = saboRep.6.desc.d
+            trigger = {
+                is_same_value = event_target:stageOneChoiceB_Fail
+            }
+        }
+        is_triggered_only = yes
+        picture = GFX_evt_debris
+        show_sound = event_default
+        
+        immediate = { }
+
+        # END
+        option = {
+            name = saboRep.6.a
+            hidden_effect = { }
+        }
+    }

@@ -77,6 +77,9 @@
 	### DOM STABILITY EVENTS ###
 	@domStabilityLength = 180
 
+	### AI FUND CRIME RPEAT TIMER  ###
+	@fundCrimeRepeatLength = 180
+
 
 
 
