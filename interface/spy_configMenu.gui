@@ -403,7 +403,6 @@ guiTypes = {
 			listboxType = {
 				name = "option_list"
 				position = { x = -840 y = -500 }
-				backGround=""
 				size = { x = 10 y = 800 }# ALL THE OPTIONS
 				spacing = 1
 				scrollbartype = "standardlistbox_slider"
