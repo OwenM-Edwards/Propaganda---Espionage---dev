@@ -13,7 +13,7 @@ country_event = {
 		trigger = { }
 	}
 	is_triggered_only = yes
-	picture = GFX_evt_debris
+	picture = GFX_evt_emergency_workers
 	show_sound = event_default
 	
 	immediate = { }
@@ -96,7 +96,7 @@ country_event = {
 		}
 	}
 	is_triggered_only = yes
-	picture = GFX_evt_default
+	picture = GFX_evt_emergency_workers
 	show_sound = event_default
 	
 	immediate = { }
@@ -274,7 +274,6 @@ country_event = {
 
 
 ##### DEFECTING SCIENTIST EVENT ########
-
 ### INDUSTRIAL ESPIONAGE - DEFECTING SCIENTIST - INITAL EVENT ###
 country_event = {
 	id = studyTech_Opportunity.3
@@ -332,7 +331,6 @@ country_event = {
 		}
 	}
 }
-
 #### RAID THE LAB CHAIN ####
 	## TEAM BACKED INTO CORNER, ACTIVATE KILL SWITCH? ##
 	country_event = {  
@@ -361,7 +359,6 @@ country_event = {
 			}
 		}
 	}
-
 	## KILL SUCCEED, MISSION FAILED ##
 	country_event = {  
 		id = studyTech_Opportunity.5
@@ -379,7 +376,6 @@ country_event = {
 			}
 		}
 	}
-
 	## WAIT, TEAM CAPTURED, MISSION FAILED ##
 	country_event = {  
 		id = studyTech_Opportunity.6
@@ -398,7 +394,6 @@ country_event = {
 			}
 		}
 	}
-
 	## WAIT, TEAM SURVIVE, MISSION SUCCEED ##
 	country_event = {  
 		id = studyTech_Opportunity.7
@@ -416,7 +411,6 @@ country_event = {
 			}
 		}
 	}
-
 	## MISSION SUCCEED ##
 	country_event = {  
 		id = studyTech_Opportunity.8
@@ -434,10 +428,6 @@ country_event = {
 			}
 		}
 	}
-
-
-
-
 #### INFILTRATE THE LAB CHAIN ####
 ### PERIMETRE PATROLS BETTER THAN EXPECTED ###
 	country_event = {  
@@ -511,8 +501,6 @@ country_event = {
 			}
 		}
 	}
-
-
 	#AMBUSH PATROLS COMPLICATION
 	country_event = {  
 		id = studyTech_Opportunity.19
@@ -549,9 +537,6 @@ country_event = {
 			}
 		}
 	}
-
-
-
 	## MISSION SUCCEED ##
 	country_event = {  
 		id = studyTech_Opportunity.10
@@ -585,9 +570,6 @@ country_event = {
 			}
 		}
 	}
-
-
-
 #### GET THE SCIENTIST ####
 country_event = {  
 	id = studyTech_Opportunity.100
