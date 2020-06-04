@@ -103,6 +103,25 @@
 #fixed small bug cuased when cancelling a sow unrest operation
 
 
+TODO 3 = {
+   
+}
+
+DONE 3 = {
+   AI more likely to industrial espionage if target more advanced.
+   Added open menu effect to topbar icons.
+   tweaked ai fund crime length to be longer.
+   implemented indus esp sick agents event.
+   fix tooltip on topbar icons now that button is there = {
+      maybe create duplicate button and add tooltip to that
+   }
+   Fixed some GUI errors, thanks to LokiCharms
+
+
+
+}
+
+
 MAKE SURE ALL MODS HAVE ICONS AND DESCRIPTIONS
 
 ADD DISPLAY OF OWN COUNTERINTEL LEVEL
