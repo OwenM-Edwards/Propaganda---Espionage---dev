@@ -168,7 +168,7 @@ country_event = {
 
         # CHOICE A
         option = {
-            name = saboRep.1.a
+            name = saboRep.5.a
             hidden_effect = {
                 random_list = {
                     50 = {
@@ -235,7 +235,7 @@ country_event = {
             }
         }
         is_triggered_only = yes
-        picture = GFX_event_default
+        picture = GFX_evt_debris
         show_sound = event_default
         
         immediate = { }
