@@ -35,7 +35,6 @@ guiTypes = {
 		clipping = no
 		size = { width = 795 height = 550 }
 		position = { x = 0 y = 0 }
-		alwaysTransparent = yes
 		
 		background = {
 			name = "background"
@@ -112,7 +111,6 @@ guiTypes = {
 			font = "malgun_goth_24"
 			format = left
 			text = "Intelligence_Networks_Header" #WHAT APPEARS AT THE VERY TOP, THE TITLE
-			scale = 3.2
 		}
 
 		#### CONFIG BUTTON #####
@@ -144,7 +142,6 @@ guiTypes = {
 			position = { x = 13 y = 90 }
 			size = { width = 964 height = 350 }
 			clipping = yes
-			scale = 0.1
 			
 			iconType = {
 				name = "portrait"
