@@ -518,13 +518,6 @@ getCounterIntelLevelTargetAlpha = {
 
 	##### CALCULATE POLICY EFFECTS #####
 	
-	if = {
-		limit = {
-			event_target:alphaNetworkTarget_temp = {
-				has_policy_flag = spy_balanced_focus
-			}
-		}
-	}
 	if = { #INCREASES BY ONE FOR DEFENSIVE FOCUS POLICY
 		limit = {
 			event_target:alphaNetworkTarget_temp = {
@@ -603,13 +596,6 @@ getCounterIntelLevelTargetBeta = {
 
 	##### CALCULATE POLICY EFFECTS #####
 
-	if = {
-		limit = {
-			event_target:betaNetworkTarget_temp = {
-				has_policy_flag = spy_balanced_focus
-			}
-		}
-	}
 	if = { #INCREASES BY ONE FOR DEFENSIVE FOCUS POLICY
 		limit = {
 			event_target:betaNetworkTarget_temp = {
@@ -692,13 +678,6 @@ getCounterIntelLevelTargetAI = {
 
 	##### CALCULATE POLICY EFFECTS #####
 
-	if = {
-		limit = {
-			event_target:AIAgency_Defender_Final = {
-				has_policy_flag = spy_balanced_focus
-			}
-		}
-	}
 	if = { #INCREASES BY ONE FOR DEFENSIVE FOCUS POLICY
 		limit = {
 			event_target:AIAgency_Defender_Final = {
