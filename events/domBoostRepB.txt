@@ -211,3 +211,68 @@ country_event = {
 		}
 	}
 }
+
+
+#### CRIT SUCCESS 2 ###
+country_event = {
+	id = boostRepB.4
+	title = "boostRepBCritSuccess2.title"
+	desc = "boostRepBCritSuccess2.desc" 
+	show_sound = event_conversation
+	is_triggered_only = yes
+	picture = GFX_evt_news_room
+
+	immediate = {
+		save_event_target_as = playerAgency
+
+		every_country = {
+			limit = {
+				checkCountryType = yes
+				has_communications = event_target:playerAgency
+			}
+			add_opinion_modifier = {
+				who = event_target:playerAgency
+				modifier = opinion_boostRep_high
+			}
+		}
+
+		random_neighbor_country = {
+			limit = {
+				checkCountryType = yes
+				has_communications = event_target:playerAgency
+			}
+			save_event_target_as = randomFavorCountryBeta
+		}
+		add_favors = {
+			target = event_target:randomFavorCountryBeta
+			value = 1
+		}
+	}
+
+	option = { #REDO
+		name = boostRepBSuccess.a
+		custom_tooltip = pointsRequiredBetaD.tooltip
+		allow = {
+			hidden_trigger = {
+				has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
+			}
+		}
+		hidden_effect = {
+			removeGatherProgress_Beta_D = yes
+			country_event = {
+				id = counterProgressTrackerB.1
+			}
+		}
+	}
+
+	option = { #RETURN TO INTEL GATHERING
+		name = boostRepBSuccess.b
+		hidden_effect = {
+			remove_country_flag = boostRepB
+			removeGatherProgress_Beta_D = yes
+			country_event = {
+				id = counterProgressTrackerB.1
+			}
+		}
+	}
+}
