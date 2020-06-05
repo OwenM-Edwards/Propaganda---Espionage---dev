@@ -110,6 +110,8 @@ TODO 3 = {
    add actual tech stealing to AI
 
    Add pvp notification to sow unrest
+
+   ADDED TOOLTIP TO MENU INTEL POINTS ICON
 }
 
 DONE 3 = {
@@ -130,7 +132,29 @@ DONE 3 = {
 
 }
 
+Feature creep stuff = {
+   pop happyness penalty firced gene modding
 
+   Detailed Intelligence = {
+      Info on things the target is doing
+      a log of recent activity = {
+
+         colonisation
+         techs
+      }
+   }
+}
+
+
+
+INTERNAL COUNCIL = {
+   made up of factions = {
+      can vote on resolutions
+      vote on policies
+   }
+
+
+}
 MAKE SURE ALL MODS HAVE ICONS AND DESCRIPTIONS
 
 ADD DISPLAY OF OWN COUNTERINTEL LEVEL
