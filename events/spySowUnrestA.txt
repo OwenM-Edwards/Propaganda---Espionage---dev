@@ -375,7 +375,7 @@ country_event = { #CHOOSE TARGET
 				save_event_target_as = finalPlanetTarget
 			}
 			country_event = { id = progressTrackerA.1  }
-			country_event = { id = agencyGlobal.2 }
+			country_event = { id = agencyGlobal.2 } 
 		}
 	}
 	option = {
@@ -722,6 +722,7 @@ country_event = { #PARTIAL SUCCESS
         	allow = {
             hidden_trigger = {
 					has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+				
 				
 			}
 		}
