@@ -51,9 +51,44 @@ country_event = {
                 }
             }
         }
+        if = {
+            limit = {
+                event_target:alphaNetworkTarget_temp = {
+                    is_ai = no
+                }
+            }
+            event_target:alphaNetworkTarget_temp = {
+                random_list = {
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_1_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:alphaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_2_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:alphaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_3_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:alphaNetworkTarget_temp
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    option = { #REDO
+    option = { #REDO 
         name = sabotageRepSuccess.a
         custom_tooltip = pointsRequiredAlpha.tooltip
         allow = {
@@ -109,6 +144,41 @@ country_event = {
                 add_opinion_modifier = {
                     who = event_target:alphaNetworkTarget_temp
                     modifier = opinion_saboRep_low
+                }
+            }
+        }
+        if = {
+            limit = {
+                event_target:alphaNetworkTarget_temp = {
+                    is_ai = no
+                }
+            }
+            event_target:alphaNetworkTarget_temp = {
+                random_list = {
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_1_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:alphaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_2_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:alphaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_3_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:alphaNetworkTarget_temp
+                        }
+                    }
                 }
             }
         }

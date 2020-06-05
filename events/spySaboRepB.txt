@@ -50,6 +50,41 @@ country_event = {
                 }
             }
         }
+        if = {
+            limit = {
+                event_target:betaNetworkTarget_temp = {
+                    is_ai = no
+                }
+            }
+            event_target:betaNetworkTarget_temp = {
+                random_list = {
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_1_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:betaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_2_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:betaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_3_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:betaNetworkTarget_temp
+                        }
+                    }
+                }
+            }
+        }
     }
     option = { #REDO
         name = sabotageRepSuccess.a
@@ -109,6 +144,41 @@ country_event = {
                 add_opinion_modifier = {
                     who = event_target:betaNetworkTarget_temp
                     modifier = opinion_saboRep_low
+                }
+            }
+        }
+        if = {
+            limit = {
+                event_target:betaNetworkTarget_temp = {
+                    is_ai = no
+                }
+            }
+            event_target:betaNetworkTarget_temp = {
+                random_list = {
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_1_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:betaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_2_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:betaNetworkTarget_temp
+                        }
+                    }
+                    30 = {
+                        create_message = {
+                            type = EVENT_MESSAGE_TYPE
+                            localization = SABREP_NOTE_3_MESSAGE 
+                            days = @messageDisplayLength
+                            target = event_target:betaNetworkTarget_temp
+                        }
+                    }
                 }
             }
         }

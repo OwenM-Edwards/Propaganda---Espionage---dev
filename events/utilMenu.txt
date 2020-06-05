@@ -2077,7 +2077,6 @@ country_event = {
 }
 
 
-
 ############SWING ETHICS CHOOSE DESIRED ETHICS EVENT - FIRES FROM ABOVE############
 ##CHOOSE ETHICS ALPHA
 country_event = {

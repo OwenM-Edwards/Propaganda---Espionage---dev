@@ -104,7 +104,8 @@
 
 
 TODO 3 = {
-   
+   change swing ethics to only use your governing ethics
+   add pvp notification to swing ethics
 }
 
 DONE 3 = {
@@ -116,6 +117,10 @@ DONE 3 = {
       maybe create duplicate button and add tooltip to that
    }
    Fixed some GUI errors, thanks to LokiCharms
+   Added more success options for boosting dip repuatation.
+   Added pvp messages for stealing technology.
+   added pvp notification to fund crime
+   added pvp notifivation to sabrep
 
 
 
