@@ -106,6 +106,10 @@
 TODO 3 = {
    change swing ethics to only use your governing ethics
    add pvp notification to swing ethics
+
+   add actual tech stealing to AI
+
+   Add pvp notification to sow unrest
 }
 
 DONE 3 = {
