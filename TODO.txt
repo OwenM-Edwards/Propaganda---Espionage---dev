@@ -112,6 +112,14 @@ TODO 3 = {
    Add pvp notification to sow unrest
 
    ADDED TOOLTIP TO MENU INTEL POINTS ICON
+
+   Add in custom operation costs for all the different operation types = {
+      custom variables added
+      need to make a filter for progresstracker operation cost
+      need to tweak all of the tooltips to reflect that = {
+         making them work off of a variable would be easier.
+      }
+   }
 }
 
 DONE 3 = {
