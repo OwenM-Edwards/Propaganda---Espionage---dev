@@ -1,47 +1,5 @@
 namespace = stationSabotageBeta
 
-country_event = { #generic stop if 
-	id = stationSabotageBeta.0
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		country_event = { id = agencyGlobal.13 } #THEN FIRES stationSabotage.100
-	}
-}
-country_event = { #CHECKS THAT TARGET IS STILL VALID
-	id = stationSabotageBeta.100
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
-			limit = {
-				event_target:betaNetworkTarget_temp = {
-					is_same_empire = event_target:raid_target_beta
-				}	
-			}
-			set_country_flag = raidTarget_beta_true
-		}
-	}
-}
-country_event = { #NOTIFIES PLAYER THAT RAID TEAM IS RECALLED
-	id = stationSabotageBeta.1000
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
-			limit = {
-				event_target:betaNetworkTarget_temp = {
-					is_same_empire = event_target:raid_target_beta
-				}	
-			}
-			set_country_flag = raidTarget_beta_true
-		}
-	}
-}
-
 
 ## MAIN, ROLLS FOR COMPLICATIONS ETC
 country_event = {
@@ -57,12 +15,12 @@ country_event = {
 		random_list = {
 			30 = { #need more funds
 				country_event = {
-					id = stationSabotageBeta.2 #days = @raidRandomDays random = @raidRandomRandom
+					id = stationSabotageBeta.2 days = @raidRandomDays random = @raidRandomRandom
 				}
 			}
 			30 = { #partial success
 				country_event = {
-					id = stationSabotageBeta.3 #days = @raidRandomDays random = @raidRandomRandom
+					id = stationSabotageBeta.3 days = @raidRandomDays random = @raidRandomRandom
 				}
 			}
 		}
@@ -142,7 +100,7 @@ country_event = {
 	option = {#DELAY ATTACK
 		name = stationSabotageBeta.3.c
 		hidden_effect = {
-			country_event = { id = stationSabotageBeta.3 }#days = 65 } ### LOOP BACK TO THIS EVENT
+			country_event = { id = stationSabotageBeta.3 days = 65 } ### LOOP BACK TO THIS EVENT
 		}
 	}
 }
@@ -267,7 +225,7 @@ country_event = {
 		}
 		hidden_effect = {
 			event_target:stationAttacker = { #STOP EVENT AFTER NORMAL TIME
-				country_event = { id = stationSabotageBeta.6 }#days = @stationSabFullTime }
+				country_event = { id = stationSabotageBeta.6 days = @stationSabFullTime }
 			}
 		}
 	}
@@ -284,8 +242,8 @@ country_event = {
 		add_resource = { influence = -40 }
 		hidden_effect = {
 			event_target:stationAttacker = { #STOP EVENT AFTER SHORTER TIME
-				country_event = { id = stationSabotageBeta.6 }#days = @stationSabPartialTime }
-				country_event = { id = stationSabotageBeta.77 }
+				country_event = { id = stationSabotageBeta.6 days = @stationSabPartialTime }
+				country_event = { id = stationSabotageBeta.77 days = 5 random = 2 }
 			}
 		}
 	}

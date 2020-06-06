@@ -1,47 +1,5 @@
 namespace = stationSabotage
 
-country_event = { #generic stop if 
-	id = stationSabotage.0
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		country_event = { id = agencyGlobal.12 } #THEN FIRES stationSabotage.100
-	}
-}
-country_event = { #CHECKS THAT TARGET IS STILL VALID
-	id = stationSabotage.100
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
-			limit = {
-				event_target:alphaNetworkTarget_temp = {
-					is_same_empire = event_target:raid_target_alpha
-				}	
-			}
-			set_country_flag = raidTarget_alpha_true
-		}
-	}
-}
-country_event = { #NOTIFIES PLAYER THAT RAID TEAM IS RECALLED
-	id = stationSabotage.1000
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
-			limit = {
-				event_target:alphaNetworkTarget_temp = {
-					is_same_empire = event_target:raid_target_alpha
-				}	
-			}
-			set_country_flag = raidTarget_alpha_true
-		}
-	}
-}
-
 
 ## MAIN, ROLLS FOR COMPLICATIONS ETC
 country_event = {

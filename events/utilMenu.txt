@@ -2887,6 +2887,7 @@ country_event = {
         }
         hidden_effect = {
             set_country_flag = raid_starbase_beta
+            set_country_flag = betaF_raidStation
             set_country_flag = ongoingRaidBeta
             set_country_flag = tempStationSabBeta #JUST FOR STATION SELECTION EVENT
             country_event = { id = stationManager.1 }
