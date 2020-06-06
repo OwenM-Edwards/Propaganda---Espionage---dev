@@ -1482,6 +1482,7 @@ country_event = {
     option = {
         name = displayAlphaIntelPoints.a
         custom_gui = "alphaPointsDisplayOption"
+        custom_tooltip = "menuIntelPoints_Alpha"
         allow = {
 			custom_tooltip = {
 				fail_text = "blankFailTooltip" 
@@ -1495,6 +1496,7 @@ country_event = {
     option = {
         name = displayBetaIntelPoints.a
         custom_gui = "betaPointsDisplayOption"
+        custom_tooltip = "menuIntelPoints_Beta"
         allow = {
 			custom_tooltip = {
 				fail_text = "blankFailTooltip" 
@@ -1565,11 +1567,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownBeta_F"
-                has_resource = { type = sr_beta_points amount >= @sabRepOperationCostCheck }
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_BETA
-                }
+                }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_sabRep"
+                has_resource = { type = sr_beta_points amount >= @sabRepOperationCostCheck }  
             }
         }
         hidden_effect = {
@@ -1588,13 +1593,15 @@ country_event = {
             }
         }
         allow = {
-            
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownAlpha_F"
-                has_resource = { type = sr_alpha_points amount >= @sabRepOperationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_ALPHA
                 }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_sabRep"
+                has_resource = { type = sr_alpha_points amount >= @sabRepOperationCostCheck }  
             }
         }
         hidden_effect = {
@@ -1615,11 +1622,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownBeta_F"
-                has_resource = { type = sr_beta_points amount >= @operationCostCheck }
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_BETA
-                }
+                }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_fundCrime"
+                has_resource = { type = sr_beta_points amount >= @fundCrimeOperationCostCheck }  
             }
         }
         hidden_effect = {     
@@ -1639,11 +1649,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownAlpha_F"
-                has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_ALPHA
                 }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_fundCrime"
+                has_resource = { type = sr_alpha_points amount >= @fundCrimeOperationCostCheck }  
             }
         }
         hidden_effect = {
@@ -1663,11 +1676,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownBeta_F"
-                has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_BETA
-                }
+                }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_swingEthics"
+                has_resource = { type = sr_beta_points amount >= @swingEthicsOperationCostCheck }  
             }
             has_technology = tech_spy_socialPropaganda
         }
@@ -1687,11 +1703,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownAlpha_F"
-                has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_ALPHA
                 }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_swingEthics"
+                has_resource = { type = sr_alpha_points amount >= @swingEthicsOperationCostCheck }  
             }
             has_technology = tech_spy_socialPropaganda
         }
@@ -1711,11 +1730,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownBeta_F"
-                has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_BETA
-                }
+                }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_sowUnrest"
+                has_resource = { type = sr_beta_points amount >= @sowUnrestOperationCostCheck }  
             }
             has_technology = tech_spy_socialPropaganda
         }
@@ -1735,11 +1757,14 @@ country_event = {
         }
         allow = {
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownAlpha_F"
-                has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_ALPHA
                 }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_sowUnrest"
+                has_resource = { type = sr_alpha_points amount >= @sowUnrestOperationCostCheck }  
             }
             has_technology = tech_spy_socialPropaganda
         }
@@ -1758,13 +1783,15 @@ country_event = {
             has_country_flag = agencyBetaF
         }
         allow = {
-            has_technology = tech_spy_industrial
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownBeta_F"
-                has_resource = { type = sr_beta_points amount >= @operationCostCheck }
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_BETA
-                }
+                }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_stealTech"
+                has_resource = { type = sr_beta_points amount >= @studyTechOperationCostCheck }  
             }
             custom_tooltip = {
                 fail_text = "industrialEnigmatic"
@@ -1774,6 +1801,7 @@ country_event = {
                     }
                 }
             }
+            has_technology = tech_spy_industrial
         }
         hidden_effect = {     
             clearFlagsForNewOperation_BETA_F = yes
@@ -1791,13 +1819,15 @@ country_event = {
             }
         }
         allow = {
-            has_technology = tech_spy_industrial
             custom_tooltip = {
-                fail_text = "pointsRequiredandOpChangeCoolDownAlpha_F"
-                has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+                fail_text = "opCooldownTooltip"
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_ALPHA
                 }   
+            }
+            custom_tooltip = {
+                fail_text = "needIntel_stealTech"
+                has_resource = { type = sr_alpha_points amount >= @studyTechOperationCostCheck }  
             }
             custom_tooltip = {
                 fail_text = "industrialEnigmatic"
@@ -1807,39 +1837,14 @@ country_event = {
                     }
                 }
             }
+            has_technology = tech_spy_industrial
         }
         hidden_effect = {
             clearFlagsForNewOperation_ALPHA_F = yes
             set_country_flag = studyTech
-            country_event = { id = spySowUnrest.1 }    
-        }
-        hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_ALPHA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Alpha = yes
-
-            removeFundCrimeFlags_Alpha = yes
-
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Alpha_F = yes
-                    }
-                }
-                removeGatherProgress_Alpha_F = yes
-                set_country_flag = cancelOngoing
-            }
-
-            removeOpFlagsAlpha_F = yes
-            remove_country_flag = gatherIntelAlpha
-
-            set_country_flag = studyTech
-
             country_event = { id = progressTrackerA.1  }
-            country_event = { id = agencyGlobal.2 }
-        } 
+            country_event = { id = agencyGlobal.2 }  
+        }
     }
 
 
