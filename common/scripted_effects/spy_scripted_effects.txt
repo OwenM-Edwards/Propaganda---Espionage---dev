@@ -701,3 +701,122 @@ getCounterIntelLevelTargetAI = {
 		}
 	}
 }
+
+
+
+### OPERATION COST FILTER ###
+## ALPHA F ##
+operationCostCalAlphaF = {
+	if = {
+		limit = {
+			has_country_flag = saboRep
+		}
+		add_resource = { sr_alpha_points = @sabRepOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = sowUnrest
+		}
+		add_resource = { sr_alpha_points = @sowUnrestOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = studyTech
+		}
+		add_resource = { sr_alpha_points = @studyTechOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = fundCrime
+		}
+		add_resource = { sr_alpha_points = @fundCrimeOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = swingEthics
+		}
+		add_resource = { sr_alpha_points = @swingEthicsOperationCost }
+	}
+}
+
+### OPERATION COST FILTER ###
+## BETA F ##
+operationCostCalBetaF = {
+	if = {
+		limit = {
+			has_country_flag = saboRep2
+		}
+		add_resource = { sr_beta_points = @sabRepOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = sowUnrest2
+		}
+		add_resource = { sr_beta_points = @sowUnrestOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = studyTech2
+		}
+		add_resource = { sr_beta_points = @studyTechOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = fundCrime2
+		}
+		add_resource = { sr_beta_points = @fundCrimeOperationCost }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = swingEthics2
+		}
+		add_resource = { sr_beta_points = @swingEthicsOperationCost }
+	}
+}
+
+
+clearFlagsForNewOperation_ALPHA_F = {
+	set_timed_country_flag = {
+		flag = REDEPLOY_COOLDOWN_ALPHA
+		days = @changeOpCooldown
+	}
+
+	removeSwingEthicsFlags_Alpha = yes
+	removeFundCrimeFlags_Alpha = yes
+	removeOpFlagsAlpha_F = yes
+
+	if = {
+		limit = {
+			OR = {
+				hasGatherProgress_Alpha_F = yes
+			}
+		}
+		removeGatherProgress_Alpha_F = yes
+		set_country_flag = cancelOngoing
+	}
+
+	remove_country_flag = gatherIntelAlpha
+}
+clearFlagsForNewOperation_BETA_F = {
+	set_timed_country_flag = {
+		flag = REDEPLOY_COOLDOWN_BETA
+		days = @changeOpCooldown
+	}
+
+	removeSwingEthicsFlags_Beta = yes
+	removeFundCrimeFlags_Beta = yes
+	removeOpFlagsBeta_F = yes
+
+	if = {
+		limit = {
+			OR = {
+				hasGatherProgress_Beta_F = yes
+			}
+		}
+		removeGatherProgress_Beta_F = yes
+		set_country_flag = cancelOngoingBeta
+	}
+
+	remove_country_flag = gatherIntelBeta
+	remove_country_flag = agencyBetaF
+}

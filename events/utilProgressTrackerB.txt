@@ -28,7 +28,7 @@ country_event = {
 				country_event = { id = progressTrackerB.2 days = @gatherProgStageOne }  #SHOULD ALWAYS BE ONE LONGER THAN OTHER STAGES TO ALLOW FOR CANCELLATION
 			}
 			else = {
-				add_resource = { sr_beta_points = @operationCost }
+				operationCostCalBetaF = yes
 				set_country_flag = gatherProgress_1_2
 				country_event = { id = progressTrackerB.2 days = @gatherProgStageOne }  #SHOULD ALWAYS BE ONE LONGER THAN OTHER STAGES TO ALLOW FOR CANCELLATION
 			}
@@ -41,7 +41,7 @@ country_event = {
 			country_event = { id = progressTrackerB.2 days = @gatherProgStageOne }  #SHOULD ALWAYS BE ONE LONGER THAN OTHER STAGES TO ALLOW FOR CANCELLATION
 		}
 		else = {
-			add_resource = { sr_beta_points = @operationCost }
+			operationCostCalBetaF = yes
 			set_country_flag = gatherProgress_1_2
 			country_event = { id = progressTrackerB.2 days = @gatherProgStageOne }  #SHOULD ALWAYS BE ONE LONGER THAN OTHER STAGES TO ALLOW FOR CANCELLATION
 		}	

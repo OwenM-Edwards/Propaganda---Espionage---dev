@@ -1566,46 +1566,17 @@ country_event = {
         allow = {
             custom_tooltip = {
                 fail_text = "pointsRequiredandOpChangeCoolDownBeta_F"
-                has_resource = { type = sr_beta_points amount >= @operationCostCheck }
+                has_resource = { type = sr_beta_points amount >= @sabRepOperationCostCheck }
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_BETA
                 }
             }
         }
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = agencyBetaF
-                }
-                set_timed_country_flag = {
-                    flag = REDEPLOY_COOLDOWN_BETA
-                    days = @changeOpCooldown
-                }
-
-                removeSwingEthicsFlags_Beta = yes
-
-                removeFundCrimeFlags_Beta = yes
-
-                if = {
-                    limit = {
-                        OR = {
-                            hasGatherProgress_Beta_F = yes
-                        }
-                    }
-                    removeGatherProgress_Beta_F = yes
-                    set_country_flag = cancelOngoingBeta
-                }
-
-                removeOpFlagsBeta_F = yes
-
-                remove_country_flag = gatherIntelBeta
-
-                set_country_flag = saboRep2
-
-                remove_country_flag = agencyBetaF
-                country_event = { id = progressTrackerB.1  }
-                country_event = { id = agencyGlobal.2 }
-            }
+            clearFlagsForNewOperation_BETA_F = yes
+            set_country_flag = saboRep2
+            country_event = { id = progressTrackerB.1  }
+            country_event = { id = agencyGlobal.2 }     
         }
     }
     option = { #Sabotage Reputation
@@ -1620,38 +1591,17 @@ country_event = {
             
             custom_tooltip = {
                 fail_text = "pointsRequiredandOpChangeCoolDownAlpha_F"
-                has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
+                has_resource = { type = sr_alpha_points amount >= @sabRepOperationCostCheck } 
                 not = {
                     has_country_flag = REDEPLOY_COOLDOWN_ALPHA
                 }   
             }
         }
         hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_ALPHA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Alpha = yes
-    
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Alpha_F = yes
-                    }
-                }
-                removeGatherProgress_Alpha_F = yes
-                set_country_flag = cancelOngoing
-            }
-    
-            removeFundCrimeFlags_Alpha = yes
-    
-            removeOpFlagsAlpha_F = yes
-            remove_country_flag = gatherIntelAlpha
-    
+            clearFlagsForNewOperation_ALPHA_F = yes
             set_country_flag = saboRep
-    
             country_event = { id = progressTrackerA.1  }
-            country_event = { id = agencyGlobal.2 }
+            country_event = { id = agencyGlobal.2 }     
         }
     }
 
@@ -1672,35 +1622,11 @@ country_event = {
                 }
             }
         }
-        hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = agencyBetaF
-                }
-                set_timed_country_flag = {
-                    flag = REDEPLOY_COOLDOWN_BETA
-                    days = @changeOpCooldown
-                }
-                removeSwingEthicsFlags_Beta = yes
-
-                
-                removeFundCrimeFlags_Beta = yes
-                if = {
-                    limit = {
-                        OR = {
-                            hasGatherProgress_Beta_F = yes
-                        }
-                    }
-                    removeGatherProgress_Beta_F = yes
-                    set_country_flag = cancelOngoingBeta
-                }
-                removeOpFlagsBeta_F = yes
-                remove_country_flag = gatherIntelBeta
-                remove_country_flag = agencyBetaF
-                set_country_flag = fundCrime2
-                country_event = { id = progressTrackerB.1  }
-                country_event = { id = agencyGlobal.2 }
-            }
+        hidden_effect = {     
+            clearFlagsForNewOperation_BETA_F = yes
+            set_country_flag = fundCrime2
+            country_event = { id = progressTrackerB.1  }
+            country_event = { id = agencyGlobal.2 }  
         }
     }
     option = { #FUND CRIME
@@ -1721,30 +1647,10 @@ country_event = {
             }
         }
         hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_ALPHA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Alpha = yes
-            
-            removeFundCrimeFlags_Alpha = yes
-
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Alpha_F = yes
-                    }
-                }
-                removeGatherProgress_Alpha_F = yes
-                set_country_flag = cancelOngoing
-            }
-            
-            removeOpFlagsAlpha_F = yes
-            remove_country_flag = gatherIntelAlpha
-
+            clearFlagsForNewOperation_ALPHA_F = yes
             set_country_flag = fundCrime
             country_event = { id = progressTrackerA.1  }
-            country_event = { id = agencyGlobal.2 }
+            country_event = { id = agencyGlobal.2 }     
         }
     }
 
@@ -1765,30 +1671,10 @@ country_event = {
             }
             has_technology = tech_spy_socialPropaganda
         }
-        hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_BETA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Beta = yes
-
-            
-            removeFundCrimeFlags_Beta = yes
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Beta_F = yes
-                    }
-                }
-                removeGatherProgress_Beta_F = yes
-                set_country_flag = cancelOngoingBeta
-            }
-
-            removeOpFlagsBeta_F = yes
-            remove_country_flag = gatherIntelBeta
-            remove_country_flag = agencyBetaF
+        hidden_effect = {     
+            clearFlagsForNewOperation_BETA_F = yes
             set_country_flag = swingEthics2
-            country_event = { id = agencyMenu.203  } #PLAYER CHOOSES DESIRED ETHIC
+            country_event = { id = agencyMenu.203  }
         }
     }
     option = { #SWING ETHICS
@@ -1810,29 +1696,9 @@ country_event = {
             has_technology = tech_spy_socialPropaganda
         }
         hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_ALPHA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Alpha = yes
-
-            removeFundCrimeFlags_Alpha = yes
-
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Alpha_F = yes
-                    }
-                }
-                removeGatherProgress_Alpha_F = yes
-                set_country_flag = cancelOngoing
-            }
-
-            removeOpFlagsAlpha_F = yes
-            remove_country_flag = gatherIntelAlpha
-
+            clearFlagsForNewOperation_ALPHA_F = yes
             set_country_flag = swingEthics
-            country_event = { id = agencyMenu.202  }
+            country_event = { id = agencyMenu.202 }    
         }
     }
 
@@ -1853,30 +1719,10 @@ country_event = {
             }
             has_technology = tech_spy_socialPropaganda
         }
-        hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_BETA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Beta = yes
-
-            removeFundCrimeFlags_Beta = yes
-
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Beta_F = yes
-                    }
-                }
-                removeGatherProgress_Beta_F = yes
-                set_country_flag = cancelOngoingBeta
-            }
-
-            removeOpFlagsBeta_F = yes
-            remove_country_flag = gatherIntelBeta
-            remove_country_flag = agencyBetaF
+        hidden_effect = {     
+            clearFlagsForNewOperation_BETA_F = yes
             set_country_flag = sowUnrest2
-            country_event = { id = spySowUnrestB.1  } #PLAYER CHOOSES DESIRED ETHIC
+            country_event = { id = spySowUnrestB.1  }
         }
     }
     option = { #SOW UNREST
@@ -1898,29 +1744,9 @@ country_event = {
             has_technology = tech_spy_socialPropaganda
         }
         hidden_effect = {
-            set_timed_country_flag = {
-                flag = REDEPLOY_COOLDOWN_ALPHA
-                days = @changeOpCooldown
-            }
-            removeSwingEthicsFlags_Alpha = yes
-
-            removeFundCrimeFlags_Alpha = yes
-
-            if = {
-                limit = {
-                    OR = {
-                        hasGatherProgress_Alpha_F = yes
-                    }
-                }
-                removeGatherProgress_Alpha_F = yes
-                set_country_flag = cancelOngoing
-            }
-
-            removeOpFlagsAlpha_F = yes
-            remove_country_flag = gatherIntelAlpha
-
+            clearFlagsForNewOperation_ALPHA_F = yes
             set_country_flag = sowUnrest
-            country_event = { id = spySowUnrest.1 }
+            country_event = { id = spySowUnrest.1 }    
         }
     }
 
@@ -1949,40 +1775,11 @@ country_event = {
                 }
             }
         }
-        hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = agencyBetaF
-                }
-                set_timed_country_flag = {
-                    flag = REDEPLOY_COOLDOWN_BETA
-                    days = @changeOpCooldown
-                }
-
-                removeSwingEthicsFlags_Beta = yes
-
-                removeFundCrimeFlags_Beta = yes
-                
-                if = {
-                    limit = {
-                        OR = {
-                            hasGatherProgress_Beta_F = yes
-                        }
-                    }
-                    removeGatherProgress_Beta_F = yes
-                    set_country_flag = cancelOngoingBeta
-                }
-
-                removeOpFlagsBeta_F = yes
-
-                remove_country_flag = gatherIntelBeta
-
-                remove_country_flag = agencyBetaF
-                set_country_flag = studyTech2
-                country_event = { id = progressTrackerB.1  }
-                country_event = { id = agencyGlobal.2 }
-                
-            }
+        hidden_effect = {     
+            clearFlagsForNewOperation_BETA_F = yes
+            set_country_flag = studyTech2
+            country_event = { id = progressTrackerB.1  }
+            country_event = { id = agencyGlobal.2 }  
         }
     }
     option = { #Industrial Espionage
@@ -2010,6 +1807,11 @@ country_event = {
                     }
                 }
             }
+        }
+        hidden_effect = {
+            clearFlagsForNewOperation_ALPHA_F = yes
+            set_country_flag = studyTech
+            country_event = { id = spySowUnrest.1 }    
         }
         hidden_effect = {
             set_timed_country_flag = {
