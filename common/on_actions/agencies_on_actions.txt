@@ -39,6 +39,12 @@ on_country_destroyed = {
 	}
 }
 
+on_monthly_pulse_country = {
+	events = {
+		espionageUnlock.6
+	}
+}
+
 # This = country
 # From = opponent war leader
 on_entering_war = {

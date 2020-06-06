@@ -282,3 +282,36 @@ country_event = {
 		}
 	}
 }
+
+
+
+### SET EACH COUNTIRES OPERATION COST VARIABLES BASED OFF OF THE SCRIPTED VARS ###
+### MUST BE DONE THIS WAY SO WE CAN REFERENCE IN LOCALISATION ###
+country_event = {
+	id = espionageUnlock.6
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_variable = {
+			which = sabRep_OpCostVar
+			value = @sabRepOperationCostCheck
+		}
+		set_variable = {
+			which = studyTech_OpCostVar
+			value = @studyTechOperationCostCheck
+		}
+		set_variable = {
+			which = fundCrime_OpCostVar
+			value = @fundCrimeOperationCostCheck
+		}
+		set_variable = {
+			which = sowUnrest_OpCostVar
+			value = @sowUnrestOperationCostCheck
+		}
+		set_variable = {
+			which = swingEthics_OpCostVar
+			value = @swingEthicsOperationCostCheck
+		}
+	}
+}	
