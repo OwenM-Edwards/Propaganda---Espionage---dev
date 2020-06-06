@@ -631,6 +631,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  BetaD-boostEthics.a:0 "Conducting propaganda operations with the aim of influencing our civilian population towards our governing ethics."
 
  BetaD-boostStability.a:0 "Campaigning to improve stability."
+ AlphaD-boostStability.a:0 "Campaigning to improve stability."
  
  BetaD-intelPoints.a:0 "Our current level of domestic intelligence."
  
