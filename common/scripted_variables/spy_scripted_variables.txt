@@ -14,6 +14,18 @@
 	@operationCost = -15
 	@operationCostCheck = 15
 
+	@sabRepOperationCost = -5
+	@studyTechOperationCost = -20
+	@fundCrimeOperationCost = -10
+	@sowUnrestOperationCost = -20
+	@swingEthicsOperationCost = -15
+
+	@sabRepOperationCostCheck = 5
+	@studyTechOperationCostCheck = 20
+	@fundCrimeOperationCostCheck = 10
+	@sowUnrestOperationCostCheck = 20
+	@swingEthicsOperationCostCheck = 15
+
 	### CHANGE OP COOLDOWN
 	@changeOpCooldown = 91 #Must always be a few days longer than primary stage
 
