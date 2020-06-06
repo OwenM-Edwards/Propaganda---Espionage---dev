@@ -450,7 +450,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { has_country_flag = sowUnrest }
-			country_event = { id = spySowUnrest.10 days = @gatherProgRandomDays random = @gatherProgRandomRandom }
+			country_event = { id = spySowUnrest.1 days = @gatherProgRandomDays random = @gatherProgRandomRandom }
 		}
 	}	
 }

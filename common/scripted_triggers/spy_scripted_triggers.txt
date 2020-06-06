@@ -117,56 +117,119 @@ neighborCountryFilter = {
 }
 
 
-sowUnrestPlanetFilter = {
-	NOR = {
-		is_same_value = event_target:target_planet_1
-		is_same_value = event_target:target_planet_2
-		is_same_value = event_target:target_planet_3
-		is_same_value = event_target:target_planet_4
-		is_same_value = event_target:target_planet_5
-		is_same_value = event_target:target_planet_6
-		is_same_value = event_target:target_planet_7
-		is_same_value = event_target:target_planet_8
-		is_same_value = event_target:target_planet_9
-		is_same_value = event_target:target_planet_10
 
-		is_same_value = event_target:target_planet_11
-		is_same_value = event_target:target_planet_12
-		is_same_value = event_target:target_planet_13
-		is_same_value = event_target:target_planet_14
-		is_same_value = event_target:target_planet_15
-		is_same_value = event_target:target_planet_16
-		is_same_value = event_target:target_planet_17
-		is_same_value = event_target:target_planet_18
-		is_same_value = event_target:target_planet_19
-		is_same_value = event_target:target_planet_20
+
+
+
+sowUnrestSystemFilter = {
+	NOR = {
+		is_same_value = event_target:unrest_target_system_1
+		is_same_value = event_target:unrest_target_system_2
+		is_same_value = event_target:unrest_target_system_3
+		is_same_value = event_target:unrest_target_system_4
+		is_same_value = event_target:unrest_target_system_5
+		is_same_value = event_target:unrest_target_system_6
+		is_same_value = event_target:unrest_target_system_7
+		is_same_value = event_target:unrest_target_system_8
+		is_same_value = event_target:unrest_target_system_9
+		is_same_value = event_target:unrest_target_system_10
+
+		is_same_value = event_target:unrest_target_system_11
+		is_same_value = event_target:unrest_target_system_12
+		is_same_value = event_target:unrest_target_system_13
+		is_same_value = event_target:unrest_target_system_14
+		is_same_value = event_target:unrest_target_system_15
+		is_same_value = event_target:unrest_target_system_16
+		is_same_value = event_target:unrest_target_system_17
+		is_same_value = event_target:unrest_target_system_18
+		is_same_value = event_target:unrest_target_system_19
+		is_same_value = event_target:unrest_target_system_20
+
+		is_same_value = event_target:unrest_target_system_21
+		is_same_value = event_target:unrest_target_system_22
+		is_same_value = event_target:unrest_target_system_23
+		is_same_value = event_target:unrest_target_system_24
+		is_same_value = event_target:unrest_target_system_25
+		is_same_value = event_target:unrest_target_system_26
+		is_same_value = event_target:unrest_target_system_27
+		is_same_value = event_target:unrest_target_system_28
+		is_same_value = event_target:unrest_target_system_29
+		is_same_value = event_target:unrest_target_system_30
+
+		is_same_value = event_target:unrest_target_system_31
+		is_same_value = event_target:unrest_target_system_32
+		is_same_value = event_target:unrest_target_system_33
+		is_same_value = event_target:unrest_target_system_34
+		is_same_value = event_target:unrest_target_system_35
+		is_same_value = event_target:unrest_target_system_36
+		is_same_value = event_target:unrest_target_system_37
+		is_same_value = event_target:unrest_target_system_38
+		is_same_value = event_target:unrest_target_system_39
+		is_same_value = event_target:unrest_target_system_40
+
+		is_same_value = event_target:unrest_target_system_41
+		is_same_value = event_target:unrest_target_system_42
+		is_same_value = event_target:unrest_target_system_43
+		is_same_value = event_target:unrest_target_system_44
+		is_same_value = event_target:unrest_target_system_45
+		is_same_value = event_target:unrest_target_system_46
+		is_same_value = event_target:unrest_target_system_47
+		is_same_value = event_target:unrest_target_system_48
+		is_same_value = event_target:unrest_target_system_49
+		is_same_value = event_target:unrest_target_system_50
+
+		is_same_value = event_target:unrest_target_system_51
+		is_same_value = event_target:unrest_target_system_52
+		is_same_value = event_target:unrest_target_system_53
+		is_same_value = event_target:unrest_target_system_54
+		is_same_value = event_target:unrest_target_system_55
+		is_same_value = event_target:unrest_target_system_56
+		is_same_value = event_target:unrest_target_system_57
+		is_same_value = event_target:unrest_target_system_58
+		is_same_value = event_target:unrest_target_system_59
+		is_same_value = event_target:unrest_target_system_60
+
+		is_same_value = event_target:unrest_target_system_71
+		is_same_value = event_target:unrest_target_system_72
+		is_same_value = event_target:unrest_target_system_73
+		is_same_value = event_target:unrest_target_system_74
+		is_same_value = event_target:unrest_target_system_75
+		is_same_value = event_target:unrest_target_system_76
+		is_same_value = event_target:unrest_target_system_77
+		is_same_value = event_target:unrest_target_system_78
+		is_same_value = event_target:unrest_target_system_79
+		is_same_value = event_target:unrest_target_system_80
+
+		is_same_value = event_target:unrest_target_system_81
+		is_same_value = event_target:unrest_target_system_82
+		is_same_value = event_target:unrest_target_system_83
+		is_same_value = event_target:unrest_target_system_84
+		is_same_value = event_target:unrest_target_system_85
+		is_same_value = event_target:unrest_target_system_86
+		is_same_value = event_target:unrest_target_system_87
+		is_same_value = event_target:unrest_target_system_88
+		is_same_value = event_target:unrest_target_system_89
+		is_same_value = event_target:unrest_target_system_90
+
+		is_same_value = event_target:unrest_target_system_91
+		is_same_value = event_target:unrest_target_system_92
+		is_same_value = event_target:unrest_target_system_93
+		is_same_value = event_target:unrest_target_system_94
+		is_same_value = event_target:unrest_target_system_95
+		is_same_value = event_target:unrest_target_system_96
+		is_same_value = event_target:unrest_target_system_97
+		is_same_value = event_target:unrest_target_system_98
+		is_same_value = event_target:unrest_target_system_99
+		is_same_value = event_target:unrest_target_system_100
 	}
 }
-sowUnrestPlanetFilterB = {
-	NOR = {
-		is_same_value = event_target:target_planet_1_2
-		is_same_value = event_target:target_planet_2_2
-		is_same_value = event_target:target_planet_3_2
-		is_same_value = event_target:target_planet_4_2
-		is_same_value = event_target:target_planet_5_2
-		is_same_value = event_target:target_planet_6_2
-		is_same_value = event_target:target_planet_7_2
-		is_same_value = event_target:target_planet_8_2
-		is_same_value = event_target:target_planet_9_2
-		is_same_value = event_target:target_planet_10_2
 
-		is_same_value = event_target:target_planet_11_2
-		is_same_value = event_target:target_planet_12_2
-		is_same_value = event_target:target_planet_13_2
-		is_same_value = event_target:target_planet_14_2
-		is_same_value = event_target:target_planet_15_2
-		is_same_value = event_target:target_planet_16_2
-		is_same_value = event_target:target_planet_17_2
-		is_same_value = event_target:target_planet_18_2
-		is_same_value = event_target:target_planet_19_2
-		is_same_value = event_target:target_planet_20_2
-	}
-}
+
+
+
+
+
+
 
 
 

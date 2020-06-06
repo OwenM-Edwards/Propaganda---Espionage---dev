@@ -1744,7 +1744,8 @@ country_event = {
         hidden_effect = {     
             clearFlagsForNewOperation_BETA_F = yes
             set_country_flag = sowUnrest2
-            country_event = { id = spySowUnrestB.1  }
+            set_country_flag = betaF_Unrest
+            country_event = { id = unrestTargetManager.1  }
         }
     }
     option = { #SOW UNREST
@@ -1771,7 +1772,7 @@ country_event = {
         hidden_effect = {
             clearFlagsForNewOperation_ALPHA_F = yes
             set_country_flag = sowUnrest
-            country_event = { id = spySowUnrest.1 }    
+            country_event = { id = unrestTargetManager.1 }    
         }
     }
 
@@ -1882,6 +1883,16 @@ country_event = {
     #}
     ##### future OPERATIONS#####
 }
+
+
+
+
+
+
+
+
+
+
 
 
 ############SWING ETHICS CHOOSE DESIRED ETHICS EVENT - FIRES FROM ABOVE############
