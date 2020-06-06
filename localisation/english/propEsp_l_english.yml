@@ -5,8 +5,12 @@
  ##################\
 
 ##### GENERIC UI STUFF ######
+ menuIntelPoints_Alpha:0 "Alpha networks intelligence points.\nCollected by gathering intelligence.\nExpended when performing operations."
+ menuIntelPoints_Beta:0 "Beta networks intelligence points.\nCollected by gathering intelligence.\nExpended when performing operations."
+
  industrialEnigmatic:0 "The target's enigmatic engineering makes industrial espionage impossible."
 
+ genericBlankFailTooltip:0 ""
 
  menuAlreadyOpen:0 "Network manager is already open."
 
@@ -807,23 +811,36 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
 ############### MAIN MAIN SELECT OPERATION #####################
 ### TOOLTIPS ###
- AF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.c.a:0 "Infiltrate §S[alphaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.c.a:0 "Infiltrate §S[betaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.f.a:0 "Support organised criminal elements within the §S[alphaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.f.a:0 "Support organised criminal elements within the §S[betaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the population's ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
+ AF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sabRep_OpCostVar]§! intelligence points."
+ BF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sabRep_OpCostVar]§! intelligence points."
 
- AF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! levels of intelligence."
- BF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! levels of intelligence."
+ needIntel_sabRep:0 "Requires §R[root.sabRep_OpCostVar]§! intelligence points."
+
+ 
+ AF_chooseOP.c.a:0 "Infiltrate §S[alphaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S[root.studyTech_OpCostVar]§! intelligence points."
+ BF_chooseOP.c.a:0 "Infiltrate §S[betaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S[root.studyTech_OpCostVar]§! intelligence points."
+
+ needIntel_stealTech:0 "Requires §R[root.studyTech_OpCostVar]§! intelligence points."
+ 
+ AF_chooseOP.f.a:0 "Support organised criminal elements within the §S[alphaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S[root.fundCrime_OpCostVar]§! intelligence points."
+ BF_chooseOP.f.a:0 "Support organised criminal elements within the §S[betaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S[root.fundCrime_OpCostVar]§! intelligence points."
+
+ needIntel_fundCrime:0 "Requires §R[root.fundCrime_OpCostVar]§! intelligence points."
+ 
+ AF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S[root.swingEthics_OpCostVar]§! intelligence points."
+ BF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the population's ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S[root.swingEthics_OpCostVar]§! intelligence points."
+
+ needIntel_swingEthics:0 "Requires §R[root.swingEthics_OpCostVar]§! intelligence points."
+ 
+ AF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sowUnrest_OpCostVar]§! intelligence points."
+ BF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sowUnrest_OpCostVar]§! intelligence points."
+
+ needIntel_sowUnrest:0 "Requires §R[root.sowUnrest_OpCostVar]§! intelligence points."
+
+ AF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! intelligence points."
+ BF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! intelligence points."
+
+ opCooldownTooltip:0 "Must wait around §R60§! days for your network to change operations again."
  
  ### MAIN ###
  ABF_chooseOP.title:0 "Select Operation"
