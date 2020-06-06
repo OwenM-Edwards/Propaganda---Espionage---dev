@@ -111,16 +111,15 @@ TODO 3 = {
 
    Add pvp notification to sow unrest
 
-   ADDED TOOLTIP TO MENU INTEL POINTS ICON
-
-   Add in custom operation costs for all the different operation types = {
-      custom variables added
-      need to make a filter for progresstracker operation cost
-      need to tweak all of the tooltips to reflect that = {
-         making them work off of a variable would be easier.
-      }
+   ANOTHER AI PASS = {
+      Better decision making for chooing target
+      better operation choice
+      
    }
+
 }
+
+
 
 DONE 3 = {
    AI more likely to industrial espionage if target more advanced.
@@ -135,16 +134,33 @@ DONE 3 = {
    Added pvp messages for stealing technology.
    added pvp notification to fund crime
    added pvp notifivation to sabrep
-
-
-
+   Add in custom operation costs for all the different operation types = {
+      custom variables added
+      need to make a filter for progresstracker operation cost
+      need to tweak all of the tooltips to reflect that = {
+         making them work off of a variable would be easier.
+      }
+   }
+   ADDED TOOLTIP TO MENU INTEL POINTS ICON
+   fix sowunrest colony name bug 
+   add more colony options to sow unrest
+   unify alpha and beta sow unrest target selection
+   addmore option to station selector
+   fix station raid beta target bug
 }
+
+
+
+
+
+
+
 
 Feature creep stuff = {
    pop happyness penalty firced gene modding
 
    Detailed Intelligence = {
-      Info on things the target is doing
+      Info on things the target is doing/thinking
       a log of recent activity = {
 
          colonisation
