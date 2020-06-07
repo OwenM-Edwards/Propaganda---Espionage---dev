@@ -31,7 +31,7 @@ country_event = { #SUCCESS
 
 	immediate = {
 		event_target:final_unrest_target_system_beta = {
-			every_planet = {
+			every_system_planet = {
 				limit = {
 					is_colony = yes
 				}
@@ -45,7 +45,7 @@ country_event = { #SUCCESS
 
 	option = { #REDO
 		name = spySowUnrestB.2.a
-		custom_tooltip = pointsRequiredBeta.tooltip
+		custom_tooltip = pointsRequired_sowUnrest.tooltip
       allow = {
          hidden_trigger = {
 				has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
@@ -83,7 +83,7 @@ country_event = { #PARTIAL SUCCESS
 
 	immediate = {
 		event_target:final_unrest_target_system_beta = {
-			every_planet = {
+			every_system_planet = {
 				limit = {
 					is_colony = yes
 				}
@@ -97,7 +97,7 @@ country_event = { #PARTIAL SUCCESS
 
 	option = { #REDO
 		name = spySowUnrestB.2.a
-		custom_tooltip = pointsRequiredBeta.tooltip
+		custom_tooltip = pointsRequired_sowUnrest.tooltip
         	allow = {
             hidden_trigger = {
 					has_resource = { type = sr_beta_points amount >= @operationCostCheck } 

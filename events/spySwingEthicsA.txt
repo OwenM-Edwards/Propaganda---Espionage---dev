@@ -251,7 +251,7 @@ country_event = {
    
 	option = { #REDO
 		name = sabotageRepSuccess.a
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		custom_tooltip = pointsRequired_swingEthics.tooltip
 		allow = {
 			hidden_trigger = {
 				has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
@@ -512,7 +512,7 @@ country_event = {
 
 	option = { #REDO
 		name = sabotageRepSuccess.a
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		custom_tooltip = pointsRequired_swingEthics.tooltip
 		allow = {
 			hidden_trigger = {
 				has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 

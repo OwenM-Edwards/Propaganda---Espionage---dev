@@ -11,7 +11,7 @@ country_event = {
                     id = techGeneric.2
                 }
             }
-            5 = {
+            15 = {
                 country_event = { id = studyTechBeta.2 } 
             }
         }
@@ -118,7 +118,7 @@ country_event = {
 
     option = { #REDO
         name = studyTechSuccess2.a
-        custom_tooltip = pointsRequiredBeta.tooltip
+        custom_tooltip = pointsRequired_studyTech.tooltip
         allow = {
             hidden_trigger = {
 				has_resource = { type = sr_beta_points amount >= @operationCostCheck } 

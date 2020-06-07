@@ -11,7 +11,7 @@ country_event = {
                     id = techGeneric.1
                 }
             }
-            5 = { #FULL SUCCESS
+            15 = { #FULL SUCCESS
                 country_event = { id = studyTech.2 } 
             }
         }
@@ -114,7 +114,7 @@ country_event = {
 
     option = { #REDO
         name = studyTechSuccess.a
-        custom_tooltip = pointsRequiredAlpha.tooltip
+        custom_tooltip = pointsRequired_studyTech.tooltip
         allow = {
             hidden_trigger = {
 				has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
