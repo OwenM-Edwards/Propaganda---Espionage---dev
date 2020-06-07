@@ -27,16 +27,11 @@ country_event = {  #SAB REP CRIT FAIL ALERT PLAYER
 
 				event_target:spyDefender = {
 					country_event = {
-						id = agencyGlobal.55
-					}
-					country_event = {
 						id = agencyGlobal.5
-					}
-					country_event = {
-						id = spyFailEvt.1
 					}
 				}
 			}
+
 			else = {
 				event_target:spyDefender = {
 					country_event = {
@@ -47,7 +42,7 @@ country_event = {  #SAB REP CRIT FAIL ALERT PLAYER
 		} 
 
 
-		else_if = { #FOR PLAYER ALPHA
+		else_if = { #FOR PLAYER
 			limit = {
 				is_ai = no
 			}
@@ -69,13 +64,7 @@ country_event = {  #SAB REP CRIT FAIL ALERT PLAYER
 					}
 					event_target:spyDefender = {
 						country_event = {
-							id = agencyGlobal.55
-						}
-						country_event = {
 							id = agencyGlobal.5
-						}
-						country_event = {
-							id = spyFailEvt.1
 						}
 					}
 				}
@@ -102,12 +91,6 @@ country_event = {  #SAB REP CRIT FAIL ALERT PLAYER
 					event_target:spyDefender = {
 						country_event = {
 							id = agencyGlobal.5
-						}
-						country_event = {
-							id = agencyGlobal.55
-						}
-						country_event = {
-							id = spyFailEvt.1
 						}
 					}
 				}
@@ -247,13 +230,31 @@ country_event = {
 					event_target:spyAttacker = {
 						is_same_value = event_target:alphaNetworkTarget_temp
 					}
+					event_target:spyAttacker = {
+						is_same_value = event_target:betaNetworkTarget_temp
+					}
 					is_ai = yes
 				}
 			}
 		}
 		hidden_effect = { 
-			add_resource = { sr_alpha_points = 90 }
 			if = {
+				limit = {
+					event_target:spyAttacker = {
+						is_same_value = event_target:alphaNetworkTarget_temp
+					}
+				}
+				add_resource = { sr_alpha_points = 90 }
+			}
+			else_if = {
+				limit = {
+					event_target:spyAttacker = {
+						is_same_value = event_target:betaNetworkTarget_temp
+					}
+				}
+				add_resource = { sr_beta_points = 90 }
+			}
+			else_if = {
 				limit = {
 					event_target:spyAttacker = {
 						is_ai = no

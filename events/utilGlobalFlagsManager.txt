@@ -1491,6 +1491,9 @@ country_event = {
             }
             save_event_target_as = player_Agency
         }
+        country_event = {
+            id = agencyGlobal.55
+        }
     }
 }
 
@@ -1691,6 +1694,9 @@ country_event = {
                 }
             }
             save_event_target_as = player_Agency
+        }
+        country_event = {
+            id = spyFailEvt.1
         }
     }
 }
