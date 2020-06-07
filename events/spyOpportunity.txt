@@ -64,10 +64,10 @@ country_event = {
 					factor = 0
 					or = {
 						has_country_flag = OppinfectedAgents
-						event_target:alphaNetworkTarget_temp = {
+						event_target:spyOpportunityTarget = {
 							is_at_war_with = event_target:spyOpportunityAttacker
 						}
-						event_target:alphaNetworkTarget_temp = {
+						event_target:spyOpportunityTarget = {
 							nor = {
 								has_technology = tech_genome_mapping
 								has_technology = tech_vitality_boosters
