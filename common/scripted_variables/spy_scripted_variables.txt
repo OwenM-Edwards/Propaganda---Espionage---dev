@@ -14,15 +14,15 @@
 	@operationCost = -15
 	@operationCostCheck = 15
 
-	@sabRepOperationCost = -5
+	@sabRepOperationCost = -10
 	@studyTechOperationCost = -20
-	@fundCrimeOperationCost = -10
+	@fundCrimeOperationCost = -15
 	@sowUnrestOperationCost = -20
 	@swingEthicsOperationCost = -15
 
-	@sabRepOperationCostCheck = 5
+	@sabRepOperationCostCheck = 10
 	@studyTechOperationCostCheck = 20
-	@fundCrimeOperationCostCheck = 10
+	@fundCrimeOperationCostCheck = 15
 	@sowUnrestOperationCostCheck = 20
 	@swingEthicsOperationCostCheck = 15
 
