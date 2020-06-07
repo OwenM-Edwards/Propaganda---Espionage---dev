@@ -49,7 +49,7 @@ country_event = {
         name = sabRepCrit_Terror.a
         hidden_effect = {
             random_list = {
-                70 = { #SUCCEED
+                70 = { #SUCCEED 
                     country_event = { id = sabRepCrit.201 days = 20 random = 5 }
                 }
 
