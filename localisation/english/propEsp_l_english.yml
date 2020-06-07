@@ -100,6 +100,10 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
 
 ########## MODIFIERS ############
+ opinion_bombed_diplomats_mod:0 "Suspected of sabotaging diplomatic conference."
+ opinion_bombed_diplomats:0 "Suspected of sabotaging diplomatic conference."
+ opinion_bombed_diplomats_mod_desc:0 ""
+
  sowUnrest_mod:0 "Civil Unrest"
  
  sowUnrestHigh_mod:0 "Major Civil Unrest"
@@ -1655,20 +1659,7 @@ spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives 
  
 ########## TODO OPERATIONS ############
 ### MAIN ###
-#### SABOTAGE REP CRIT EVENTS ####
- sabRepCrit_Terror_title:0 "Sabotage Reputation Opportunity"
- sabRepCrit_Terror_desc:0 "An opportunity presents itself - Alpha Network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[alphaNetworkTarget_temp.GetName]§! capital of §S[alphaNetworkTarget_temp.Capital.GetName]§!. \n\nAgents already operating on §S[alphaNetworkTarget_temp.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[alphaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
- sabRepCrit_Terror.a:0 "Approve the operation."
- sabRepCrit_Terror.b:0 "Stand down, find another solution."
- sabRepCrit_Terror_desc2:0 "An opportunity presents itself - Beta Network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[betaNetworkTarget_temp.GetName]§! capital of §S[betaNetworkTarget_temp.Capital.GetName]§!. \n\nAgents already operating on §S[betaNetworkTarget_temp.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[betaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
- sabRepCrit_Terror_success.title:0 "Diplomat Attack - Success"
- sabRepCrit_Terror_success.desc:0 "While the diplomatic convoy was mid transit to the surface of §S[alphaNetworkTarget_temp.Capital.GetName]§!, our Alpha Network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[alphaNetworkTarget_temp.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the TEMP casus belli against the §S[alphaNetworkTarget_temp.GetName]§!, whose general diplomatic reputation has been significantly impacted."
- sabRepCrit_Terror_success.a:0 "Excellent."
- sabRepCrit_Terror_success.desc2:0 "While the diplomatic convoy was mid transit to the surface of §S[betaNetworkTarget_temp.Capital.GetName]§!, our Beta Network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[betaNetworkTarget_temp.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the TEMP casus belli against the §S[betaNetworkTarget_temp.GetName]§!, whose general diplomatic reputation has been significantly impacted."
- sabRepCrit_Terror_fail.title:0 "Diplomat Attack - Failure"
- sabRepCrit_Terror_fail.desc:0 "Out sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated \n\nSeveral other Alpha Network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement. \n\nThe §S[alphaNetworkTarget_temp.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."
- sabRepCrit_Terror_fail.a:0 "Unacceptable"
- sabRepCrit_Terror_fail.desc2:0 "Out sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated \n\nSeveral other Beta Network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement. \n\nThe §S[betaNetworkTarget_temp.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."  
+
  ##### BIO WEAPONS #####
  sabRepCrit_Extreme.title:0 "Sabotage Reputation Opportunity"
  sabRepCrit_Extreme.desc:0 "An opportunity presents itself - Alpha Network agents have been monitoring the activity of a militant xenophobic group within the §S[alphaNetworkTarget_temp.GetName]§!. We have uncovered evidence that several high ranking government officials are secretly financial backers of this group. \n\nOur agents believe that with careful manipulation and covert support, we could goad the group into launching attacks against neighboring empires. Information packets containing the identity of the groups backers could then be made public. \n\nIf successful the attacks would drastically upset §S[alphaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."  
@@ -2214,7 +2205,7 @@ spyModConfig.2.b:0 "Cancel."
 
 
  spyOpportunity.18.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter to slip through."
+ spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected and we cant slip through.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter."
  spyOpportunity.18.a:0 "Secondary entrance."
  spyOpportunity.18.b:0 "Ambush patrol."
 
@@ -2234,3 +2225,49 @@ spyModConfig.2.b:0 "Cancel."
  spyOpportunity.10.name:0 "Opportunity - Scientist Defection"
  spyOpportunity.10.desc:0 "§RFailure§!. Our agents were discovered and either killed or captured by the local counterintelligence forces. It seems that our involvement has remained undiscovered.\n\n The networks current operation has been set back."
  spyOpportunity.10.a:0 "Unfortunate."
+
+
+
+
+#### SABOREP OPPORTUNITY EVENTS #####
+### BLACKMAIL DIPLOMAT EVENT ###
+ saborepOpportunity.1.name:0 "Compromised Diplomat"
+ saborepOpportunity.1.desc:0 "[Root.oppEvent_AorB] agents have been monitoring a §S[spyOpportunityTarget.GetName]§! diplomat residing on [Root.Capital.GetName]. They have been recorded interacting with known criminal elements on mulitple occasions, feeding a substance abuse addicition.\n\nOur agents believe that we could use the recordings to either publicaly expose and shame the diplomat, or attempt to make the §S[spyOpportunityTarget.GetAdjective]§! pay to keep the recordnings private."
+
+ saborepOpportunity.1.a:0 "Publicly expose them."
+ saborepOpportunity.1.b:0 "Blackmail them."
+
+ saborepOpportunity.2.name:0 "Compromised Diplomat"
+ saborepOpportunity.2.desc.a:0 ""
+ saborepOpportunity.2.desc.b:0 ""
+ saborepOpportunity.2.desc.c:0 ""
+ saborepOpportunity.2.desc.d:0 ""
+
+ saborepOpportunity.2.a:0 "Understood."
+
+
+
+### BOMB DIPLOMATS EVENT ###
+#### SABOTAGE REP CRIT EVENTS ####
+ saborepOpportunity.3.title:0 "Diplomat Attack"
+ saborepOpportunity.3.desc:0 "§SOpportunity§!. An opportunity presents itself - [Root.oppEvent_AorB] network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[spyOpportunityTarget.GetName]§! capital of §S[spyOpportunityTarget.Capital.GetName]§!.\n\nAgents already operating on §S[spyOpportunityTarget.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[spyOpportunityTarget.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
+
+ saborepOpportunity.3.a:0 "Approve the operation."
+ saborepOpportunity.3.b:0 "Stand down, find another solution."
+ 
+ saborepOpportunity.4.title:0 "Diplomat Attack"
+ saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid transit to the surface of §S[spyOpportunityTarget.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the humilatiom casus belli against the §S[spyOpportunityTarget.GetName]§!, whose general diplomatic reputation has been significantly impacted."
+
+ saborepOpportunity.4.a:0 "Excellent"
+
+ saborepOpportunity.5.title:0 "Diplomat Attack"
+ saborepOpportunity.5.desc:0 "§RFailure!§!. Our sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated \n\nSeveral other Alpha Network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement. \n\nThe §S[alphaNetworkTarget_temp.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."
+
+ saborepOpportunity.5.a:0 "Unacceptable"
+
+ saborepOpportunity.6.title:0 "Diplomat Attack"
+ saborepOpportunity.6.desc:0 "§RMajor Failure!§!. Our sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling the explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated.\n\nSeveral other [Root.oppEvent_AorB] network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement.\n\nThe §S[spyOpportunityTarget.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."
+
+ saborepOpportunity.6.a:0 "This is terrible news!"
+
+
