@@ -6,7 +6,7 @@ namespace = studyTech_Opportunity
 @eventDayLength = 20
 @eventRandomLength = 10
 country_event = {
-	id = studyTech_Opportunity.1
+	id = studyTech_Opportunity.1 
 	title = studyTech_Opportunity.1.name
 	desc = {
 		text = studyTech_Opportunity.1.desc
@@ -106,7 +106,10 @@ country_event = {
 		name = studyTech_Opportunity.2.a
 		if = {
 			limit = {
-				is_same_value = event_target:stageOneChoiceB_Success
+				or = {
+					is_same_value = event_target:stageOneChoiceB_Success
+					is_same_value = event_target:stageOneChoiceB_Fail
+				}
 			}
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -117,7 +120,7 @@ country_event = {
 		}
 		hidden_effect = {
 			if = {
-				limit = {
+				limit = { #A CRIT SUCCESS
 					is_same_value = event_target:stageOneChoiceA_Crit
 				}
 				random_list = {
@@ -171,8 +174,10 @@ country_event = {
 						give_technology = { tech = tech_society_1 message = yes }
 					}
 				}	
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
 			}
-			else_if = {
+			else_if = { #A SUCCESS
 				limit = {
 					is_same_value = event_target:stageOneChoiceA_Success
 				}
@@ -227,32 +232,30 @@ country_event = {
 						add_tech_progress = { tech = tech_society_1 progress = 0.25 }
 					}
 				}
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
 			}
-			else_if = {
+			else_if = { #A FAIL
 				limit = {
 					is_same_value = event_target:stageOneChoiceA_Fail
 				}
-				remove_country_flag = alphaF_OpportunityOngoing
-				removeGatherProgress_Alpha_F = yes
-				country_event = { id = progressTrackerA.2 }
+				set_country_flag = opportunityEnd_1
+				country_event = { id = opportunityManager.3 }
 			}	
-			else_if = {
+			else_if = { #B SUCCESS
 				limit = {
 					is_same_value = event_target:stageOneChoiceB_Success
 				}
-				remove_country_flag = alphaF_OpportunityOngoing
-				removeGatherProgress_Alpha_F = yes
-				country_event = { id = progressTrackerA.2 }
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
 			}
-			else_if = {
+			else_if = { #B FAIL
 				limit = {
 					is_same_value = event_target:stageOneChoiceB_Fail
 				}
-				remove_country_flag = alphaF_OpportunityOngoing
-				removeGatherProgress_Alpha_F = yes
-				country_event = { id = progressTrackerA.2 }
+				set_country_flag = opportunityEnd_1
+				country_event = { id = opportunityManager.3 }
 			}                              
-			country_event = { id = spyOpportunity.0 } #PROPERLY ENDS THE EVENT
 		}
 	}
 }
@@ -326,8 +329,8 @@ country_event = {
 	option = {
 		name = spyOpportunity.2.c #CANCEL, CONTINUE OP AS NORMAL
 		hidden_effect = {
-			country_event = { id = spyOpportunity.0 }
-			#PUT THEM BACK ONTO INDUSTRIAL ESP
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -371,8 +374,8 @@ country_event = {
 		option = { #ok
 			name = spyOpportunity.4.a
 			hidden_effect = {
-				country_event = { id = spyOpportunity.0 }
-				country_event = { id = studyTech_Opportunity.100 }
+				set_country_flag = opportunityEnd_1
+				country_event = { id = opportunityManager.3 }
 			}
 		}
 	}
@@ -388,9 +391,8 @@ country_event = {
 		option = { #ok
 			name = spyOpportunity.5.a
 			hidden_effect = {
-				country_event = {
-					id = spyOpportunity.0
-				}
+				set_country_flag = opportunityEnd_1
+				country_event = { id = opportunityManager.3 }
 			}
 		}
 	}
@@ -406,7 +408,8 @@ country_event = {
 		option = { #ok
 			name = spyOpportunity.6.a
 			hidden_effect = {
-				country_event = { id = spyOpportunity.0 }
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
 				country_event = { id = studyTech_Opportunity.100 } #GET THE SCIENTIST 
 			}
 		}
@@ -423,8 +426,9 @@ country_event = {
 		option = { #ok
 			name = spyOpportunity.7.a
 			hidden_effect = {
-				country_event = { id = studyTech_Opportunity.100 }
-				country_event = { id = spyOpportunity.0 }
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+				country_event = { id = studyTech_Opportunity.100 } #GET THE SCIENTIST 
 			}
 		}
 	}
@@ -549,8 +553,9 @@ country_event = {
 		option = { #ok
 			name = spyOpportunity.9.a
 			hidden_effect = {
-				country_event = { id = studyTech_Opportunity.100 }
-				country_event = { id = spyOpportunity.0 }
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+				country_event = { id = studyTech_Opportunity.100 } #GET THE SCIENTIST 
 			}
 		}
 	}
@@ -566,10 +571,14 @@ country_event = {
 		option = { #ok
 			name = spyOpportunity.10.a
 			hidden_effect = {
-				country_event = { id = spyOpportunity.0 }
+				set_country_flag = opportunityEnd_1
+				country_event = { id = opportunityManager.3 }
 			}
 		}
 	}
+
+
+
 #### GET THE SCIENTIST ####
 country_event = {  
 	id = studyTech_Opportunity.100

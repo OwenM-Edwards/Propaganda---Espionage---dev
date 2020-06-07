@@ -20,8 +20,6 @@ namespace = opportunityManager
 
 
 
-
-
 ## AB GENRIC FLAG/TARGET GEN ##
 country_event = {
 	id = opportunityManager.0
@@ -37,13 +35,15 @@ country_event = {
 			event_target:betaNetworkTarget_temp = {
 				save_event_target_as = spyOpportunityTarget
 			}
+			set_country_flag = betaF_OpportunityOngoing
 		}
 		else = {
 			event_target:alphaNetworkTarget_temp = {
 				save_event_target_as = spyOpportunityTarget
 			}
+			set_country_flag = alphaF_OpportunityOngoing
 		}
-	} 
+	} 		
 }
 
 
@@ -141,9 +141,13 @@ country_event = {
 				limit = {
 					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
 				}
+				removeGatherProgress_Beta_F = yes
+				remove_country_flag = betaF_OpportunityOngoing
 				country_event = { id = progressTrackerB.1 }
 			}
 			else = { #is alpha
+				removeGatherProgress_Alpha_F = yes
+				remove_country_flag = alphaF_OpportunityOngoing
 				country_event = { id = progressTrackerA.1 }
 			}
 		}
@@ -157,9 +161,11 @@ country_event = {
 				limit = {
 					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
 				}
+				remove_country_flag = betaF_OpportunityOngoing
 				country_event = { id = progressTrackerB.9 }
 			}
 			else = { #is alpha
+				remove_country_flag = alphaF_OpportunityOngoing
 				country_event = { id = progressTrackerA.9 }
 			}
 		}
@@ -173,9 +179,11 @@ country_event = {
 				limit = {
 					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
 				}
+				remove_country_flag = betaF_OpportunityOngoing
 				set_country_flag = failedBeta country_event = { id = spyFailEvt.0 }
 			}
 			else = { #is alpha
+				remove_country_flag = alphaF_OpportunityOngoing
 				country_event = { id = spyFailEvt.0 }
 			}
 		}
@@ -189,31 +197,18 @@ country_event = {
 				limit = {
 					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
 				}
+				remove_country_flag = betaF_OpportunityOngoing
 				set_country_flag = gatherProgress_3_2
 				country_event = { id = progressTrackerB.4 } 
 			}
 			else = { #is alpha
+				remove_country_flag = alphaF_OpportunityOngoing
 				set_country_flag = gatherProgress_3
 				country_event = { id = progressTrackerA.4 } 
 			}
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #### ROLL TABLES #####
@@ -224,9 +219,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
-		set_country_flag = betaF_OpportunityOngoing
-		set_country_flag = alphaF_OpportunityOngoing
+
 		random_list = {
 			50 = {}
 			50 = {}
@@ -242,8 +235,48 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			50 = {}
-			50 = {}
+			# INFECTED AGENTS EVENT #
+			50 = {
+				modifier = { #IF ALREADY HAVE THE TECH, DONT RUN
+					factor = 0
+					has_technology = tech_genome_mapping
+					has_technology = tech_vitality_boosters
+					has_technology = tech_frontier_hospital
+					has_technology = tech_alien_life_studies
+					has_technology = tech_society_3
+					has_technology = tech_society_2
+					has_technology = tech_society_1
+				}
+				modifier = { #IF TARGET DOESNT HAVE TECH, DONT RUN
+					factor = 0
+					event_target:spyOpportunityTarget = {
+						nor = {
+							has_technology = tech_genome_mapping
+							has_technology = tech_vitality_boosters
+							has_technology = tech_frontier_hospital
+							has_technology = tech_alien_life_studies
+							has_technology = tech_society_3
+							has_technology = tech_society_2
+							has_technology = tech_society_1
+						}
+					}
+				}
+				modifier = { #IF AT WAR WITH TARGET, DONT RUN
+					factor = 0
+					is_at_war_with = event_target:spyOpportunityTarget
+				}
+				set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+				country_event = {
+					id = studyTech_Opportunity.1
+				}
+			}
+			# SCIENTIST DEFECTION EVENT #
+			50 = {
+				set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+				country_event = {
+					id = studyTech_Opportunity.3
+				}
+			}
 		}
 	}
 }
@@ -261,7 +294,6 @@ country_event = {
 		}
 	}
 }
-
 
 ## SWING ETHICS OPPORTUNITY EVENT ROLL TABLE ##
 country_event = {
@@ -291,124 +323,3 @@ country_event = {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IF FAIL OR DECLINE OR SUCCEED, PUT THEM BACK INTO PROGRESS TRACKER ###
-country_event = {
-	id = spyOpportunity.0
-	hide_window = yes
-	is_triggered_only = yes 
-	
-	immediate = {
-		if = {
-			limit = {
-				has_country_flag = betaF_Opportunity
-			}
-			remove_country_flag = betaF_Opportunity
-			remove_country_flag = betaF_OpportunityOngoing
-			country_event = { id = progressTrackerB.3 }
-		}
-		else = {
-			remove_country_flag = alphaF_OpportunityOngoing
-			country_event = { id = progressTrackerA.3 }
-		}
-	}
-} 
-### GIVE OPPORTUNITY FLAGS, ROLL FOR EVENT ###
-country_event = {
-	id = spyOpportunity.1
-	hide_window = yes
-	is_triggered_only = yes 
-	
-	immediate = {
-		set_timed_country_flag = { flag = opportunityLock days = 3650 }
-		save_event_target_as = spyOpportunityAttacker
-		if = {
-			limit = {
-				has_country_flag = betaF_Opportunity
-			}
-			event_target:betaNetworkTarget_temp = { save_event_target_as = spyOpportunityTarget }
-			set_country_flag = betaF_OpportunityOngoing
-		}
-		else = {
-			event_target:alphaNetworkTarget_temp = { save_event_target_as = spyOpportunityTarget }
-			set_country_flag = alphaF_OpportunityOngoing
-		}
-
-		random_list = {
-			50 = { # DEFECTING SCIENTIST
-				modifier = {
-					factor = 0
-					or = {
-						event_target:spyOpportunityTarget = { 
-							is_ai = no 
-						}
-						has_country_flag = OppdefectingScientistCooldown
-					}
-				}
-				set_timed_country_flag = {
-					flag = OppdefectingScientistCooldown
-					days = 3650
-				}
-				country_event = { id = studyTech_Opportunity.3 }
-			}
-			50 = { # INFECTED AGENTS
-				modifier = {
-					factor = 0
-					or = {
-						has_country_flag = OppinfectedAgents
-						event_target:spyOpportunityTarget = {
-							is_at_war_with = event_target:spyOpportunityAttacker
-						}
-						event_target:spyOpportunityTarget = {
-							nor = {
-								has_technology = tech_genome_mapping
-								has_technology = tech_vitality_boosters
-								has_technology = tech_frontier_hospital
-								has_technology = tech_alien_life_studies
-								has_technology = tech_society_3
-								has_technology = tech_society_2
-								has_technology = tech_society_1
-							}
-						}
-					}
-				}
-				set_timed_country_flag = {
-					flag = OppinfectedAgents
-					days = 3650
-				}
-				country_event = { id = studyTech_Opportunity.1 }
-			}
-			10 = {
-				country_event = {
-					id = spyOpportunity.0
-				}
-			}
-		}
-	}
-}

@@ -801,7 +801,7 @@ defined_text = {
 
 #### OPPORTUNITY EVENTS, ALPHA / BETA TEXT ####
 defined_text = {
-	name = opportunityEvent_AorB
+	name = oppEvent_AorB
 	text = {
 		trigger = {
 			is_same_value = event_target:spyOpportunityAttacker_BetaNetwork

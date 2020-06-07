@@ -1915,87 +1915,6 @@ spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives 
 
 
 
-
-
-
-
- 
-
-#### OPPORTUNITY EVENTS ####
-### INDUSTRIAL ESPIONAGE ###
- spyOpportunity.2.name:0 "Espionage Opportunity"
- spyOpportunity.2.desc:0 "We have received a coded communique from a dissatisfied §S[spyOpportunityTarget.GetName]§! lead scientist looking to defect. Due to the nature of their work they are kept under close scrutiny at a discreet research lab on the planet §S[spyOpportunityTarget.Capital.GetName]§!.\nOur operatives believe that we only have a small window of opportunity to extract the scientist before they are relocated somewhere more secure."
-
- spyOpportunity.2.a:0 "Gear up a strike team, extract them with force."
- spyOpportunity.2.b:0 "Gear up a covert infiltration team, carefully extract them."
- spyOpportunity.2.c:0 "It's not worth the risk, continue with the operation as normal."
-
-#  spyOpportunity.2.name:0 "Scientist Defection"
-#  spyOpportunity.2.desc:0 "§PComplication§!. Orbital imagery of the blacksite holding the defecting scientist has revealed a far higher security detail that we expected. Our operatives are in position and ready to begin the raid, but opposition will be strong."
-#  spyOpportunity.2.a:0 "Go ahead with the operation."
-#  spyOpportunity.2.b:0 "It's not worth the risk."
-
- spyOpportunity.3.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.3.desc:0 "§PComplication§!. After blasting their way through to the main compound our operatives were encircled by the local defense force. They are currently engaged in a vicious firefight on all sides.\nThe operation commander has discreetly informed us of remote kill switches implanted in all of the operatives. We could activate these to prevent them from being captured or wait to see if they can pull out of this."
- spyOpportunity.3.a:0 "Trigger the switches, no chances."
- spyOpportunity.3.b:0 "Let's wait, give them a chance."
-
-#  spyOpportunity.4.name:0 "Scientist Defection"
-#  spyOpportunity.4.desc:0 "§RFailure§!. Our agents discovered our efforts, the kill switches failed, and they know that we tried to kill them. They fought their way out of the firefight and disappeared into the streets of §S[spyOpportunityTarget.Capital.GetName]§. We can surely expect revenge."
-#  spyOpportunity.4.a:0 "A complete failure."
-
- spyOpportunity.4.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.4.desc:0 "§RFailure§!. The kill switches triggered, and our team is dead. Our involvement has not been discovered."
- spyOpportunity.4.a:0 "A complete failure."
-
- spyOpportunity.5.name:0 "Scientist Defection"
- spyOpportunity.5.desc:0 "§RFailure§!. Our team was either killed or captured by the counterintelligence forces. Our involvement has not been discovered."
- spyOpportunity.5.a:0 "A complete failure."
-
- spyOpportunity.6.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.6.desc:0 "§YSuccess§!. Our gamble paid off, the team fought their way out of the corner and completed the mission. "
- spyOpportunity.6.a:0 "Excellent."
-
- spyOpportunity.7.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.7.desc:0 "§YSuccess§!. A clean mission, the scientist was extracted."
- spyOpportunity.7.a:0 "Excellent."
-
-
-
- spyOpportunity.18.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter to slip through."
- spyOpportunity.18.a:0 "Secondary entrance."
- spyOpportunity.18.b:0 "Ambush patrol."
-
- spyOpportunity.8.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.8.desc:0 "§PComplication§!. The infiltration team found a secondary entrance in the form of a ventilation shaft, however only after having made their way inside did they realise the whole shaft has been rigged with a laser grid trap. They are attempting to slip through it."
- spyOpportunity.8.a:0 "Keep me informed."
-
- spyOpportunity.19.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.19.desc:0 "§PComplication§!. Our team successfully ambushed and silently killed one of the patrols, and we now have an opportunity. We could either strip them of their uniforms and attempt to use them and walk straight into the compound, or continue with the plan as normal."
- spyOpportunity.19.a:0 "Take the uniforms."
- spyOpportunity.19.b:0 "Continue as normal."
-
- spyOpportunity.9.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.9.desc:0 "§SSuccess§!. A clean mission, the scientist was extracted and our agents slipped back off the planet undetected."
- spyOpportunity.9.a:0 "Excellent."
-
- spyOpportunity.10.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.10.desc:0 "§RFailure§!. Our agents were discovered and either killed or captured by the local counterintelligence forces. It seems that our involvement has remained undiscovered."
- spyOpportunity.10.a:0 "Unfortunate."
-
-
-
-
-
-
-
-
-
-
-
-
-
 ########### ADVANCED INTEL REPORT SCREEN ###############
  
  
@@ -2212,30 +2131,6 @@ spyModConfig.2.b:0 "Cancel."
 
 
 
- ###### STUDY TECH OPPORTUNITY EVENTS ######
- ## SICK AGENTS - BY DPD ##
-## OPENING EVENT ##
- studyTech_Opportunity.1.name:0 "Infected Agents"
- studyTech_Opportunity.1.desc:0 "Our Alpha Network agents within the §S[alphaNetworkTarget_temp.GetName]§! have been infected with a deadly virus. We dot beleive there to have been any foul play, but unless treated quickly our agents will be in serious danger.\n\nWe can send an emergency transport to recall them, effectivly cancelling their current operation, or send them to a local §S[alphaNetworkTarget_temp.GetAdjective]§! hospital, at the risk of their true purpose being discovered."
-# CHOICE A
- studyTech_Opportunity.1.a:0 "Send the agents to a local hospital."
-# CHOICE B
- studyTech_Opportunity.1.b:0 "Recall the agents."
-
-## FINAL STAGE ##
- studyTech_Opportunity.2.name:0 "Infected Agents"
-# CHOICE A CRIT SUCCESS
- studyTech_Opportunity.2.desc.a:0 "Excellent news, our agents were treated well at a nearby §S[alphaNetworkTarget_temp.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents used the event as an opportunity to snoop through onsite database and aquire details on some of the advanced medical technology used."
-# CHOICE A SUCCESS
- studyTech_Opportunity.2.desc.b:0 "Good news, our agents were treated well at a nearby §S[alphaNetworkTarget_temp.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents learned a great deal from observing the medical technology used."
-# CHOICE A FAIL
- studyTech_Opportunity.2.desc.c:0 "Bad news, though our Alpha Network agents made it to a nearby §S[alphaNetworkTarget_temp.GetAdjective]§! emergency center it was already too late. All of of Alpha Network field agents perished.\n\nHowever, their true purpose was never discovered, and Alpha Network is already preparing a new field team."
-# CHOICE B SUCCESS
- studyTech_Opportunity.2.desc.d:0 "Good news, our Alpha Network agents were extracted and treated before the virus could progress any further. They are recoverering well, and have even managed to bring back a small cache of already collected technical data."
-# CHOICE B FAIL
- studyTech_Opportunity.2.desc.e:0 "Bad news, we were unable to extract our Alpha Network agents in time, and the entire field team perished.\n\nHowever they the extraction team did find a small cache of already collected technical data. We have added it to our research archives."
-# END #
- studyTech_Opportunity.2.a:0 "Understood."
 
 
 
@@ -2244,3 +2139,98 @@ spyModConfig.2.b:0 "Cancel."
 
  opportunityEvent_Alpha_desc:0 "Alpha"
  opportunityEvent_Beta_desc:0 "Beta"
+
+ ###### STUDY TECH OPPORTUNITY EVENTS ######
+ ## SICK AGENTS - BY DPD ##
+## OPENING EVENT ##
+ studyTech_Opportunity.1.name:0 "Infected Agents"
+ studyTech_Opportunity.1.desc:0 "Our [Root.oppEvent_AorB] Network agents within the §S[spyOpportunityTarget.GetName]§! have been infected with a deadly virus. We dot beleive there to have been any foul play, but unless treated quickly our agents will be in serious danger.\n\nWe can send an emergency transport to recall them, effectivly cancelling their current operation, or send them to a local §S[spyOpportunityTarget.GetAdjective]§! hospital, at the risk of their true purpose being discovered."
+# CHOICE A
+ studyTech_Opportunity.1.a:0 "Send the agents to a local hospital."
+# CHOICE B
+ studyTech_Opportunity.1.b:0 "Recall the agents."
+
+## FINAL STAGE ##
+ studyTech_Opportunity.2.name:0 "Infected Agents"
+# CHOICE A CRIT SUCCESS
+ studyTech_Opportunity.2.desc.a:0 "Excellent news, our agents were treated well at a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents used the event as an opportunity to snoop through onsite database and aquire details on some of the advanced medical technology used."
+# CHOICE A SUCCESS
+ studyTech_Opportunity.2.desc.b:0 "Good news, our agents were treated well at a nearby §§S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents learned a great deal from observing the medical technology used."
+# CHOICE A FAIL
+ studyTech_Opportunity.2.desc.c:0 "Bad news, though our [Root.oppEvent_AorB] network agents made it to a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center it was already too late. All of of [Root.oppEvent_AorB] network field agents perished.\n\nHowever, their true purpose was never discovered, and [Root.oppEvent_AorB] network is already preparing a new field team.\n\n The networks current operation has been set back."
+# CHOICE B SUCCESS
+ studyTech_Opportunity.2.desc.d:0 "Good news, our [Root.oppEvent_AorB] network agents were extracted and treated before the virus could progress any further. They are recoverering well, and have even managed to bring back a small cache of already collected technical data."
+# CHOICE B FAIL
+ studyTech_Opportunity.2.desc.e:0 "Bad news, we were unable to extract our [Root.oppEvent_AorB] network agents in time, and the entire field team perished.\n\nHowever they the extraction team did find a small cache of already collected technical data. We have added it to our research archives.\n\n The networks current operation has been set back."
+# END #
+ studyTech_Opportunity.2.a:0 "Understood."
+
+
+
+
+
+
+ 
+
+#### OPPORTUNITY EVENTS ####
+### INDUSTRIAL ESPIONAGE ###
+ spyOpportunity.2.name:0 "Espionage Opportunity"
+ spyOpportunity.2.desc:0 "We have received a coded communique from a dissatisfied §S[spyOpportunityTarget.GetName]§! lead scientist looking to defect. Due to the nature of their work they are kept under close scrutiny at a discreet research lab on the planet §S[spyOpportunityTarget.Capital.GetName]§!.\nOur [Root.oppEvent_AorB] network operatives believe that we only have a small window of opportunity to extract the scientist before they are relocated somewhere more secure."
+
+ spyOpportunity.2.a:0 "Gear up a strike team, extract them with force."
+ spyOpportunity.2.b:0 "Gear up a covert infiltration team, carefully extract them."
+ spyOpportunity.2.c:0 "It's not worth the risk, continue with the operation as normal."
+
+#  spyOpportunity.2.name:0 "Scientist Defection"
+#  spyOpportunity.2.desc:0 "§PComplication§!. Orbital imagery of the blacksite holding the defecting scientist has revealed a far higher security detail that we expected. Our operatives are in position and ready to begin the raid, but opposition will be strong."
+#  spyOpportunity.2.a:0 "Go ahead with the operation."
+#  spyOpportunity.2.b:0 "It's not worth the risk."
+
+ spyOpportunity.3.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.3.desc:0 "§PComplication§!. After blasting their way through to the main compound our operatives were encircled by the local defense force. They are currently engaged in a vicious firefight on all sides.\nThe operation commander has discreetly informed us of remote kill switches implanted in all of the operatives. We could activate these to prevent them from being captured or wait to see if they can pull out of this."
+ spyOpportunity.3.a:0 "Trigger the switches, no chances."
+ spyOpportunity.3.b:0 "Let's wait, give them a chance."
+
+#  spyOpportunity.4.name:0 "Scientist Defection"
+#  spyOpportunity.4.desc:0 "§RFailure§!. Our agents discovered our efforts, the kill switches failed, and they know that we tried to kill them. They fought their way out of the firefight and disappeared into the streets of §S[spyOpportunityTarget.Capital.GetName]§. We can surely expect revenge."
+#  spyOpportunity.4.a:0 "A complete failure."
+
+ spyOpportunity.4.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.4.desc:0 "§RFailure§!. The kill switches triggered, and our team is dead. Our involvement has not been discovered.\n\n The networks current operation has been set back."
+ spyOpportunity.4.a:0 "A complete failure."
+
+ spyOpportunity.5.name:0 "Scientist Defection"
+ spyOpportunity.5.desc:0 "§RFailure§!. Our team was either killed or captured by the counterintelligence forces. Our involvement has not been discovered.\n\n The networks current operation has been set back."
+ spyOpportunity.5.a:0 "A complete failure."
+
+ spyOpportunity.6.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.6.desc:0 "§YSuccess§!. Our gamble paid off, the team fought their way out of the corner and completed the mission. "
+ spyOpportunity.6.a:0 "Excellent."
+
+ spyOpportunity.7.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.7.desc:0 "§YSuccess§!. A clean mission, the scientist was extracted."
+ spyOpportunity.7.a:0 "Excellent."
+
+
+
+ spyOpportunity.18.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter to slip through."
+ spyOpportunity.18.a:0 "Secondary entrance."
+ spyOpportunity.18.b:0 "Ambush patrol."
+
+ spyOpportunity.8.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.8.desc:0 "§PComplication§!. The infiltration team found a secondary entrance in the form of a ventilation shaft, however only after having made their way inside did they realise the whole shaft has been rigged with a laser grid trap. They are attempting to slip through it."
+ spyOpportunity.8.a:0 "Keep me informed."
+
+ spyOpportunity.19.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.19.desc:0 "§PComplication§!. Our team successfully ambushed and silently killed one of the patrols, and we now have an opportunity. We could either strip them of their uniforms and attempt to use them and walk straight into the compound, or continue with the plan as normal."
+ spyOpportunity.19.a:0 "Take the uniforms."
+ spyOpportunity.19.b:0 "Continue as normal."
+
+ spyOpportunity.9.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.9.desc:0 "§SSuccess§!. A clean mission, the scientist was extracted and our agents slipped back off the planet undetected."
+ spyOpportunity.9.a:0 "Excellent."
+
+ spyOpportunity.10.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.10.desc:0 "§RFailure§!. Our agents were discovered and either killed or captured by the local counterintelligence forces. It seems that our involvement has remained undiscovered.\n\n The networks current operation has been set back."
+ spyOpportunity.10.a:0 "Unfortunate."
