@@ -114,8 +114,10 @@ TODO 3 = {
    ANOTHER AI PASS = {
       Better decision making for chooing target
       better operation choice
-      
+
    }
+
+   NEED TO FIX UP THE OPPORTUNITY EVENT LAUNCHER
 
 }
 
