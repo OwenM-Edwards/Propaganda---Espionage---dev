@@ -97,6 +97,8 @@ country_event = {     #BEGIN LONGTERM OPERATION - STAGE TWO
 
 
 
+
+
 #### STAGE THREE CHECKS FOR OPPORUNITY / COMPLICATION ####
 country_event = {     #STAGE THREE
 	id = progressTrackerA.3
@@ -104,82 +106,70 @@ country_event = {     #STAGE THREE
 	hide_window = yes
 
 	immediate = { 
-		# CHECKS FOR STUDY TECH OPPORTUNITY #
-		if = { #STUDY TECH OPP EVENTS#
+
+		if = { #ERROR CHECK
 			limit = {
-				has_country_flag = studyTech
-				not = {
-					has_country_flag = opportunityLock
+				or = {
+					has_country_flag = gatherProgress_3
+					has_country_flag = gatherProgress_4
+					has_country_flag = gatherProgress_5
+					has_country_flag = gatherProgress_6
 				}
 			}
+			break=yes
+		}
+
+		else_if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
+			limit = {
+				has_country_flag = cancelOngoing
+			}
+			remove_country_flag = cancelOngoing
+		}
+
+		else_if = { #IF GATHERING INTEL, CONTINUE
+			limit = {
+				has_country_flag = gatherIntelAlpha
+			}
+			set_country_flag = gatherProgress_3
+			country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
+		}
+
+		else = { #IF ON OPERATION, ROLL FOR OPPORTUNITY CHECK
 			random_list = {
-				5 = {
-					country_event = { id = spyOpportunity.1 } #ROLLS FOR TYPE OF OPPORTUNITY
-				}
-				90 = {
+				50 = {
+					# CHECKS FOR OPPORTUNITY #
 					if = {
-						limit = {
-							or = {
-								has_country_flag = gatherProgress_3
-								has_country_flag = gatherProgress_4
-								has_country_flag = gatherProgress_5
-								has_country_flag = gatherProgress_6
+						limit = { #if not on opportunity cooldown, check for opportunity
+							not = {
+								has_country_flag = opportunityCooldown
 							}
 						}
-						break=yes
+						country_event = { id = opportunityManager.0 }
 					}
-					else_if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
-						limit = {
-							has_country_flag = cancelOngoing
-						}
-						remove_country_flag = cancelOngoing
-					}
-					else_if = {
-						limit = {
-							has_country_flag = gatherIntelAlpha
-						}
-						set_country_flag = gatherProgress_3
-						country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
-					}
+					# CONTINUE AS NORMAL #
 					else = {
 						set_country_flag = gatherProgress_3
 						country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
 					}
 				}
-			}
-		} 
-		else = {
-			if = {
-				limit = {
-					or = {
-						has_country_flag = gatherProgress_3
-						has_country_flag = gatherProgress_4
-						has_country_flag = gatherProgress_5
-						has_country_flag = gatherProgress_6
-					}
+				50 = {
+					# CONTINUE AS NORMAL #
+					set_country_flag = gatherProgress_3
+					country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
 				}
-				break=yes
-			}
-			else_if = { #STOPS CHAIN IF CANCEL OP HAS BEEN USED
-				limit = {
-					has_country_flag = cancelOngoing
-				}
-				remove_country_flag = cancelOngoing
-			}
-			else_if = {
-				limit = {
-					has_country_flag = gatherIntelAlpha
-				}
-				set_country_flag = gatherProgress_3
-				country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
-			}
-			else = {
-				set_country_flag = gatherProgress_3
-				country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
 			}
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
 
 
 

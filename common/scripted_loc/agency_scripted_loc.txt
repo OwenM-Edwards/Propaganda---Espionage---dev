@@ -794,3 +794,26 @@ defined_text = {
 		localization_key = "spy_FallenEmpires_Disabled"
 	}
 }
+
+
+
+
+
+#### OPPORTUNITY EVENTS, ALPHA / BETA TEXT ####
+defined_text = {
+	name = opportunityEvent_AorB
+	text = {
+		trigger = {
+			is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+		}
+		localization_key = "opportunityEvent_Alpha_desc"
+	}
+	text = {
+		trigger = {
+			not = {
+				is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+			}
+		}
+		localization_key = "opportunityEvent_Beta_desc"
+	}
+}

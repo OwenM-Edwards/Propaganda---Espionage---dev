@@ -2236,3 +2236,11 @@ spyModConfig.2.b:0 "Cancel."
  studyTech_Opportunity.2.desc.e:0 "Bad news, we were unable to extract our Alpha Network agents in time, and the entire field team perished.\n\nHowever they the extraction team did find a small cache of already collected technical data. We have added it to our research archives."
 # END #
  studyTech_Opportunity.2.a:0 "Understood."
+
+
+
+
+ ##### OPPORTUNITY MANAGER #####
+
+ opportunityEvent_Alpha_desc:0 "Alpha"
+ opportunityEvent_Beta_desc:0 "Beta"

@@ -13,7 +13,16 @@ namespace = opportunityManager
 
 ## NEED TO BE ABLE TO HANDLE BOTH ALPHA AND BETA, ALL IN ONE
 
-## AB GENRIC GEN ##
+
+
+
+
+
+
+
+
+
+## AB GENRIC FLAG/TARGET GEN ##
 country_event = {
 	id = opportunityManager.0
 	hide_window = yes
@@ -23,7 +32,7 @@ country_event = {
 		save_event_target_as = spyOpportunityAttacker
 		if = {
 			limit = {
-				has_country_flag = opportunity_Beta
+				is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
 			}
 			event_target:betaNetworkTarget_temp = {
 				save_event_target_as = spyOpportunityTarget
@@ -34,11 +43,11 @@ country_event = {
 				save_event_target_as = spyOpportunityTarget
 			}
 		}
-	}
+	} 
 }
 
 
-## OPPORTUNITY CHECKER
+## OPPORTUNITY INDEX - SENDS OUT TO INDIIVUAL OPPORTUNITY CATEGORY ROLL TABLES ##
 country_event = {
 	id = opportunityManager.1
 	hide_window = yes
@@ -53,13 +62,258 @@ country_event = {
 					has_country_flag = saboRep2
 				}
 			}
-			random_list = {
-				50 = {}
-				50 = {}
+			country_event = {
+				id = opportunityManager.10
+			}
+		}
+		else_if = {
+			limit = {
+				or = {
+					has_country_flag = studyTech
+					has_country_flag = studyTech2
+				}
+			}
+			country_event = {
+				id = opportunityManager.11
+			}
+		}
+		else_if = {
+			limit = {
+				or = {
+					has_country_flag = fundCrime
+					has_country_flag = fundCrime2
+				}
+			}
+			country_event = {
+				id = opportunityManager.12
+			}
+		}
+		else_if = {
+			limit = {
+				or = {
+					has_country_flag = swingEthics
+					has_country_flag = swingEthics2
+				}
+			}
+			country_event = {
+				id = opportunityManager.13
+			}
+		}
+		else_if = {
+			limit = {
+				or = {
+					has_country_flag = sowUnrest
+					has_country_flag = sowUnrest2
+				}
+			}
+			country_event = {
+				id = opportunityManager.14
 			}
 		}
 	}
 }
+
+
+#EVENT ENDERS = {
+	#1 - SEND BACK TO START OF PROGRESS CHAIN
+	#2 - SEND TO END OF PROGRESS CHAIN - SUCCESS
+	#3 - SEND TO END OF PROGRESS CHAIN - FAIL
+	#4 - SEND BACK INTO PROGRESS CHAIN
+#}
+## ENDS THE OPPORTUNITY EVENT ##
+country_event = {
+	id = opportunityManager.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = opportunityEnd_1
+		set_country_flag = opportunityEnd_2
+		set_country_flag = opportunityEnd_3
+		set_country_flag = opportunityEnd_4
+
+		if = { # SEND BACK TO START OF PROGRESS CHAIN
+			limit = {
+				has_country_flag = opportunityEnd_1
+			}
+			remove_country_flag = opportunityEnd_1
+			if = { #is beta
+				limit = {
+					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+				}
+				country_event = { id = progressTrackerB.1 }
+			}
+			else = { #is alpha
+				country_event = { id = progressTrackerA.1 }
+			}
+		}
+
+		else_if = { # SEND TO END OF PROGRESS CHAIN - SUCCESS
+			limit = {
+				has_country_flag = opportunityEnd_2
+			}
+			remove_country_flag = opportunityEnd_2
+			if = { #is beta
+				limit = {
+					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+				}
+				country_event = { id = progressTrackerB.9 }
+			}
+			else = { #is alpha
+				country_event = { id = progressTrackerA.9 }
+			}
+		}
+
+		else_if = { # SEND TO END OF PROGRESS CHAIN - FAIL
+			limit = {
+				has_country_flag = opportunityEnd_3
+			}
+			remove_country_flag = opportunityEnd_3
+			if = { #is beta
+				limit = {
+					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+				}
+				set_country_flag = failedBeta country_event = { id = spyFailEvt.0 }
+			}
+			else = { #is alpha
+				country_event = { id = spyFailEvt.0 }
+			}
+		}
+
+		else_if = { # SEND BACK INTO PROGRESS CHAIN
+			limit = {
+				has_country_flag = opportunityEnd_4
+			}
+			remove_country_flag = opportunityEnd_4
+			if = { #is beta
+				limit = {
+					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+				}
+				set_country_flag = gatherProgress_3_2
+				country_event = { id = progressTrackerB.4 } 
+			}
+			else = { #is alpha
+				set_country_flag = gatherProgress_3
+				country_event = { id = progressTrackerA.4 } 
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### ROLL TABLES #####
+## SABOREP OPPORTUNITY EVENT ROLL TABLE ##
+country_event = {
+	id = opportunityManager.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+		set_country_flag = betaF_OpportunityOngoing
+		set_country_flag = alphaF_OpportunityOngoing
+		random_list = {
+			50 = {}
+			50 = {}
+		}
+	}
+}
+
+## STUDY TECH OPPORTUNITY EVENT ROLL TABLE ##
+country_event = {
+	id = opportunityManager.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = {}
+			50 = {}
+		}
+	}
+}
+
+## FUND CRIME OPPORTUNITY EVENT ROLL TABLE ##
+country_event = {
+	id = opportunityManager.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = {}
+			50 = {}
+		}
+	}
+}
+
+
+## SWING ETHICS OPPORTUNITY EVENT ROLL TABLE ##
+country_event = {
+	id = opportunityManager.13
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = {}
+			50 = {}
+		}
+	}
+}
+
+## SOW UNREST OPPORTUNITY EVENT ROLL TABLE ##
+country_event = {
+	id = opportunityManager.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = {}
+			50 = {}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
