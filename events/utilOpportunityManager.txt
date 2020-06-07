@@ -4,20 +4,10 @@ namespace = opportunityManager
 ## Can put player back into the tracker when done
 ## Can also reset the tracket etc.
 ## Rolls for type of opportunity
-
 ## Can be called when running any type of operation
-
 ## When opporunity chosen, sends over to relevant opporunity file.
-
 ## Adding new events should be as easy as adding them to a role table
-
-## NEED TO BE ABLE TO HANDLE BOTH ALPHA AND BETA, ALL IN ONE
-
-
-
-
-
-
+## handles both Alpha and Beta
 
 
 ## AB GENRIC FLAG/TARGET GEN ##
@@ -42,6 +32,9 @@ country_event = {
 				save_event_target_as = spyOpportunityTarget
 			}
 			set_country_flag = alphaF_OpportunityOngoing
+		}
+		country_event = {
+			id = opportunityManager.1
 		}
 	} 		
 }
@@ -108,6 +101,19 @@ country_event = {
 			}
 			country_event = {
 				id = opportunityManager.14
+			}
+		}
+		else = {
+			if = { #is beta
+				limit = {
+					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+				}
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
+			else = { #is alpha
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
 			}
 		}
 	}
@@ -221,8 +227,39 @@ country_event = {
 	immediate = {
 
 		random_list = {
-			50 = {}
-			50 = {}
+			# BLACKMAIL DIPLOMAT #
+			# 50 = {
+			# 	modifier = { #MUST BE AT A CERTAIN RELATION THRESHOLD
+			# 		factor = 0
+			# 		or = {
+			# 			is_at_war_with = event_target:spyOpportunityTarget
+			# 			event_target:spyOpportunityTarget = {
+			# 				opinion_level = {
+			# 					who = event_target:spyOpportunityAttacker
+			# 					level < neutral
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+			# 	country_event = {
+			# 		id = saborepOpportunity.1
+			# 	}
+			# }
+
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
+		}
+		if = {
+			limit = {
+				not = {
+					has_country_flag = opportunityCooldown
+				}
+			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -270,6 +307,7 @@ country_event = {
 					id = studyTech_Opportunity.1
 				}
 			}
+
 			# SCIENTIST DEFECTION EVENT #
 			50 = {
 				set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
@@ -277,6 +315,15 @@ country_event = {
 					id = studyTech_Opportunity.3
 				}
 			}
+		}
+		if = {
+			limit = {
+				not = {
+					has_country_flag = opportunityCooldown
+				}
+			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -289,8 +336,19 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			50 = {}
-			50 = {}
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
+		}
+		if = {
+			limit = {
+				not = {
+					has_country_flag = opportunityCooldown
+				}
+			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -303,8 +361,19 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			50 = {}
-			50 = {}
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
+		}
+		if = {
+			limit = {
+				not = {
+					has_country_flag = opportunityCooldown
+				}
+			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -317,8 +386,19 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			50 = {}
-			50 = {}
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
+		}
+		if = {
+			limit = {
+				not = {
+					has_country_flag = opportunityCooldown
+				}
+			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
