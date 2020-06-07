@@ -152,6 +152,7 @@ DONE 3 = {
    unify alpha and beta sow unrest target selection
    addmore option to station selector
    fix station raid beta target bug
+   Fixed bug with espionage fail events
 }
 
 
