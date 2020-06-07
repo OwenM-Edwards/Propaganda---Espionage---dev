@@ -57,8 +57,8 @@ country_event = {     #BEGIN LONGTERM OPERATION - STAGE TWO
 	hide_window = yes
 
 	immediate = {
-		if = {
-			limit = {
+		if = { #ERROR CHECK
+			limit = { 
 				or = {
 					has_country_flag = gatherProgress_2
 					has_country_flag = gatherProgress_3
@@ -99,7 +99,7 @@ country_event = {     #BEGIN LONGTERM OPERATION - STAGE TWO
 
 
 
-#### STAGE THREE CHECKS FOR OPPORUNITY / COMPLICATION ####
+#### STAGE THREE CHECKS FOR OPPORTUNITY EVENT ####
 country_event = {     #STAGE THREE
 	id = progressTrackerA.3
 	is_triggered_only = yes
@@ -152,7 +152,7 @@ country_event = {     #STAGE THREE
 						country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
 					}
 				}
-				50 = {
+				0 = {
 					# CONTINUE AS NORMAL #
 					set_country_flag = gatherProgress_3
 					country_event = { id = progressTrackerA.4 days = @gatherProgGenericStage } 
@@ -179,7 +179,7 @@ country_event = {     #STAGE FOUR
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		if = {
+		if = { #ERROR CHECK
 			limit = {
 				or = {
 					has_country_flag = gatherProgress_4
@@ -214,7 +214,7 @@ country_event = {     #STAGE FIVE
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		if = {
+		if = { #ERROR CHECK
 			limit = {
 				or = {
 					has_country_flag = gatherProgress_5
@@ -248,7 +248,7 @@ country_event = {     #STAGE SIX
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		if = {
+		if = { #ERROR CHECK
 			limit = {
 				has_country_flag = gatherProgress_6
 			}
