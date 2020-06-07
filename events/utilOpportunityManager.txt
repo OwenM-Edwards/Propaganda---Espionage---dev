@@ -1,0 +1,160 @@
+namespace = opportunityManager
+
+## Can be called at any point during the progress tracker, will check for opporunity
+## Can put player back into the tracker when done
+## Can also reset the tracket etc.
+## Rolls for type of opportunity
+
+## Can be called when running any type of operation
+
+## When opporunity chosen, sends over to relevant opporunity file.
+
+## Adding new events should be as easy as adding them to a role table
+
+## NEED TO BE ABLE TO HANDLE BOTH ALPHA AND BETA, ALL IN ONE
+
+## AB GENRIC GEN ##
+country_event = {
+	id = opportunityManager.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		save_event_target_as = spyOpportunityAttacker
+		if = {
+			limit = {
+				has_country_flag = opportunity_Beta
+			}
+			event_target:betaNetworkTarget_temp = {
+				save_event_target_as = spyOpportunityTarget
+			}
+		}
+		else = {
+			event_target:alphaNetworkTarget_temp = {
+				save_event_target_as = spyOpportunityTarget
+			}
+		}
+	}
+}
+
+
+## OPPORTUNITY CHECKER
+country_event = {
+	id = opportunityManager.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# CHECK IF RUNNING SABREP OP
+		if = {
+			limit = {
+				or = {
+					has_country_flag = saboRep
+					has_country_flag = saboRep2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = {}
+			}
+		}
+	}
+}
+
+
+
+
+### IF FAIL OR DECLINE OR SUCCEED, PUT THEM BACK INTO PROGRESS TRACKER ###
+country_event = {
+	id = spyOpportunity.0
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = betaF_Opportunity
+			}
+			remove_country_flag = betaF_Opportunity
+			remove_country_flag = betaF_OpportunityOngoing
+			country_event = { id = progressTrackerB.3 }
+		}
+		else = {
+			remove_country_flag = alphaF_OpportunityOngoing
+			country_event = { id = progressTrackerA.3 }
+		}
+	}
+} 
+### GIVE OPPORTUNITY FLAGS, ROLL FOR EVENT ###
+country_event = {
+	id = spyOpportunity.1
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	immediate = {
+		set_timed_country_flag = { flag = opportunityLock days = 3650 }
+		save_event_target_as = spyOpportunityAttacker
+		if = {
+			limit = {
+				has_country_flag = betaF_Opportunity
+			}
+			event_target:betaNetworkTarget_temp = { save_event_target_as = spyOpportunityTarget }
+			set_country_flag = betaF_OpportunityOngoing
+		}
+		else = {
+			event_target:alphaNetworkTarget_temp = { save_event_target_as = spyOpportunityTarget }
+			set_country_flag = alphaF_OpportunityOngoing
+		}
+
+		random_list = {
+			50 = { # DEFECTING SCIENTIST
+				modifier = {
+					factor = 0
+					or = {
+						event_target:spyOpportunityTarget = { 
+							is_ai = no 
+						}
+						has_country_flag = OppdefectingScientistCooldown
+					}
+				}
+				set_timed_country_flag = {
+					flag = OppdefectingScientistCooldown
+					days = 3650
+				}
+				country_event = { id = studyTech_Opportunity.3 }
+			}
+			50 = { # INFECTED AGENTS
+				modifier = {
+					factor = 0
+					or = {
+						has_country_flag = OppinfectedAgents
+						event_target:spyOpportunityTarget = {
+							is_at_war_with = event_target:spyOpportunityAttacker
+						}
+						event_target:spyOpportunityTarget = {
+							nor = {
+								has_technology = tech_genome_mapping
+								has_technology = tech_vitality_boosters
+								has_technology = tech_frontier_hospital
+								has_technology = tech_alien_life_studies
+								has_technology = tech_society_3
+								has_technology = tech_society_2
+								has_technology = tech_society_1
+							}
+						}
+					}
+				}
+				set_timed_country_flag = {
+					flag = OppinfectedAgents
+					days = 3650
+				}
+				country_event = { id = studyTech_Opportunity.1 }
+			}
+			10 = {
+				country_event = {
+					id = spyOpportunity.0
+				}
+			}
+		}
+	}
+}
