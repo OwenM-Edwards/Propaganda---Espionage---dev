@@ -75,3 +75,15 @@ opinion_spy_discovered = {
 		base = @opinionDiscoveredDecay
 	}
 }
+
+
+
+opinion_bombed_diplomats = {
+	opinion = {
+		base = @opinionBombedDiplomats
+	}
+	monthly = yes
+	decay = {
+		base = @@opinionBombedDiplomatsDecay
+	}
+}
