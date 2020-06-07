@@ -66,6 +66,9 @@
 	@messageDisplayChance = 80
 	@messageNoDisplayChance = 20
 
+	@opinionBombedDiplomats = 120
+	@opinionBombedDiplomatsDecay = 4
+
 
 	### STATION SABOTAGE ###
 	@stationSabPartialTime = 30
