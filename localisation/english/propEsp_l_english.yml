@@ -468,7 +468,16 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  agencyNeighborslist.y.a:0 "Recall the network, but will lose us all intelligence levels with the target."
  
 ########## MAIN MENU TOOLTIPS ##########
- pointsRequiredAlpha.tooltip:0 "Requires §S15§! levels of intelligence."
+ pointsRequired_sabRep.tooltip:0 "Requires §S[root.sabRep_OpCostVar]§!  levels of intelligence."
+
+ pointsRequired_studyTech.tooltip:0 "Requires §S[root.studyTech_OpCostVar]§! levels of intelligence."
+
+ pointsRequired_swingEthics.tooltip:0 "Requires §S[root.swingEthics_OpCostVar]§! levels of intelligence."
+
+ pointsRequired_fundCrime.tooltip:0 "Requires §S[root.fundCrime_OpCostVar]§! levels of intelligence."
+
+
+ pointsRequired_sowUnrest.tooltip:0 "Requires §S[root.sowUnrest_OpCostVar]§! levels of intelligence."
  
  pointsRequiredAlphaD.tooltip:0 "Requires §S15§! levels of intelligence."
  
@@ -904,8 +913,8 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  sabotageRepSuccess2.desc:0 "§YMajor success!§!. Our Beta Network agents have successfully sabotaged the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their diplomatic contacts have become strained."
  
  sabotageRepSuccess.a:0 "Repeat operation"
- sabotageRepSuccess.a.alpha:0 "Requires §S15§! levels of intelligence."
- sabotageRepSuccess.a.beta:0 "Requires §S15§! levels of intelligence."
+ sabotageRepSuccess.a.alpha:0 "Requires §S[root.sabRep_OpCostVar]§! levels of intelligence."
+ sabotageRepSuccess.a.beta:0 "Requires §S[root.sabRep_OpCostVar]§! levels of intelligence."
  sabotageRepSuccess.b:0 "Return to Intelligence Gathering"
  
  sabotageRepSuccessPartial.title:0 "Sabotage Reputation"
@@ -1051,9 +1060,9 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
 ##### SUPPORT ORGANISED CRIME #####
 ### TOOLTIPS ###
- fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
+ fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S[root.fundCrime_OpCostVar]§! levels of intelligence."
  
- fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
+ fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S[root.fundCrime_OpCostVar]§! levels of intelligence."
  
  ### MAIN ###
  ### ALPHA ###
