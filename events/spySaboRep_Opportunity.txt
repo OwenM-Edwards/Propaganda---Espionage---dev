@@ -183,18 +183,6 @@ country_event = {
 				}
 				save_event_target_as = bombDiplomatsTarget_2
 			}
-			random_neighbor_country = {
-				limit = {
-					nor = {
-						is_same_value = event_target:spyOpportunityAttacker
-						is_same_value = event_target:bombDiplomatsTarget_1
-						is_same_value = event_target:bombDiplomatsTarget_2
-					}
-					checkCountryType = yes
-					has_communications = event_target:spyOpportunityTarget
-				}
-				save_event_target_as = bombDiplomatsTarget_3
-			}
 		}
 	}
 	
@@ -240,11 +228,6 @@ country_event = { #BOMB DIPLOMATS OPERATION SUCCESS
 				who = event_target:bombDiplomatsTarget_2
 				days = 365
 			}
-			add_casus_belli = {
-				type = cb_humiliation
-				who = event_target:bombDiplomatsTarget_3
-				days = 365
-			}
 
 			add_opinion_modifier = {
 				who = event_target:bombDiplomatsTarget_1
@@ -253,12 +236,7 @@ country_event = { #BOMB DIPLOMATS OPERATION SUCCESS
 			add_opinion_modifier = {
 				who = event_target:bombDiplomatsTarget_2
 				modifier = opinion_bombed_diplomats
-			}
-			add_opinion_modifier = {
-				who = event_target:bombDiplomatsTarget_3
-				modifier = opinion_bombed_diplomats
-		   }
-			  
+			} 
 		}
 		event_target:bombDiplomatsTarget_1 = {
 			add_casus_belli = {
@@ -271,11 +249,6 @@ country_event = { #BOMB DIPLOMATS OPERATION SUCCESS
 				who = event_target:bombDiplomatsTarget_2
 				days = 365
 			}
-			add_casus_belli = {
-				type = cb_humiliation
-				who = event_target:bombDiplomatsTarget_3
-				days = 365
-			}
 
 			add_opinion_modifier = {
 				who = event_target:spyOpportunityTarget
@@ -285,10 +258,6 @@ country_event = { #BOMB DIPLOMATS OPERATION SUCCESS
 				who = event_target:bombDiplomatsTarget_2
 				modifier = opinion_bombed_diplomats
 			}
-			add_opinion_modifier = {
-				who = event_target:bombDiplomatsTarget_3
-				modifier = opinion_bombed_diplomats
-		   }
 		}
 		event_target:bombDiplomatsTarget_2 = {
 			add_casus_belli = {
@@ -301,11 +270,6 @@ country_event = { #BOMB DIPLOMATS OPERATION SUCCESS
 				who = event_target:bombDiplomatsTarget_1
 				days = 365
 			}
-			add_casus_belli = {
-				type = cb_humiliation
-				who = event_target:bombDiplomatsTarget_3
-				days = 365
-			}
 
 			add_opinion_modifier = {
 				who = event_target:spyOpportunityTarget
@@ -315,40 +279,6 @@ country_event = { #BOMB DIPLOMATS OPERATION SUCCESS
 				who = event_target:bombDiplomatsTarget_1
 				modifier = opinion_bombed_diplomats
 			}
-			add_opinion_modifier = {
-				who = event_target:bombDiplomatsTarget_3
-				modifier = opinion_bombed_diplomats
-		   }
-		}
-		event_target:bombDiplomatsTarget_3 = {
-			add_casus_belli = {
-				type = cb_humiliation
-				who = event_target:spyOpportunityTarget
-				days = 365
-			}
-			add_casus_belli = {
-				type = cb_humiliation
-				who = event_target:bombDiplomatsTarget_2
-				days = 365
-			}
-			add_casus_belli = {
-				type = cb_humiliation
-				who = event_target:bombDiplomatsTarget_1
-				days = 365
-			}
-
-			add_opinion_modifier = {
-				who = event_target:spyOpportunityTarget
-				modifier = opinion_bombed_diplomats
-			}
-			add_opinion_modifier = {
-				who = event_target:bombDiplomatsTarget_2
-				modifier = opinion_bombed_diplomats
-			}
-			add_opinion_modifier = {
-				who = event_target:bombDiplomatsTarget_1
-				modifier = opinion_bombed_diplomats
-		   }
 		}
 	}
 
@@ -384,12 +314,6 @@ country_event = { #BOMB DIPLOMATS OPERATION FAIL
 				}
 			}
 			event_target:bombDiplomatsTarget_2 = {
-				add_opinion_modifier = {
-					who = event_target:spyOpportunityAttacker
-					modifier = opinion_bombed_diplomats
-				}
-			}
-			event_target:bombDiplomatsTarget_3 = {
 				add_opinion_modifier = {
 					who = event_target:spyOpportunityAttacker
 					modifier = opinion_bombed_diplomats
@@ -434,17 +358,6 @@ country_event = { #BOMB DIPLOMATS OPERATION CRIT FAIL
 				}
 			}
 			event_target:bombDiplomatsTarget_2 = {
-				add_opinion_modifier = {
-					who = event_target:spyOpportunityAttacker
-					modifier = opinion_bombed_diplomats
-				}
-				add_casus_belli = {
-					type = cb_humiliation
-					who = event_target:spyOpportunityAttacker
-					days = 365
-				}
-			}
-			event_target:bombDiplomatsTarget_3 = {
 				add_opinion_modifier = {
 					who = event_target:spyOpportunityAttacker
 					modifier = opinion_bombed_diplomats
