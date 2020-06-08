@@ -225,7 +225,30 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-
+		event_target:spyOpportunityTarget = {
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_same_value = event_target:spyOpportunityAttacker
+					}
+					checkCountryType = yes
+					has_communications = event_target:spyOpportunityTarget
+				}
+				save_event_target_as = bombDiplomatsTarget_1
+			}
+			random_neighbor_country = {
+				limit = {
+					nor = {
+						is_same_value = event_target:spyOpportunityAttacker
+						is_same_value = event_target:bombDiplomatsTarget_1
+					}
+					checkCountryType = yes
+					has_communications = event_target:spyOpportunityTarget
+				}
+				save_event_target_as = bombDiplomatsTarget_2
+			}
+		}
+		
 		random_list = {
 			# BLACKMAIL DIPLOMAT #
 			# 50 = {
@@ -241,11 +264,27 @@ country_event = {
 			# 			}
 			# 		}
 			# 	}
-			# 	set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+			# 	set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 			# 	country_event = {
 			# 		id = saborepOpportunity.1
 			# 	}
 			# }
+
+
+			# BOMB DIPLOMATS #
+			50 = {
+				modifier = {
+					factor = 0
+					nand = {
+						exists = event_target:bombDiplomatsTarget_1
+						exists = event_target:bombDiplomatsTarget_2
+					}
+				}
+				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
+			 	country_event = {
+			 		id = saborepOpportunity.3
+			 	}
+			}
 
 			50 = {
 				set_country_flag = opportunityEnd_4
@@ -302,7 +341,7 @@ country_event = {
 					factor = 0
 					is_at_war_with = event_target:spyOpportunityTarget
 				}
-				set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 				country_event = {
 					id = studyTech_Opportunity.1
 				}
@@ -310,7 +349,7 @@ country_event = {
 
 			# SCIENTIST DEFECTION EVENT #
 			50 = {
-				set_timed_country_flag = { flag = opportunityCooldown days = 3650 }
+				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 				country_event = {
 					id = studyTech_Opportunity.3
 				}
