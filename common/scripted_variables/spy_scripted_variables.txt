@@ -79,6 +79,8 @@
 	@opportunityGapTime = 30
 	@opportunityGapTimeRandom = 15
 
+	@opportunityCooldown = 3650
+
 
 	### RAIDS ###
 	@raidRandomDays = 30
@@ -94,6 +96,8 @@
 
 	### AI FUND CRIME RPEAT TIMER  ###
 	@fundCrimeRepeatLength = 180
+
+
 
 
 
