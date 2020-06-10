@@ -368,6 +368,9 @@ country_event = {  ### MTTH for this event
 
 
 
+
+
+
 ### CHOOSE OPERATION ###
 country_event = {  
     id = agnAImenu.22
@@ -375,17 +378,31 @@ country_event = {
     hide_window = yes
     immediate = {
         random_list = { #RANDOM CHOOSE OPERATION TYPE
-            10 = {
+            20 = {
                 country_event = { 
                     id = agnAImenu.3 #SAB REP
                 }
             }
-            10 = {
+            20 = {
+                modifier = {
+                    factor = 0.5
+                    has_monthly_income = {
+                        resource = energy
+                        value >= 60
+                    }
+                }
+                modifier = {
+                    factor = 2.5
+                    has_monthly_income = {
+                        resource = energy
+                        value <= 30
+                    }
+                }
                 country_event = { 
                     id = agnAImenu.4 #FUND CRIME
                 }
             }
-            10 = {
+            20 = {
                 modifier = {
                     factor = 0
                     or = {
@@ -396,11 +413,14 @@ country_event = {
                             has_ascension_perk = ap_enigmatic_engineering
                         }
                     }
-
+                }
+                modifier = {
+                    factor = 1.2
+                    has_technology = tech_spy_industrial
                 }
                 modifier = {
                     factor = 1.5
-                    has_technology = tech_spy_industrial
+                    has_technology = tech_spy_industrial 
                     event_target:AIAgency_Defender_Final = {
                         relative_power = {
                             who = event_target:AIAgency
@@ -413,18 +433,25 @@ country_event = {
                     id = agnAImenu.5 #TECH STEAL
                 }
             }
-            10 = {
+            20 = {
                 modifier = {
                     factor = 0
                     not = {
                         has_technology = tech_spy_socialPropaganda
                     }
                 }
+                modifier = {
+                    factor = 2
+                    or = {
+                        has_ai_personality = evangelising_zealots
+                        has_ai_personality = democratic_crusaders
+                    }
+                }
                 country_event = { 
                     id = agnAImenu.6 #SWING ETHICS  
                 }
             }
-            10 = {
+            20 = {
                 modifier = {
                     factor = 0
                     not = {
@@ -438,6 +465,7 @@ country_event = {
         }
     }
 }
+
 
 
 
