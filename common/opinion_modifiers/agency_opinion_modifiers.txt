@@ -78,12 +78,34 @@ opinion_spy_discovered = {
 
 
 
+
+### OPPORTUNITY EVENT MODIFIERS ###
 opinion_bombed_diplomats = {
 	opinion = {
 		base = @opinionBombedDiplomats
 	}
 	monthly = yes
 	decay = {
-		base = @@opinionBombedDiplomatsDecay
+		base = @opinionBombedDiplomatsDecay
+	}
+}
+
+opinion_triedBlackmail = {
+	opinion = {
+		base = @opinionBombedDiplomats
+	}
+	monthly = yes
+	decay = {
+		base = @opinionBombedDiplomatsDecay
+	}
+}
+
+opinion_compromisedDiplomat = {
+	opinion = {
+		base = @opinionBombedDiplomats
+	}
+	monthly = yes
+	decay = {
+		base = @opinionBombedDiplomatsDecay
 	}
 }
