@@ -12,12 +12,12 @@ country_event = {
 		trigger = { }
 	}
 	is_triggered_only = yes
-	picture = GFX_evt_debris
+	picture = GFX_evt_board_meeting
 	show_sound = event_default
 	
 	immediate = { }
 
-	# CHOICE A
+	# CHOICE A - #PUBLICALLY EXPOSE THEM
 	option = {
 		name = saborepOpportunity.1.a
 		hidden_effect = {
@@ -36,7 +36,7 @@ country_event = {
 		}
 	}
 
-	# CHOICE B
+	# CHOICE B - #BLACKMAIL THEM
 	option = {
 		name = saborepOpportunity.1.b
 		hidden_effect = {
@@ -52,6 +52,14 @@ country_event = {
 				id = saborepOpportunity.2
 				days = @eventDayLength random = @eventRandomLength 
 			}
+		}
+	}
+	# CHOICE C - #DO NOTHING
+	option = {
+		name = saborepOpportunity.1.C
+		hidden_effect = {
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -78,14 +86,14 @@ country_event = {
 			is_same_value = event_target:stageOneChoiceB_Success
 		}
 	}
-	desc = { # CHOICE B FAIL - THEY GIVE US A FAVOR
+	desc = { # CHOICE B FAIL - THEY GIVE US A FAVOR - BAD REP WITH THEM
 		text = saborepOpportunity.2.desc.d
 		trigger = {
 			is_same_value = event_target:stageOneChoiceB_Fail
 		}
 	}
 	is_triggered_only = yes
-	picture = GFX_evt_debris
+	picture = GFX_evt_board_meeting
 	show_sound = event_default
 	
 	immediate = { 
@@ -100,6 +108,14 @@ country_event = {
 			}
 			add_resource = {
 				influence = 100
+			}
+		}
+		if = {
+			limit = {
+				is_same_value = event_target:stageOneChoiceB_Success
+			}
+			add_resource = {
+				energy = 100
 			}
 		}
 		hidden_effect = { 
@@ -117,7 +133,7 @@ country_event = {
 					}
 					add_opinion_modifier = {
 						who = event_target:spyOpportunityTarget
-						modifier = opinion_saboRep_low
+						modifier = opinion_compromisedDiplomat
 					}
 				}
 			}
@@ -132,10 +148,36 @@ country_event = {
 					}
 					add_opinion_modifier = {
 						who = event_target:spyOpportunityAttacker
-						modifier = opinion_saboRep_low
+						modifier = opinion_triedBlackmail
 					}
 				}
 			}
+			else_if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceB_Success
+				}
+				add_favors = {
+					target = event_target:spyOpportunityTarget
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					is_same_value = event_target:stageOneChoiceB_Fail
+				}
+				add_favors = {
+					target = event_target:spyOpportunityTarget
+					value = 2
+				}
+				event_target:spyOpportunityTarget = {
+					add_opinion_modifier = {
+						who = event_target:spyOpportunityAttacker
+						modifier = opinion_triedBlackmail
+					}
+				}
+			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
