@@ -30,7 +30,7 @@ tech_spy_industrial = {
 	}
 	
 	ai_weight = {
-		factor = 1.25
+		factor = 2.25
 		modifier = {
 			factor = 1.20
 			any_neighbor_country = {
@@ -94,7 +94,7 @@ tech_spy_tactical = {
 	}
 	
 	ai_weight = {
-		factor = 1.25
+		factor = 2.25
 		modifier = {
 			factor = 1.20
 			has_ai_personality = erudite_explorers
@@ -142,7 +142,7 @@ tech_spy_socialPropaganda = {
 	}
 	
 	ai_weight = {
-		factor = 1.25
+		factor = 2.25
 		modifier = {
 			factor = 1.25
 			research_leader = {
