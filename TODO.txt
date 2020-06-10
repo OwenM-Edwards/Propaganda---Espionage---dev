@@ -117,8 +117,6 @@ TODO 3 = {
 
    }
 
-   NEED TO FIX UP THE OPPORTUNITY EVENT LAUNCHER
-
    SCIENTIST DEFECTION = {
       HAD MESSAGE FOR TARGET COUNTRY WHEN SCIENTIST IS TAKEN
    }
@@ -153,6 +151,7 @@ DONE 3 = {
    addmore option to station selector
    fix station raid beta target bug
    Fixed bug with espionage fail events
+   Fixed the opportunity event launcher/manager
 }
 
 
