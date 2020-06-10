@@ -170,10 +170,17 @@ country_event = { #
 country_event = {
 	id = espionageUnlock.5
 	title = espionageUnlock.5.title
+	desc = { # CHOICE B FAIL
+		text = studyTech_Opportunity.2.desc.e
+		show_sound = event_cityscape
+		trigger = {
+			is_ai = no
+		}
+	}
 	desc = espionageUnlock.5.desc
 	is_triggered_only = yes
 	picture = GFX_evt_board_meeting
-	show_sound = event_cityscape
+	
 	
 
 	option = {
