@@ -35,29 +35,26 @@ removeIntelPointsAlpha = {
 		}
 		add_resource = { sr_alpha_points = -1 }
 	}
-	if = {while = { #had a bug that resources over 100 wouldnt completly deplete, instead of being a good programmer 
-		limit discovering the cause, i just run this twice.
-			limit = {
-				has_resource = { type = sr_alpha_points amount > 0 }
-			}
-			add_resource = { sr_alpha_points = -1 }
-	}	
+	while = {
+		limit = {
+			has_resource = { type = sr_alpha_points amount > 0 }
+		}
+		add_resource = { sr_alpha_points = -1 }
+	}
 }	
-re	m}oveIntelPointsBeta = {
+removeIntelPointsBeta = {
 	while = {
 		limit = {
 			has_resource = { type = sr_beta_points amount > 0 }
 		}
 		add_resource = { sr_beta_points = -1 }
 	}
-	if = {while = { #had a bug that resources over 100 wouldnt completly deplete, instead of being a good programmer 
-		limit discovering the cause, i just run this twice.
-			limit = {
-				has_resource = { type = sr_beta_points amount > 0 }
-			}
-			add_resource = { sr_beta_points = -1 }
+	while = { 
+		limit = {
+			has_resource = { type = sr_beta_points amount > 0 }
+		}
+		add_resource = { sr_beta_points = -1 }
 	}	
-}		
 }
 
 
@@ -474,16 +471,14 @@ getCounterIntelLevelTargetAlpha = {
 			event_target:alphaNetworkTarget_temp = {
 				or = {
 					has_country_flag = AI_Defence_Double
-					if = {
-						limit = {
-							has_country_flag = Alpha_Defence
-						has	_country_flag = Beta_Defence
-						}
+					and = {
+						has_country_flag = Alpha_Defence
+						has_country_flag = Beta_Defence
 					}
 				}
-		}	
-		se	t
-	}_variable = {
+			}	
+		}
+		set_variable = {
 			which = defenceLevelVarAlpha
 			value = 3 #HIGH
 		}
@@ -554,16 +549,14 @@ getCounterIntelLevelTargetBeta = {
 			event_target:betaNetworkTarget_temp = {
 				or = {
 					has_country_flag = AI_Defence_Double
-					if = {
-						limit = {
-							has_country_flag = Alpha_Defence
-						has	_country_flag = Beta_Defence
-						}
+					and = {
+						has_country_flag = Alpha_Defence
+						has_country_flag = Beta_Defence
 					}
 				}
+			}
 		}	
-		se	t
-	}_variable = {
+		set_variable = {
 			which = defenceLevelVarBeta
 			value = 3 #MEDIUM
 		}
@@ -638,16 +631,14 @@ getCounterIntelLevelTargetAI = {
 			event_target:AIAgency_Defender_Final = {
 				or = {
 					has_country_flag = AI_Defence_Double
-					if = {
-						limit = {
-							has_country_flag = Alpha_Defence
-						has	_country_flag = Beta_Defence
-						}
+					and = {
+						has_country_flag = Alpha_Defence
+						has_country_flag = Beta_Defence
 					}
 				}
+			}
 		}	
-		se	t
-	}_variable = {
+		set_variable = {
 			which = defenceLevelVarAI
 			value = 3 #MEDIUM
 		}
