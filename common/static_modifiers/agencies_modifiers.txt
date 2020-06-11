@@ -347,3 +347,16 @@ domStability_high = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"   
 	icon_frame = 1
 }
+
+
+#### OPPORTUNITY EVENTS ####
+# TECH PENALTY #
+spy_physicsPenalty = {
+	country_physics_research_produces_mult = -0.10
+}
+spy_societyPenalty = {
+	country_society_research_produces_mult = -0.10
+}
+spy_engineeringPenalty = {
+	country_engineering_research_produces_mult = -0.10
+}
