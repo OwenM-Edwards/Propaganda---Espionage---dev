@@ -449,7 +449,7 @@ country_event = {
 				}
 				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 				country_event = {
-					id = studyTech_Opportunity.3
+					id = studyTech_Opportunity.20
 				}
 			}
 		}
