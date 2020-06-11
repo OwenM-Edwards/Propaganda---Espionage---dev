@@ -108,9 +108,26 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  opinion_triedBlackmail_mod:0 "Attempted to blackmail us"
  opinion_triedBlackmail_mod_desc:0 ""
 
+ spy_physicsPenalty_mod:0 "Sabotaged research."
+ spy_physicsPenalty:0 "Sabotaged research."
+ spy_physicsPenalty_mod_desc:0 ""
+
+ spy_societyPenalty_mod:0 "Sabotaged research."
+ spy_societyPenalty:0 "Sabotaged research."
+ spy_societyPenalty_mod_desc:0 ""
+
+ spy_engineeringPenalty_mod:0 "Sabotaged research."
+ spy_engineeringPenalty:0 "Sabotaged research."
+ spy_engineeringPenalty_mod_desc:0 ""
+
+
  opinion_compromisedDiplomat:0 "Embarrassing diplomat"
  opinion_compromisedDiplomat_mod:0 "Embarrassing diplomat"
  opinion_compromisedDiplomat_mod_desc:0 ""
+
+ prototypeWeaponSabotage:0 "Tried to sabotage research"
+ prototypeWeaponSabotage_mod:0 "Tried to sabotage research"
+ prototypeWeaponSabotage_mod_desc:0 ""
 
  sowUnrest_mod:0 "Civil Unrest"
  
@@ -2252,7 +2269,7 @@ spyModConfig.2.b:0 "Cancel."
  saborepOpportunity.2.desc.c:0 "Through discrete channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat.\"
  saborepOpportunity.2.desc.d:0 "The §S[spyOpportunityTarget.GetName]§! begrudgingly sent us the payment package, and thanked us for keeping the matter private."
 
- saborepOpportunity.2.a:0 "Understood."
+ saborepOpportunity.2.a:0 "Understood." 
 
 
 
@@ -2281,5 +2298,30 @@ spyModConfig.2.b:0 "Cancel."
  saborepOpportunity.6.a:0 "This is terrible news!"
 
 
+
+
+
+
+ ###### PROTOTYPE WEAPONS TEST ##### 
+ studyTech_Opportunity.20.name:0 "Prototype Weapons Test"
+ studyTech_Opportunity.20.desc:0 "Your [Root.oppEvent_AorB] network agents working within the §S[spyOpportunityTarget.GetName]§! have had a team monitoring a remote research installation. That team has detected a burst of powerful radiation emanating from a nearby testsite. It is likely that the §S[spyOpportunityTarget.GetAdjective]§! is field testing a new weapon, however security around the installation is tight."
+ 
+ studyTech_Opportunity.20.a:0 "Send a team down and attempt to secure the tech."
+ studyTech_Opportunity.20.b:0 "Try to destroy the installation and setback their research."
+ studyTech_Opportunity.20.c:0 "Ignore it."
+ 
+ studyTech_Opportunity.21.name:0 "Prototype Weapons Test"
+ studyTech_Opportunity.21.desc.a:0 "Our agents successfully infiltrated the remote research installation, and collected comprehensive data on the targets experimental weapons research, all while remaining undetected. We have added it to our archives for further study."
+ 
+ studyTech_Opportunity.21.desc.b:0 "Our agents failed to infiltrate the remote research installation, worse still they were apprehended by the perimeter security forces. The target is furious."
+ 
+ studyTech_Opportunity.21.desc.c:0 "Coming in low to avoid perimetre sensors, several attack craft flown by our agents delivered devastating damage to the weapons research installation. The targets progress with this tech has been seriously set back."
+ 
+ studyTech_Opportunity.21.desc.d:0 "The installations perimetres defences spotted our agents before they could get close enough to do any damage, though we were able to extract them without incident. The target has likely already relocated the weapons data somewhere more secure."
+ 
+ studyTech_Opportunity.21.a:0 "Understood."
+
+
+ 
 
 
