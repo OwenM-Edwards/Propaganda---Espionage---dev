@@ -20,7 +20,7 @@ country_event = {
 		save_event_target_as = spyOpportunityAttacker
 		if = {
 			limit = {
-				is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+				checkIfBetaOpportunity = yes
 			}
 			event_target:betaNetworkTarget_temp = {
 				save_event_target_as = spyOpportunityTarget
@@ -50,71 +50,78 @@ country_event = {
 		# CHECK IF RUNNING SABREP OP
 		if = {
 			limit = {
-				or = {
-					has_country_flag = saboRep
+				checkIfBetaOpportunity = yes
+			}
+			if = {
+				limit = {
 					has_country_flag = saboRep2
 				}
+				country_event = { id = opportunityManager.10 }
 			}
-			country_event = {
-				id = opportunityManager.10
-			}
-		}
-		else_if = {
-			limit = {
-				or = {
-					has_country_flag = studyTech
+			else_if = {
+				limit = {
 					has_country_flag = studyTech2
 				}
+				country_event = { id = opportunityManager.11 }
 			}
-			country_event = {
-				id = opportunityManager.11
-			}
-		}
-		else_if = {
-			limit = {
-				or = {
-					has_country_flag = fundCrime
+			else_if = {
+				limit = {
 					has_country_flag = fundCrime2
 				}
+				country_event = { id = opportunityManager.12 }
 			}
-			country_event = {
-				id = opportunityManager.12
-			}
-		}
-		else_if = {
-			limit = {
-				or = {
-					has_country_flag = swingEthics
+			else_if = {
+				limit = {
 					has_country_flag = swingEthics2
 				}
+				country_event = { id = opportunityManager.13 }
 			}
-			country_event = {
-				id = opportunityManager.13
+			else_if = {
+				limit = {
+					has_country_flag = sowUnrest2
+				}
+				country_event = { id = opportunityManager.14 }
 			}
+			
 		}
 		else_if = {
 			limit = {
-				or = {
-					has_country_flag = sowUnrest
-					has_country_flag = sowUnrest2
-				}
+				checkIfAlphaOpportunity = yes
 			}
-			country_event = {
-				id = opportunityManager.14
+			if = {
+				limit = {
+					has_country_flag = saborep
+				}
+				country_event = { id = opportunityManager.10 }
+			}
+			if = {
+				limit = {
+					has_country_flag = studyTech
+				}
+				country_event = { id = opportunityManager.11 }
+			}
+			if = {
+				limit = {
+					has_country_flag = fundCrime
+				}
+				country_event = { id = opportunityManager.12 }
+			}
+			if = {
+				limit = {
+					has_country_flag = swingEthics
+				}
+				country_event = { id = opportunityManager.13 }
+			}
+			if = {
+				limit = {
+					has_country_flag = sowUnrest
+				}
+				country_event = { id = opportunityManager.14 }
 			}
 		}
 		else = {
-			if = { #is beta
-				limit = {
-					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
-				}
-				set_country_flag = opportunityEnd_4
-				country_event = { id = opportunityManager.3 }
-			}
-			else = { #is alpha
-				set_country_flag = opportunityEnd_4
-				country_event = { id = opportunityManager.3 }
-			}
+			set_country_flag = opportunityEnd_4
+			country_event = { id = opportunityManager.3 }
 		}
 	}
 }
@@ -133,11 +140,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = opportunityEnd_1
-		set_country_flag = opportunityEnd_2
-		set_country_flag = opportunityEnd_3
-		set_country_flag = opportunityEnd_4
-
 		if = { # SEND BACK TO START OF PROGRESS CHAIN
 			limit = {
 				has_country_flag = opportunityEnd_1
@@ -145,13 +147,15 @@ country_event = {
 			remove_country_flag = opportunityEnd_1
 			if = { #is beta
 				limit = {
-					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+					checkIfBetaOpportunity = yes
 				}
+				removeGlobalOpportunityFlagBeta = yes
 				removeGatherProgress_Beta_F = yes
 				remove_country_flag = betaF_OpportunityOngoing
 				country_event = { id = progressTrackerB.1 }
 			}
 			else = { #is alpha
+				removeGlobalOpportunityFlag = yes
 				removeGatherProgress_Alpha_F = yes
 				remove_country_flag = alphaF_OpportunityOngoing
 				country_event = { id = progressTrackerA.1 }
@@ -165,12 +169,14 @@ country_event = {
 			remove_country_flag = opportunityEnd_2
 			if = { #is beta
 				limit = {
-					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+					checkIfBetaOpportunity = yes
 				}
+				removeGlobalOpportunityFlagBeta = yes
 				remove_country_flag = betaF_OpportunityOngoing
 				country_event = { id = progressTrackerB.9 }
 			}
 			else = { #is alpha
+				removeGlobalOpportunityFlag = yes
 				remove_country_flag = alphaF_OpportunityOngoing
 				country_event = { id = progressTrackerA.9 }
 			}
@@ -183,12 +189,14 @@ country_event = {
 			remove_country_flag = opportunityEnd_3
 			if = { #is beta
 				limit = {
-					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+					checkIfBetaOpportunity = yes
 				}
+				removeGlobalOpportunityFlagBeta = yes
 				remove_country_flag = betaF_OpportunityOngoing
 				set_country_flag = failedBeta country_event = { id = spyFailEvt.0 }
 			}
 			else = { #is alpha
+				removeGlobalOpportunityFlag = yes
 				remove_country_flag = alphaF_OpportunityOngoing
 				country_event = { id = spyFailEvt.0 }
 			}
@@ -201,13 +209,15 @@ country_event = {
 			remove_country_flag = opportunityEnd_4
 			if = { #is beta
 				limit = {
-					is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+					checkIfBetaOpportunity = yes
 				}
+				removeGlobalOpportunityFlagBeta = yes
 				remove_country_flag = betaF_OpportunityOngoing
 				set_country_flag = gatherProgress_3_2
 				country_event = { id = progressTrackerB.4 } 
 			}
 			else = { #is alpha
+				removeGlobalOpportunityFlag = yes
 				remove_country_flag = alphaF_OpportunityOngoing
 				set_country_flag = gatherProgress_3
 				country_event = { id = progressTrackerA.4 } 
@@ -229,7 +239,7 @@ country_event = {
 			random_neighbor_country = {
 				limit = {
 					not = {
-						is_same_value = event_target:spyOpportunityAttacker
+						is_same_empire = event_target:spyOpportunityAttacker
 					}
 					checkCountryType = yes
 					has_communications = event_target:spyOpportunityTarget
@@ -239,8 +249,8 @@ country_event = {
 			random_neighbor_country = {
 				limit = {
 					nor = {
-						is_same_value = event_target:spyOpportunityAttacker
-						is_same_value = event_target:bombDiplomatsTarget_1
+						is_same_empire = event_target:spyOpportunityAttacker
+						is_same_empire = event_target:bombDiplomatsTarget_1
 					}
 					checkCountryType = yes
 					has_communications = event_target:spyOpportunityTarget
@@ -251,24 +261,24 @@ country_event = {
 		
 		random_list = {
 			# BLACKMAIL DIPLOMAT #
-			# 50 = {
-			# 	modifier = { #MUST BE AT A CERTAIN RELATION THRESHOLD
-			# 		factor = 0
-			# 		or = {
-			# 			is_at_war_with = event_target:spyOpportunityTarget
-			# 			event_target:spyOpportunityTarget = {
-			# 				opinion_level = {
-			# 					who = event_target:spyOpportunityAttacker
-			# 					level < neutral
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
-			# 	country_event = {
-			# 		id = saborepOpportunity.1
-			# 	}
-			# }
+			50 = {
+				modifier = { #MUST BE AT A CERTAIN RELATION THRESHOLD
+					factor = 0
+					or = {
+						is_at_war_with = event_target:spyOpportunityTarget
+						event_target:spyOpportunityTarget = {
+							opinion_level = {
+								who = event_target:spyOpportunityAttacker
+								level < neutral
+							}
+						}
+					}
+				}
+				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
+				country_event = {
+					id = saborepOpportunity.1
+				}
+			}
 
 
 			# BOMB DIPLOMATS #
