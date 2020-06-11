@@ -28,7 +28,7 @@ country_event = {
 
     option = { #REPEAT OPERATION
         name = techGeneric.1.a 
-        custom_tooltip = pointsRequiredAlpha.tooltip
+        custom_tooltip = pointsRequired_studyTech.tooltip
         allow = {
             has_resource = { type = sr_alpha_points amount >= @operationCostCheck } 
         }
@@ -105,7 +105,7 @@ country_event = {
 
     option = { #REPEAT OPERATION
         name = techGeneric.2.a 
-        custom_tooltip = pointsRequiredBeta.tooltip
+        custom_tooltip = pointsRequired_studyTech.tooltip
         allow = {
             has_resource = { type = sr_beta_points amount >= @operationCostCheck } 
         }
