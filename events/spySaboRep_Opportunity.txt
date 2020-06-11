@@ -230,6 +230,10 @@ country_event = {
 	
 	option = { #DO IT
 		name = saborepOpportunity.3.a
+		allow = {
+			resource_stockpile_compare = { resource = influence value >= 90 }
+			resource_stockpile_compare = { resource = energy value >= 200 }
+		}
 		hidden_effect = {
 			random_list = {
 				70 = { #SUCCEED 
