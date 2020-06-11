@@ -139,29 +139,47 @@ country_event = {     #STAGE THREE
 		}
 
 		else = { #IF ON OPERATION, ROLL FOR OPPORTUNITY CHECK
-			random_list = {
-				50 = {
-					# CHECKS FOR OPPORTUNITY #
-					if = {
-						limit = { #if not on opportunity cooldown, check for opportunity
-							not = {
-								has_country_flag = opportunityCooldown
-							}
-						}
-						save_event_target_as = spyOpportunityAttacker_BetaNetwork
-						country_event = { id = opportunityManager.0 }
+			if = {
+				limit = {
+					nor = {
+						checkIfAlphaOpportunity = yes
+						checkIfBetaOpportunity = yes
+						#has_country_flag = opportunityCooldown
 					}
-					# CONTINUE AS NORMAL #
-					else = {
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							factor = @opportunityCheckFactor
+						}
+						# CHECKS FOR OPPORTUNITY #
+						if = {
+							limit = { #if not on opportunity cooldown, check for opportunity
+								nor = {
+									checkIfAlphaOpportunity = yes
+									checkIfBetaOpportunity = yes
+									#has_country_flag = opportunityCooldown
+								}
+							}
+							assignGlobalOpportunityFlagBeta = yes
+							country_event = { id = opportunityManager.0 }
+						}
+						# CONTINUE AS NORMAL #
+						else = {
+							set_country_flag = gatherProgress_3_2
+							country_event = { id = progressTrackerB.4 days = @gatherProgGenericStage } 
+						}
+					}
+					50 = {
+						# CONTINUE AS NORMAL #
 						set_country_flag = gatherProgress_3_2
 						country_event = { id = progressTrackerB.4 days = @gatherProgGenericStage } 
 					}
 				}
-				50 = {
-					# CONTINUE AS NORMAL #
-					set_country_flag = gatherProgress_3_2
-					country_event = { id = progressTrackerB.4 days = @gatherProgGenericStage } 
-				}
+			}
+			else = {
+				set_country_flag = gatherProgress_3_2
+				country_event = { id = progressTrackerB.4 days = @gatherProgGenericStage } 
 			}
 		}
 	}
