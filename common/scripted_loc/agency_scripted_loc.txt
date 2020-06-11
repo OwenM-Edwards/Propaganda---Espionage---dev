@@ -804,15 +804,13 @@ defined_text = {
 	name = oppEvent_AorB
 	text = {
 		trigger = {
-			is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
+			checkIfAlphaOpportunity = yes
 		}
 		localization_key = "opportunityEvent_Alpha_desc"
 	}
 	text = {
 		trigger = {
-			not = {
-				is_same_value = event_target:spyOpportunityAttacker_BetaNetwork
-			}
+			checkIfBetaOpportunity = yes
 		}
 		localization_key = "opportunityEvent_Beta_desc"
 	}
