@@ -9,6 +9,9 @@ country_event = { #THIS ONE IS FOR TESTING ONLY
 
 	immediate = {
 		set_country_flag = espionageAllowed
+		add_modifier = {
+			modifier = spy_physicsPenalty
+		}
 	}
 }
 
