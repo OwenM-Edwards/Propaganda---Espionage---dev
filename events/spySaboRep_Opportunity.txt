@@ -56,7 +56,7 @@ country_event = {
 	}
 	# CHOICE C - #DO NOTHING
 	option = {
-		name = saborepOpportunity.1.C
+		name = saborepOpportunity.1.c
 		hidden_effect = {
 			set_country_flag = opportunityEnd_4
 			country_event = { id = opportunityManager.3 }
