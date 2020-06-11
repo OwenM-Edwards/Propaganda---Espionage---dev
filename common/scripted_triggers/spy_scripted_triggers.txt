@@ -592,3 +592,58 @@ domStabilitySystemFilterBeta = {
 		is_same_value = event_target:stability_target_system_beta_50
 	}
 }
+
+
+
+
+##### CHECK FOR GLOBAL OPPORTUNITY EVENT GLAGS ######
+# ALPHA #
+checkIfAlphaOpportunity = {
+	or = {
+		is_same_value = event_target:globalOpporFlag_1
+		is_same_value = event_target:globalOpporFlag_2
+		is_same_value = event_target:globalOpporFlag_3
+		is_same_value = event_target:globalOpporFlag_4
+		is_same_value = event_target:globalOpporFlag_5
+		is_same_value = event_target:globalOpporFlag_6
+		is_same_value = event_target:globalOpporFlag_7
+		is_same_value = event_target:globalOpporFlag_8
+		is_same_value = event_target:globalOpporFlag_9
+		is_same_value = event_target:globalOpporFlag_10
+		is_same_value = event_target:globalOpporFlag_11
+		is_same_value = event_target:globalOpporFlag_12
+		is_same_value = event_target:globalOpporFlag_13
+		is_same_value = event_target:globalOpporFlag_14
+		is_same_value = event_target:globalOpporFlag_15
+		is_same_value = event_target:globalOpporFlag_16
+		is_same_value = event_target:globalOpporFlag_17
+		is_same_value = event_target:globalOpporFlag_18
+		is_same_value = event_target:globalOpporFlag_19
+		is_same_value = event_target:globalOpporFlag_20
+	}
+}
+# BETA #
+checkIfBetaOpportunity = {
+	or = {
+		is_same_value = event_target:globalOpporFlagBeta_1
+		is_same_value = event_target:globalOpporFlagBeta_2
+		is_same_value = event_target:globalOpporFlagBeta_3
+		is_same_value = event_target:globalOpporFlagBeta_4
+		is_same_value = event_target:globalOpporFlagBeta_5
+		is_same_value = event_target:globalOpporFlagBeta_6
+		is_same_value = event_target:globalOpporFlagBeta_7
+		is_same_value = event_target:globalOpporFlagBeta_8
+		is_same_value = event_target:globalOpporFlagBeta_9
+		is_same_value = event_target:globalOpporFlagBeta_10
+		is_same_value = event_target:globalOpporFlagBeta_11
+		is_same_value = event_target:globalOpporFlagBeta_12
+		is_same_value = event_target:globalOpporFlagBeta_13
+		is_same_value = event_target:globalOpporFlagBeta_14
+		is_same_value = event_target:globalOpporFlagBeta_15
+		is_same_value = event_target:globalOpporFlagBeta_16
+		is_same_value = event_target:globalOpporFlagBeta_17
+		is_same_value = event_target:globalOpporFlagBeta_18
+		is_same_value = event_target:globalOpporFlagBeta_19
+		is_same_value = event_target:globalOpporFlagBeta_20
+	}
+}
