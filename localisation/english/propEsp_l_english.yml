@@ -2248,7 +2248,7 @@ spyModConfig.2.b:0 "Cancel."
 
  saborepOpportunity.2.name:0 "Compromised Diplomat"
  saborepOpportunity.2.desc.a:0 "Excellent news, the §S[spyOpportunityTarget.GetName]§! is left with a diplomatic embarrassment on their hands after we discreetly leaked information on the activities of their diplomat. Several other empires have openly mocked them for this."
- saborepOpportunity.2.desc.b:0 "Terrible news, after leaking the details of the §S[spyOpportunityTarget.GetName]§! diplomat, many of our diplomatic contacts instead decounded US. Apparently many feel that we should have had the decency to keep the matter private."
+ saborepOpportunity.2.desc.b:0 "Terrible news, after leaking the details of the §S[spyOpportunityTarget.GetName]§! diplomat, many of our diplomatic contacts have voiced their displeasure with us. Apparently many feel that the matter should have been kept private, and that the leak only serves to demonstrate our own ineffectiveness."
  saborepOpportunity.2.desc.c:0 "Through discrete channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat.\"
  saborepOpportunity.2.desc.d:0 "The §S[spyOpportunityTarget.GetName]§! begrudgingly sent us the payment package, and thanked us for keeping the matter private."
 
@@ -2259,14 +2259,14 @@ spyModConfig.2.b:0 "Cancel."
 ### BOMB DIPLOMATS EVENT ###
 #### SABOTAGE REP CRIT EVENTS ####
  saborepOpportunity.3.title:0 "Diplomat Attack"
- saborepOpportunity.3.desc:0 "§SOpportunity§!. An opportunity presents itself - [Root.oppEvent_AorB] network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[spyOpportunityTarget.GetName]§! capital of §S[spyOpportunityTarget.Capital.GetName]§!.\n\nAgents already operating on §S[spyOpportunityTarget.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[spyOpportunityTarget.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
+ saborepOpportunity.3.desc:0 "An opportunity presents itself - [Root.oppEvent_AorB] network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[spyOpportunityTarget.GetName]§! capital of §S[spyOpportunityTarget.Capital.GetName]§!.\n\nNotable delegates will include the §S[bombDiplomatsTarget_1.GetName]§! and the §S[bombDiplomatsTarget_2.GetName]§!\n\nAgents already operating on §S[spyOpportunityTarget.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[spyOpportunityTarget.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
 
  saborepOpportunity.3.a:0 "Approve the operation."
  saborepOpportunity.3.b:0 "Stand down, find another solution."
 
  
  saborepOpportunity.4.title:0 "Diplomat Attack"
- saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid-transit to the surface of §S[spyOpportunityTarget.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the humiliation casus belli against the §S[spyOpportunityTarget.GetName]§!, whose general diplomatic reputation has been significantly impacted."
+ saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid-transit to the surface of §S[spyOpportunityTarget.Capital.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetAdjective]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the humiliation casus belli against the [spyOpportunityTarget.GetAdjective], whose general diplomatic reputation has been significantly impacted."
 
  saborepOpportunity.4.a:0 "Excellent"
 
