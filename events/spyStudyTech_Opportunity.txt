@@ -108,6 +108,7 @@ country_event = {
 			limit = {
 				or = {
 					is_same_value = event_target:stageOneChoiceB_Success
+					is_same_value = event_target::stageOneChoiceA_Success
 					is_same_value = event_target:stageOneChoiceB_Fail
 				}
 			}
