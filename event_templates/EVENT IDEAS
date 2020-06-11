@@ -49,6 +49,32 @@ BASIC EVENTS = {
 	}
 
 
+	ORGANISED CRIME
+		AN AMBITIOUS OFFICIAL- no restrictions 
+
+			OPENER: A lesser knwon [ownrace] politician has traced credits laundered on [targetplanet] to our Empire through our [network]. They have threatened to expose our involvement unless we support their campaign for office. 
+
+				A: Agree to their terms (influence cost)
+				B: Let's see if we can come to an agreement... (credit cost)
+				C: Ignore their demands.
+				D: Silence them! (begin assasination chain)
+
+			ENDING: 
+				A or B:
+					Support organised crime resumes
+
+				C: The galactic community is displeased by your involvement in criminal activity
+					Minor Penalty to diplomatic reputation
+
+				D Success (0.5) The politician and their evidence has been destroyed. [network] on [targetplanet] are able to continue their work. 
+					Enorgy creddit boni 0.05
+
+				D Fail (0.5) The politician is dead. Sadly, he made arrangements. The diplomatic community will be made aware of your recent criminal activity.
+					Moderate penalty to diplomatic reputation
+			}
+		}
+	}
+
 
 
 
