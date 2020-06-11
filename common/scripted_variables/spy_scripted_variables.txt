@@ -2,8 +2,11 @@
 ##### BASIC STUFF ######
 
 	### OPERATION PROGRESS ###
-	@gatherProgStageOne = 90 #Must always be a few days longer than generic stage
-	@gatherProgGenericStage = 80
+	# @gatherProgStageOne = 90 #Must always be a few days longer than generic stage
+	# @gatherProgGenericStage = 80
+
+	@gatherProgStageOne = 10 #Must always be a few days longer than generic stage
+	@gatherProgGenericStage = 8
 
 	@gatherProgRandomDays = 5 #Must not overlap
 	@gatherProgRandomRandom = 3
@@ -66,7 +69,7 @@
 	@messageDisplayChance = 80
 	@messageNoDisplayChance = 20
 
-	@opinionBombedDiplomats = 120
+	@opinionBombedDiplomats = -120
 	@opinionBombedDiplomatsDecay = 4
 
 
@@ -98,7 +101,8 @@
 	@fundCrimeRepeatLength = 180
 
 
-
+	### OPPORTUNITY EVENT ROLL MODIFIER ###
+	@opportunityCheckFactor = 10
 
 
 
