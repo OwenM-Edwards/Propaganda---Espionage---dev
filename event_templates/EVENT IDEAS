@@ -1,0 +1,55 @@
+BASIC EVENTS = {
+
+	INDUSTRIAL ESPIONAGE = {
+		DONE - WEAPONS TEST - detected energy signature = {
+			pay more to get tech.
+			Maybe can go wrong because untested.
+
+			OPENER: Your agents working monitoring a remote research instillation in the target empire, have detecgted a burst of powerful radiation eminating from a nearby testsite.
+			It is likely the target is field testing a powerful new weapon, however security around the installation is tight.
+			A. Send a team down and attempt to secure the tech.
+			B. Try to destroy the installation and setback targets development of tech.
+			C. Leave it.
+
+			ENDING:
+				A SUCCESS. (80) Our agents succesfully infiltrated the remote reearch instllation, and comprehensive data on the targets experimental weapons research, all while remaining undetected. We have added it to our archives for further study.
+
+				A FAIL. (20) Our agents failed to infiltrate the remore research instllation, worse still they were aprehended by the perimater security forces. The target is furious, and contacting us now.
+
+				B SUCCESS. (50) Coming in low to avoid perimetre sensors, several attck craft flown by our agents delivered devstating damage to the weapons research installation. The targets progress with this tech has been seriously set back.
+
+				B FAIL. (50) The installations perimetres defences spotted our agents before they could get close enough to do any damage, though we were able to extract them without incident. The target has likely already reloacted the weapons data somewhere more secure.
+			}
+		}
+	
+   	DONE - HEALTHCARE - only fires at neutral relations or above, or if a native species is shared
+			OPENER: Your agents in the field have become sick with coronavirus
+				A. Send your agents to be treated at a local hospital
+				B. Recall your agents 
+			ENDING
+				A CRIT SUCCESS (0.5) Agents return home with knowledge of advanced medical technology 
+					Requires Genome Mapping
+					Begins Genome mapping/ Genetic Healthcare/ Cyto-Revitalisation with 50% progress
+
+				A SUCCESS (0.25) Agents are able to complete their mission and return home. They also learn something of alien medical technology.
+					100% Normal research point reward 
+					100% Biology research points reward
+
+				A FAIL (0.25) Agents pass away in hospital. Their knowledge is lost.
+					No rewards from industrial espionage
+
+				B SUCCESS 
+				Your agents return home what information they were able to gather before they were recalled
+					50-100% of normal research point reward
+				B FAIL 
+				Your agents have died in the field 
+					No rewards from industrial espionage
+			}
+		}
+	}
+
+
+
+
+
+
