@@ -820,3 +820,589 @@ clearFlagsForNewOperation_BETA_F = {
 	remove_country_flag = gatherIntelBeta
 	remove_country_flag = agencyBetaF
 }
+
+
+
+
+
+#### OPPORTUNITY EVENT, ATTACKER GLOBAL FLAGS ####
+## ALPHA ##
+assignGlobalOpportunityFlagAlpha = {
+	if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_1
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_1
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_2
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_2
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_3
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_3
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_4
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_4
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_5
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_5
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_6
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_6
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_7
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_7
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_8
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_8
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_9
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_9
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_10
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_10
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_11
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_11
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_12
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_12
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_13
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_13
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_14
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_14
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_15
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_15
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_16
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_16
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_17
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_17
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_18
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_18
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_19
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_19
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlag_20
+			}
+		}
+		save_global_event_target_as = globalOpporFlag_20
+	}
+}
+## REMOVE ##
+removeGlobalOpportunityFlag = {
+	if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_1
+		}
+		clear_global_event_target = globalOpporFlag_1
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_2
+		}
+		clear_global_event_target = globalOpporFlag_2
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_3
+		}
+		clear_global_event_target = globalOpporFlag_3
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_4
+		}
+		clear_global_event_target = globalOpporFlag_4
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_5
+		}
+		clear_global_event_target = globalOpporFlag_5
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_6
+		}
+		clear_global_event_target = globalOpporFlag_6
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_7
+		}
+		clear_global_event_target = globalOpporFlag_7
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_8
+		}
+		clear_global_event_target = globalOpporFlag_8
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_9
+		}
+		clear_global_event_target = globalOpporFlag_9
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_10
+		}
+		clear_global_event_target = globalOpporFlag_10
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_11
+		}
+		clear_global_event_target = globalOpporFlag_11
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_12
+		}
+		clear_global_event_target = globalOpporFlag_12
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_13
+		}
+		clear_global_event_target = globalOpporFlag_13
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_14
+		}
+		clear_global_event_target = globalOpporFlag_14
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_15
+		}
+		clear_global_event_target = globalOpporFlag_15
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_16
+		}
+		clear_global_event_target = globalOpporFlag_16
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_17
+		}
+		clear_global_event_target = globalOpporFlag_17
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_18
+		}
+		clear_global_event_target = globalOpporFlag_18
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_19
+		}
+		clear_global_event_target = globalOpporFlag_19
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlag_20
+		}
+		clear_global_event_target = globalOpporFlag_20
+	}
+}
+
+
+#### OPPORTUNITY EVENT, ATTACKER GLOBAL FLAGS ####
+## BETA ##
+assignGlobalOpportunityFlagBeta = {
+	if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_1
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_1
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_2
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_2
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_3
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_3
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_4
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_4
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_5
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_5
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_6
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_6
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_7
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_7
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_8
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_8
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_9
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_9
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_10
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_10
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_11
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_11
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_12
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_12
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_13
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_13
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_14
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_14
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_15
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_15
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_16
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_16
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_17
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_17
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_18
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_18
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_19
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_19
+	}
+	else_if = {
+		limit = {
+			not = {
+				exists = event_target:globalOpporFlagBeta_20
+			}
+		}
+		save_global_event_target_as = globalOpporFlagBeta_20
+	}
+}
+## REMOVE ##
+removeGlobalOpportunityFlagBeta = {
+	if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_1
+		}
+		clear_global_event_target = globalOpporFlagBeta_1
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_2
+		}
+		clear_global_event_target = globalOpporFlagBeta_2
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_3
+		}
+		clear_global_event_target = globalOpporFlagBeta_3
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_4
+		}
+		clear_global_event_target = globalOpporFlagBeta_4
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_5
+		}
+		clear_global_event_target = globalOpporFlagBeta_5
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_6
+		}
+		clear_global_event_target = globalOpporFlagBeta_6
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_7
+		}
+		clear_global_event_target = globalOpporFlagBeta_7
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_8
+		}
+		clear_global_event_target = globalOpporFlagBeta_8
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_9
+		}
+		clear_global_event_target = globalOpporFlagBeta_9
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_10
+		}
+		clear_global_event_target = globalOpporFlagBeta_10
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_11
+		}
+		clear_global_event_target = globalOpporFlagBeta_11
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_12
+		}
+		clear_global_event_target = globalOpporFlagBeta_12
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_13
+		}
+		clear_global_event_target = globalOpporFlagBeta_13
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_14
+		}
+		clear_global_event_target = globalOpporFlagBeta_14
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_15
+		}
+		clear_global_event_target = globalOpporFlagBeta_15
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_16
+		}
+		clear_global_event_target = globalOpporFlagBeta_16
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_17
+		}
+		clear_global_event_target = globalOpporFlagBeta_17
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_18
+		}
+		clear_global_event_target = globalOpporFlagBeta_18
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_19
+		}
+		clear_global_event_target = globalOpporFlagBeta_19
+	}
+	else_if = {
+		limit = {
+			is_same_value = event_target:globalOpporFlagBeta_20
+		}
+		clear_global_event_target = globalOpporFlagBeta_20
+	}
+}
+
+
+
+
+
