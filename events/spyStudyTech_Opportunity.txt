@@ -1,7 +1,6 @@
 namespace = studyTech_Opportunity
 
 ###### INFECTED AGENTS EVENT #####
-
 ## OPENING EVENT ##
 @eventDayLength = 20
 @eventRandomLength = 10
@@ -577,9 +576,6 @@ country_event = {
 			}
 		}
 	}
-
-
-
 #### GET THE SCIENTIST ####
 country_event = {  
 	id = studyTech_Opportunity.100
@@ -615,3 +611,128 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### PROTOTYPE WEAPONS TEST #####
+## OPENING EVENT ##
+	country_event = {
+		id = studyTech_Opportunity.20
+		title = studyTech_Opportunity.20.name
+		desc = {
+			text = studyTech_Opportunity.20.desc
+			trigger = { }
+		}
+		is_triggered_only = yes
+		picture = GFX_evt_debris
+		show_sound = event_default
+		
+		immediate = { }
+
+		# CHOICE A #Send a team down and attempt to secure the tech.
+		option = {
+			name = studyTech_Opportunity.20.a
+			hidden_effect = {
+				random_list = {
+					50 = {
+						save_event_target_as = stageOneChoiceA_Success
+					}
+					50 = {
+						save_event_target_as = stageOneChoiceA_Fail
+					}
+				}
+				country_event = { 
+					id = studyTech_Opportunity.21 
+					days = @eventDayLength random = @eventRandomLength 
+				}
+			}
+		}
+
+		# CHOICE B #Try to destroy the installation and setback targets development of tech.
+		option = {
+			name = studyTech_Opportunity.20.b
+			hidden_effect = {
+				random_list = {
+					50 = {
+						save_event_target_as = stageOneChoiceB_Success
+					}
+					50 = {
+						save_event_target_as = stageOneChoiceB_Fail
+					}
+				}
+				country_event = { 
+					id = studyTech_Opportunity.21
+					days = @eventDayLength random = @eventRandomLength 
+				}
+			}
+		}
+		# CHOICE C #DO NOTHING
+		option = {
+			name = studyTech_Opportunity.20.c
+			hidden_effect = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
+		}
+	}
+
+
+## FINAL STAGE ##
+	country_event = {
+		id = studyTech_Opportunity.21
+		title = studyTech_Opportunity.21.name
+		desc = { # CHOICE A WON # GET TECH
+			text = studyTech_Opportunity.21.desc.a
+			trigger = {
+				is_same_value = event_target:stageOneChoiceA_Success
+			}
+		}
+		desc = { # CHOICE A FAIL # GET CAUGHT
+			text = studyTech_Opportunity.21.desc.b
+			trigger = {
+				is_same_value = event_target:stageOneChoiceA_Fail
+			}
+		}
+		desc = { # CHOICE B WON # SET TARGETS TECH BACK
+			text = studyTech_Opportunity.21.desc.c
+			trigger = {
+				is_same_value = event_target:stageOneChoiceB_Success
+			}
+		}
+		desc = { # CHOICE B FAIL # FAIL
+			text = studyTech_Opportunity.21.desc.d
+			trigger = {
+				is_same_value = event_target:stageOneChoiceB_Fail
+			}
+		}
+		is_triggered_only = yes
+		picture = GFX_event_default
+		show_sound = event_default
+		
+		immediate = { }
+
+		# END
+		option = {
+			name = studyTech_Opportunity.21.a
+			hidden_effect = { }
+		}
+	}
+
+
+
+
+
+
