@@ -1,7 +1,7 @@
 BASIC EVENTS = {
 
 	INDUSTRIAL ESPIONAGE = {
-		Prototype weapons test - detected energy signature = {
+		DONE - WEAPONS TEST - detected energy signature = {
 			pay more to get tech.
 			Maybe can go wrong because untested.
 
@@ -21,8 +21,8 @@ BASIC EVENTS = {
 				B FAIL. (50) The installations perimetres defences spotted our agents before they could get close enough to do any damage, though we were able to extract them without incident. The target has likely already reloacted the weapons data somewhere more secure.
 			}
 		}
-	}
-   	HEALTHCARE - only fires at neutral relations or above, or if a native species is shared
+	
+   	DONE - HEALTHCARE - only fires at neutral relations or above, or if a native species is shared
 			OPENER: Your agents in the field have become sick with coronavirus
 				A. Send your agents to be treated at a local hospital
 				B. Recall your agents 
