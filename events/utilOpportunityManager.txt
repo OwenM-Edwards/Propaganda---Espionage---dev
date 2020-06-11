@@ -347,6 +347,82 @@ country_event = {
 						}
 					}
 				}
+				modifier = { #IF NO MATCHING TECH NEED DONT RUN
+					factor = 0
+					nor = {
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_genome_mapping
+								
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_genome_mapping
+								}
+							}
+						}
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_vitality_boosters
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_vitality_boosters
+								}
+							}
+						}
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_frontier_hospital
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_frontier_hospital
+								}
+							}
+						}
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_alien_life_studies
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_alien_life_studies
+								}
+							}
+						}
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_society_1
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_society_1
+								}
+							}
+						}
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_society_2
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_society_2
+								}
+							}
+						}
+						and = {
+							event_target:spyOpportunityTarget = {
+								has_technology = tech_society_3
+							}
+							event_target:spyOpportunityAttacker = {
+								not = {
+									has_technology = tech_society_3
+								}
+							}
+						}
+					}
+				}
 				modifier = { #IF AT WAR WITH TARGET, DONT RUN
 					factor = 0
 					is_at_war_with = event_target:spyOpportunityTarget
@@ -359,6 +435,18 @@ country_event = {
 
 			# SCIENTIST DEFECTION EVENT #
 			50 = {
+				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
+				country_event = {
+					id = studyTech_Opportunity.3
+				}
+			}
+
+			# PROTOTYPE WEAPONS TEST #
+			50 = {
+				modifier = { #check for tech need
+					factor = 0 
+					checkWeaponsTech = no
+				}
 				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 				country_event = {
 					id = studyTech_Opportunity.3
