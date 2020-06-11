@@ -104,6 +104,14 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  opinion_bombed_diplomats:0 "Suspected of sabotaging diplomatic conference."
  opinion_bombed_diplomats_mod_desc:0 ""
 
+ opinion_triedBlackmail:0 "Attempted to blackmail us"
+ opinion_triedBlackmail_mod:0 "Attempted to blackmail us"
+ opinion_triedBlackmail_mod_desc:0 ""
+
+ opinion_compromisedDiplomat:0 "Embarrassing diplomat"
+ opinion_compromisedDiplomat_mod:0 "Embarrassing diplomat"
+ opinion_compromisedDiplomat_mod_desc:0 ""
+
  sowUnrest_mod:0 "Civil Unrest"
  
  sowUnrestHigh_mod:0 "Major Civil Unrest"
@@ -871,7 +879,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  ABF_chooseOP.e:0 "Back."
  
  
-###### SELECT DOMESTIC OPERATION ###### 
+###### SELECT DOMESTIC OPERATION ######
 ### TOOLTIPS ###
  AD_chooseOP.a:0 "Improve our diplomatic reputation.\n\nRequires §S15§! levels of intelligence."
  BD_chooseOP.a:0 "Improve our diplomatic reputation.\n\nRequires §S15§! levels of intelligence."
@@ -1492,10 +1500,10 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  boostRepACritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Alpha Network has earned us a diplomatic favor from the §S[randomFavorCountry.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
 
  boostRepACritSuccess2.title:0 "Favor Earned"
- boostRepACritSuccess2.desc:0 "§YBonus Success!§!. The §S[randomFavorCountry.GetName]§! have been particulaly impressed with our recent diplomatic actions. We have earned a diplomatic favor.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts. "
+ boostRepACritSuccess2.desc:0 "§YBonus Success!§!. The §S[randomFavorCountry.GetName]§! have been particularly impressed with our recent diplomatic actions. We have earned a diplomatic favor.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts. "
 
  boostRepBCritSuccess2.title:0 "Favor Earned"
- boostRepBCritSuccess2.desc:0 "§YBonus Success!§!. The §S[randomFavorCountryBeta.GetName]§! have been particulaly impressed with our recent diplomatic actions. We have earned a diplomatic favor.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts. "
+ boostRepBCritSuccess2.desc:0 "§YBonus Success!§!. The §S[randomFavorCountryBeta.GetName]§! have been particularly impressed with our recent diplomatic actions. We have earned a diplomatic favor.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts. "
 
  boostRepBCritSuccess.title:0 "Favor Earned"
  boostRepBCritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Beta Network has earned us a diplomatic favor from the §S[randomFavorCountryBeta.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
@@ -1519,12 +1527,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
 ##### BOOST STABILITY ######
 ### CHOOSE TARGET ###
-## ALPHA ## 
+## ALPHA ##
  spyDomStability.1.name:0 "Target System"
- spyDomStability.1.desc:0 "We can order the Alpha Network to focus its operations on a single system, conducting widescale grassroots propaganda campaigns to improve the stability of all colonies within."
+ spyDomStability.1.desc:0 "We can order the Alpha Network to focus its operations on a single system, conducting wide scale grassroots propaganda campaigns to improve the stability of all colonies within."
 
  spyDomStabilityBeta.1.name:0 "Target System"
- spyDomStabilityBeta.1.desc:0 "We can order the Beta Network to focus its operations on a single system, conducting widescale grassroots propaganda campaigns to improve the stability of all colonies within."
+ spyDomStabilityBeta.1.desc:0 "We can order the Beta Network to focus its operations on a single system, conducting wide scale grassroots propaganda campaigns to improve the stability of all colonies within."
 
  spyDomStability.1.1:0 "§S[stability_target_system_1.GetName]§!."
  spyDomStability.1.2:0 "§S[stability_target_system_2.GetName]§!."
@@ -1638,7 +1646,7 @@ spyDomStability.3.desc:0 "§YSuccess!§!. Our Alpha Network operatives have succ
 
 ## SUCCESS PARTIAL ##
 spyDomStabilityBeta.3.name:0 "Domestic Stability"
-spyDomStabilityBeta.3.desc:0 "§YSuccess!§!. Our Beta Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
+spyDomStabilityBeta.3.desc:0 "§YSuccess!§!. Our Beta Network operatives have successfully run a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
 
 ## SUCCESS MAJOR ##
 spyDomStability.4.name:0 "Domestic Stability"
@@ -1647,7 +1655,7 @@ spyDomStability.4.desc:0 "§YMajor Success!§!. Our Alpha Network operatives hav
 
 ## SUCCESS MAJOR ##
 spyDomStabilityBeta.4.name:0 "Domestic Stability"
-spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
+spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives have successfully run a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
  
  
  
@@ -2135,7 +2143,7 @@ spyModConfig.2.b:0 "Cancel."
  ## SICK AGENTS - BY DPD ##
 ## OPENING EVENT ##
  studyTech_Opportunity.1.name:0 "Infected Agents"
- studyTech_Opportunity.1.desc:0 "Our [Root.oppEvent_AorB] Network agents within the §S[spyOpportunityTarget.GetName]§! have been infected with a deadly virus. We dot beleive there to have been any foul play, but unless treated quickly our agents will be in serious danger.\n\nWe can send an emergency transport to recall them, effectivly cancelling their current operation, or send them to a local §S[spyOpportunityTarget.GetAdjective]§! hospital, at the risk of their true purpose being discovered."
+ studyTech_Opportunity.1.desc:0 "Our [Root.oppEvent_AorB] Network agents within the §S[spyOpportunityTarget.GetName]§! have been infected with a deadly virus. We do not believe there to have been any foul play, but unless treated quickly our agents will be in serious danger.\n\nWe can send an emergency transport to recall them, effectively cancelling their current operation, or send them to a local §S[spyOpportunityTarget.GetAdjective]§! hospital at the risk of their true purpose being discovered."
 # CHOICE A
  studyTech_Opportunity.1.a:0 "Send the agents to a local hospital."
 # CHOICE B
@@ -2144,13 +2152,13 @@ spyModConfig.2.b:0 "Cancel."
 ## FINAL STAGE ##
  studyTech_Opportunity.2.name:0 "Infected Agents"
 # CHOICE A CRIT SUCCESS
- studyTech_Opportunity.2.desc.a:0 "Excellent news, our agents were treated well at a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents used the event as an opportunity to snoop through onsite database and aquire details on some of the advanced medical technology used."
+ studyTech_Opportunity.2.desc.a:0 "Excellent news, our agents were treated well at a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents used the event as an opportunity to snoop through an onsite database and acquire details on some of the advanced medical technology used."
 # CHOICE A SUCCESS
- studyTech_Opportunity.2.desc.b:0 "Good news, our agents were treated well at a nearby §§S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents learned a great deal from observing the medical technology used."
+ studyTech_Opportunity.2.desc.b:0 "Good news, our agents were treated well at a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents learned a great deal from observing the medical technology used."
 # CHOICE A FAIL
  studyTech_Opportunity.2.desc.c:0 "Bad news, though our [Root.oppEvent_AorB] network agents made it to a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center it was already too late. All of of [Root.oppEvent_AorB] network field agents perished.\n\nHowever, their true purpose was never discovered, and [Root.oppEvent_AorB] network is already preparing a new field team.\n\n The networks current operation has been set back."
 # CHOICE B SUCCESS
- studyTech_Opportunity.2.desc.d:0 "Good news, our [Root.oppEvent_AorB] network agents were extracted and treated before the virus could progress any further. They are recoverering well, and have even managed to bring back a small cache of already collected technical data."
+ studyTech_Opportunity.2.desc.d:0 "Good news, our [Root.oppEvent_AorB] network agents were extracted and treated before the virus could progress any further. They are recovering well, and have even managed to bring back a small cache of already collected technical data."
 # CHOICE B FAIL
  studyTech_Opportunity.2.desc.e:0 "Bad news, we were unable to extract our [Root.oppEvent_AorB] network agents in time, and the entire field team perished.\n\nHowever they the extraction team did find a small cache of already collected technical data. We have added it to our research archives.\n\n The networks current operation has been set back."
 # END #
@@ -2205,7 +2213,7 @@ spyModConfig.2.b:0 "Cancel."
 
 
  spyOpportunity.18.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected and we cant slip through.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter."
+ spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected and we can't slip through.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter."
  spyOpportunity.18.a:0 "Secondary entrance."
  spyOpportunity.18.b:0 "Ambush patrol."
 
@@ -2232,17 +2240,17 @@ spyModConfig.2.b:0 "Cancel."
 #### SABOREP OPPORTUNITY EVENTS #####
 ### BLACKMAIL DIPLOMAT EVENT ###
  saborepOpportunity.1.name:0 "Compromised Diplomat"
- saborepOpportunity.1.desc:0 "[Root.oppEvent_AorB] agents have been monitoring a §S[spyOpportunityTarget.GetName]§! diplomat residing on [Root.Capital.GetName]. They have been recorded interacting with known criminal elements on mulitple occasions after apparently developing a serious substance abuse addicition.\n\nOur agents believe that we could use the recordings to either publicaly expose and shame the §S[spyOpportunityTarget.GetAdjective]§!, or privatley offer to keep the matter private for a small reward."
+ saborepOpportunity.1.desc:0 "[Root.oppEvent_AorB] agents have been monitoring a §S[spyOpportunityTarget.GetName]§! diplomat residing on [Root.Capital.GetName]. They have been recorded interacting with known criminal elements on multiple occasions after apparently developing a serious substance abuse addiction.\n\nOur agents believe that we could use the recordings to either publicly expose and shame the §S[spyOpportunityTarget.GetAdjective]§!, or privately offer to keep the matter private for a small reward."
 
  saborepOpportunity.1.a:0 "Publicly expose them."
  saborepOpportunity.1.b:0 "Blackmail them."
  saborepOpportunity.1.c:0 "Leave them be."
 
  saborepOpportunity.2.name:0 "Compromised Diplomat"
- saborepOpportunity.2.desc.a:0 "Excellent news, the §S[spyOpportunityTarget.GetName]§! is left with a diplomatic embaressement on their hands after we discreetly leaked information on the activites of their diplomat. Several other empires have openly mocked them for this."
- saborepOpportunity.2.desc.b:0 "Terrible news, after leaking the details of the §S[spyOpportunityTarget.GetName]§! diplomat, many of our diplomatic contacts instead decounded US. Apparantly many feel that we should have had the deceny to keep the matter private."
- saborepOpportunity.2.desc.c:0 "Through discreet channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat.\"
- saborepOpportunity.2.desc.d:0 "The §S[spyOpportunityTarget.GetName]§! begudingly sent us the payment package, and thanked us for keeping the matter private."
+ saborepOpportunity.2.desc.a:0 "Excellent news, the §S[spyOpportunityTarget.GetName]§! is left with a diplomatic embarrassment on their hands after we discreetly leaked information on the activities of their diplomat. Several other empires have openly mocked them for this."
+ saborepOpportunity.2.desc.b:0 "Terrible news, after leaking the details of the §S[spyOpportunityTarget.GetName]§! diplomat, many of our diplomatic contacts instead decounded US. Apparently many feel that we should have had the decency to keep the matter private."
+ saborepOpportunity.2.desc.c:0 "Through discrete channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat.\"
+ saborepOpportunity.2.desc.d:0 "The §S[spyOpportunityTarget.GetName]§! begrudgingly sent us the payment package, and thanked us for keeping the matter private."
 
  saborepOpportunity.2.a:0 "Understood."
 
@@ -2258,7 +2266,7 @@ spyModConfig.2.b:0 "Cancel."
 
  
  saborepOpportunity.4.title:0 "Diplomat Attack"
- saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid transit to the surface of §S[spyOpportunityTarget.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the humilatiom casus belli against the §S[spyOpportunityTarget.GetName]§!, whose general diplomatic reputation has been significantly impacted."
+ saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid-transit to the surface of §S[spyOpportunityTarget.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the humiliation casus belli against the §S[spyOpportunityTarget.GetName]§!, whose general diplomatic reputation has been significantly impacted."
 
  saborepOpportunity.4.a:0 "Excellent"
 
@@ -2271,5 +2279,7 @@ spyModConfig.2.b:0 "Cancel."
  saborepOpportunity.6.desc:0 "§RMajor Failure!§!. Our sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling the explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated.\n\nSeveral other [Root.oppEvent_AorB] network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement.\n\nThe §S[spyOpportunityTarget.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."
 
  saborepOpportunity.6.a:0 "This is terrible news!"
+
+
 
 
