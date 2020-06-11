@@ -109,3 +109,13 @@ opinion_compromisedDiplomat = {
 		base = @opinionBombedDiplomatsDecay
 	}
 }
+
+prototypeWeaponSabotage = {
+	opinion = {
+		base = -120
+	}
+	monthly = yes
+	decay = {
+		base = 2
+	}
+}
