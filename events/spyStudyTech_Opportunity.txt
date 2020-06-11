@@ -123,57 +123,97 @@ country_event = {
 				limit = { #A CRIT SUCCESS
 					is_same_value = event_target:stageOneChoiceA_Crit
 				}
-				random_list = {
-					10 = {
-						modifier = {
-							factor = 0
+				if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_genome_mapping
 						}
-						give_technology = { tech = tech_genome_mapping message = yes }
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_genome_mapping
+							}
+						}
 					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_genome_mapping message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_vitality_boosters
 						}
-						give_technology = { tech = tech_vitality_boosters message = yes }
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_vitality_boosters
+							}
+						}
 					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_vitality_boosters message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_frontier_hospital
 						}
-						give_technology = { tech = tech_frontier_hospital message = yes }
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_frontier_hospital
+							}
+						}
 					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_frontier_hospital message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_alien_life_studies
 						}
-						give_technology = { tech = tech_alien_life_studies message = yes }
-					}
-					10 = {
-						modifier = {
-							factor = 0
-							has_technology = tech_society_3
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_alien_life_studies
+							}
 						}
-						give_technology = { tech = tech_society_3 message = yes }
 					}
-					10 = {
-						modifier = {
-							factor = 0
-							has_technology = tech_society_2
-						}
-						give_technology = { tech = tech_society_2 message = yes }
-					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_alien_life_studies message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_society_1
 						}
-						give_technology = { tech = tech_society_1 message = yes }
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_society_1
+							}
+						}
 					}
-				}	
+					give_technology = { tech = tech_society_1 message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
+							has_technology = tech_society_2	
+						}
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_society_2
+							}
+						}
+					}
+					give_technology = { tech = tech_society_2 message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
+							has_technology = tech_society_3
+						}
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_society_3
+							}
+						}
+					}
+					give_technology = { tech = tech_society_3 message = yes }
+				}
 				set_country_flag = opportunityEnd_4
 				country_event = { id = opportunityManager.3 }
 			}
@@ -181,56 +221,96 @@ country_event = {
 				limit = {
 					is_same_value = event_target:stageOneChoiceA_Success
 				}
-				random_list = {
-					10 = {
-						modifier = {
-							factor = 0
+				if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_genome_mapping
 						}
-						add_tech_progress = { tech = tech_genome_mapping progress = 0.25 }
-					}
-					10 = {
-						modifier = {
-							factor = 0
-							has_technology = tech_vitality_boosters
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_genome_mapping
+							}
 						}
-						add_tech_progress = { tech = tech_vitality_boosters progress = 0.25 }
 					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_genome_mapping message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
+							has_technology = tech_vitality_boosters	
+						}
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_vitality_boosters
+							}
+						}
+					}
+					give_technology = { tech = tech_vitality_boosters message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_frontier_hospital
 						}
-						add_tech_progress = { tech = tech_frontier_hospital progress = 0.25 }
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_frontier_hospital
+							}
+						}
 					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_frontier_hospital message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_alien_life_studies
 						}
-						add_tech_progress = { tech = tech_alien_life_studies progress = 0.25 }
-					}
-					10 = {
-						modifier = {
-							factor = 0
-							has_technology = tech_society_3
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_alien_life_studies
+							}
 						}
-						add_tech_progress = { tech = tech_society_3 progress = 0.25 }
 					}
-					10 = {
-						modifier = {
-							factor = 0
-							has_technology = tech_society_2
-						}
-						add_tech_progress = { tech = tech_society_2 progress = 0.25 }
-					}
-					10 = {
-						modifier = {
-							factor = 0
+					give_technology = { tech = tech_alien_life_studies message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
 							has_technology = tech_society_1
 						}
-						add_tech_progress = { tech = tech_society_1 progress = 0.25 }
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_society_1
+							}
+						}
 					}
+					give_technology = { tech = tech_society_1 message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
+							has_technology = tech_society_2
+						}
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_society_2
+							}
+						}
+					}
+					give_technology = { tech = tech_society_2 message = yes }
+				}
+				else_if = {
+					limit = {
+						event_target:spyOpportunityTarget = {
+							has_technology = tech_society_3
+						}
+						event_target:spyOpportunityAttacker = {
+							not = {
+								has_technology = tech_society_3
+							}
+						}
+					}
+					give_technology = { tech = tech_society_3 message = yes }
 				}
 				set_country_flag = opportunityEnd_4
 				country_event = { id = opportunityManager.3 }
@@ -627,17 +707,14 @@ country_event = {
 
 
 
-###### PROTOTYPE WEAPONS TEST #####
+###### PROTOTYPE WEAPONS TEST ##### 
 ## OPENING EVENT ##
 	country_event = {
 		id = studyTech_Opportunity.20
 		title = studyTech_Opportunity.20.name
-		desc = {
-			text = studyTech_Opportunity.20.desc
-			trigger = { }
-		}
+		desc = studyTech_Opportunity.20.desc
 		is_triggered_only = yes
-		picture = GFX_evt_debris
+		picture = GFX_evt_large_explosion
 		show_sound = event_default
 		
 		immediate = { }
@@ -719,7 +796,7 @@ country_event = {
 			}
 		}
 		is_triggered_only = yes
-		picture = GFX_event_default
+		picture = GFX_evt_landing_ship
 		show_sound = event_default
 		
 		immediate = { }
@@ -727,9 +804,106 @@ country_event = {
 		# END
 		option = {
 			name = studyTech_Opportunity.21.a
-			hidden_effect = { }
+			hidden_effect = {
+				if = {
+					limit = {
+						is_same_value = event_target:stageOneChoiceA_Success
+					}
+					getWeaponsTech = yes
+					set_country_flag = opportunityEnd_4
+					country_event = { id = opportunityManager.3 }
+				}
+				else_if = {
+					limit = {
+						is_same_value = event_target:stageOneChoiceA_Fail
+					}
+					event_target:spyOpportunityTarget = {
+						add_opinion_modifier = {
+							who = event_target:spyOpportunityAttacker
+							modifier = prototypeWeaponSabotage
+						}
+					}
+					set_country_flag = opportunityEnd_4
+					country_event = { id = opportunityManager.3 }
+				}
+				else_if = {
+					limit = {
+						is_same_value = event_target:stageOneChoiceB_Success
+					}
+					random_list = {
+						30 = {
+							event_target:spyOpportunityTarget = {
+								add_modifier = {
+									modifier = spy_physicsPenalty
+									days = 300
+								}
+							}
+						}
+						30 = {
+							event_target:spyOpportunityTarget = {
+								add_modifier = {
+									modifier = spy_societyPenalty
+									days = 300
+								}
+							}
+						}
+						30 = {
+							event_target:spyOpportunityTarget = {
+								add_modifier = {
+									modifier = spy_engineeringPenalty
+									days = 300
+								}
+							}
+						}
+					}
+					set_country_flag = opportunityEnd_4
+					country_event = { id = opportunityManager.3 }
+				}
+				else_if = {
+					limit = {
+						is_same_value = event_target:stageOneChoiceB_Fail
+					}
+					set_country_flag = opportunityEnd_4
+					country_event = { id = opportunityManager.3 }
+				}
+			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
