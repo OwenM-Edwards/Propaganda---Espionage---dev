@@ -112,7 +112,7 @@ TODO 3 = {
    Add pvp notification to sow unrest
 
    ANOTHER AI PASS = {
-      Better decision making for chooing target
+      Better decision making for choosing target
       better operation choice
 
    }
@@ -128,6 +128,14 @@ TODO 3 = {
    CHECK THE CONVERT AND REDEPLOY COOLDOWNS, MIGHT NOT BE LONG ENOUGH IN SOME CASES
 
    ADD IN PVP NOTIFICATIONS FOR OPPORTUNITY EVENTS
+
+
+   ADD IN CUSTOM VARIABLE DOMESTIC OPERATION COSTS
+
+   copy localisation over to other lanuages.
+
+   remove testing variables 
+   Added back in opportunity cooldown.
 }
 
 
@@ -160,6 +168,10 @@ DONE 3 = {
    fix station raid beta target bug
    Fixed bug with espionage fail events
    Fixed the opportunity event launcher/manager
+   FIX OPERATION COST SPY FAIL EVENT TOOLTIPS
+   Added prototpye weapons test opportunity event
+   Fixed domestic tooltips operation cost
+   added pvp messages for ethics shifting
 }
 
 
