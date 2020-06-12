@@ -644,7 +644,90 @@ country_event = {
 
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+
+
 		name = spyFailEvt.10.a
 		trigger = {
 			is_same_empire = event_target:betaFailMarker
@@ -672,7 +755,87 @@ country_event = {
 
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			not = {
@@ -714,7 +877,87 @@ country_event = {
 	picture = GFX_evt_assembly_fight
 	
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			is_same_empire = event_target:betaFailMarker
@@ -742,7 +985,87 @@ country_event = {
 
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			not = {
@@ -967,7 +1290,87 @@ country_event = {
    picture = GFX_evt_board_meeting
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			is_same_empire = event_target:betaFailMarker
@@ -995,7 +1398,87 @@ country_event = {
 
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			not = {
@@ -1040,7 +1523,87 @@ country_event = {
    picture = GFX_evt_board_meeting
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			is_same_empire = event_target:betaFailMarker
@@ -1068,7 +1631,87 @@ country_event = {
 
 
 	option = { #REDO OP
-		custom_tooltip = pointsRequiredAlpha.tooltip
+		if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = saboRep2
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = studyTech2
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = fundCrime2
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = swingEthics2
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				is_same_empire = event_target:betaFailMarker
+				has_country_flag = sowUnrest2
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
+
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = saboRep
+			}
+			custom_tooltip = pointsRequired_sabRep.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = studyTech
+			}
+			custom_tooltip = pointsRequired_studyTech.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = fundCrime
+			}
+			custom_tooltip = fundCrime.2.c.a
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = swingEthics
+			}
+			custom_tooltip = pointsRequired_swingEthics.tooltip
+		}
+		else_if = {
+			limit = {
+				not = {
+					is_same_empire = event_target:betaFailMarker
+				}
+				has_country_flag = sowUnrest
+			}
+			custom_tooltip = pointsRequired_sowUnrest.tooltip
+		}
 		name = spyFailEvt.10.a
 		trigger = {
 			not = {
