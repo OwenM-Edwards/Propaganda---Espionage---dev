@@ -426,7 +426,9 @@ country_event = {
 
 		option = { #KILL SWITCH
 			name = spyOpportunity.3.a
-			country_event = { id = studyTech_Opportunity.5 days = @opportunityGapTime random = @opportunityGapTimeRandom } #TEAM KILLED, MISSION FAILED
+			hidden_effect = {
+				country_event = { id = studyTech_Opportunity.5 days = @opportunityGapTime random = @opportunityGapTimeRandom } #TEAM KILLED, MISSION FAILED
+			}
 		}
 		option = { #WAIT
 			name = spyOpportunity.3.b

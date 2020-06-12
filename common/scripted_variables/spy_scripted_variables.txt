@@ -69,7 +69,7 @@
 	@messageDisplayChance = 80
 	@messageNoDisplayChance = 20
 
-	@opinionBombedDiplomats = -120
+	@opinionBombedDiplomats = -190
 	@opinionBombedDiplomatsDecay = 4
 
 
