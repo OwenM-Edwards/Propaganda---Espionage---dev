@@ -124,6 +124,19 @@ country_event = {
 					modifier = spy_swingAuthoritarian_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_AUTHORITARIAN_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -132,6 +145,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingEgalitarian_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_EGALITARIAN_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -142,6 +168,19 @@ country_event = {
 					modifier = spy_swingMaterialist_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_MATERIALIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -150,6 +189,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingMilitarist_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_MILITARIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -160,6 +212,20 @@ country_event = {
 					modifier = spy_swingPacifist_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_PACIFIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
+
 			}
 			else_if = {
             limit = {
@@ -168,6 +234,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingSpiritualist_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_SPIRITUALIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -178,6 +257,19 @@ country_event = {
 					modifier = spy_swingXenophile_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_XENOPHILE_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -186,6 +278,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingXenophobe_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_XENOPHOBE_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 
@@ -199,6 +304,19 @@ country_event = {
 					modifier = spy_swingGreen_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_GREEN_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -207,6 +325,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingIndustrial_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_INDUSTRIAL_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -217,6 +348,19 @@ country_event = {
 					modifier = spy_swingElitist_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_ELITIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -225,6 +369,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingSocialist_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_SOCIALISM_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -235,6 +392,19 @@ country_event = {
 					modifier = spy_swingPluralist_high
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_PLURALIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -243,6 +413,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingCapitalist_high
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_CAPITALISM_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 		}
@@ -384,6 +567,19 @@ country_event = {
 					modifier = spy_swingAuthoritarian
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_AUTHORITARIAN_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -392,6 +588,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingEgalitarian
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_EGALITARIAN_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -402,6 +611,19 @@ country_event = {
 					modifier = spy_swingMaterialist
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_MATERIALIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -410,6 +632,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingMilitarist
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_MILITARIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -420,6 +655,19 @@ country_event = {
 					modifier = spy_swingPacifist
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_PACIFIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -428,6 +676,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingSpiritualist
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_SPIRITUALIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -438,6 +699,19 @@ country_event = {
 					modifier = spy_swingXenophile
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_XENOPHILE_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
             limit = {
@@ -446,6 +720,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingXenophobe
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_XENOPHOBE_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 
@@ -459,6 +746,19 @@ country_event = {
 					modifier = spy_swingGreen
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_GREEN_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -467,6 +767,19 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingIndustrial
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_INDUSTRIAL_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
 				}
 			}
 			else_if = {
@@ -477,6 +790,19 @@ country_event = {
 					modifier = spy_swingElitist
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_ELITIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -486,6 +812,19 @@ country_event = {
 					modifier = spy_swingSocialist
 					days = @swingEthicLength
 				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_SOCIALISM_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -494,6 +833,32 @@ country_event = {
 				add_modifier = {
 					modifier = spy_swingPluralist
 					days = @swingEthicLength
+				}
+				if = {
+					limit = {
+						event_target:betaNetworkTarget_temp = {
+							is_ai = no
+						}
+					}
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization =  AIswingEthics_PLURALIST_MESSAGE
+						days = @messageDisplayLength
+						target = event_target:betaNetworkTarget_temp
+					}
+					if = {
+						limit = {
+							event_target:betaNetworkTarget_temp = {
+								is_ai = no
+							}
+						}
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization =  AIswingEthics_CAPITALISM_MESSAGE
+							days = @messageDisplayLength
+							target = event_target:betaNetworkTarget_temp
+						}
+					}
 				}
 			}
 			else_if = {
