@@ -5,6 +5,7 @@
  ##################\
 
 ##### GENERIC UI STUFF ######
+ pointsRequiredAlpha.tooltip:0 "Requires 15 intelligence points."
  menuIntelPoints_Alpha:0 "Alpha networks intelligence points.\nCollected by gathering intelligence.\nExpended when performing operations."
  menuIntelPoints_Beta:0 "Beta networks intelligence points.\nCollected by gathering intelligence.\nExpended when performing operations."
 
@@ -2283,7 +2284,7 @@ spyModConfig.2.b:0 "Cancel."
 
  
  saborepOpportunity.4.title:0 "Diplomat Attack"
- saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid-transit to the surface of §S[spyOpportunityTarget.Capital.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetAdjective]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the humiliation casus belli against the [spyOpportunityTarget.GetAdjective], whose general diplomatic reputation has been significantly impacted."
+ saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid-transit to the surface of §S[spyOpportunityTarget.Capital.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetAdjective]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nThe §S[bombDiplomatsTarget_1.GetName]§! and the §S[bombDiplomatsTarget_2.GetName]§! have gained the humiliation casus belli against the [spyOpportunityTarget.GetAdjective], whose general diplomatic reputation has been significantly impacted."
 
  saborepOpportunity.4.a:0 "Excellent"
 
