@@ -9,7 +9,7 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			10 = { #BOOST REPUTATION
+			30 = { #BOOST REPUTATION
 				country_event = {
 					id = aiDomestic.2
 				}
