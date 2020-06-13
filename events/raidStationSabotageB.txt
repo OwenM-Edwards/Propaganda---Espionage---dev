@@ -6,7 +6,7 @@ country_event = {
 	id = stationSabotageBeta.1
 	is_triggered_only = yes
 	hide_window = yes
-	
+	 
 	immediate = {
 		save_event_target_as = stationAttacker
 		event_target:betaNetworkTarget_temp = {
