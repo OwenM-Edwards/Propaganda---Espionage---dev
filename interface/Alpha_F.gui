@@ -178,10 +178,11 @@ guiTypes = {
         position = { x = 0 y = 0 }
         size = { width = 0 height = 0 }
 
+
         buttonType = {
             name = "option_button"
             spriteType = "GFX_button_update"
-            position = { x = 290 y = 305 } 
+            position = { x = 288 y = 305 } 
             
             size = { x = 100 y = 34 }
             font = "cg_16b"
@@ -197,7 +198,7 @@ guiTypes = {
         buttonType = {
             name = "option_button"
             spriteType = "GFX_button_update"
-            position = { x = 290 y = 305 }  
+            position = { x = 288 y = 305 }  
             size = { x = 100 y = 34 }
             font = "cg_16b"
             format = left
@@ -213,7 +214,7 @@ guiTypes = {
         buttonType = {
             name = "option_button"
             spriteType = "GFX_button_update"
-            position = { x = 745 y = 305 } 
+            position = { x = 742 y = 305 } 
             size = { x = 100 y = 34 }
             font = "cg_16b"
             format = left
@@ -228,7 +229,7 @@ guiTypes = {
         buttonType = {
             name = "option_button"
             spriteType = "GFX_button_update"
-            position = { x = 745 y = 305 } 
+            position = { x = 742 y = 305 } 
             size = { x = 100 y = 34 }
             font = "cg_16b"
             format = left
