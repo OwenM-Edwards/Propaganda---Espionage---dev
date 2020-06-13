@@ -144,7 +144,7 @@ country_event = {     #STAGE THREE
 					nor = {
 						checkIfAlphaOpportunity = yes
 						checkIfBetaOpportunity = yes
-						#has_country_flag = opportunityCooldown
+						has_country_flag = opportunityCooldown
 					}
 				}
 				random_list = {
@@ -158,7 +158,7 @@ country_event = {     #STAGE THREE
 								nor = {
 									checkIfAlphaOpportunity = yes
 									checkIfBetaOpportunity = yes
-									#has_country_flag = opportunityCooldown
+									has_country_flag = opportunityCooldown
 								}
 							}
 							assignGlobalOpportunityFlagBeta = yes
@@ -170,7 +170,7 @@ country_event = {     #STAGE THREE
 							country_event = { id = progressTrackerB.4 days = @gatherProgGenericStage } 
 						}
 					}
-					50 = {
+					20 = {
 						# CONTINUE AS NORMAL #
 						set_country_flag = gatherProgress_3_2
 						country_event = { id = progressTrackerB.4 days = @gatherProgGenericStage } 
