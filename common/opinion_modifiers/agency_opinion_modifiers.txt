@@ -99,6 +99,15 @@ opinion_triedBlackmail = {
 		base = @opinionBombedDiplomatsDecay
 	}
 }
+opinion_triedBlackmailPersonal = {
+	opinion = {
+		base = @opinionBombedDiplomats
+	}
+	monthly = yes
+	decay = {
+		base = @opinionBombedDiplomatsDecay
+	}
+}
 
 opinion_compromisedDiplomat = {
 	opinion = {
