@@ -2,11 +2,11 @@
 ##### BASIC STUFF ######
 
 	### OPERATION PROGRESS ###
-	# @gatherProgStageOne = 90 #Must always be a few days longer than generic stage
-	# @gatherProgGenericStage = 80
+	@gatherProgStageOne = 90 #Must always be a few days longer than generic stage
+	@gatherProgGenericStage = 80
 
-	@gatherProgStageOne = 10 #Must always be a few days longer than generic stage
-	@gatherProgGenericStage = 8
+	# @gatherProgStageOne = 10 #Must always be a few days longer than generic stage
+	# @gatherProgGenericStage = 8
 
 	@gatherProgRandomDays = 5 #Must not overlap
 	@gatherProgRandomRandom = 3
@@ -102,7 +102,7 @@
 
 
 	### OPPORTUNITY EVENT ROLL MODIFIER ###
-	@opportunityCheckFactor = 10
+	@opportunityCheckFactor = 0.8
 
 
 
