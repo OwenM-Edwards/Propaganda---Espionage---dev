@@ -1,0 +1,79 @@
+[h1] Propaganda and Espionage [/h1]
+
+[h2] Introduction: [/h2]
+An expansive addition to Stellaris that adds in a complete espionage system. - Prop & Esp is designed to fit as seamlessly into the vanilla game as possible, while providing new options to sabotage and manipulate other empires.
+
+[h2] Features:    [/h2]
+A full custom menu.
+
+Stealing valuable technologies.
+
+Diplomatic sabotage.
+
+Starbase raids.
+
+Supporting criminal enterprises.
+
+Sowing unrest and manipulating the ethics of distant worlds.
+
+New technologies.
+
+New Policies.
+
+New federation laws.
+
+Reactive events that are triggered as AI empires conduct espionage operations against you and each other.
+
+[h3] FAQ: [/h3]
+Q: Does the AI use this mod?
+A: Yes! Almost anything the player has access to, the AI does too.
+
+Q: Will this mod affect my performance?
+A: The mod has been built with performance in mind (the base game is bad enough already). In my own tests I haven't noticed any difference at all.
+
+Q: How do I open the new menu?
+A: In the government tab there is a new button located at the bottom right labelled 'Networks'. If you can't see that button then another UI mod is conflicting. There is also an edict to activate the mod however.
+
+Q: When I press the 'Networks' button an event fires and the menu doesn't open?
+A: Galactic espionage is unlocked a short time after first contact.
+
+Q: How do I switch one of my networks between foreign and domestic operations?
+A: The button in the top right of each network panel.
+
+Q: Can hive minds use espionage?
+A: By default they cannot, however there is an option in the configuration menu that enables it.
+
+Q: Is it multiplayer compatible?
+A: Yes! The mod works great in multiplayer, however if you have a very large amount of players ( > 20) there MIGHT be some small visual bugs in the custom menu sometimes. Cant test that myself, but it would be an easy fix if there was.
+
+[h3] Compatibility: [/h3]
+2.7.*
+
+Propaganda & Espionage has been built to be as compatible as possible with all mods.
+
+UI OVERHAUL - Patch available - https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=2098309555
+
+You're best off always putting Propaganda and Espionage at the very [b]start[/b] of your load order.
+You're also best off always putting the UI Overhaul patch at the very [b]end[/b] of your load order.
+Load Order:
+Propaganda and Espionage 2.7 (Always load first)
+UI Overhaul Dynamic
+UI Overhaul - Prop&Esp Patch (Always load last)
+    
+The only mods that might conflict will be UI mods, and they will only mean that you can't see some of the new UI elements added. (The new menu will be unaffected, just the buttons to access it) Compatibility patches will be easy to make though, otherwise you can always just use the backup edict to open the menu.
+
+AI MODS: Will work with all of them, no problems.
+
+SLEX (Stellaris List Extender) is now a required item for this mod, however it is only used for the detailed intelligence screen. If for whatever reason you don't want to use SLEX (It's a great mod though), my mod will still work fine you just won't be able to use that one feature.
+
+Other than that I cant think of anything else that would conflict in any way.
+
+----
+Thank you to everyone who gave feedback during the beta!
+----
+
+
+[url=https://discord.gg/WpeXm2h][img] https://i.ibb.co/SsGYjbF/4Und3QN.png [/img][/url]
+
+Like my work? Consider donating so that I can spend more of my time doing it, thank you :] : 
+[url=https://www.paypal.me/Zibbly][img] https://i.ibb.co/Fb3hGjM/LtUMrSu.png [/img][/url]
