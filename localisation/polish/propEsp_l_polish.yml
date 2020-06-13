@@ -5,13 +5,21 @@
  ##################\
 
 ##### GENERIC UI STUFF ######
+ pointsRequiredAlpha.tooltip:0 "Requires 15 intelligence points."
+ menuIntelPoints_Alpha:0 "Alpha networks intelligence points.\nCollected by gathering intelligence.\nExpended when performing operations."
+ menuIntelPoints_Beta:0 "Beta networks intelligence points.\nCollected by gathering intelligence.\nExpended when performing operations."
+
  industrialEnigmatic:0 "The target's enigmatic engineering makes industrial espionage impossible."
 
+ genericBlankFailTooltip:0 ""
 
  menuAlreadyOpen:0 "Network manager is already open."
 
  displayAlphaIntelPoints.a:0 "[playerAgency.getAlphaIntelPoints]"
  displayBetaIntelPoints.a:0 "[playerAgency.getBetaIntelPoints]"
+
+ spy_openMenuButton_topbar_A.tooltip:0 "Alpha network intelligence points.\n\nClick to open networks menu."
+ spy_openMenuButton_topbar_B.tooltip:0 "Beta network intelligence points.\n\nClick to open networks menu."
 
  advancedIntel.1.close:0 ""
  AlphaF-IntelReport-Unnasigned:0 "Unassigned"
@@ -93,6 +101,39 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
 
 ########## MODIFIERS ############
+ opinion_bombed_diplomats_mod:0 "Suspected of sabotaging diplomatic conference."
+ opinion_bombed_diplomats:0 "Suspected of sabotaging diplomatic conference."
+ opinion_bombed_diplomats_mod_desc:0 ""
+
+ opinion_triedBlackmail:0 "Attempted to blackmail someone"
+ opinion_triedBlackmail_mod:0 "Attempted to blackmail someone"
+ opinion_triedBlackmail_mod_desc:0 ""
+
+ opinion_triedBlackmailPersonal:0 "Attempted to blackmail us"
+ opinion_triedBlackmailPersonal_mod:0 "Attempted to blackmail us"
+ opinion_triedBlackmailPersonal_mod_desc:0 ""
+
+ spy_physicsPenalty_mod:0 "Sabotaged research."
+ spy_physicsPenalty:0 "Sabotaged research."
+ spy_physicsPenalty_mod_desc:0 ""
+
+ spy_societyPenalty_mod:0 "Sabotaged research."
+ spy_societyPenalty:0 "Sabotaged research."
+ spy_societyPenalty_mod_desc:0 ""
+
+ spy_engineeringPenalty_mod:0 "Sabotaged research."
+ spy_engineeringPenalty:0 "Sabotaged research."
+ spy_engineeringPenalty_mod_desc:0 ""
+
+
+ opinion_compromisedDiplomat:0 "Embarrassing diplomat"
+ opinion_compromisedDiplomat_mod:0 "Embarrassing diplomat"
+ opinion_compromisedDiplomat_mod_desc:0 ""
+
+ prototypeWeaponSabotage:0 "Tried to sabotage research"
+ prototypeWeaponSabotage_mod:0 "Tried to sabotage research"
+ prototypeWeaponSabotage_mod_desc:0 ""
+
  sowUnrest_mod:0 "Civil Unrest"
  
  sowUnrestHigh_mod:0 "Major Civil Unrest"
@@ -461,7 +502,16 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  agencyNeighborslist.y.a:0 "Recall the network, but will lose us all intelligence levels with the target."
  
 ########## MAIN MENU TOOLTIPS ##########
- pointsRequiredAlpha.tooltip:0 "Requires §S15§! levels of intelligence."
+ pointsRequired_sabRep.tooltip:0 "Requires §S[root.sabRep_OpCostVar]§!  levels of intelligence."
+
+ pointsRequired_studyTech.tooltip:0 "Requires §S[root.studyTech_OpCostVar]§! levels of intelligence."
+
+ pointsRequired_swingEthics.tooltip:0 "Requires §S[root.swingEthics_OpCostVar]§! levels of intelligence."
+
+ pointsRequired_fundCrime.tooltip:0 "Requires §S[root.fundCrime_OpCostVar]§! levels of intelligence."
+
+
+ pointsRequired_sowUnrest.tooltip:0 "Requires §S[root.sowUnrest_OpCostVar]§! levels of intelligence."
  
  pointsRequiredAlphaD.tooltip:0 "Requires §S15§! levels of intelligence."
  
@@ -624,6 +674,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  BetaD-boostEthics.a:0 "Conducting propaganda operations with the aim of influencing our civilian population towards our governing ethics."
 
  BetaD-boostStability.a:0 "Campaigning to improve stability."
+ AlphaD-boostStability.a:0 "Campaigning to improve stability."
  
  BetaD-intelPoints.a:0 "Our current level of domestic intelligence."
  
@@ -804,23 +855,36 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  
 ############### MAIN MAIN SELECT OPERATION #####################
 ### TOOLTIPS ###
- AF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.c.a:0 "Infiltrate §S[alphaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.c.a:0 "Infiltrate §S[betaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.f.a:0 "Support organised criminal elements within the §S[alphaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.f.a:0 "Support organised criminal elements within the §S[betaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the population's ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S15§! levels of intelligence."
- 
- AF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
- BF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S15§! levels of intelligence."
+ AF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sabRep_OpCostVar]§! intelligence points."
+ BF_chooseOP.a.a:0 "Sabotage the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sabRep_OpCostVar]§! intelligence points."
 
- AF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! levels of intelligence."
- BF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! levels of intelligence."
+ needIntel_sabRep:0 "Requires §R[root.sabRep_OpCostVar]§! intelligence points."
+
+ 
+ AF_chooseOP.c.a:0 "Infiltrate §S[alphaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S[root.studyTech_OpCostVar]§! intelligence points."
+ BF_chooseOP.c.a:0 "Infiltrate §S[betaNetworkTarget_temp.GetName]§! research institutions and data vaults, attempting to steal information on their researched technologies. \n\nRequires §S[root.studyTech_OpCostVar]§! intelligence points."
+
+ needIntel_stealTech:0 "Requires §R[root.studyTech_OpCostVar]§! intelligence points."
+ 
+ AF_chooseOP.f.a:0 "Support organised criminal elements within the §S[alphaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S[root.fundCrime_OpCostVar]§! intelligence points."
+ BF_chooseOP.f.a:0 "Support organised criminal elements within the §S[betaNetworkTarget_temp.GetName]§!. While their crime levels will increase, we will siphon off profits for ourselves.\n\nEach time we repeat the operation, the effects will increase.\n\nRequires §S[root.fundCrime_OpCostVar]§! intelligence points."
+
+ needIntel_fundCrime:0 "Requires §R[root.fundCrime_OpCostVar]§! intelligence points."
+ 
+ AF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S[root.swingEthics_OpCostVar]§! intelligence points."
+ BF_chooseOP.g.a:0 "Using a variety of propaganda methods attempt to shift the population's ethics of §S[alphaNetworkTarget_temp.GetName]§! citizens.\n\nRequires §S[root.swingEthics_OpCostVar]§! intelligence points."
+
+ needIntel_swingEthics:0 "Requires §R[root.swingEthics_OpCostVar]§! intelligence points."
+ 
+ AF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sowUnrest_OpCostVar]§! intelligence points."
+ BF_chooseOP.h.a:0 "Our operatives will attempt to initiate wide scale civil unrest on a colony belonging to the §S[betaNetworkTarget_temp.GetName]§!. \n\nRequires §S[root.sowUnrest_OpCostVar]§! intelligence points."
+
+ needIntel_sowUnrest:0 "Requires §R[root.sowUnrest_OpCostVar]§! intelligence points."
+
+ AF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! intelligence points."
+ BF_chooseOP.i.a:0 "Infiltrate an enemy starbase and bring down its defences from within.\nRequires §S15§! intelligence points."
+
+ opCooldownTooltip:0 "Must wait around §R60§! days for your network to change operations again."
  
  ### MAIN ###
  ABF_chooseOP.title:0 "Select Operation"
@@ -837,7 +901,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  ABF_chooseOP.e:0 "Back."
  
  
-###### SELECT DOMESTIC OPERATION ###### 
+###### SELECT DOMESTIC OPERATION ######
 ### TOOLTIPS ###
  AD_chooseOP.a:0 "Improve our diplomatic reputation.\n\nRequires §S15§! levels of intelligence."
  BD_chooseOP.a:0 "Improve our diplomatic reputation.\n\nRequires §S15§! levels of intelligence."
@@ -883,8 +947,8 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  sabotageRepSuccess2.desc:0 "§YMajor success!§!. Our Beta Network agents have successfully sabotaged the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their diplomatic contacts have become strained."
  
  sabotageRepSuccess.a:0 "Repeat operation"
- sabotageRepSuccess.a.alpha:0 "Requires §S15§! levels of intelligence."
- sabotageRepSuccess.a.beta:0 "Requires §S15§! levels of intelligence."
+ sabotageRepSuccess.a.alpha:0 "Requires §S[root.sabRep_OpCostVar]§! levels of intelligence."
+ sabotageRepSuccess.a.beta:0 "Requires §S[root.sabRep_OpCostVar]§! levels of intelligence."
  sabotageRepSuccess.b:0 "Return to Intelligence Gathering"
  
  sabotageRepSuccessPartial.title:0 "Sabotage Reputation"
@@ -897,82 +961,142 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 ##### SOW UNREST #####
 ### MAIN ###
  spySowUnrest.title:0 "Target Planet"
- spySowUnrest.desc:0 "The Alpha Network stands ready, which foreign colony of the §S[alphaNetworkTarget_temp.GetName]§! should be our target?"
+ spySowUnrest.desc:0 "Alpha network stands ready, which §S[alphaNetworkTarget_temp.GetAdjective]§! colony should we target?"
  
  spySowUnrestB.title:0 "Target Planet"
- spySowUnrestB.desc:0 "Beta Network stands ready, which foreign colony of the §S[betaNetworkTarget_temp.GetName]§! should be our target?"
- 
- spySowUnrest.1.1:0 "§S[target_planet_1.GetName]§! in the §S[target_system_1.GetName]§! system."
- spySowUnrest.1.2:0 "§S[target_planet_2.GetName]§! in the §S[target_system_2.GetName]§! system."
- spySowUnrest.1.3:0 "§S[target_planet_3.GetName]§! in the §S[target_system_3.GetName]§! system."
- spySowUnrest.1.4:0 "§S[target_planet_4.GetName]§! in the §S[target_system_4.GetName]§! system."
- spySowUnrest.1.5:0 "§S[target_planet_5.GetName]§! in the §S[target_system_5.GetName]§! system."
- spySowUnrest.1.6:0 "§S[target_planet_6.GetName]§! in the §S[target_system_6.GetName]§! system."
- spySowUnrest.1.7:0 "§S[target_planet_7.GetName]§! in the §S[target_system_7.GetName]§! system."
- spySowUnrest.1.8:0 "§S[target_planet_8.GetName]§! in the §S[target_system_8.GetName]§! system."
- spySowUnrest.1.9:0 "§S[target_planet_9.GetName]§! in the §S[target_system_9.GetName]§! system."
- spySowUnrest.1.10:0 "§S[target_planet_10.GetName]§! in the §S[target_system_10.GetName]§! system."
+ spySowUnrestB.desc:0 "Beta network stands ready, which §S[betaNetworkTarget_temp.GetAdjective]§! colony should we target?"
 
- spySowUnrest.1.11:0 "§S[target_planet_10.GetName]§! in the §S[target_system_11.GetName]§! system."
- spySowUnrest.1.12:0 "§S[target_planet_10.GetName]§! in the §S[target_system_13.GetName]§! system."
- spySowUnrest.1.13:0 "§S[target_planet_10.GetName]§! in the §S[target_system_14.GetName]§! system."
- spySowUnrest.1.14:0 "§S[target_planet_10.GetName]§! in the §S[target_system_14.GetName]§! system."
- spySowUnrest.1.15:0 "§S[target_planet_10.GetName]§! in the §S[target_system_15.GetName]§! system."
- spySowUnrest.1.16:0 "§S[target_planet_10.GetName]§! in the §S[target_system_16.GetName]§! system."
- spySowUnrest.1.17:0 "§S[target_planet_10.GetName]§! in the §S[target_system_17.GetName]§! system."
- spySowUnrest.1.18:0 "§S[target_planet_10.GetName]§! in the §S[target_system_18.GetName]§! system."
- spySowUnrest.1.19:0 "§S[target_planet_10.GetName]§! in the §S[target_system_19.GetName]§! system."
- spySowUnrest.1.20:0 "§S[target_planet_10.GetName]§! in the §S[target_system_20.GetName]§! system."
- 
- spySowUnrestB.1.1:0 "§S[target_planet_1_2.GetName]§! in the §S[target_system_1_2.GetName]§! system."
- spySowUnrestB.1.2:0 "§S[target_planet_2_2.GetName]§! in the §S[target_system_2_2.GetName]§! system."
- spySowUnrestB.1.3:0 "§S[target_planet_3_2.GetName]§! in the §S[target_system_3_2.GetName]§! system."
- spySowUnrestB.1.4:0 "§S[target_planet_4_2.GetName]§! in the §S[target_system_4_2.GetName]§! system."
- spySowUnrestB.1.5:0 "§S[target_planet_5_2.GetName]§! in the §S[target_system_5_2.GetName]§! system."
- spySowUnrestB.1.6:0 "§S[target_planet_6_2.GetName]§! in the §S[target_system_6_2.GetName]§! system."
- spySowUnrestB.1.7:0 "§S[target_planet_7_2.GetName]§! in the §S[target_system_7_2.GetName]§! system."
- spySowUnrestB.1.8:0 "§S[target_planet_8_2.GetName]§! in the §S[target_system_8_2.GetName]§! system."
- spySowUnrestB.1.9:0 "§S[target_planet_9_2.GetName]§! in the §S[target_system_9_2.GetName]§! system."
- spySowUnrestB.1.10:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_10_2.GetName]§! system."
+ unrestTargetManager.1.title:0 "Target system"
+ unrestTargetManager.1.desc:0 "Choose where to deploy our network. All colonies in the system will be affected."
 
- spySowUnrestB.1.11:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_11_2.GetName]§! system."
- spySowUnrestB.1.12:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_12_2.GetName]§! system."
- spySowUnrestB.1.13:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_13_2.GetName]§! system."
- spySowUnrestB.1.14:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_14_2.GetName]§! system."
- spySowUnrestB.1.15:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_15_2.GetName]§! system."
- spySowUnrestB.1.16:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_16_2.GetName]§! system."
- spySowUnrestB.1.17:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_17_2.GetName]§! system."
- spySowUnrestB.1.18:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_18_2.GetName]§! system."
- spySowUnrestB.1.19:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_19_2.GetName]§! system."
- spySowUnrestB.1.20:0 "§S[target_planet_10_2.GetName]§! in the §S[target_system_20_2.GetName]§! system."
+  unrestSystemManager.1:0 "Target the §S[unrest_target_system_1.GetName]§! system."
+  unrestSystemManager.2:0 "Target the §S[unrest_target_system_2.GetName]§! system."
+  unrestSystemManager.3:0 "Target the §S[unrest_target_system_3.GetName]§! system."
+  unrestSystemManager.4:0 "Target the §S[unrest_target_system_4.GetName]§! system."
+  unrestSystemManager.5:0 "Target the §S[unrest_target_system_5.GetName]§! system."
+  unrestSystemManager.6:0 "Target the §S[unrest_target_system_6.GetName]§! system."
+  unrestSystemManager.7:0 "Target the §S[unrest_target_system_7.GetName]§! system."
+  unrestSystemManager.8:0 "Target the §S[unrest_target_system_8.GetName]§! system."
+  unrestSystemManager.9:0 "Target the §S[unrest_target_system_9.GetName]§! system."
+  unrestSystemManager.10:0 "Target the §S[unrest_target_system_10.GetName]§! system."
+  unrestSystemManager.11:0 "Target the §S[unrest_target_system_11.GetName]§! system."
+  unrestSystemManager.12:0 "Target the §S[unrest_target_system_12.GetName]§! system."
+  unrestSystemManager.13:0 "Target the §S[unrest_target_system_13.GetName]§! system."
+  unrestSystemManager.14:0 "Target the §S[unrest_target_system_14.GetName]§! system."
+  unrestSystemManager.15:0 "Target the §S[unrest_target_system_15.GetName]§! system."
+  unrestSystemManager.16:0 "Target the §S[unrest_target_system_16.GetName]§! system."
+  unrestSystemManager.17:0 "Target the §S[unrest_target_system_17.GetName]§! system."
+  unrestSystemManager.18:0 "Target the §S[unrest_target_system_18.GetName]§! system."
+  unrestSystemManager.19:0 "Target the §S[unrest_target_system_19.GetName]§! system."
+  unrestSystemManager.20:0 "Target the §S[unrest_target_system_20.GetName]§! system."
+  unrestSystemManager.21:0 "Target the §S[unrest_target_system_21.GetName]§! system."
+  unrestSystemManager.22:0 "Target the §S[unrest_target_system_22.GetName]§! system."
+  unrestSystemManager.23:0 "Target the §S[unrest_target_system_23.GetName]§! system."
+  unrestSystemManager.24:0 "Target the §S[unrest_target_system_24.GetName]§! system."
+  unrestSystemManager.25:0 "Target the §S[unrest_target_system_25.GetName]§! system."
+  unrestSystemManager.26:0 "Target the §S[unrest_target_system_26.GetName]§! system."
+  unrestSystemManager.27:0 "Target the §S[unrest_target_system_27.GetName]§! system."
+  unrestSystemManager.28:0 "Target the §S[unrest_target_system_28.GetName]§! system."
+  unrestSystemManager.29:0 "Target the §S[unrest_target_system_29.GetName]§! system."
+  unrestSystemManager.30:0 "Target the §S[unrest_target_system_30.GetName]§! system."
+  unrestSystemManager.31:0 "Target the §S[unrest_target_system_31.GetName]§! system."
+  unrestSystemManager.32:0 "Target the §S[unrest_target_system_32.GetName]§! system."
+  unrestSystemManager.33:0 "Target the §S[unrest_target_system_33.GetName]§! system."
+  unrestSystemManager.34:0 "Target the §S[unrest_target_system_34.GetName]§! system."
+  unrestSystemManager.35:0 "Target the §S[unrest_target_system_35.GetName]§! system."
+  unrestSystemManager.36:0 "Target the §S[unrest_target_system_36.GetName]§! system."
+  unrestSystemManager.37:0 "Target the §S[unrest_target_system_37.GetName]§! system."
+  unrestSystemManager.38:0 "Target the §S[unrest_target_system_38.GetName]§! system."
+  unrestSystemManager.39:0 "Target the §S[unrest_target_system_39.GetName]§! system."
+  unrestSystemManager.40:0 "Target the §S[unrest_target_system_40.GetName]§! system."
+  unrestSystemManager.41:0 "Target the §S[unrest_target_system_41.GetName]§! system."
+  unrestSystemManager.42:0 "Target the §S[unrest_target_system_42.GetName]§! system."
+  unrestSystemManager.43:0 "Target the §S[unrest_target_system_43.GetName]§! system."
+  unrestSystemManager.44:0 "Target the §S[unrest_target_system_44.GetName]§! system."
+  unrestSystemManager.45:0 "Target the §S[unrest_target_system_45.GetName]§! system."
+  unrestSystemManager.46:0 "Target the §S[unrest_target_system_46.GetName]§! system."
+  unrestSystemManager.47:0 "Target the §S[unrest_target_system_47.GetName]§! system."
+  unrestSystemManager.48:0 "Target the §S[unrest_target_system_48.GetName]§! system."
+  unrestSystemManager.49:0 "Target the §S[unrest_target_system_49.GetName]§! system."
+  unrestSystemManager.50:0 "Target the §S[unrest_target_system_50.GetName]§! system."
+  unrestSystemManager.51:0 "Target the §S[unrest_target_system_51.GetName]§! system."
+  unrestSystemManager.52:0 "Target the §S[unrest_target_system_52.GetName]§! system."
+  unrestSystemManager.53:0 "Target the §S[unrest_target_system_53.GetName]§! system."
+  unrestSystemManager.54:0 "Target the §S[unrest_target_system_54.GetName]§! system."
+  unrestSystemManager.55:0 "Target the §S[unrest_target_system_55.GetName]§! system."
+  unrestSystemManager.56:0 "Target the §S[unrest_target_system_56.GetName]§! system."
+  unrestSystemManager.57:0 "Target the §S[unrest_target_system_57.GetName]§! system."
+  unrestSystemManager.58:0 "Target the §S[unrest_target_system_58.GetName]§! system."
+  unrestSystemManager.59:0 "Target the §S[unrest_target_system_59.GetName]§! system."
+  unrestSystemManager.60:0 "Target the §S[unrest_target_system_60.GetName]§! system."
+  unrestSystemManager.61:0 "Target the §S[unrest_target_system_61.GetName]§! system."
+  unrestSystemManager.62:0 "Target the §S[unrest_target_system_62.GetName]§! system."
+  unrestSystemManager.63:0 "Target the §S[unrest_target_system_63.GetName]§! system."
+  unrestSystemManager.64:0 "Target the §S[unrest_target_system_64.GetName]§! system."
+  unrestSystemManager.65:0 "Target the §S[unrest_target_system_65.GetName]§! system."
+  unrestSystemManager.66:0 "Target the §S[unrest_target_system_66.GetName]§! system."
+  unrestSystemManager.67:0 "Target the §S[unrest_target_system_67.GetName]§! system."
+  unrestSystemManager.68:0 "Target the §S[unrest_target_system_68.GetName]§! system."
+  unrestSystemManager.69:0 "Target the §S[unrest_target_system_69.GetName]§! system."
+  unrestSystemManager.70:0 "Target the §S[unrest_target_system_70.GetName]§! system."
+  unrestSystemManager.71:0 "Target the §S[unrest_target_system_71.GetName]§! system."
+  unrestSystemManager.72:0 "Target the §S[unrest_target_system_72.GetName]§! system."
+  unrestSystemManager.73:0 "Target the §S[unrest_target_system_73.GetName]§! system."
+  unrestSystemManager.74:0 "Target the §S[unrest_target_system_74.GetName]§! system."
+  unrestSystemManager.75:0 "Target the §S[unrest_target_system_75.GetName]§! system."
+  unrestSystemManager.76:0 "Target the §S[unrest_target_system_76.GetName]§! system."
+  unrestSystemManager.77:0 "Target the §S[unrest_target_system_77.GetName]§! system."
+  unrestSystemManager.78:0 "Target the §S[unrest_target_system_78.GetName]§! system."
+  unrestSystemManager.79:0 "Target the §S[unrest_target_system_79.GetName]§! system."
+  unrestSystemManager.80:0 "Target the §S[unrest_target_system_80.GetName]§! system."
+  unrestSystemManager.81:0 "Target the §S[unrest_target_system_81.GetName]§! system."
+  unrestSystemManager.82:0 "Target the §S[unrest_target_system_82.GetName]§! system."
+  unrestSystemManager.83:0 "Target the §S[unrest_target_system_83.GetName]§! system."
+  unrestSystemManager.84:0 "Target the §S[unrest_target_system_84.GetName]§! system."
+  unrestSystemManager.85:0 "Target the §S[unrest_target_system_85.GetName]§! system."
+  unrestSystemManager.86:0 "Target the §S[unrest_target_system_86.GetName]§! system."
+  unrestSystemManager.87:0 "Target the §S[unrest_target_system_87.GetName]§! system."
+  unrestSystemManager.88:0 "Target the §S[unrest_target_system_88.GetName]§! system."
+  unrestSystemManager.89:0 "Target the §S[unrest_target_system_89.GetName]§! system."
+  unrestSystemManager.90:0 "Target the §S[unrest_target_system_90.GetName]§! system."
+  unrestSystemManager.91:0 "Target the §S[unrest_target_system_91.GetName]§! system."
+  unrestSystemManager.92:0 "Target the §S[unrest_target_system_92.GetName]§! system."
+  unrestSystemManager.93:0 "Target the §S[unrest_target_system_93.GetName]§! system."
+  unrestSystemManager.94:0 "Target the §S[unrest_target_system_94.GetName]§! system."
+  unrestSystemManager.95:0 "Target the §S[unrest_target_system_95.GetName]§! system."
+  unrestSystemManager.96:0 "Target the §S[unrest_target_system_96.GetName]§! system."
+  unrestSystemManager.97:0 "Target the §S[unrest_target_system_97.GetName]§! system."
+  unrestSystemManager.98:0 "Target the §S[unrest_target_system_98.GetName]§! system."
+  unrestSystemManager.99:0 "Target the §S[unrest_target_system_99.GetName]§! system."
+  unrestSystemManager.100:0 "Target the §S[unrest_target_system_100.GetName]§! system."
 
 
  
 ###### SUCCESS ######
  spySowUnrest2.title:0 "Sow Civil Unrest"
- spySowUnrest2.desc:0 "§YMajor success!§!. Our Alpha Network agents have successfully galvanized support for radicals and fringe groups on the §S[alphaNetworkTarget_temp.GetName]§! colony, §S[finalPlanetTarget.GetName]§! in the §S[finalPlanetTarget.Solar_System.GetName]§! system. The civilian populace are storming the streets, and local law enforcement have been stretched to the limit."
+ spySowUnrest2.desc:0 "§YMajor success!§!. Our Alpha Network agents have successfully galvanized support for radicals and fringe groups in the §S[alphaNetworkTarget_temp.GetName]§! system, §S[final_unrest_target_system.GetName]§!. The civilian populace are storming the streets, and local law enforcement have been stretched to the limit."
  
  spySowUnrest.2.a:0 "Repeat operation"
  spySowUnrest.2.b:0 "Return to gathering intelligence"
  
  spySowUnrest3.title:0 "Sow Civil Unrest"
- spySowUnrest3.desc:0 "§YSuccess!§!. Our Alpha Network succeeded in stirring unrest and discontent in the civilian population of the §S[alphaNetworkTarget_temp.GetName]§! colony, §S[finalPlanetTarget.GetName]§! in the §S[finalPlanetTarget.Solar_System.GetName]§! system. There have been scattered reports of civilians protesting in the streets."
+ spySowUnrest3.desc:0 "§YSuccess!§!. Our Alpha Network succeeded in stirring unrest and discontent in the civilian population of the §S[alphaNetworkTarget_temp.GetName]§! system, §S[final_unrest_target_system.GetName]§!. There have been scattered reports of civilians protesting in the streets."
  
  spySowUnrest2B.title:0 "Sow Civil Unrest"
- spySowUnrest2B.desc:0 "§YMajor success!§!. Our Beta Network agents have successfully galvanized support for radicals and fringe groups on the §S[betaNetworkTarget_temp.GetName]§! colony, §S[finalPlanetTarget_2.GetName]§! in the §S[finalPlanetTarget_2.Solar_System.GetName]§! system. The civilian populace are storming the streets, and local law enforcement have been stretched to the limit."
+ spySowUnrest2B.desc:0 "§YMajor success!§!. Our Beta Network agents have successfully galvanized support for radicals and fringe groups on the §S[betaNetworkTarget_temp.GetName]§! system, §S[final_unrest_target_system_beta.GetName]§!. The civilian populace are storming the streets, and local law enforcement have been stretched to the limit."
  
  spySowUnrestB.2.a:0 "Repeat operation"
  spySowUnrestB.2.b:0 "Return to gathering intelligence"
  
  spySowUnrest3B.title:0 "Sow Civil Unrest"
- spySowUnrest3B.desc:0 "§YSuccess!§!. Our Beta Network succeeded in stirring unrest and discontent in the civilian population of the §S[betaNetworkTarget_temp.GetName]§! colony, §S[finalPlanetTarget_2.GetName]§! in the §S[finalPlanetTarget_2.Solar_System.GetName]§! system. There have been scattered reports of civilians protesting in the streets."
+ spySowUnrest3B.desc:0 "§YSuccess!§!. Our Beta Network succeeded in stirring unrest and discontent in the civilian population of the §S[betaNetworkTarget_temp.GetName]§! system, §S[final_unrest_target_system_beta.GetName]§!. There have been scattered reports of civilians protesting in the streets."
  
  
 ##### SUPPORT ORGANISED CRIME #####
 ### TOOLTIPS ###
- fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
+ fundCrime.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S[root.fundCrime_OpCostVar]§! levels of intelligence."
  
- fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S15§! levels of intelligence."
+ fundCrime2.2.c.a:0 "Repeating the operation will also increase the targets crime levels and the amount of stolen profits we are able to syphon away.\n\nRequires §S[root.fundCrime_OpCostVar]§! levels of intelligence."
  
  ### MAIN ###
  ### ALPHA ###
@@ -1146,26 +1270,107 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  stationManager.1.name:0 "Select target starbase"
  stationManager.1.desc:0 "Our network will attempt to covertly infiltrate the target starbase.\n\nThey will prepare to assault the local command center and weapons systems, with the aim of sabotaging the starbase’s defence by any means necessary."
 
- stationManager.1.1:0 "§Y[potentialSabStation_1.System.GetName]§! Starbase."
- stationManager.1.2:0 "§Y[potentialSabStation_2.System.GetName]§! Starbase."
- stationManager.1.3:0 "§Y[potentialSabStation_3.System.GetName]§! Starbase."
- stationManager.1.4:0 "§Y[potentialSabStation_4.System.GetName]§! Starbase."
- stationManager.1.5:0 "§Y[potentialSabStation_5.System.GetName]§! Starbase."
- stationManager.1.6:0 "§Y[potentialSabStation_6.System.GetName]§! Starbase."
- stationManager.1.7:0 "§Y[potentialSabStation_7.System.GetName]§! Starbase."
- stationManager.1.8:0 "§Y[potentialSabStation_8.System.GetName]§! Starbase."
- stationManager.1.9:0 "§Y[potentialSabStation_9.System.GetName]§! Starbase."
- stationManager.1.10:0 "§Y[potentialSabStation_10.System.GetName]§! Starbase."
- stationManager.1.11:0 "§Y[potentialSabStation_11.System.GetName]§! Starbase."
- stationManager.1.12:0 "§Y[potentialSabStation_12.System.GetName]§! Starbase."
- stationManager.1.13:0 "§Y[potentialSabStation_13.System.GetName]§! Starbase."
- stationManager.1.14:0 "§Y[potentialSabStation_14.System.GetName]§! Starbase."
- stationManager.1.15:0 "§Y[potentialSabStation_15.System.GetName]§! Starbase."
- stationManager.1.16:0 "§Y[potentialSabStation_16.System.GetName]§! Starbase"
- stationManager.1.17:0 "§Y[potentialSabStation_17.System.GetName]§! Starbase."
- stationManager.1.18:0 "§Y[potentialSabStation_18.System.GetName]§! Starbase."
- stationManager.1.19:0 "§Y[potentialSabStation_19.System.GetName]§! Starbase."
- stationManager.1.20:0 "§Y[potentialSabStation_20.System.GetName]§! Starbase."
+
+  stationManager.1:0 "§Y[potentialSabStation_1.System.GetName]§! Starbase."
+  stationManager.2:0 "§Y[potentialSabStation_2.System.GetName]§! Starbase."
+  stationManager.3:0 "§Y[potentialSabStation_3.System.GetName]§! Starbase."
+  stationManager.4:0 "§Y[potentialSabStation_4.System.GetName]§! Starbase."
+  stationManager.5:0 "§Y[potentialSabStation_5.System.GetName]§! Starbase."
+  stationManager.6:0 "§Y[potentialSabStation_6.System.GetName]§! Starbase."
+  stationManager.7:0 "§Y[potentialSabStation_7.System.GetName]§! Starbase."
+  stationManager.8:0 "§Y[potentialSabStation_8.System.GetName]§! Starbase."
+  stationManager.9:0 "§Y[potentialSabStation_9.System.GetName]§! Starbase."
+  stationManager.10:0 "§Y[potentialSabStation_10.System.GetName]§! Starbase."
+  stationManager.11:0 "§Y[potentialSabStation_11.System.GetName]§! Starbase."
+  stationManager.12:0 "§Y[potentialSabStation_12.System.GetName]§! Starbase."
+  stationManager.13:0 "§Y[potentialSabStation_13.System.GetName]§! Starbase."
+  stationManager.14:0 "§Y[potentialSabStation_14.System.GetName]§! Starbase."
+  stationManager.15:0 "§Y[potentialSabStation_15.System.GetName]§! Starbase."
+  stationManager.16:0 "§Y[potentialSabStation_16.System.GetName]§! Starbase."
+  stationManager.17:0 "§Y[potentialSabStation_17.System.GetName]§! Starbase."
+  stationManager.18:0 "§Y[potentialSabStation_18.System.GetName]§! Starbase."
+  stationManager.19:0 "§Y[potentialSabStation_19.System.GetName]§! Starbase."
+  stationManager.20:0 "§Y[potentialSabStation_20.System.GetName]§! Starbase."
+  stationManager.21:0 "§Y[potentialSabStation_21.System.GetName]§! Starbase."
+  stationManager.22:0 "§Y[potentialSabStation_22.System.GetName]§! Starbase."
+  stationManager.23:0 "§Y[potentialSabStation_23.System.GetName]§! Starbase."
+  stationManager.24:0 "§Y[potentialSabStation_24.System.GetName]§! Starbase."
+  stationManager.25:0 "§Y[potentialSabStation_25.System.GetName]§! Starbase."
+  stationManager.26:0 "§Y[potentialSabStation_26.System.GetName]§! Starbase."
+  stationManager.27:0 "§Y[potentialSabStation_27.System.GetName]§! Starbase."
+  stationManager.28:0 "§Y[potentialSabStation_28.System.GetName]§! Starbase."
+  stationManager.29:0 "§Y[potentialSabStation_29.System.GetName]§! Starbase."
+  stationManager.30:0 "§Y[potentialSabStation_30.System.GetName]§! Starbase."
+  stationManager.31:0 "§Y[potentialSabStation_31.System.GetName]§! Starbase."
+  stationManager.32:0 "§Y[potentialSabStation_32.System.GetName]§! Starbase."
+  stationManager.33:0 "§Y[potentialSabStation_33.System.GetName]§! Starbase."
+  stationManager.34:0 "§Y[potentialSabStation_34.System.GetName]§! Starbase."
+  stationManager.35:0 "§Y[potentialSabStation_35.System.GetName]§! Starbase."
+  stationManager.36:0 "§Y[potentialSabStation_36.System.GetName]§! Starbase."
+  stationManager.37:0 "§Y[potentialSabStation_37.System.GetName]§! Starbase."
+  stationManager.38:0 "§Y[potentialSabStation_38.System.GetName]§! Starbase."
+  stationManager.39:0 "§Y[potentialSabStation_39.System.GetName]§! Starbase."
+  stationManager.40:0 "§Y[potentialSabStation_40.System.GetName]§! Starbase."
+  stationManager.41:0 "§Y[potentialSabStation_41.System.GetName]§! Starbase."
+  stationManager.42:0 "§Y[potentialSabStation_42.System.GetName]§! Starbase."
+  stationManager.43:0 "§Y[potentialSabStation_43.System.GetName]§! Starbase."
+  stationManager.44:0 "§Y[potentialSabStation_44.System.GetName]§! Starbase."
+  stationManager.45:0 "§Y[potentialSabStation_45.System.GetName]§! Starbase."
+  stationManager.46:0 "§Y[potentialSabStation_46.System.GetName]§! Starbase."
+  stationManager.47:0 "§Y[potentialSabStation_47.System.GetName]§! Starbase."
+  stationManager.48:0 "§Y[potentialSabStation_48.System.GetName]§! Starbase."
+  stationManager.49:0 "§Y[potentialSabStation_49.System.GetName]§! Starbase."
+  stationManager.50:0 "§Y[potentialSabStation_50.System.GetName]§! Starbase."
+  stationManager.51:0 "§Y[potentialSabStation_51.System.GetName]§! Starbase."
+  stationManager.52:0 "§Y[potentialSabStation_52.System.GetName]§! Starbase."
+  stationManager.53:0 "§Y[potentialSabStation_53.System.GetName]§! Starbase."
+  stationManager.54:0 "§Y[potentialSabStation_54.System.GetName]§! Starbase."
+  stationManager.55:0 "§Y[potentialSabStation_55.System.GetName]§! Starbase."
+  stationManager.56:0 "§Y[potentialSabStation_56.System.GetName]§! Starbase."
+  stationManager.57:0 "§Y[potentialSabStation_57.System.GetName]§! Starbase."
+  stationManager.58:0 "§Y[potentialSabStation_58.System.GetName]§! Starbase."
+  stationManager.59:0 "§Y[potentialSabStation_59.System.GetName]§! Starbase."
+  stationManager.60:0 "§Y[potentialSabStation_60.System.GetName]§! Starbase."
+  stationManager.61:0 "§Y[potentialSabStation_61.System.GetName]§! Starbase."
+  stationManager.62:0 "§Y[potentialSabStation_62.System.GetName]§! Starbase."
+  stationManager.63:0 "§Y[potentialSabStation_63.System.GetName]§! Starbase."
+  stationManager.64:0 "§Y[potentialSabStation_64.System.GetName]§! Starbase."
+  stationManager.65:0 "§Y[potentialSabStation_65.System.GetName]§! Starbase."
+  stationManager.66:0 "§Y[potentialSabStation_66.System.GetName]§! Starbase."
+  stationManager.67:0 "§Y[potentialSabStation_67.System.GetName]§! Starbase."
+  stationManager.68:0 "§Y[potentialSabStation_68.System.GetName]§! Starbase."
+  stationManager.69:0 "§Y[potentialSabStation_69.System.GetName]§! Starbase."
+  stationManager.70:0 "§Y[potentialSabStation_70.System.GetName]§! Starbase."
+  stationManager.71:0 "§Y[potentialSabStation_71.System.GetName]§! Starbase."
+  stationManager.72:0 "§Y[potentialSabStation_72.System.GetName]§! Starbase."
+  stationManager.73:0 "§Y[potentialSabStation_73.System.GetName]§! Starbase."
+  stationManager.74:0 "§Y[potentialSabStation_74.System.GetName]§! Starbase."
+  stationManager.75:0 "§Y[potentialSabStation_75.System.GetName]§! Starbase."
+  stationManager.76:0 "§Y[potentialSabStation_76.System.GetName]§! Starbase."
+  stationManager.77:0 "§Y[potentialSabStation_77.System.GetName]§! Starbase."
+  stationManager.78:0 "§Y[potentialSabStation_78.System.GetName]§! Starbase."
+ stationManager.79:0 "§Y[potentialSabStation_79.System.GetName]§! Starbase."
+ stationManager.80:0 "§Y[potentialSabStation_80.System.GetName]§! Starbase."
+ stationManager.81:0 "§Y[potentialSabStation_81.System.GetName]§! Starbase."
+ stationManager.82:0 "§Y[potentialSabStation_82.System.GetName]§! Starbase."
+ stationManager.83:0 "§Y[potentialSabStation_83.System.GetName]§! Starbase."
+ stationManager.84:0 "§Y[potentialSabStation_84.System.GetName]§! Starbase."
+ stationManager.85:0 "§Y[potentialSabStation_85.System.GetName]§! Starbase."
+ stationManager.86:0 "§Y[potentialSabStation_86.System.GetName]§! Starbase."
+ stationManager.87:0 "§Y[potentialSabStation_87.System.GetName]§! Starbase."
+ stationManager.88:0 "§Y[potentialSabStation_88.System.GetName]§! Starbase."
+ stationManager.89:0 "§Y[potentialSabStation_89.System.GetName]§! Starbase."
+ stationManager.90:0 "§Y[potentialSabStation_90.System.GetName]§! Starbase."
+ stationManager.91:0 "§Y[potentialSabStation_91.System.GetName]§! Starbase."
+ stationManager.92:0 "§Y[potentialSabStation_92.System.GetName]§! Starbase."
+ stationManager.93:0 "§Y[potentialSabStation_93.System.GetName]§! Starbase."
+ stationManager.94:0 "§Y[potentialSabStation_94.System.GetName]§! Starbase."
+ stationManager.95:0 "§Y[potentialSabStation_95.System.GetName]§! Starbase."
+ stationManager.96:0 "§Y[potentialSabStation_96.System.GetName]§! Starbase."
+ stationManager.97:0 "§Y[potentialSabStation_97.System.GetName]§! Starbase."
+ stationManager.98:0 "§Y[potentialSabStation_98.System.GetName]§! Starbase."
+ stationManager.99:0 "§Y[potentialSabStation_99.System.GetName]§! Starbase."
+ stationManager.100:0 "§Y[potentialSabStation_100.System.GetName]§! Starbase."
 
  stationManager.1.z:0 "Cancel."
 
@@ -1316,6 +1521,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  boostRepACritSuccess.title:0 "Favor Earned"
  boostRepACritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Alpha Network has earned us a diplomatic favor from the §S[randomFavorCountry.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
 
+ boostRepACritSuccess2.title:0 "Favor Earned"
+ boostRepACritSuccess2.desc:0 "§YBonus Success!§!. The §S[randomFavorCountry.GetName]§! have been particularly impressed with our recent diplomatic actions. We have earned a diplomatic favor.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts. "
+
+ boostRepBCritSuccess2.title:0 "Favor Earned"
+ boostRepBCritSuccess2.desc:0 "§YBonus Success!§!. The §S[randomFavorCountryBeta.GetName]§! have been particularly impressed with our recent diplomatic actions. We have earned a diplomatic favor.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts. "
+
  boostRepBCritSuccess.title:0 "Favor Earned"
  boostRepBCritSuccess.desc:0 "§YBonus Success!§!. Due to careful diplomacy and relations management, our Beta Network has earned us a diplomatic favor from the §S[randomFavorCountryBeta.GetName]§!.\n\nOur diplomatic reputation has also been improved and for a time we can enjoy better relations with all of our foreign contacts."
  
@@ -1338,12 +1549,12 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
 ##### BOOST STABILITY ######
 ### CHOOSE TARGET ###
-## ALPHA ## 
+## ALPHA ##
  spyDomStability.1.name:0 "Target System"
- spyDomStability.1.desc:0 "We can order the Alpha Network to focus its operations on a single system, conducting widescale grassroots propaganda campaigns to improve the stability of all colonies within."
+ spyDomStability.1.desc:0 "We can order the Alpha Network to focus its operations on a single system, conducting wide scale grassroots propaganda campaigns to improve the stability of all colonies within."
 
  spyDomStabilityBeta.1.name:0 "Target System"
- spyDomStabilityBeta.1.desc:0 "We can order the Beta Network to focus its operations on a single system, conducting widescale grassroots propaganda campaigns to improve the stability of all colonies within."
+ spyDomStabilityBeta.1.desc:0 "We can order the Beta Network to focus its operations on a single system, conducting wide scale grassroots propaganda campaigns to improve the stability of all colonies within."
 
  spyDomStability.1.1:0 "§S[stability_target_system_1.GetName]§!."
  spyDomStability.1.2:0 "§S[stability_target_system_2.GetName]§!."
@@ -1457,7 +1668,7 @@ spyDomStability.3.desc:0 "§YSuccess!§!. Our Alpha Network operatives have succ
 
 ## SUCCESS PARTIAL ##
 spyDomStabilityBeta.3.name:0 "Domestic Stability"
-spyDomStabilityBeta.3.desc:0 "§YSuccess!§!. Our Beta Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
+spyDomStabilityBeta.3.desc:0 "§YSuccess!§!. Our Beta Network operatives have successfully run a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
 
 ## SUCCESS MAJOR ##
 spyDomStability.4.name:0 "Domestic Stability"
@@ -1466,7 +1677,7 @@ spyDomStability.4.desc:0 "§YMajor Success!§!. Our Alpha Network operatives hav
 
 ## SUCCESS MAJOR ##
 spyDomStabilityBeta.4.name:0 "Domestic Stability"
-spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives have successfully a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
+spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives have successfully run a campaign to increase the stability of all colonies within the §S[domStability_TargetPlanetBeta.GetName]§! system."
  
  
  
@@ -1478,39 +1689,19 @@ spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives 
  
 ########## TODO OPERATIONS ############
 ### MAIN ###
-#### SABOTAGE REP CRIT EVENTS ####
- sabRepCrit_Terror_title:0 "Sabotage Reputation Opportunity"
- sabRepCrit_Terror_desc:0 "An opportunity presents itself - Alpha Network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[alphaNetworkTarget_temp.GetName]§! capital of §S[alphaNetworkTarget_temp.Capital.GetName]§!. \n\nAgents already operating on §S[alphaNetworkTarget_temp.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[alphaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
- sabRepCrit_Terror.a:0 "Approve the operation."
- sabRepCrit_Terror.b:0 "Stand down, find another solution."
- sabRepCrit_Terror_desc2:0 "An opportunity presents itself - Beta Network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[betaNetworkTarget_temp.GetName]§! capital of §S[betaNetworkTarget_temp.Capital.GetName]§!. \n\nAgents already operating on §S[betaNetworkTarget_temp.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[betaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
- sabRepCrit_Terror_success.title:0 "Diplomat Attack - Success"
- sabRepCrit_Terror_success.desc:0 "While the diplomatic convoy was mid transit to the surface of §S[alphaNetworkTarget_temp.Capital.GetName]§!, our Alpha Network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[alphaNetworkTarget_temp.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the TEMP casus belli against the §S[alphaNetworkTarget_temp.GetName]§!, whose general diplomatic reputation has been significantly impacted."
- sabRepCrit_Terror_success.a:0 "Excellent."
- sabRepCrit_Terror_success.desc2:0 "While the diplomatic convoy was mid transit to the surface of §S[betaNetworkTarget_temp.Capital.GetName]§!, our Beta Network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[betaNetworkTarget_temp.GetName]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nSeveral neighboring empires have gained the TEMP casus belli against the §S[betaNetworkTarget_temp.GetName]§!, whose general diplomatic reputation has been significantly impacted."
- sabRepCrit_Terror_fail.title:0 "Diplomat Attack - Failure"
- sabRepCrit_Terror_fail.desc:0 "Out sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated \n\nSeveral other Alpha Network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement. \n\nThe §S[alphaNetworkTarget_temp.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."
- sabRepCrit_Terror_fail.a:0 "Unacceptable"
- sabRepCrit_Terror_fail.desc2:0 "Out sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated \n\nSeveral other Beta Network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement. \n\nThe §S[betaNetworkTarget_temp.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."  
+
  ##### BIO WEAPONS #####
  sabRepCrit_Extreme.title:0 "Sabotage Reputation Opportunity"
  sabRepCrit_Extreme.desc:0 "An opportunity presents itself - Alpha Network agents have been monitoring the activity of a militant xenophobic group within the §S[alphaNetworkTarget_temp.GetName]§!. We have uncovered evidence that several high ranking government officials are secretly financial backers of this group. \n\nOur agents believe that with careful manipulation and covert support, we could goad the group into launching attacks against neighboring empires. Information packets containing the identity of the groups backers could then be made public. \n\nIf successful the attacks would drastically upset §S[alphaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."  
  
- sabRepCrit_Extreme2.title:0 "Sabotage Reputation Opportunity"
- sabRepCrit_Extreme2.desc:0 "An opportunity presents itself - Beta Network agents have been monitoring the activity of a militant xenophobic group within the §S[betaNetworkTarget_temp.GetName]§!. We have uncovered evidence that several high ranking government officials are secretly financial backers of this group. \n\nOur agents believe that with careful manipulation and covert support, we could goad the group into launching attacks against neighboring empires. Information packets containing the identity of the groups backers could then be made public. \n\nIf successful the attacks would drastically upset §S[betaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."  
  
  sabRepCrit_Extreme_success.title:0 "Xenophobic Militancy - Success"
  sabRepCrit_Extreme_success.desc:0 "Due to our subtle provocations the extremist movement was goaded into violence against empires bordering the §S[alphaNetworkTarget_temp.GetName]§!. \n\nImmediately following the attacks,  §S[alphaNetworkTarget_temp.GetName]§! authorities publicly denied any connection to the group, however our pre-prepared information packets were already being covertly broadcasted. \n\nThe affected empires have gained the TEMP casus belli against the §S[alphaNetworkTarget_temp.GetName]§!, whose diplomatic relations have been severely affected."
  sabRepCrit_Extreme_success.a:0 "Excellent."
  
- sabRepCrit_Extreme_success2.title:0 "Xenophobic Militancy - Success"
- sabRepCrit_Extreme_success2.desc:0 "Due to our subtle provocations the xenophobic group was goaded into violence against empires bordering the §S[betaNetworkTarget_temp.GetName]§!. \n\nImmediately following the attacks,  §S[betaNetworkTarget_temp.GetName]§! authorities publicly denied any connection to the group, however our pre-prepared information packets were already being covertly broadcasted. \n\nThe affected empires have gained the TEMP casus belli against the §S[betaNetworkTarget_temp.GetName]§!, whose diplomatic relations have been severely affected."
  
  sabRepCrit_Extreme_fail.title:0 "Xenophobic Militancy - Failure"
  sabRepCrit_Extreme_fail.desc:0 "Our efforts to covertly manipulate the extremist group within the §S[alphaNetworkTarget_temp.GetName]§! have met with disaster. \nAfter a data leak that lead to the group learning the true loyalties of our agents, several bombings were orchesrated on civilain targets on §S[root.Capital.GetName]§!. \n\nThe group has publicly denounced our interference, and though the larger duplomatic community has been unaffected, our relations with the §S[alphaNetworkTarget_temp.GetName]§! have been severely damaged."
- 
- sabRepCrit_Extreme_fail2.title:0 "Xenophobic Militancy - Failure"
- sabRepCrit_Extreme_fail2.desc:0 "Our efforts to covertly manipulate the extremist group within the §S[betaNetworkTarget_temp.GetName]§! have met with disaster. \nAfter a data leak that lead to the group learning the true loyalties of our agents, several bombings were orchesrated on civilain targets on §S[root.Capital.GetName]§!. \n\nThe group has publicly denounced our interference, and though the larger duplomatic community has been unaffected, our relations with the §S[betaNetworkTarget_temp.GetName]§! have been severely damaged."
  
  
  
@@ -1738,87 +1929,6 @@ spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives 
 
 
 
-
-
-
-
- 
-
-#### OPPORTUNITY EVENTS ####
-### INDUSTRIAL ESPIONAGE ###
- spyOpportunity.2.name:0 "Espionage Opportunity"
- spyOpportunity.2.desc:0 "We have received a coded communique from a dissatisfied §S[spyOpportunityTarget.GetName]§! lead scientist looking to defect. Due to the nature of their work they are kept under close scrutiny at a discreet research lab on the planet §S[spyOpportunityTarget.Capital.GetName]§!.\nOur operatives believe that we only have a small window of opportunity to extract the scientist before they are relocated somewhere more secure."
-
- spyOpportunity.2.a:0 "Gear up a strike team, extract them with force."
- spyOpportunity.2.b:0 "Gear up a covert infiltration team, carefully extract them."
- spyOpportunity.2.c:0 "It's not worth the risk, continue with the operation as normal."
-
-#  spyOpportunity.2.name:0 "Scientist Defection"
-#  spyOpportunity.2.desc:0 "§PComplication§!. Orbital imagery of the blacksite holding the defecting scientist has revealed a far higher security detail that we expected. Our operatives are in position and ready to begin the raid, but opposition will be strong."
-#  spyOpportunity.2.a:0 "Go ahead with the operation."
-#  spyOpportunity.2.b:0 "It's not worth the risk."
-
- spyOpportunity.3.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.3.desc:0 "§PComplication§!. After blasting their way through to the main compound our operatives were encircled by the local defense force. They are currently engaged in a vicious firefight on all sides.\nThe operation commander has discreetly informed us of remote kill switches implanted in all of the operatives. We could activate these to prevent them from being captured or wait to see if they can pull out of this."
- spyOpportunity.3.a:0 "Trigger the switches, no chances."
- spyOpportunity.3.b:0 "Let's wait, give them a chance."
-
-#  spyOpportunity.4.name:0 "Scientist Defection"
-#  spyOpportunity.4.desc:0 "§RFailure§!. Our agents discovered our efforts, the kill switches failed, and they know that we tried to kill them. They fought their way out of the firefight and disappeared into the streets of §S[spyOpportunityTarget.Capital.GetName]§. We can surely expect revenge."
-#  spyOpportunity.4.a:0 "A complete failure."
-
- spyOpportunity.4.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.4.desc:0 "§RFailure§!. The kill switches triggered, and our team is dead. Our involvement has not been discovered."
- spyOpportunity.4.a:0 "A complete failure."
-
- spyOpportunity.5.name:0 "Scientist Defection"
- spyOpportunity.5.desc:0 "§RFailure§!. Our team was either killed or captured by the counterintelligence forces. Our involvement has not been discovered."
- spyOpportunity.5.a:0 "A complete failure."
-
- spyOpportunity.6.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.6.desc:0 "§YSuccess§!. Our gamble paid off, the team fought their way out of the corner and completed the mission. "
- spyOpportunity.6.a:0 "Excellent."
-
- spyOpportunity.7.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.7.desc:0 "§YSuccess§!. A clean mission, the scientist was extracted."
- spyOpportunity.7.a:0 "Excellent."
-
-
-
- spyOpportunity.18.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter to slip through."
- spyOpportunity.18.a:0 "Secondary entrance."
- spyOpportunity.18.b:0 "Ambush patrol."
-
- spyOpportunity.8.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.8.desc:0 "§PComplication§!. The infiltration team found a secondary entrance in the form of a ventilation shaft, however only after having made their way inside did they realise the whole shaft has been rigged with a laser grid trap. They are attempting to slip through it."
- spyOpportunity.8.a:0 "Keep me informed."
-
- spyOpportunity.19.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.19.desc:0 "§PComplication§!. Our team successfully ambushed and silently killed one of the patrols, and we now have an opportunity. We could either strip them of their uniforms and attempt to use them and walk straight into the compound, or continue with the plan as normal."
- spyOpportunity.19.a:0 "Take the uniforms."
- spyOpportunity.19.b:0 "Continue as normal."
-
- spyOpportunity.9.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.9.desc:0 "§SSuccess§!. A clean mission, the scientist was extracted and our agents slipped back off the planet undetected."
- spyOpportunity.9.a:0 "Excellent."
-
- spyOpportunity.10.name:0 "Opportunity - Scientist Defection"
- spyOpportunity.10.desc:0 "§RFailure§!. Our agents were discovered and either killed or captured by the local counterintelligence forces. It seems that our involvement has remained undiscovered."
- spyOpportunity.10.a:0 "Unfortunate."
-
-
-
-
-
-
-
-
-
-
-
-
-
 ########### ADVANCED INTEL REPORT SCREEN ###############
  
  
@@ -1995,3 +2105,224 @@ spyModConfig.2.b:0 "Cancel."
  ####################
 
  galactic_espionage:0 "Galactic Espionage"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## OPENING EVENT ##
+ saboRep.5.name:0 ""
+ saboRep.5.desc:0 ""
+# CHOICE A
+ saboRep.5.a:0 ""
+# CHOICE B
+ saboRep.5.b:0 ""
+
+## FINAL STAGE ##
+ saboRep.6.name:0 ""
+# CHOICE A SUCCESS
+ saboRep.6.desc.a:0 ""
+# CHOICE A FAIL
+ saboRep.6.desc.b:0 ""
+# CHOICE B SUCCESS
+ saboRep.6.desc.c:0 ""
+# CHOICE B FAIL
+ saboRep.6.desc.d:0 ""
+# END #
+ saboRep.6.a:0 ""
+
+
+
+
+
+
+
+
+ ##### OPPORTUNITY MANAGER #####
+
+ opportunityEvent_Alpha_desc:0 "Alpha"
+ opportunityEvent_Beta_desc:0 "Beta"
+
+ ###### STUDY TECH OPPORTUNITY EVENTS ######
+ ## SICK AGENTS - BY DPD ##
+## OPENING EVENT ##
+ studyTech_Opportunity.1.name:0 "Infected Agents"
+ studyTech_Opportunity.1.desc:0 "Our [Root.oppEvent_AorB] Network agents within the §S[spyOpportunityTarget.GetName]§! have been infected with a deadly virus. We do not believe there to have been any foul play, but unless treated quickly our agents will be in serious danger.\n\nWe can send an emergency transport to recall them, effectively cancelling their current operation, or send them to a local §S[spyOpportunityTarget.GetAdjective]§! hospital at the risk of their true purpose being discovered."
+# CHOICE A
+ studyTech_Opportunity.1.a:0 "Send the agents to a local hospital."
+# CHOICE B
+ studyTech_Opportunity.1.b:0 "Recall the agents."
+
+## FINAL STAGE ##
+ studyTech_Opportunity.2.name:0 "Infected Agents"
+# CHOICE A CRIT SUCCESS
+ studyTech_Opportunity.2.desc.a:0 "Excellent news, our agents were treated well at a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents used the event as an opportunity to snoop through an onsite database and acquire details on some of the advanced medical technology used."
+# CHOICE A SUCCESS
+ studyTech_Opportunity.2.desc.b:0 "Good news, our agents were treated well at a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center, and were believed to be nothing more than visiting traders.\nEven further, our agents learned a great deal from observing the medical technology used."
+# CHOICE A FAIL
+ studyTech_Opportunity.2.desc.c:0 "Bad news, though our [Root.oppEvent_AorB] network agents made it to a nearby §S[spyOpportunityTarget.GetAdjective]§! emergency center it was already too late. All of of [Root.oppEvent_AorB] network field agents perished.\n\nHowever, their true purpose was never discovered, and [Root.oppEvent_AorB] network is already preparing a new field team.\n\n The networks current operation has been set back."
+# CHOICE B SUCCESS
+ studyTech_Opportunity.2.desc.d:0 "Good news, our [Root.oppEvent_AorB] network agents were extracted and treated before the virus could progress any further. They are recovering well, and have even managed to bring back a small cache of already collected technical data."
+# CHOICE B FAIL
+ studyTech_Opportunity.2.desc.e:0 "Bad news, we were unable to extract our [Root.oppEvent_AorB] network agents in time, and the entire field team perished.\n\nHowever they the extraction team did find a small cache of already collected technical data. We have added it to our research archives.\n\n The networks current operation has been set back."
+# END #
+ studyTech_Opportunity.2.a:0 "Understood."
+
+
+
+
+
+
+ 
+
+#### OPPORTUNITY EVENTS ####
+### INDUSTRIAL ESPIONAGE ###
+ spyOpportunity.2.name:0 "Espionage Opportunity"
+ spyOpportunity.2.desc:0 "We have received a coded communique from a dissatisfied §S[spyOpportunityTarget.GetName]§! lead scientist looking to defect. Due to the nature of their work they are kept under close scrutiny at a discreet research lab on the planet §S[spyOpportunityTarget.Capital.GetName]§!.\nOur [Root.oppEvent_AorB] network operatives believe that we only have a small window of opportunity to extract the scientist before they are relocated somewhere more secure."
+
+ spyOpportunity.2.a:0 "Gear up a strike team, extract them with force."
+ spyOpportunity.2.b:0 "Gear up a covert infiltration team, carefully extract them."
+ spyOpportunity.2.c:0 "It's not worth the risk, continue with the operation as normal."
+
+#  spyOpportunity.2.name:0 "Scientist Defection"
+#  spyOpportunity.2.desc:0 "§PComplication§!. Orbital imagery of the blacksite holding the defecting scientist has revealed a far higher security detail that we expected. Our operatives are in position and ready to begin the raid, but opposition will be strong."
+#  spyOpportunity.2.a:0 "Go ahead with the operation."
+#  spyOpportunity.2.b:0 "It's not worth the risk."
+
+ spyOpportunity.3.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.3.desc:0 "§PComplication§!. After blasting their way through to the main compound our operatives were encircled by the local defense force. They are currently engaged in a vicious firefight on all sides.\nThe operation commander has discreetly informed us of remote kill switches implanted in all of the operatives. We could activate these to prevent them from being captured or wait to see if they can pull out of this."
+ spyOpportunity.3.a:0 "Trigger the switches, no chances."
+ spyOpportunity.3.b:0 "Let's wait, give them a chance."
+
+#  spyOpportunity.4.name:0 "Scientist Defection"
+#  spyOpportunity.4.desc:0 "§RFailure§!. Our agents discovered our efforts, the kill switches failed, and they know that we tried to kill them. They fought their way out of the firefight and disappeared into the streets of §S[spyOpportunityTarget.Capital.GetName]§. We can surely expect revenge."
+#  spyOpportunity.4.a:0 "A complete failure."
+
+ spyOpportunity.4.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.4.desc:0 "§RFailure§!. The kill switches triggered, and our team is dead. Our involvement has not been discovered.\n\n The networks current operation has been set back."
+ spyOpportunity.4.a:0 "A complete failure."
+
+ spyOpportunity.5.name:0 "Scientist Defection"
+ spyOpportunity.5.desc:0 "§RFailure§!. Our team was either killed or captured by the counterintelligence forces. Our involvement has not been discovered.\n\n The networks current operation has been set back."
+ spyOpportunity.5.a:0 "A complete failure."
+
+ spyOpportunity.6.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.6.desc:0 "§YSuccess§!. Our gamble paid off, the team fought their way out of the corner and completed the mission. "
+ spyOpportunity.6.a:0 "Excellent."
+
+ spyOpportunity.7.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.7.desc:0 "§YSuccess§!. A clean mission, the scientist was extracted."
+ spyOpportunity.7.a:0 "Excellent."
+
+
+
+ spyOpportunity.18.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.18.desc:0 "§PComplication§!. The infiltration team has made planetfall and covertly approached the compound holding the defecting scientist. However they have reported that the perimeter defences are far more comprehensive than we expected and we can't slip through.\nTwo options are available to us; Attempt to find a secondary access point, or ambush one of the patrols with silenced weapons to create a gap in the perimeter."
+ spyOpportunity.18.a:0 "Secondary entrance."
+ spyOpportunity.18.b:0 "Ambush patrol."
+
+ spyOpportunity.8.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.8.desc:0 "§PComplication§!. The infiltration team found a secondary entrance in the form of a ventilation shaft, however only after having made their way inside did they realise the whole shaft has been rigged with a laser grid trap. They are attempting to slip through it."
+ spyOpportunity.8.a:0 "Keep me informed."
+
+ spyOpportunity.19.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.19.desc:0 "§PComplication§!. Our team successfully ambushed and silently killed one of the patrols, and we now have an opportunity. We could either strip them of their uniforms and attempt to use them and walk straight into the compound, or continue with the plan as normal."
+ spyOpportunity.19.a:0 "Take the uniforms."
+ spyOpportunity.19.b:0 "Continue as normal."
+
+ spyOpportunity.9.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.9.desc:0 "§SSuccess§!. A clean mission, the scientist was extracted and our agents slipped back off the planet undetected."
+ spyOpportunity.9.a:0 "Excellent."
+
+ spyOpportunity.10.name:0 "Opportunity - Scientist Defection"
+ spyOpportunity.10.desc:0 "§RFailure§!. Our agents were discovered and either killed or captured by the local counterintelligence forces. It seems that our involvement has remained undiscovered.\n\n The networks current operation has been set back."
+ spyOpportunity.10.a:0 "Unfortunate."
+
+
+
+
+#### SABOREP OPPORTUNITY EVENTS #####
+### BLACKMAIL DIPLOMAT EVENT ###
+ saborepOpportunity.1.name:0 "Compromised Diplomat"
+ saborepOpportunity.1.desc:0 "[Root.oppEvent_AorB] agents have been monitoring a §S[spyOpportunityTarget.GetName]§! diplomat residing on [Root.Capital.GetName]. They have been recorded interacting with known criminal elements on multiple occasions after apparently developing a serious substance abuse addiction.\n\nOur agents believe that we could use the recordings to either publicly expose and shame the §S[spyOpportunityTarget.GetAdjective]§!, or privately offer to keep the matter private for a small reward."
+
+ saborepOpportunity.1.a:0 "Publicly expose them."
+ saborepOpportunity.1.b:0 "Blackmail them."
+ saborepOpportunity.1.c:0 "Leave them be."
+
+ saborepOpportunity.2.name:0 "Compromised Diplomat"
+ saborepOpportunity.2.desc.a:0 "Excellent news, the §S[spyOpportunityTarget.GetName]§! is left with a diplomatic embarrassment on their hands after we discreetly leaked information on the activities of their diplomat. Several other empires have openly mocked them for this."
+
+ saborepOpportunity.2.desc.b:0 "Terrible news, after leaking the details of the §S[spyOpportunityTarget.GetName]§! diplomat, many of our diplomatic contacts have voiced their displeasure with us. Apparently many feel that the matter should have been kept private, and that the leak only serves to demonstrate our own ineffectiveness."
+
+ saborepOpportunity.2.desc.c:0 "Through discrete channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat."
+
+ saborepOpportunity.2.desc.d:0 "The §S[spyOpportunityTarget.GetName]§! begrudgingly sent us the payment package, and thanked us for keeping the matter private."
+
+ saborepOpportunity.2.a:0 "Understood." 
+
+
+
+### BOMB DIPLOMATS EVENT ###
+#### SABOTAGE REP CRIT EVENTS ####
+ saborepOpportunity.3.title:0 "Diplomat Attack"
+ saborepOpportunity.3.desc:0 "An opportunity presents itself - [Root.oppEvent_AorB] network agents have gained valuable intelligence that several high value visiting diplomats will soon arrive on the §S[spyOpportunityTarget.GetName]§! capital of §S[spyOpportunityTarget.Capital.GetName]§!.\n\nNotable delegates will include the §S[bombDiplomatsTarget_1.GetName]§! and the §S[bombDiplomatsTarget_2.GetName]§!\n\nAgents already operating on §S[spyOpportunityTarget.Capital.GetName]§! are prepared to eliminate these delegates and frame the attack as the work of local extremist groups. \nIf successful the attack could drastically upset §S[spyOpportunityTarget.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."
+
+ saborepOpportunity.3.a:0 "Approve the operation."
+ saborepOpportunity.3.b:0 "Stand down, find another solution."
+
+ 
+ saborepOpportunity.4.title:0 "Diplomat Attack"
+ saborepOpportunity.4.desc:0 "§SSuccess!§!. While the diplomatic convoy was mid-transit to the surface of §S[spyOpportunityTarget.Capital.GetName]§!, our [Root.oppEvent_AorB] network agents remotely detonated an explosive device hidden within the cargo hold of the lead ship. The entire convoy was destroyed in the resulting explosion, with all of the visiting diplomats confirmed dead. \n\nThe §S[spyOpportunityTarget.GetAdjective]§! denied any responsibility for the attack, however we ensured that foreign investigators found certain 'evidence' of their involvement. \n\nThe §S[bombDiplomatsTarget_1.GetName]§! and the §S[bombDiplomatsTarget_2.GetName]§! have gained the humiliation casus belli against the [spyOpportunityTarget.GetAdjective], whose general diplomatic reputation has been significantly impacted."
+
+ saborepOpportunity.4.a:0 "Excellent"
+
+ saborepOpportunity.5.title:0 "Diplomat Attack"
+ saborepOpportunity.5.desc:0 "§RFailure!§!. Our sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling explosives onto a diplomats ship. We managed to secure our agents before they could be captured, and there is no direct evidence of our involvement.\nRegardless, the §S[spyOpportunityTarget.GetAdjective]§!, the §S[bombDiplomatsTarget_1.GetAdjective]§!, and the §S[bombDiplomatsTarget_2.GetAdjective]§! have all publically spoken out against us."
+
+ saborepOpportunity.5.a:0 "Unacceptable"
+
+ saborepOpportunity.6.title:0 "Diplomat Attack"
+ saborepOpportunity.6.desc:0 "§RMajor Failure!§!. Our sabotage operation has ended in disaster. The exact events are uncertain, but we believe that while preparing for their operation several agents were discovered smuggling the explosives onto a diplomats ship. In the ensuing shootout the explosives were detonated.\n\nSeveral other [Root.oppEvent_AorB] network agents were apprehended in the following security sweeps, along with logs and files which at the very least suggest our involvement.\n\nThe §S[spyOpportunityTarget.GetName]§! authorities have wasted no time in publicly spreading and condemning our involvement."
+
+ saborepOpportunity.6.a:0 "This is terrible news!"
+
+
+
+
+
+
+ ###### PROTOTYPE WEAPONS TEST ##### 
+ studyTech_Opportunity.20.name:0 "Prototype Weapons Test"
+ studyTech_Opportunity.20.desc:0 "Your [Root.oppEvent_AorB] network agents working within the §S[spyOpportunityTarget.GetName]§! have had a team monitoring a remote research installation. That team has detected a burst of powerful radiation emanating from a nearby testsite. It is likely that the §S[spyOpportunityTarget.GetAdjective]§! is field testing a new weapon, however security around the installation is tight."
+ 
+ studyTech_Opportunity.20.a:0 "Send a team down and attempt to secure the tech."
+ studyTech_Opportunity.20.b:0 "Try to destroy the installation and setback their research."
+ studyTech_Opportunity.20.c:0 "Ignore it."
+ 
+ studyTech_Opportunity.21.name:0 "Prototype Weapons Test"
+ studyTech_Opportunity.21.desc.a:0 "Our agents successfully infiltrated the remote research installation, and collected comprehensive data on the targets experimental weapons research, all while remaining undetected. We have added it to our archives for further study."
+ 
+ studyTech_Opportunity.21.desc.b:0 "Our agents failed to infiltrate the remote research installation, worse still they were apprehended by the perimeter security forces. The target is furious."
+ 
+ studyTech_Opportunity.21.desc.c:0 "Coming in low to avoid perimetre sensors, several attack craft flown by our agents delivered devastating damage to the weapons research installation. The targets progress with this tech has been seriously set back."
+ 
+ studyTech_Opportunity.21.desc.d:0 "The installations perimetres defences spotted our agents before they could get close enough to do any damage, though we were able to extract them without incident. The target has likely already relocated the weapons data somewhere more secure."
+ 
+ studyTech_Opportunity.21.a:0 "Understood."
+
+
+ 
+
+

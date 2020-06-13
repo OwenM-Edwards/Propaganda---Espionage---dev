@@ -105,9 +105,13 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  opinion_bombed_diplomats:0 "Suspected of sabotaging diplomatic conference."
  opinion_bombed_diplomats_mod_desc:0 ""
 
- opinion_triedBlackmail:0 "Attempted to blackmail us"
- opinion_triedBlackmail_mod:0 "Attempted to blackmail us"
+ opinion_triedBlackmail:0 "Attempted to blackmail someone"
+ opinion_triedBlackmail_mod:0 "Attempted to blackmail someone"
  opinion_triedBlackmail_mod_desc:0 ""
+
+ opinion_triedBlackmailPersonal:0 "Attempted to blackmail us"
+ opinion_triedBlackmailPersonal_mod:0 "Attempted to blackmail us"
+ opinion_triedBlackmailPersonal_mod_desc:0 ""
 
  spy_physicsPenalty_mod:0 "Sabotaged research."
  spy_physicsPenalty:0 "Sabotaged research."
@@ -1690,21 +1694,14 @@ spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives 
  sabRepCrit_Extreme.title:0 "Sabotage Reputation Opportunity"
  sabRepCrit_Extreme.desc:0 "An opportunity presents itself - Alpha Network agents have been monitoring the activity of a militant xenophobic group within the §S[alphaNetworkTarget_temp.GetName]§!. We have uncovered evidence that several high ranking government officials are secretly financial backers of this group. \n\nOur agents believe that with careful manipulation and covert support, we could goad the group into launching attacks against neighboring empires. Information packets containing the identity of the groups backers could then be made public. \n\nIf successful the attacks would drastically upset §S[alphaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."  
  
- sabRepCrit_Extreme2.title:0 "Sabotage Reputation Opportunity"
- sabRepCrit_Extreme2.desc:0 "An opportunity presents itself - Beta Network agents have been monitoring the activity of a militant xenophobic group within the §S[betaNetworkTarget_temp.GetName]§!. We have uncovered evidence that several high ranking government officials are secretly financial backers of this group. \n\nOur agents believe that with careful manipulation and covert support, we could goad the group into launching attacks against neighboring empires. Information packets containing the identity of the groups backers could then be made public. \n\nIf successful the attacks would drastically upset §S[betaNetworkTarget_temp.GetName]§! diplomatic relations, but there is no guarantee of our involvement staying secret. \n\nOur agents will require additional supplies."  
  
  sabRepCrit_Extreme_success.title:0 "Xenophobic Militancy - Success"
  sabRepCrit_Extreme_success.desc:0 "Due to our subtle provocations the extremist movement was goaded into violence against empires bordering the §S[alphaNetworkTarget_temp.GetName]§!. \n\nImmediately following the attacks,  §S[alphaNetworkTarget_temp.GetName]§! authorities publicly denied any connection to the group, however our pre-prepared information packets were already being covertly broadcasted. \n\nThe affected empires have gained the TEMP casus belli against the §S[alphaNetworkTarget_temp.GetName]§!, whose diplomatic relations have been severely affected."
  sabRepCrit_Extreme_success.a:0 "Excellent."
  
- sabRepCrit_Extreme_success2.title:0 "Xenophobic Militancy - Success"
- sabRepCrit_Extreme_success2.desc:0 "Due to our subtle provocations the xenophobic group was goaded into violence against empires bordering the §S[betaNetworkTarget_temp.GetName]§!. \n\nImmediately following the attacks,  §S[betaNetworkTarget_temp.GetName]§! authorities publicly denied any connection to the group, however our pre-prepared information packets were already being covertly broadcasted. \n\nThe affected empires have gained the TEMP casus belli against the §S[betaNetworkTarget_temp.GetName]§!, whose diplomatic relations have been severely affected."
  
  sabRepCrit_Extreme_fail.title:0 "Xenophobic Militancy - Failure"
  sabRepCrit_Extreme_fail.desc:0 "Our efforts to covertly manipulate the extremist group within the §S[alphaNetworkTarget_temp.GetName]§! have met with disaster. \nAfter a data leak that lead to the group learning the true loyalties of our agents, several bombings were orchesrated on civilain targets on §S[root.Capital.GetName]§!. \n\nThe group has publicly denounced our interference, and though the larger duplomatic community has been unaffected, our relations with the §S[alphaNetworkTarget_temp.GetName]§! have been severely damaged."
- 
- sabRepCrit_Extreme_fail2.title:0 "Xenophobic Militancy - Failure"
- sabRepCrit_Extreme_fail2.desc:0 "Our efforts to covertly manipulate the extremist group within the §S[betaNetworkTarget_temp.GetName]§! have met with disaster. \nAfter a data leak that lead to the group learning the true loyalties of our agents, several bombings were orchesrated on civilain targets on §S[root.Capital.GetName]§!. \n\nThe group has publicly denounced our interference, and though the larger duplomatic community has been unaffected, our relations with the §S[betaNetworkTarget_temp.GetName]§! have been severely damaged."
  
  
  
@@ -2266,8 +2263,11 @@ spyModConfig.2.b:0 "Cancel."
 
  saborepOpportunity.2.name:0 "Compromised Diplomat"
  saborepOpportunity.2.desc.a:0 "Excellent news, the §S[spyOpportunityTarget.GetName]§! is left with a diplomatic embarrassment on their hands after we discreetly leaked information on the activities of their diplomat. Several other empires have openly mocked them for this."
+
  saborepOpportunity.2.desc.b:0 "Terrible news, after leaking the details of the §S[spyOpportunityTarget.GetName]§! diplomat, many of our diplomatic contacts have voiced their displeasure with us. Apparently many feel that the matter should have been kept private, and that the leak only serves to demonstrate our own ineffectiveness."
- saborepOpportunity.2.desc.c:0 "Through discrete channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat.\"
+
+ saborepOpportunity.2.desc.c:0 "Through discrete channels the §S[spyOpportunityTarget.GetName]§! has directed a sizable payment package, and promise of future aid. They have thanked us for keeping the matter private. They have recalled their diplomat."
+
  saborepOpportunity.2.desc.d:0 "The §S[spyOpportunityTarget.GetName]§! begrudgingly sent us the payment package, and thanked us for keeping the matter private."
 
  saborepOpportunity.2.a:0 "Understood." 
