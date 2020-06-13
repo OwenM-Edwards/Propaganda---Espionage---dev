@@ -2606,6 +2606,7 @@ country_event = {
             remove_country_flag = cover_domestic_alpha  #handles the grey covers
             set_country_flag = Alpha_Defence
             set_country_flag = cover_foreign_alpha
+            remove_country_flag = ongoingRaidAlpha
 
             removeIntelPointsAlpha = yes
             country_event = { id = counterProgressTrackerA.1 }
@@ -2754,6 +2755,7 @@ country_event = {
             
             country_event = { id = counterProgressTrackerB.1 }
             country_event = { id = agencyGlobal.33 }	
+            remove_country_flag = ongoingRaidBeta
 
             remove_country_flag = convertingBeta-D-to-F
             set_country_flag = convertingBeta-F-to-D
