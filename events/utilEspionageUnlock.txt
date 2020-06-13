@@ -268,6 +268,9 @@ country_event = {
 		removeIntelPointsAlpha = yes
 		removeIntelPointsBeta = yes
 
+		remove_country_flag = ongoingRaidAlpha
+		remove_country_flag = ongoingRaidBeta
+
 		remove_country_flag = convertingAlpha-D-to-F
 		remove_country_flag = convertingAlpha-F-to-D
 
