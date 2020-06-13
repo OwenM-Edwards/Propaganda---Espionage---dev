@@ -110,14 +110,28 @@ country_event = {
 				influence = 100
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				is_same_value = event_target:stageOneChoiceB_Success
 			}
 			add_resource = {
-				energy = 100
+				energy = 1000
+			}
+			add_favors = {
+				target = event_target:spyOpportunityTarget
+				value = 2
 			}
 		}
+		else_if = {
+			limit = {
+				is_same_value = event_target:stageOneChoiceB_Fail
+			}
+			add_favors = {
+				target = event_target:spyOpportunityTarget
+				value = 2
+			}
+		}
+
 		hidden_effect = { 
 			if = {
 				limit = {
@@ -148,31 +162,25 @@ country_event = {
 					}
 					add_opinion_modifier = {
 						who = event_target:spyOpportunityAttacker
-						modifier = opinion_triedBlackmail
+						modifier = opinion_triedBlackmail 
 					}
 				}
-			}
-			else_if = {
-				limit = {
-					is_same_value = event_target:stageOneChoiceB_Success
-				}
-				add_favors = {
-					target = event_target:spyOpportunityTarget
-					value = 2
+				event_target:spyOpportunityTarget = {
+					add_opinion_modifier = {
+						who = event_target:spyOpportunityAttacker
+						modifier = opinion_triedBlackmailPersonal
+					}
 				}
 			}
 			else_if = {
 				limit = {
 					is_same_value = event_target:stageOneChoiceB_Fail
 				}
-				add_favors = {
-					target = event_target:spyOpportunityTarget
-					value = 2
-				}
+
 				event_target:spyOpportunityTarget = {
 					add_opinion_modifier = {
 						who = event_target:spyOpportunityAttacker
-						modifier = opinion_triedBlackmail
+						modifier = opinion_triedBlackmailPersonal
 					}
 				}
 			}
