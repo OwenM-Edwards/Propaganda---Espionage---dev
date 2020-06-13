@@ -274,6 +274,12 @@ country_event = {
 						}
 					}
 				}
+				modifier = {
+					factor = 0
+					event_target:spyOpportunityTarget = {
+						is_ai = no
+					}
+				}
 				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 				country_event = {
 					id = saborepOpportunity.1
@@ -288,6 +294,12 @@ country_event = {
 					nand = {
 						exists = event_target:bombDiplomatsTarget_1
 						exists = event_target:bombDiplomatsTarget_2
+					}
+				}
+				modifier = {
+					factor = 0
+					event_target:spyOpportunityTarget = {
+						is_ai = no
 					}
 				}
 				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
@@ -435,6 +447,17 @@ country_event = {
 
 			# SCIENTIST DEFECTION EVENT #
 			50 = {
+				modifier = {
+					factor = 0
+					has_country_flag = recentlyStoleScientist
+				}
+				modifier = {
+					factor = 0
+					event_target:spyOpportunityTarget = {
+						is_ai = no
+					}
+				}
+				set_timed_country_flag = { flag = recentlyStoleScientist days = 3650 }
 				set_timed_country_flag = { flag = opportunityCooldown days = @opportunityCooldown }
 				country_event = {
 					id = studyTech_Opportunity.3
