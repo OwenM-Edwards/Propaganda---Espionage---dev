@@ -11,7 +11,7 @@ country_event = {
                     id = techGeneric.1
                 }
             }
-            15 = { #FULL SUCCESS
+            25 = { #FULL SUCCESS
                 country_event = { id = studyTech.2 } 
             }
         }
