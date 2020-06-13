@@ -5,7 +5,12 @@ country_event = {
 	title = stationManager.1.name
 	desc = stationManager.1.desc
 	is_triggered_only = yes
-	picture = GFX_evt_space_station
+	picture_event_data = {
+		portrait = event_target:playerAgency
+		room = default_room
+	} 
+   custom_gui = quibble_spy_window
+   diplomatic = yes
 
 	immediate = {
 		if = {
@@ -1043,10 +1048,11 @@ country_event = {
 	
 	option = {
 		name = stationManager.1
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_1 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_1 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_1 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1057,24 +1063,26 @@ country_event = {
 	}
 	option = {
 		name = stationManager.2
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_2 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_2 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_2 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
 			else = { event_target:potentialSabStation_2 = { save_event_target_as = finalStationTarget } 
-				country_event = { id = stationSabotage.1 }
+				country_event = { id = stationSabotage.1 } 
 			}
 		}
 	}
 	option = {
 		name = stationManager.3
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_3 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_3 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_3 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1085,10 +1093,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.4
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_4 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_4 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_4 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1099,10 +1108,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.5
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_5 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_5 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_5 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1113,10 +1123,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.6
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_6 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_6 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_6 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1127,10 +1138,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.7
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_7 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_7 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_7 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1141,10 +1153,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.8
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_8 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_8 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_8 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1155,10 +1168,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.9
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_9 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_9 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_9 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1169,10 +1183,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.10
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_10 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_10 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_10 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1183,10 +1198,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.11
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_11 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_11 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_11 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1197,10 +1213,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.12
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_12 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_12 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_12 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1211,10 +1228,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.13
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_13 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_13 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_13 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1225,10 +1243,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.14
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_14 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_14 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_14 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1239,10 +1258,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.15
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_15 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_15 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_15 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1253,10 +1273,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.16
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_16 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_16 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_16 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1267,10 +1288,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.17
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_17 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_17 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_17 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1281,10 +1303,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.18
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_18 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_18 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_18 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1295,10 +1318,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.19
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_19 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_19 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_19 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1309,10 +1333,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.20
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_20 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_20 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_20 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1323,10 +1348,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.21
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_21 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_21 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_21 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1337,10 +1363,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.22
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_22 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_22 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_22 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1351,10 +1378,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.23
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_23 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_23 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_23 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1365,10 +1393,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.24
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_24 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_24 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_24 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1379,10 +1408,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.25
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_25 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_25 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_25 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1393,10 +1423,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.26
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_26 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_26 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_26 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1407,10 +1438,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.27
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_27 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_27 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_27 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1421,10 +1453,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.28
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_28 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_28 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_28 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1435,10 +1468,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.29
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_29 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_29 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_29 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1449,10 +1483,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.30
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_30 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_30 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_30 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1463,10 +1498,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.31
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_31 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_31 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_31 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1477,10 +1513,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.32
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_32 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_32 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_32 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1491,10 +1528,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.33
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_33 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_33 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_33 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1505,10 +1543,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.34
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_34 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_34 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_34 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1519,10 +1558,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.35
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_35 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_35 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_35 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1533,10 +1573,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.36
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_36 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_36 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_36 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1547,10 +1588,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.37
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_37 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_37 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_37 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1561,10 +1603,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.38
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_38 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_38 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_38 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1575,10 +1618,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.39
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_39 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_39 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_39 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1589,10 +1633,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.40
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_40 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_40 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_40 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1603,10 +1648,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.41
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_41 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_41 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_41 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1617,10 +1663,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.42
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_42 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_42 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_42 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1631,10 +1678,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.43
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_43 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_43 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_43 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1645,10 +1693,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.44
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_44 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_44 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_44 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1659,10 +1708,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.45
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_45 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_45 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_45 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1673,10 +1723,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.46
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_46 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_46 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_46 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1687,10 +1738,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.47
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_47 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_47 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_47 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1701,10 +1753,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.48
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_48 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_48 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_48 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1715,10 +1768,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.49
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_49 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_49 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_49 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1729,10 +1783,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.50
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_50 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_50 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_50 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1743,10 +1798,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.51
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_51 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_51 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_51 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1757,10 +1813,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.52
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_52 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_52 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_52 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1771,10 +1828,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.53
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_53 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_53 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_53 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1785,10 +1843,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.54
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_54 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_54 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_54 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1799,10 +1858,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.55
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_55 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_55 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_55 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1813,10 +1873,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.56
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_56 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_56 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_56 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1827,10 +1888,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.57
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_57 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_57 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_57 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1841,10 +1903,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.58
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_58 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_58 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_58 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1855,10 +1918,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.59
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_59 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_59 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_59 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1869,10 +1933,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.60
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_60 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_60 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_60 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1883,10 +1948,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.61
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_61 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_61 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_61 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1897,10 +1963,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.62
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_62 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_62 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_62 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1911,10 +1978,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.63
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_63 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_63 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_63 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1925,10 +1993,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.64
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_64 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_64 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_64 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1939,10 +2008,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.65
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_65 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_65 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_65 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1953,10 +2023,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.66
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_66 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_66 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_66 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1967,10 +2038,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.67
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_67 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_67 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_67 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1981,10 +2053,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.68
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_68 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_68 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_68 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -1995,10 +2068,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.69
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_69 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_69 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_69 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2009,10 +2083,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.70
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_70 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_70 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_70 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2023,10 +2098,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.71
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_71 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_71 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_71 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2037,10 +2113,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.72
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_72 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_72 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_72 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2051,10 +2128,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.73
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_73 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_73 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_73 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2065,10 +2143,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.74
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_74 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_74 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_74 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2079,10 +2158,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.75
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_75 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_75 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_75 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2093,10 +2173,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.76
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_76 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_76 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_76 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2107,10 +2188,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.77
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_77 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_77 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_77 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2121,10 +2203,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.78
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_78 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_78 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_78 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2135,10 +2218,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.79
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_79 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_79 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_79 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2149,10 +2233,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.80
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_80 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_80 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_80 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2163,10 +2248,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.81
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_81 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_81 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_81 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2177,10 +2263,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.82
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_82 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_82 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_82 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2191,10 +2278,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.83
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_83 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_83 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_83 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2205,10 +2293,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.84
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_84 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_84 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_84 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2219,10 +2308,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.85
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_85 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_85 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_85 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2233,10 +2323,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.86
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_86 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_86 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_86 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2247,10 +2338,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.87
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_87 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_87 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_87 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2261,10 +2353,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.88
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_88 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_88 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_88 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2275,10 +2368,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.89
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_89 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_89 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_89 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2289,10 +2383,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.90
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_90 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_90 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_90 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2303,10 +2398,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.91
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_91 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_91 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_91 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2317,10 +2413,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.92
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_92 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_92 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_92 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2331,10 +2428,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.93
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_93 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_93 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_93 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2345,10 +2443,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.94
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_94 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_94 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_94 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2359,10 +2458,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.95
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_95 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_95 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_95 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2373,10 +2473,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.96
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_96 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_96 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_96 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2387,10 +2488,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.97
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_97 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_97 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_97 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2401,10 +2503,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.98
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_98 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_98 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_98 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2415,10 +2518,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.99
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_99 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_99 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_99 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
@@ -2429,10 +2533,11 @@ country_event = {
 	}
 	option = {
 		name = stationManager.100
+		custom_gui = quibble_spy_option
 		trigger = { exists = event_target:potentialSabStation_100 }
 		hidden_effect = { 
 			if = { limit = { has_country_flag = betaF_raidStation } 
-				event_target:potentialSabStation_100 = { save_event_target_as = finalStationTargetBeta }
+				event_target:potentialSabStation_100 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
 			}
