@@ -103,7 +103,45 @@
 #fixed small bug cuased when cancelling a sow unrest operation
 
 
-TODO 3 = {
+
+
+#DONE 3 = {
+   #AI more likely to industrial espionage if target more advanced.
+   #Added open menu effect to topbar icons.
+   #tweaked ai fund crime length to be longer.
+   #implemented indus esp sick agents event.
+   #fix tooltip on topbar icons now that button is there = {
+      #maybe create duplicate button and add tooltip to that
+   #}
+   #Fixed some GUI errors, thanks to LokiCharms
+   #Added more success options for boosting dip repuatation.
+   #Added pvp messages for stealing technology.
+   #added pvp notification to fund crime
+   #added pvp notifivation to sabrep
+   #Add in custom operation costs for all the different operation types = {
+      #custom variables added
+      #need to make a filter for progresstracker operation cost
+      #need to tweak all of the tooltips to reflect that = {
+         #making them work off of a variable would be easier.
+      #}
+   #}
+   #ADDED TOOLTIP TO MENU INTEL POINTS ICON
+   #fix sowunrest colony name bug 
+   #add more colony options to sow unrest
+   #unify alpha and beta sow unrest target selection
+   #addmore option to station selector
+   #fix station raid beta target bug
+   #Fixed bug with espionage fail events
+   #Fixed the opportunity event launcher/manager
+   #FIX OPERATION COST SPY FAIL EVENT TOOLTIPS
+   #Added prototpye weapons test opportunity event
+   #Fixed domestic tooltips operation cost
+   #added pvp messages for ethics shifting
+   #STOP CONVERT BUTTON WORKING WHEN ON OPPORTUNITY OPERATION
+#}
+
+
+TODO 4 = {
    change swing ethics to only use your governing ethics
    add pvp notification to swing ethics
 
@@ -118,61 +156,31 @@ TODO 3 = {
    }
 
    SCIENTIST DEFECTION = {
-      HAD MESSAGE FOR TARGET COUNTRY WHEN SCIENTIST IS TAKEN
+      ADD MESSAGE FOR TARGET COUNTRY WHEN SCIENTIST IS TAKEN
    }
-
-
-   FIX OPPORTUNITY MANAGER BUG
-   STOP CONVERT BUTTON WORKING WHEN ON OPPORTUNITY OPERATION
 
    CHECK THE CONVERT AND REDEPLOY COOLDOWNS, MIGHT NOT BE LONG ENOUGH IN SOME CASES
 
    ADD IN PVP NOTIFICATIONS FOR OPPORTUNITY EVENTS
 
-
    ADD IN CUSTOM VARIABLE DOMESTIC OPERATION COSTS
 
-   copy localisation over to other lanuages.
+   ADD NAME OF SCIENTIST TO CAPURE SCIENTIST FINAL EVENT
 
-   remove testing variables 
-   Added back in opportunity cooldown.
+   FINISHING EVENTS = {
+      Add variation to the ending text of all the operations, with maybe small changes to the exact effect sometimes.
+      Start with adding around three extra varations for each type.
+
+   }
 }
 
 
 
-DONE 3 = {
-   AI more likely to industrial espionage if target more advanced.
-   Added open menu effect to topbar icons.
-   tweaked ai fund crime length to be longer.
-   implemented indus esp sick agents event.
-   fix tooltip on topbar icons now that button is there = {
-      maybe create duplicate button and add tooltip to that
-   }
-   Fixed some GUI errors, thanks to LokiCharms
-   Added more success options for boosting dip repuatation.
-   Added pvp messages for stealing technology.
-   added pvp notification to fund crime
-   added pvp notifivation to sabrep
-   Add in custom operation costs for all the different operation types = {
-      custom variables added
-      need to make a filter for progresstracker operation cost
-      need to tweak all of the tooltips to reflect that = {
-         making them work off of a variable would be easier.
-      }
-   }
-   ADDED TOOLTIP TO MENU INTEL POINTS ICON
-   fix sowunrest colony name bug 
-   add more colony options to sow unrest
-   unify alpha and beta sow unrest target selection
-   addmore option to station selector
-   fix station raid beta target bug
-   Fixed bug with espionage fail events
-   Fixed the opportunity event launcher/manager
-   FIX OPERATION COST SPY FAIL EVENT TOOLTIPS
-   Added prototpye weapons test opportunity event
-   Fixed domestic tooltips operation cost
-   added pvp messages for ethics shifting
-}
+
+
+
+
+
 
 
 
@@ -193,8 +201,6 @@ Feature creep stuff = {
       }
    }
 }
-
-
 
 INTERNAL COUNCIL = {
    made up of factions = {
@@ -231,8 +237,6 @@ DOMESTIC STABILITY EVENTS  = {
 
 
 }
-
-
 
 
 ----- 	MAYBE FEATURE CREEP STUFF -----
