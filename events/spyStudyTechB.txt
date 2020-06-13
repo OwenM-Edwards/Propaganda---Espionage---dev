@@ -11,7 +11,7 @@ country_event = {
                     id = techGeneric.2
                 }
             }
-            15 = {
+            25 = {
                 country_event = { id = studyTechBeta.2 } 
             }
         }
