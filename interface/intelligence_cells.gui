@@ -112,7 +112,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "configButtonContainer"
 			size = { width = 0 height = 0 }
-			position = { x = 891 y = 5   }
+			position = { x = 892 y = 5   }
 
 			if_resolution = {
 				min_width = 2560
