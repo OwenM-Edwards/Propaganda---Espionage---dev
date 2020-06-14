@@ -57,7 +57,7 @@
 	# @AISpyEventLength = 180
 	# @AISpyEventLengthRandom_mod = 90
 	@AISpyBannedLength = 3650
-	@playerTargetCoolDown = 1400 #1700
+	@playerTargetCoolDown = 1095 #1700
 
 	### STOP AI FROM ESPIONAGE TOO SOON AFTER FRIST CONTACT ###
 	@waitForAIEspionage = 3650
