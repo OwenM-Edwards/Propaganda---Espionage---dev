@@ -263,11 +263,9 @@ country_event = { #STOP CRIME
 	hide_window = yes
 
 	immediate = {
-		every_owned_planet = {
-			add_modifier = {
-				modifier = stopCrime
-				days = 120
-			}
+		add_modifier = {
+			modifier = stopCrime
+			days = 120
 		}
 	}
 }
