@@ -301,7 +301,7 @@ guiTypes = {
 		effectButtonType = {
 			id = "button"
 			name = "alphaOneName2"
-			position = { x = 199 y = 350 }
+			position = { x = 193 y = 350 }
 			buttonText = "- Domestic Operations -"
 			font = "malgun_goth_24"
 			effect = "agency_alpha_cover_foreign"
@@ -398,7 +398,7 @@ guiTypes = {
 		effectButtonType = {
 			id = "button"
 			name = "alphaOneName3"
-			position = { x =650 y = 350 }
+			position = { x =642 y = 350 }
 			clicksound = interface
 			buttonText = "- Foreign Operations -"
 			font = "malgun_goth_24"
@@ -471,7 +471,7 @@ guiTypes = {
 		effectButtonType = {
 			id = "button"
 			name = "alphaOneName4"
-			position = { x = 660 y = 347 }
+			position = { x = 650 y = 347 }
 			clicksound = interface
 			buttonText = "- Domestic Operations -"
 			font = "malgun_goth_24"
