@@ -18,8 +18,8 @@
  displayAlphaIntelPoints.a:0 "[playerAgency.getAlphaIntelPoints]"
  displayBetaIntelPoints.a:0 "[playerAgency.getBetaIntelPoints]"
 
- spy_openMenuButton_topbar_A.tooltip:0 "Alpha network intelligence points.\n\nClick to open networks menu."
- spy_openMenuButton_topbar_B.tooltip:0 "Beta network intelligence points.\n\nClick to open networks menu."
+ spy_openMenuButton_topbar_A.tooltip:0 "A measure of how much actionable intelligence the Alpha Network has gathered. Gather rate is affected by the targets counterintelligence.\n\nClick to open networks menu."
+ spy_openMenuButton_topbar_B.tooltip:0 "A measure of how much actionable intelligence the Beta Network has gathered. Gather rate is affected by the targets counterintelligence.\n\nClick to open networks menu."
 
  advancedIntel.1.close:0 ""
  AlphaF-IntelReport-Unnasigned:0 "Unassigned"
