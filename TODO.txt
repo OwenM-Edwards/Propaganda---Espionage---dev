@@ -171,6 +171,31 @@ TODO 4 = {
       Add variation to the ending text of all the operations, with maybe small changes to the exact effect sometimes.
       Start with adding around three extra varations for each type.
 
+      #saborep = {
+         #major
+         #minor
+      #}
+      study tech = {
+         major
+         minor
+      }
+      sow unrest = {
+         major 
+         minor
+      }
+      fund crime = {
+         major
+         minor
+      }
+      swing ethics = {
+         major 
+         minor
+      }
+
+   }
+
+   GATHERING INTELLIGENCE EVENTS = {
+      When target does certain things, opportunity to intervene etc.
    }
 }
 

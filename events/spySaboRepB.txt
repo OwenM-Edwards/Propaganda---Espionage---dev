@@ -27,7 +27,18 @@ country_event = {
 country_event = {
 	id = saboRepB.2
 	title = "sabotageRepSuccess2.title"
-	desc = "sabotageRepSuccess2.desc" 
+	desc = {
+		text = "sabotageRepSuccess2.desc.a"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccess2.desc.b"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccess2.desc.c"
+		trigger = { }
+    }
 	show_sound = event_conversation
     is_triggered_only = yes
     picture = GFX_evt_alien_segregation
@@ -123,7 +134,18 @@ country_event = {
 country_event = {
 	id = saboRepB.3
 	title = "sabotageRepSuccessPartial2.title"
-	desc = "sabotageRepSuccessPartial2.desc"
+    desc = {
+		text = "sabotageRepSuccessPartial2.desc.a"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccessPartial2.desc.b"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccessPartial2.desc.c"
+		trigger = { }
+    }
 	show_sound = event_conversation
 	is_triggered_only = yes
     picture = GFX_evt_alien_segregation

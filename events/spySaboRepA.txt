@@ -19,8 +19,19 @@ country_event = {  #SUCCESS/FAIL ROLL EVENT
 #### FULL SUCCESS #####
 country_event = {
 	id = saboRep.2
-	title = "sabotageRepSuccess.title"
-	desc = "sabotageRepSuccess.desc"
+    title = "sabotageRepSuccess.title"
+    desc = {
+		text = "sabotageRepSuccess.desc.a"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccess.desc.b"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccess.desc.c"
+		trigger = { }
+    }
 	show_sound = event_conversation
 	is_triggered_only = yes
     picture = GFX_evt_alien_segregation
@@ -116,7 +127,18 @@ country_event = {
 country_event = {
 	id = saboRep.3
 	title = "sabotageRepSuccessPartial.title"
-	desc = "sabotageRepSuccessPartial.desc"
+    desc = {
+		text = "sabotageRepSuccessPartial.desc.a"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccessPartial.desc.b"
+		trigger = { }
+    }
+    desc = {
+		text = "sabotageRepSuccessPartial.desc.c"
+		trigger = { }
+    }
 	show_sound = event_conversation
 	is_triggered_only = yes
     picture = GFX_evt_alien_segregation

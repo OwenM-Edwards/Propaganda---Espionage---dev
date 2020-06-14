@@ -942,9 +942,20 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 ##### SABOTAGE RELATIONS #####
 ### MAIN ###
  sabotageRepSuccess.title:0 "Sabotage Reputation"
- sabotageRepSuccess.desc:0 "§YMajor success!§!. Our Alpha Network agents have successfully sabotaged the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their diplomatic contacts have become strained."
+ sabotageRepSuccess.desc.a:0 "§YMajor success!§!. Our Alpha network agents have successfully sabotaged the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their diplomatic contacts have become strained."
+
+ sabotageRepSuccess.desc.b:0 "§YMajor success!§!. After a long campaign of grassroots foreign propaganda, our Alpha network agents have succeeded in causing serious diplomatic complications for the §S[alphaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
+
+ sabotageRepSuccess.desc.c:0 "§YMajor success!§!. Our Alpha network agents enginerring several high profile diplomatic embaressments for the §S[alphaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
+
+
+
  sabotageRepSuccess2.title:0 "Sabotage Reputation"
- sabotageRepSuccess2.desc:0 "§YMajor success!§!. Our Beta Network agents have successfully sabotaged the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their diplomatic contacts have become strained."
+ sabotageRepSuccess2.desc.a:0 "§YMajor success!§!. Our Beta network agents have successfully sabotaged the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their diplomatic contacts have become strained."
+
+ sabotageRepSuccess2.desc.b:0 "§YMajor success!§!. After a long campaign of grassroots foreign propaganda, our Beta network agents have succeeded in causing serious diplomatic complications for the §S[betaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
+
+ sabotageRepSuccess2.desc.c:0 "§YMajor success!§!. Our Beta network agents enginerring several high profile diplomatic embaressments for the §S[betaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
  
  sabotageRepSuccess.a:0 "Repeat operation"
  sabotageRepSuccess.a.alpha:0 "Requires §S[root.sabRep_OpCostVar]§! levels of intelligence."
@@ -952,10 +963,20 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  sabotageRepSuccess.b:0 "Return to Intelligence Gathering"
  
  sabotageRepSuccessPartial.title:0 "Sabotage Reputation"
- sabotageRepSuccessPartial.desc:0 "§YSuccess!§!. Our Alpha Network agents met some limited success in sabotaging the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their direct neighbors have become somewhat strained."
+
+ sabotageRepSuccessPartial.desc.a:0 "§YSuccess!§!. Our Alpha Network agents met some limited success in sabotaging the diplomatic reputation of the §S[alphaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their direct neighbors have become somewhat strained."
+
+ sabotageRepSuccessPartial.desc.b:0 "§YSuccess!§!. Alpha network agents have privately published recordings of §S[alphaNetworkTarget_temp.GetName]§! abassadors commiting several minor faux pa's, enough to cause the [alphaNetworkTarget_temp.GetAdjective] some limited diplomatic complications.\n\nRelations between them and their direct neighbors have become somewhat strained."
+
+ sabotageRepSuccessPartial.desc.c:0 "§YSuccess!§!. Quiet words in the ears of foreign ambassadors by Alpha network agents has caused enough of a diplomatic headache for the §S[alphaNetworkTarget_temp.GetName]§! that they were forced to publish an official apology.\n\nRelations between them and their direct neighbors have become somewhat strained."
  
  sabotageRepSuccessPartial2.title:0 "Sabotage Reputation"
- sabotageRepSuccessPartial2.desc:0 "§YSuccess!§!. Our Beta Network agents met some limited success in sabotaging the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!. \n\nRelations between them and their direct neighbors have become somewhat strained."
+
+ sabotageRepSuccessPartial2.desc.a:0 "§YSuccess!§!. Our Beta Network agents met some limited success in sabotaging the diplomatic reputation of the §S[betaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their direct neighbors have become somewhat strained."
+
+ sabotageRepSuccessPartial2.desc.b:0 "§YSuccess!§!. Beta network agents have privately published recordings of §S[betaNetworkTarget_temp.GetName]§! abassadors commiting several minor faux pa's, enough to cause the [betaNetworkTarget_temp.GetAdjective] some limited diplomatic complications.\n\nRelations between them and their direct neighbors have become somewhat strained."
+
+ sabotageRepSuccessPartial2.desc.c:0 "§YSuccess!§!. Quiet words in the ears of foreign ambassadors by Beta network agents has caused enough of a diplomatic headache for the §S[betaNetworkTarget_temp.GetName]§! that they were forced to publish an official apology.\n\nRelations between them and their direct neighbors have become somewhat strained."
  
  
 ##### SOW UNREST #####
