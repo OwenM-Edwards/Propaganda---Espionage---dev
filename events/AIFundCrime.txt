@@ -70,7 +70,7 @@ country_event = { #REPEAT OR STOP
             #INCREASE
             30 = { 
                 modifier = {
-                    factor = 0.0001
+                    factor = 0
                     has_country_flag = Ai_fundCrime_increased
                 }
                 event_target:AIAgency_Defender_Final = {
