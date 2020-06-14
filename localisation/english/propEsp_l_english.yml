@@ -245,9 +245,9 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
  fundCrime_level_3_mod_AI:0 "Massive Crime Wave"
  fundCrime_level_3_mod_AI_desc:0 ""
 
- fundCrime_level_1_gains_mod_AI:0 ""
- fundCrime_level_2_gains_mod_AI:0 ""
- fundCrime_level_3_gains_mod_AI:0 ""
+ fundCrime_level_1_gains_mod_AI:0 "AI_fundCrimeGains_lvl_1"
+ fundCrime_level_2_gains_mod_AI:0 "AI_fundCrimeGains_lvl_2"
+ fundCrime_level_3_gains_mod_AI:0 "AI_fundCrimeGains_lvl_3"
  fundCrime_level_1_gains_mod_AI_desc:0 ""
  fundCrime_level_2_gains_mod_AI_desc:0 ""
  fundCrime_level_3_gains_mod_AI_desc:0 ""
