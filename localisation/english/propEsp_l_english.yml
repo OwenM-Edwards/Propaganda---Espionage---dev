@@ -946,7 +946,7 @@ pol_op_spy_defensive_focus_desc:0 "We must focus our efforts inwards, protecting
 
  sabotageRepSuccess.desc.b:0 "§YMajor success!§!. After a long campaign of grassroots foreign propaganda, our Alpha network agents have succeeded in causing serious diplomatic complications for the §S[alphaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
 
- sabotageRepSuccess.desc.c:0 "§YMajor success!§!. Our Alpha network agents enginerring several high profile diplomatic embaressments for the §S[alphaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
+ sabotageRepSuccess.desc.c:0 "§YMajor success!§!. Our Alpha network agents engineered several high profile diplomatic embaressments for the §S[alphaNetworkTarget_temp.GetName]§!.\n\nRelations between them and their diplomatic contacts have become strained."
 
 
 
@@ -1959,10 +1959,10 @@ spyDomStabilityBeta.4.desc:0 "§YMajor Success!§!. Our Beta Network operatives 
  counterIntel_Medium:0 "§SMedium Internal Security§!"
  counterIntel_Low:0 "§SLow Internal Security§!"
 
- toolTipIntelReportLow:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 100% chance of successfully completing an operation."
- toolTipIntelReportMedium:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 60% chance of successfully completing an operation."
- toolTipIntelReportHigh:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 50% chance of successfully completing an operation."
- toolTipIntelReportVeryHigh:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 10% chance of successfully completing an operation."
+ toolTipIntelReportLow:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 100% chance of successfully completing an operation.\n\nWe will gain roughly 15 intelligence points."
+ toolTipIntelReportMedium:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 60% chance of successfully completing an operation.\n\nWe will gain roughly 10 intelligence points."
+ toolTipIntelReportHigh:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 50% chance of successfully completing an operation.\n\nWe will gain roughly 5 intelligence points."
+ toolTipIntelReportVeryHigh:0 "An estimate of the target's counterintelligence level.\n\nWe have roughly a 10% chance of successfully completing an operation.\n\nWe will gain roughly 2 intelligence points."
 
  BetaF-IntelReport.a:0 "An estimate of the target's counterintelligence level. Higher levels will mean less intelligence gathered by our network, and a higher chance of our operations failing."
 
