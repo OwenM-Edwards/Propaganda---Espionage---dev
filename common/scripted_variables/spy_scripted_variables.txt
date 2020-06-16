@@ -17,17 +17,17 @@
 	@operationCost = -15
 	@operationCostCheck = 15
 
-	@sabRepOperationCost = -10
-	@studyTechOperationCost = -20
-	@fundCrimeOperationCost = -15
-	@sowUnrestOperationCost = -20
-	@swingEthicsOperationCost = -15
+	@sabRepOperationCost = -20 #-10
+	@studyTechOperationCost = -40 #-20
+	@fundCrimeOperationCost = -30 #-15
+	@sowUnrestOperationCost = -40 #-20
+	@swingEthicsOperationCost = -30 #-15
 
-	@sabRepOperationCostCheck = 10
-	@studyTechOperationCostCheck = 20
-	@fundCrimeOperationCostCheck = 15
-	@sowUnrestOperationCostCheck = 20
-	@swingEthicsOperationCostCheck = 15
+	@sabRepOperationCostCheck = 20 #10
+	@studyTechOperationCostCheck = 40 #20
+	@fundCrimeOperationCostCheck = 30 #15
+	@sowUnrestOperationCostCheck = 40 #20
+	@swingEthicsOperationCostCheck = 30 #15
 
 	### CHANGE OP COOLDOWN
 	@changeOpCooldown = 91 #Must always be a few days longer than primary stage
@@ -98,7 +98,7 @@
 	@domStabilityLength = 180
 
 	### AI FUND CRIME RPEAT TIMER  ###
-	@fundCrimeRepeatLength = 180
+	@fundCrimeRepeatLength = 200
 
 
 	### OPPORTUNITY EVENT ROLL MODIFIER ###
