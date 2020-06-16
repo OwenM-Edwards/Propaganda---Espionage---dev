@@ -40,10 +40,10 @@ EVENT IDEAS
 
 		AN AMBITIOUS OFFICIAL- no restrictions 
 
-			OPENER: A lesser knwon [ownrace] politician has traced credits laundered on [targetplanet] to our Empire through our [network]. They have threatened to expose our involvement unless we support their campaign for office. 
+			OPENER: A lesser known [ownrace] politician has traced credits laundered on [targetplanet] to our Empire through our [network]. They have threatened to expose our involvement unless we support their campaign for office. 
 
 				A: Agree to their terms (influence cost)
-				B: Let's see if we can come to an agreement... (credit cost)
+				B: Let's see if we can come to an agreement... (credit cost- megacorp only)
 				C: Ignore their demands.
 				D: Silence them! (begin assasination chain)
 
@@ -59,6 +59,43 @@ EVENT IDEAS
 
 				D Fail (0.5) The politician is dead. Sadly, he made arrangements. The diplomatic community will be made aware of your recent criminal activity.
 					Moderate penalty to diplomatic reputation
+
+
+
+		THE CONTAGION OF CRIME- requires shared border or migration treaty {ideally likelihood of getting this event will be linked to how many times the organised crime option has been used against the targeted empire}
+
+			OPENER: There has been a spike in criminal activity throughout the empire. Reports suggest it may be linked to a powerful crime syndicate on [target planet] within [target empire]. Our [network] has been supporting them for some time. 
+
+				A: Brief our domestic agents. We must deal with this quietly. (requires alpha or beta domestic operations)
+				B: Our [network] has contacts. Surely we can reach an agreement that's profitable for all.	
+				C: A few more criminals is of no concern to us. The police can handle this. 
+				D: We will root them out with force! (unusuable by pacifists) {optional, if you're smort}
+
+			ENDING 
+				A Success (0.8 for domestic funding policy, 0.5 for balanced and 0.3 for foreign funding)
+				Our [domestic network] has successfully traced the syndicate to a district on [ownrandomplanet]. They were able to shut the operation down and seize their "merchanise". 
+					Gain 100 of a random strategic resource, and X5 small artifacts {or whatever you think is balanced}. Continue support organised crime.
+
+				A Fail
+				Our Domestic Network was unable to prevent the syndicate from infiltrating our empire further. Crime activity in the capital and [ownrandomplanet] is rising. 
+					Crime increases by 1.5X normal in [capital] and [ownrandomplanet]. Support organised crime continues. 
+
+				B Success (0.8 for foreign funding policy, 0.5 for balanced and 0.3 for domestic funding)
+				Our agents on [targetplanet] have been able to strike a deal with the syndicate. Hopefully it will be worth the rise in crime it has caused. 
+					Crime increases by 1.5X normal in [capital] and [ownrandomplanet]. 2X normal energy credit reward for support organised crime. Support organised crime continues.
+
+				B Fail
+				The syndicate responded to our messages with the heads of our [nework] agents. They are clearly not interested in sharing their profits.  
+					Crime increases by 1X normal in [targetplanet], [capital] and [ownrandomplanet]. Support organised crime ends. 
+
+				C: Organised Crime activity has risen in the capital and [randomtargetplanet]. 
+					1.5X increase in crime activity on [capital] and [randomtargetplanet]. Support organised crime resumes. 
+
+				D: Our military intelligence were able to trace criminal activity to [ownrandomplanet]. During their mission to destroy the outpost, several operatives escaped on ships disguised as civillian freighters. Several transport and cargo vessels have been reported missing in the area. 
+					Support organised crime resumes. Pirates spawned in system adjacent to [ownrandomplanet].
+
+
+
 
 
 
