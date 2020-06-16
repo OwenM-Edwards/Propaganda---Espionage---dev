@@ -82,6 +82,10 @@ country_event = {
 				}
 				country_event = { id = opportunityManager.14 }
 			}
+			else = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
 			
 		}
 		else_if = {
@@ -90,33 +94,37 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_country_flag = saborep
+					has_country_flag = saboRep
 				}
 				country_event = { id = opportunityManager.10 }
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_country_flag = studyTech
 				}
 				country_event = { id = opportunityManager.11 }
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_country_flag = fundCrime
 				}
 				country_event = { id = opportunityManager.12 }
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_country_flag = swingEthics
 				}
 				country_event = { id = opportunityManager.13 }
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_country_flag = sowUnrest
 				}
 				country_event = { id = opportunityManager.14 }
+			}
+			else = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
 			}
 		}
 		else = {
@@ -500,6 +508,10 @@ country_event = {
 				set_country_flag = opportunityEnd_4
 				country_event = { id = opportunityManager.3 }
 			}
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
 		}
 		if = {
 			limit = {
@@ -525,6 +537,10 @@ country_event = {
 				set_country_flag = opportunityEnd_4
 				country_event = { id = opportunityManager.3 }
 			}
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
 		}
 		if = {
 			limit = {
@@ -546,6 +562,10 @@ country_event = {
 
 	immediate = {
 		random_list = {
+			50 = {
+				set_country_flag = opportunityEnd_4
+				country_event = { id = opportunityManager.3 }
+			}
 			50 = {
 				set_country_flag = opportunityEnd_4
 				country_event = { id = opportunityManager.3 }
