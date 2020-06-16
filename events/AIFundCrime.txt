@@ -54,7 +54,7 @@ country_event = { #SUCCESS
             }
         }
         country_event = {
-            id = aifundCrime.2 days = 30 random = 15
+            id = aifundCrime.2 days = 200 random = 15
         }
     }
 }
