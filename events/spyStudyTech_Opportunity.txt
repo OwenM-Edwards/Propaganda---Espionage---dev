@@ -335,7 +335,11 @@ country_event = {
 				}
 				set_country_flag = opportunityEnd_1
 				country_event = { id = opportunityManager.3 }
-			}                              
+			}   
+			else = {
+				set_country_flag = opportunityEnd_1
+				country_event = { id = opportunityManager.3 }
+			}                           
 		}
 	}
 }
