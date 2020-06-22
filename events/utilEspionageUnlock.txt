@@ -284,6 +284,8 @@ country_event = {
 
 		set_country_flag = espionageAllowed
 
+		remove_country_flag = spyMenuOpen
+
 		country_event = {
 			id = agencyGlobal.3
 		}
