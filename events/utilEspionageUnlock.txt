@@ -296,6 +296,20 @@ country_event = {
 }
 
 
+# ONE TIME FIRE TO CLEAR OPEN MENU BUG
+country_event = {
+	id = espionageUnlock.912
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+
+	immediate = {
+		remove_country_flag = spyMenuOpen
+	}
+}
+
+
+
 
 ### SET EACH COUNTIRES OPERATION COST VARIABLES BASED OFF OF THE SCRIPTED VARS ###
 ### MUST BE DONE THIS WAY SO WE CAN REFERENCE IN LOCALISATION ###
