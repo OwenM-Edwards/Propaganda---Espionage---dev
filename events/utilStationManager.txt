@@ -1055,9 +1055,15 @@ country_event = {
 				event_target:potentialSabStation_1 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_1 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1070,9 +1076,15 @@ country_event = {
 				event_target:potentialSabStation_2 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_2 = { save_event_target_as = finalStationTarget } 
-				country_event = { id = stationSabotage.1 } 
+				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            } 
 			}
 		}
 	}
@@ -1085,9 +1097,15 @@ country_event = {
 				event_target:potentialSabStation_3 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_3 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1100,9 +1118,15 @@ country_event = {
 				event_target:potentialSabStation_4 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_4 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1115,9 +1139,15 @@ country_event = {
 				event_target:potentialSabStation_5 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_5 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1130,9 +1160,15 @@ country_event = {
 				event_target:potentialSabStation_6 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_6 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1145,9 +1181,15 @@ country_event = {
 				event_target:potentialSabStation_7 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_7 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1160,9 +1202,15 @@ country_event = {
 				event_target:potentialSabStation_8 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_8 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1175,9 +1223,15 @@ country_event = {
 				event_target:potentialSabStation_9 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_9 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1190,9 +1244,15 @@ country_event = {
 				event_target:potentialSabStation_10 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_10 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1205,9 +1265,15 @@ country_event = {
 				event_target:potentialSabStation_11 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_11 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1220,9 +1286,15 @@ country_event = {
 				event_target:potentialSabStation_12 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_12 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1235,9 +1307,15 @@ country_event = {
 				event_target:potentialSabStation_13 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_13 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1250,9 +1328,15 @@ country_event = {
 				event_target:potentialSabStation_14 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_14 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1265,9 +1349,15 @@ country_event = {
 				event_target:potentialSabStation_15 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_15 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1280,9 +1370,15 @@ country_event = {
 				event_target:potentialSabStation_16 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_16 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1295,9 +1391,15 @@ country_event = {
 				event_target:potentialSabStation_17 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_17 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1310,9 +1412,15 @@ country_event = {
 				event_target:potentialSabStation_18 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_18 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1325,9 +1433,15 @@ country_event = {
 				event_target:potentialSabStation_19 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_19 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1340,9 +1454,15 @@ country_event = {
 				event_target:potentialSabStation_20 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_20 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1355,9 +1475,15 @@ country_event = {
 				event_target:potentialSabStation_21 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_21 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1370,9 +1496,15 @@ country_event = {
 				event_target:potentialSabStation_22 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_22 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1385,9 +1517,15 @@ country_event = {
 				event_target:potentialSabStation_23 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_23 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1400,9 +1538,15 @@ country_event = {
 				event_target:potentialSabStation_24 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_24 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1415,9 +1559,15 @@ country_event = {
 				event_target:potentialSabStation_25 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_25 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1430,9 +1580,15 @@ country_event = {
 				event_target:potentialSabStation_26 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_26 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1445,9 +1601,15 @@ country_event = {
 				event_target:potentialSabStation_27 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_27 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1460,9 +1622,15 @@ country_event = {
 				event_target:potentialSabStation_28 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_28 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1475,9 +1643,15 @@ country_event = {
 				event_target:potentialSabStation_29 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_29 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1490,9 +1664,15 @@ country_event = {
 				event_target:potentialSabStation_30 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_30 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1505,9 +1685,15 @@ country_event = {
 				event_target:potentialSabStation_31 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_31 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1520,9 +1706,15 @@ country_event = {
 				event_target:potentialSabStation_32 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_32 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1535,9 +1727,15 @@ country_event = {
 				event_target:potentialSabStation_33 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_33 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1550,9 +1748,15 @@ country_event = {
 				event_target:potentialSabStation_34 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_34 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1565,9 +1769,15 @@ country_event = {
 				event_target:potentialSabStation_35 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_35 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1580,9 +1790,15 @@ country_event = {
 				event_target:potentialSabStation_36 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_36 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1595,9 +1811,15 @@ country_event = {
 				event_target:potentialSabStation_37 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_37 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1610,9 +1832,15 @@ country_event = {
 				event_target:potentialSabStation_38 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_38 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1625,9 +1853,15 @@ country_event = {
 				event_target:potentialSabStation_39 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_39 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1640,9 +1874,15 @@ country_event = {
 				event_target:potentialSabStation_40 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_40 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1655,9 +1895,15 @@ country_event = {
 				event_target:potentialSabStation_41 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_41 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1670,9 +1916,15 @@ country_event = {
 				event_target:potentialSabStation_42 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_42 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1685,9 +1937,15 @@ country_event = {
 				event_target:potentialSabStation_43 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_43 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1700,9 +1958,15 @@ country_event = {
 				event_target:potentialSabStation_44 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_44 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1715,9 +1979,15 @@ country_event = {
 				event_target:potentialSabStation_45 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_45 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1730,9 +2000,15 @@ country_event = {
 				event_target:potentialSabStation_46 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_46 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1745,9 +2021,15 @@ country_event = {
 				event_target:potentialSabStation_47 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_47 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1760,9 +2042,15 @@ country_event = {
 				event_target:potentialSabStation_48 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_48 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1775,9 +2063,15 @@ country_event = {
 				event_target:potentialSabStation_49 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_49 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1790,9 +2084,15 @@ country_event = {
 				event_target:potentialSabStation_50 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_50 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1805,9 +2105,15 @@ country_event = {
 				event_target:potentialSabStation_51 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_51 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1820,9 +2126,15 @@ country_event = {
 				event_target:potentialSabStation_52 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_52 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1835,9 +2147,15 @@ country_event = {
 				event_target:potentialSabStation_53 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_53 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1850,9 +2168,15 @@ country_event = {
 				event_target:potentialSabStation_54 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_54 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1865,9 +2189,15 @@ country_event = {
 				event_target:potentialSabStation_55 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_55 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1880,9 +2210,15 @@ country_event = {
 				event_target:potentialSabStation_56 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_56 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1895,9 +2231,15 @@ country_event = {
 				event_target:potentialSabStation_57 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_57 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1910,9 +2252,15 @@ country_event = {
 				event_target:potentialSabStation_58 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_58 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1925,9 +2273,15 @@ country_event = {
 				event_target:potentialSabStation_59 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_59 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1940,9 +2294,15 @@ country_event = {
 				event_target:potentialSabStation_60 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_60 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1955,9 +2315,15 @@ country_event = {
 				event_target:potentialSabStation_61 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_61 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1970,9 +2336,15 @@ country_event = {
 				event_target:potentialSabStation_62 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_62 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -1985,9 +2357,15 @@ country_event = {
 				event_target:potentialSabStation_63 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_63 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2000,9 +2378,15 @@ country_event = {
 				event_target:potentialSabStation_64 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_64 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2015,9 +2399,15 @@ country_event = {
 				event_target:potentialSabStation_65 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_65 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2030,9 +2420,15 @@ country_event = {
 				event_target:potentialSabStation_66 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_66 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2045,9 +2441,15 @@ country_event = {
 				event_target:potentialSabStation_67 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_67 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2060,9 +2462,15 @@ country_event = {
 				event_target:potentialSabStation_68 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_68 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2075,9 +2483,15 @@ country_event = {
 				event_target:potentialSabStation_69 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_69 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2090,9 +2504,15 @@ country_event = {
 				event_target:potentialSabStation_70 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_70 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2105,9 +2525,15 @@ country_event = {
 				event_target:potentialSabStation_71 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_71 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2120,9 +2546,15 @@ country_event = {
 				event_target:potentialSabStation_72 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_72 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2135,9 +2567,15 @@ country_event = {
 				event_target:potentialSabStation_73 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_73 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2150,9 +2588,15 @@ country_event = {
 				event_target:potentialSabStation_74 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_74 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2165,9 +2609,15 @@ country_event = {
 				event_target:potentialSabStation_75 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_75 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2180,9 +2630,15 @@ country_event = {
 				event_target:potentialSabStation_76 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_76 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2195,9 +2651,15 @@ country_event = {
 				event_target:potentialSabStation_77 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_77 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2210,9 +2672,15 @@ country_event = {
 				event_target:potentialSabStation_78 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_78 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2225,9 +2693,15 @@ country_event = {
 				event_target:potentialSabStation_79 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_79 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2240,9 +2714,15 @@ country_event = {
 				event_target:potentialSabStation_80 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_80 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2255,9 +2735,15 @@ country_event = {
 				event_target:potentialSabStation_81 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_81 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2270,9 +2756,15 @@ country_event = {
 				event_target:potentialSabStation_82 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_82 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2285,9 +2777,15 @@ country_event = {
 				event_target:potentialSabStation_83 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_83 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2300,9 +2798,15 @@ country_event = {
 				event_target:potentialSabStation_84 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_84 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2315,9 +2819,15 @@ country_event = {
 				event_target:potentialSabStation_85 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_85 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2330,9 +2840,15 @@ country_event = {
 				event_target:potentialSabStation_86 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_86 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2345,9 +2861,15 @@ country_event = {
 				event_target:potentialSabStation_87 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_87 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2360,9 +2882,15 @@ country_event = {
 				event_target:potentialSabStation_88 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_88 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2375,9 +2903,15 @@ country_event = {
 				event_target:potentialSabStation_89 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_89 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2390,9 +2924,15 @@ country_event = {
 				event_target:potentialSabStation_90 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_90 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2405,9 +2945,15 @@ country_event = {
 				event_target:potentialSabStation_91 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_91 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2420,9 +2966,15 @@ country_event = {
 				event_target:potentialSabStation_92 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_92 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2435,9 +2987,15 @@ country_event = {
 				event_target:potentialSabStation_93 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_93 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2450,9 +3008,15 @@ country_event = {
 				event_target:potentialSabStation_94 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_94 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2465,9 +3029,15 @@ country_event = {
 				event_target:potentialSabStation_95 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_95 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2480,9 +3050,15 @@ country_event = {
 				event_target:potentialSabStation_96 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_96 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2495,9 +3071,15 @@ country_event = {
 				event_target:potentialSabStation_97 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_97 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2510,9 +3092,15 @@ country_event = {
 				event_target:potentialSabStation_98 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_98 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2525,9 +3113,15 @@ country_event = {
 				event_target:potentialSabStation_99 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_99 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2540,9 +3134,15 @@ country_event = {
 				event_target:potentialSabStation_100 = { save_event_target_as = finalStationTarget }
 				remove_country_flag = betaF_raidStation
 				country_event = { id = stationSabotageBeta.1  }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 			else = { event_target:potentialSabStation_100 = { save_event_target_as = finalStationTarget } 
 				country_event = { id = stationSabotage.1 }
+				country_event = {
+               id = agencyGlobal.2  
+            }
 			}
 		}
 	}
@@ -2552,7 +3152,7 @@ country_event = {
 
 	
 	option = { #CANCEL
-		name = stationManager.1.z
+		name = stationManager.1.z 
 		if = {
 			limit = {
 				has_country_flag = tempStationSabBeta
